@@ -1,0 +1,111 @@
+{
+  "navbar": {
+    "home": "Domov",
+    "services": "Storitve",
+    "about": "O nas",
+    "references": "Reference",
+    "contact": "Kontakt",
+    "callNow": "Poklicite zdaj",
+    "toggleMenu": "Preklopi meni"
+  },
+  "hero": {
+    "title": "Vas vrt v najboljsih rokah",
+    "cta": "Zahtevajte posvet zdaj"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Premium vrtnarska nega",
+      "title": "Vas vrt v najboljsih rokah. Urejen in strokovno vzdrzevan.",
+      "text": "{{companyName}} nudi kakovostno nego vrtov za zasebne in poslovne stranke.",
+      "serviceArea": "Obmocje storitev"
+    },
+    "services": {
+      "eyebrow": "Storitve",
+      "title": "Vse za urejen vrt",
+      "description": "Od rednega vzdrzevanja do sezonskih del.",
+      "hedge": { "title": "Obrezovanje zivih mej", "description": "Strokovno obrezovanje za zdrav videz rastlin." },
+      "lawn": { "title": "Nega trate", "description": "Kosnja, prezracevanje in gnojenje trate." },
+      "beds": { "title": "Nega gred", "description": "Urejene grede in zasaditve okoli doma." },
+      "trees": { "title": "Obrezovanje drevja", "description": "Varno obrezovanje manjsih dreves in grmovnic." },
+      "season": { "title": "Sezonske storitve", "description": "Spomladanska in jesenska priprava vrta." },
+      "ongoing": { "title": "Redno vzdrzevanje", "description": "Redna oskrba zasebnih vrtov in objektov." }
+    },
+    "why": {
+      "eyebrow": "Zakaj mi",
+      "title": "Zaupanje temelji na kakovostnem delu",
+      "description": "Nas cilj je trajna kakovost.",
+      "reliable": { "title": "Zanesljiva izvedba", "text": "Jasni termini in cisto delo." },
+      "punctual": { "title": "Tocno in nacrtovano", "text": "Drzimo se dogovorjenih terminov." },
+      "personal": { "title": "Osebni pristop", "text": "Neposreden kontakt in prilagojene resitve." }
+    },
+    "about": {
+      "eyebrow": "O nas",
+      "title": "Lokalno prisotni. Osebni v stiku.",
+      "description": "Poznamo regionalne pogoje in stavimo na trajnost.",
+      "text": "Nasa ekipa dela z jasnimi procesi in postenim svetovanjem.",
+      "link": "Vec o nasi ekipi",
+      "regionActive": "Aktivni v regiji"
+    },
+    "references": {
+      "eyebrow": "Reference",
+      "title": "Izbrani projekti iz prakse",
+      "description": "Tipicni projekti iz nase regije."
+    },
+    "location": {
+      "eyebrow": "Obmocje storitev",
+      "title": "Na terenu v vasi regiji",
+      "text": "Stranke oskrbujemo na obmocju {{serviceArea}}.",
+      "phone": "Telefon",
+      "email": "E-posta",
+      "address": "Naslov"
+    }
+  },
+  "servicesPage": {
+    "heroEyebrow": "Storitve",
+    "heroTitle": "Prilagojena nega vrta namesto standardnih paketov",
+    "heroText": "Vsak vrt je drugacen. Pripravimo ustrezen nacrt oskrbe.",
+    "sectionTitle": "Nase glavne storitve",
+    "sectionDescription": "Storitve lahko narocite posamezno ali kot paket.",
+    "hedgeTitle": "Obrezovanje zivih mej",
+    "hedgeDescription": "Oblikovanje in vzdrzevanje za zdravo strukturo.",
+    "lawnTitle": "Nega trate",
+    "lawnDescription": "Redna kosnja, prezracevanje in gnojenje.",
+    "bedsTitle": "Nega gred",
+    "bedsDescription": "Nega trajnic in okrasnih gred.",
+    "greenTitle": "Obrezovanje zelenja",
+    "greenDescription": "Varno obrezovanje manjsih dreves in grmovnic.",
+    "seasonTitle": "Sezonska dela",
+    "seasonDescription": "Spomladanska priprava, jesenski servis in listje.",
+    "ongoingTitle": "Redna oskrba",
+    "ongoingDescription": "Redna nega po dogovorjenem terminskem planu."
+  },
+  "aboutPage": {
+    "heroEyebrow": "O nas",
+    "heroTitle": "Strokovna nega vrtov z regionalnim fokusom",
+    "heroText": "Kot regionalno podjetje zagotavljamo zanesljivo oskrbo in posteno svetovanje.",
+    "sectionTitle": "Kako delamo",
+    "sectionDescription": "Vrt natancno pregledamo in predlagamo le smiselne ukrepe.",
+    "body": "Nas cilj je urejen vrt, ki ustreza vasemu vsakdanu.",
+    "valuesEyebrow": "Nase vrednote",
+    "value1": "Osebno svetovanje z jasnim obsegom",
+    "value2": "Tocnost in cisto delo",
+    "value3": "Trajnostna nega za dolgorocen ucinek",
+    "value4": "Regionalna blizina in dosegljivost"
+  },
+  "contact": { "title": "Kontakt" },
+  "contactPage": {
+    "heroEyebrow": "Kontakt",
+    "heroTitle": "Veselimo se vasega povprasevanja",
+    "heroText": "Za redno nego ali enkratni projekt vam hitro odgovorimo.",
+    "formTitle": "Posljite sporocilo",
+    "formDescription": "Sporocite nam vaso zeljo. Kontaktirali vas bomo osebno.",
+    "direct": "Neposredno dosegljivi",
+    "serviceArea": "Obmocje storitev"
+  },
+  "cta": {
+    "eyebrow": "Nezavezujoca ponudba",
+    "title": "Zelite svoj vrt prepustiti zanesljivim rokam?",
+    "text": "Pripravimo jasno ponudbo in poskrbimo za cisto ter pravocasno izvedbo.",
+    "button": "Kontaktirajte nas"
+  }
+}

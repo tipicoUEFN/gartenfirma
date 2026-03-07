@@ -1,4 +1,5 @@
 import { ArrowRight, Clock3, Flower2, Leaf, Scissors, ShieldCheck, Shovel, Sprout, Trees, Users } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import CTASection from '../components/CTASection'
 import PageHero from '../components/PageHero'
@@ -9,66 +10,68 @@ import TrustCard from '../components/TrustCard'
 import { businessData } from '../config/businessData'
 import { homepageImages, referenceProjects } from '../config/imageLibrary'
 
-const services = [
-  {
-    icon: Scissors,
-    title: 'Hecken- und Strauchschnitt',
-    description: 'Fachgerechter Rueckschnitt fuer gesunde Pflanzen und ein gepflegtes Gesamtbild ueber das ganze Jahr.',
-  },
-  {
-    icon: Shovel,
-    title: 'Rasenpflege',
-    description: 'Maehen, Vertikutieren, Duengen und Bodenverbesserung abgestimmt auf Standort und Saison.',
-  },
-  {
-    icon: Flower2,
-    title: 'Beet- und Staudenpflege',
-    description: 'Saubere Beete, strukturierte Pflanzflaechen und ein harmonisches Erscheinungsbild rund ums Haus.',
-  },
-  {
-    icon: Trees,
-    title: 'Baum- und Gruenschnitt',
-    description: 'Sichere und saubere Pflegearbeiten bei kleineren Baumbestaenden und Ziergehwoelzen.',
-  },
-  {
-    icon: Sprout,
-    title: 'Saisonservice',
-    description: 'Fruehjahrs- und Herbstservice inklusive Laubarbeiten, Rueckschnitt und Wintervorbereitung.',
-  },
-  {
-    icon: Leaf,
-    title: 'Laufende Objektpflege',
-    description: 'Regelmaessige Betreuung fuer Privatgaerten, Wohnanlagen und kleine Gewerbeflaechen.',
-  },
-]
-
-const trustItems = [
-  {
-    icon: ShieldCheck,
-    title: 'Verlaessliche Ausfuehrung',
-    text: 'Klare Termine, transparente Leistungen und saubere Arbeit bis ins Detail.',
-  },
-  {
-    icon: Clock3,
-    title: 'Puenktlich & planbar',
-    text: 'Wir arbeiten strukturiert und halten vereinbarte Zeitfenster ein.',
-  },
-  {
-    icon: Users,
-    title: 'Persoenliche Betreuung',
-    text: 'Direkter Ansprechpartner und individuelle Loesungen fuer Ihren Garten.',
-  },
-]
-
 const references = referenceProjects.slice(0, 3)
 
 function HomePage() {
+  const { t } = useTranslation()
+
+  const services = [
+    {
+      icon: Scissors,
+      title: t('home.services.hedge.title'),
+      description: t('home.services.hedge.description'),
+    },
+    {
+      icon: Shovel,
+      title: t('home.services.lawn.title'),
+      description: t('home.services.lawn.description'),
+    },
+    {
+      icon: Flower2,
+      title: t('home.services.beds.title'),
+      description: t('home.services.beds.description'),
+    },
+    {
+      icon: Trees,
+      title: t('home.services.trees.title'),
+      description: t('home.services.trees.description'),
+    },
+    {
+      icon: Sprout,
+      title: t('home.services.season.title'),
+      description: t('home.services.season.description'),
+    },
+    {
+      icon: Leaf,
+      title: t('home.services.ongoing.title'),
+      description: t('home.services.ongoing.description'),
+    },
+  ]
+
+  const trustItems = [
+    {
+      icon: ShieldCheck,
+      title: t('home.why.reliable.title'),
+      text: t('home.why.reliable.text'),
+    },
+    {
+      icon: Clock3,
+      title: t('home.why.punctual.title'),
+      text: t('home.why.punctual.text'),
+    },
+    {
+      icon: Users,
+      title: t('home.why.personal.title'),
+      text: t('home.why.personal.text'),
+    },
+  ]
+
   return (
     <>
       <PageHero
-        eyebrow="Premium Gartenpflege"
-        title="Ihr Garten in besten Haenden. Gepflegt, klar und professionell betreut."
-        text={`${businessData.companyName} bietet hochwertige Gartenpflege fuer Privat- und Firmenkunden in der Suedsteiermark. Mit Fachwissen, Handschlagqualitaet und Blick fuers Detail.`}
+        eyebrow={t('home.hero.eyebrow')}
+        title={t('home.hero.title')}
+        text={t('home.hero.text', { companyName: businessData.companyName })}
         imageSrc={homepageImages.hero.src}
         imageSrcSet={homepageImages.hero.srcSet}
         imageAlt={homepageImages.hero.alt}
@@ -78,19 +81,19 @@ function HomePage() {
             to="/kontakt"
             className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-olive-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-olive-800 sm:w-auto"
           >
-            Jetzt Beratung anfragen
+            {t('hero.cta')}
             <ArrowRight size={18} />
           </Link>
-          <span className="text-sm text-olive-700">Einsatzgebiet: {businessData.serviceArea}</span>
+          <span className="text-sm text-olive-700">{t('home.hero.serviceArea')}: {businessData.serviceArea}</span>
         </div>
       </PageHero>
 
       <section className="section-spacing pt-0">
         <div className="container-width">
           <SectionTitle
-            eyebrow="Leistungen"
-            title="Alles fuer einen gepflegten Garten"
-            description="Vom regelmaessigen Service bis zum gezielten Saisoneinsatz. Wir arbeiten sorgfaeltig, effizient und nachvollziehbar."
+            eyebrow={t('home.services.eyebrow')}
+            title={t('home.services.title')}
+            description={t('home.services.description')}
           />
           <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
             {services.map((service) => (
@@ -103,9 +106,9 @@ function HomePage() {
       <section className="section-spacing bg-olive-100/40">
         <div className="container-width">
           <SectionTitle
-            eyebrow="Warum wir"
-            title="Vertrauen entsteht durch saubere Arbeit"
-            description="Unser Anspruch ist ein Ergebnis, das langfristig ueberzeugt. Fachlich, optisch und organisatorisch."
+            eyebrow={t('home.why.eyebrow')}
+            title={t('home.why.title')}
+            description={t('home.why.description')}
           />
           <div className="grid gap-5 md:grid-cols-3">
             {trustItems.map((item) => (
@@ -119,23 +122,23 @@ function HomePage() {
         <div className="container-width grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
             <SectionTitle
-              eyebrow="Ueber uns"
-              title="Regional verwurzelt. Persoenlich im Kontakt."
-              description="Wir kennen die Anforderungen von Gaerten in der Region und setzen auf nachhaltige Pflege statt kurzfristiger Kosmetik."
+              eyebrow={t('home.about.eyebrow')}
+              title={t('home.about.title')}
+              description={t('home.about.description')}
             />
             <p className="max-w-xl text-sm leading-relaxed text-olive-700 sm:text-base">
-              Unser Team arbeitet mit klaren Prozessen und ehrlicher Beratung. Sie erhalten nachvollziehbare Empfehlungen und ein Ergebnis, das Ihren Garten sichtbar aufwertet.
+              {t('home.about.text')}
             </p>
             <Link
               to="/ueber-uns"
               className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-olive-700 hover:text-olive-800"
             >
-              Mehr ueber unser Team
+              {t('home.about.link')}
               <ArrowRight size={17} />
             </Link>
           </div>
           <div className="glass-card rounded-3xl p-6 sm:p-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-olive-600">Regional aktiv</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-olive-600">{t('home.about.regionActive')}</p>
             <ul className="mt-4 space-y-3 text-sm text-olive-700 sm:text-base">
               <li>Suedsteiermark</li>
               <li>Graz</li>
@@ -149,9 +152,9 @@ function HomePage() {
       <section className="section-spacing bg-olive-100/40">
         <div className="container-width">
           <SectionTitle
-            eyebrow="Referenzen"
-            title="Ausgewaehlte Projekte aus der Praxis"
-            description="Wir zeigen typische Arbeiten wie Rasenpflege, Heckschnitt und laufende Gartenbetreuung aus der Region."
+            eyebrow={t('home.references.eyebrow')}
+            title={t('home.references.title')}
+            description={t('home.references.description')}
           />
           <div className="grid gap-5 lg:grid-cols-3">
             {references.map((item) => (
@@ -165,14 +168,14 @@ function HomePage() {
         <div className="container-width">
           <div className="glass-card grid gap-8 rounded-3xl px-6 py-8 sm:px-10 sm:py-10 lg:grid-cols-2">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-olive-600">Einsatzgebiet</p>
-              <h2 className="headline mt-3 text-3xl font-semibold text-olive-800">Vor Ort in Ihrer Region</h2>
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-olive-600">{t('home.location.eyebrow')}</p>
+              <h2 className="headline mt-3 text-3xl font-semibold text-olive-800">{t('home.location.title')}</h2>
               <p className="mt-4 max-w-xl text-sm leading-relaxed text-olive-700 sm:text-base">
-                Wir betreuen Kundinnen und Kunden in {businessData.serviceArea}. Durch unsere regionale Naehe sind wir flexibel, schnell erreichbar und persoenlich fuer Sie da.
+                {t('home.location.text', { serviceArea: businessData.serviceArea })}
               </p>
             </div>
             <div className="rounded-2xl bg-olive-800 p-6 text-olive-100">
-              <p className="text-sm">Telefon</p>
+              <p className="text-sm">{t('home.location.phone')}</p>
               <a href={`tel:${businessData.primaryPhone}`} className="mt-1 block text-xl font-semibold text-white">
                 {businessData.phoneContacts[0]?.label}: {businessData.primaryPhone}
               </a>
@@ -185,11 +188,11 @@ function HomePage() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-6 text-sm">E-Mail</p>
+              <p className="mt-6 text-sm">{t('home.location.email')}</p>
               <a href={`mailto:${businessData.email}`} className="mt-1 block text-base font-semibold text-white">
                 {businessData.email}
               </a>
-              <p className="mt-6 text-sm">Adresse</p>
+              <p className="mt-6 text-sm">{t('home.location.address')}</p>
               <p className="mt-1 text-base text-white">{businessData.address}</p>
             </div>
           </div>

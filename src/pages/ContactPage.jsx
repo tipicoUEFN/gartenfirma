@@ -1,27 +1,30 @@
 import { Mail, MapPin, Phone } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import ContactForm from '../components/ContactForm'
 import PageHero from '../components/PageHero'
 import SectionTitle from '../components/SectionTitle'
 import { businessData } from '../config/businessData'
 
 function ContactPage() {
+  const { t } = useTranslation()
+
   return (
     <>
       <PageHero
-        eyebrow="Kontakt"
-        title="Wir freuen uns auf Ihre Anfrage"
-        text="Ob laufende Gartenpflege oder ein konkretes Einzelprojekt: Wir melden uns zeitnah mit einer fundierten Rueckmeldung."
+        eyebrow={t('contactPage.heroEyebrow')}
+        title={t('contactPage.heroTitle')}
+        text={t('contactPage.heroText')}
       />
 
       <section className="section-spacing pt-0">
         <div className="container-width grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
-            <SectionTitle title="Nachricht senden" description="Teilen Sie uns Ihr Anliegen mit. Wir melden uns persoenlich bei Ihnen." />
+            <SectionTitle title={t('contactPage.formTitle')} description={t('contactPage.formDescription')} />
             <ContactForm />
           </div>
 
           <aside className="glass-card h-fit rounded-2xl p-6 sm:p-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-olive-600">Direkt erreichbar</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-olive-600">{t('contactPage.direct')}</p>
             <ul className="mt-5 space-y-4 text-sm text-olive-700 sm:text-base">
               {businessData.phoneContacts.map((contact) => (
                 <li key={contact.phone} className="flex items-start gap-3">
@@ -42,7 +45,7 @@ function ContactPage() {
                 <span>{businessData.address}</span>
               </li>
             </ul>
-            <p className="mt-7 text-xs uppercase tracking-[0.2em] text-olive-600">Einsatzgebiet</p>
+            <p className="mt-7 text-xs uppercase tracking-[0.2em] text-olive-600">{t('contactPage.serviceArea')}</p>
             <p className="mt-3 text-sm text-olive-700">{businessData.serviceArea}</p>
           </aside>
         </div>

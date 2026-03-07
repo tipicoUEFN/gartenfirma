@@ -1,37 +1,39 @@
 import { CheckCircle2 } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import PageHero from '../components/PageHero'
 import SectionTitle from '../components/SectionTitle'
 
-const values = [
-  'Persoenliche Beratung mit klarem Leistungsumfang',
-  'Termintreue und saubere Arbeitsweise',
-  'Nachhaltige Pflege mit Blick auf langfristige Wirkung',
-  'Regionale Naehe und direkte Erreichbarkeit',
-]
-
 function AboutPage() {
+  const { t } = useTranslation()
+  const values = [
+    t('aboutPage.value1'),
+    t('aboutPage.value2'),
+    t('aboutPage.value3'),
+    t('aboutPage.value4'),
+  ]
+
   return (
     <>
       <PageHero
-        eyebrow="Ueber uns"
-        title="Professionelle Gartenpflege mit regionalem Fokus"
-        text="Als Gartenpflegebetrieb in der Suedsteiermark stehen wir fuer verlaessliche Betreuung, ehrliche Beratung und Ergebnisse, die langfristig bestehen."
+        eyebrow={t('aboutPage.heroEyebrow')}
+        title={t('aboutPage.heroTitle')}
+        text={t('aboutPage.heroText')}
       />
 
       <section className="section-spacing pt-0">
         <div className="container-width grid gap-10 lg:grid-cols-2 lg:items-start">
           <div>
             <SectionTitle
-              title="Wie wir arbeiten"
-              description="Wir nehmen uns Zeit fuer eine saubere Bestandsaufnahme und empfehlen nur das, was Ihrem Garten wirklich hilft."
+              title={t('aboutPage.sectionTitle')}
+              description={t('aboutPage.sectionDescription')}
             />
             <p className="text-sm leading-relaxed text-olive-700 sm:text-base">
-              Unser Ziel ist ein gepflegter Garten, der zu Ihrem Alltag passt. Deshalb setzen wir auf klare Ablaeufe, nachvollziehbare Angebote und kontinuierliche Qualitaet in der Ausfuehrung.
+              {t('aboutPage.body')}
             </p>
           </div>
 
           <div className="glass-card rounded-2xl p-6 sm:p-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-olive-600">Unsere Werte</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-olive-600">{t('aboutPage.valuesEyebrow')}</p>
             <ul className="mt-5 space-y-4">
               {values.map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-olive-700 sm:text-base">

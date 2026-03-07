@@ -1,0 +1,111 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "references": "References",
+    "contact": "Contact",
+    "callNow": "Call now",
+    "toggleMenu": "Toggle menu"
+  },
+  "hero": {
+    "title": "Your garden in the best hands",
+    "cta": "Request consultation now"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Premium garden care",
+      "title": "Your garden in the best hands. Well-kept, clear and professionally maintained.",
+      "text": "{{companyName}} provides high-quality garden care for private and business clients in Southern Styria.",
+      "serviceArea": "Service area"
+    },
+    "services": {
+      "eyebrow": "Services",
+      "title": "Everything for a well-kept garden",
+      "description": "From regular care to targeted seasonal support.",
+      "hedge": { "title": "Hedge and shrub trimming", "description": "Professional pruning for healthy plants and a neat overall look." },
+      "lawn": { "title": "Lawn care", "description": "Mowing, scarifying, fertilizing and soil improvement tailored to the season." },
+      "beds": { "title": "Flower bed care", "description": "Clean beds and structured planting areas around your home." },
+      "trees": { "title": "Tree and green trimming", "description": "Safe and clean maintenance for smaller trees and ornamental shrubs." },
+      "season": { "title": "Seasonal service", "description": "Spring and autumn service including leaf work and winter preparation." },
+      "ongoing": { "title": "Ongoing property care", "description": "Regular support for private gardens, residential complexes and small businesses." }
+    },
+    "why": {
+      "eyebrow": "Why us",
+      "title": "Trust comes from clean work",
+      "description": "Our goal is long-lasting quality in every detail.",
+      "reliable": { "title": "Reliable execution", "text": "Clear schedules, transparent services and clean work." },
+      "punctual": { "title": "Punctual & plannable", "text": "We work in a structured way and keep agreed time slots." },
+      "personal": { "title": "Personal support", "text": "Direct contact person and tailored solutions for your garden." }
+    },
+    "about": {
+      "eyebrow": "About us",
+      "title": "Regionally rooted. Personal in contact.",
+      "description": "We know the regional conditions and focus on sustainable care.",
+      "text": "Our team works with clear processes and honest advice.",
+      "link": "More about our team",
+      "regionActive": "Active regionally"
+    },
+    "references": {
+      "eyebrow": "References",
+      "title": "Selected real-world projects",
+      "description": "Typical projects from our region."
+    },
+    "location": {
+      "eyebrow": "Service area",
+      "title": "On site in your region",
+      "text": "We serve clients in {{serviceArea}}.",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address"
+    }
+  },
+  "servicesPage": {
+    "heroEyebrow": "Services",
+    "heroTitle": "Individual garden care instead of standard packages",
+    "heroText": "Every garden has different needs. We create a suitable care concept.",
+    "sectionTitle": "Our core services",
+    "sectionDescription": "All services can be booked individually or as a full package.",
+    "hedgeTitle": "Hedge and shrub trimming",
+    "hedgeDescription": "Shape and maintenance trimming for healthy structures.",
+    "lawnTitle": "Lawn care",
+    "lawnDescription": "Regular mowing, scarifying, fertilizing and site-specific care.",
+    "bedsTitle": "Flower bed care",
+    "bedsDescription": "Care of perennials and ornamental beds including pruning.",
+    "greenTitle": "Green trimming",
+    "greenDescription": "Safe trimming for smaller trees, shrubs and ornamentals.",
+    "seasonTitle": "Seasonal work",
+    "seasonDescription": "Spring prep, autumn service, leaf work and winter prep.",
+    "ongoingTitle": "Ongoing care",
+    "ongoingDescription": "Regular maintenance based on a fixed interval plan."
+  },
+  "aboutPage": {
+    "heroEyebrow": "About us",
+    "heroTitle": "Professional garden care with regional focus",
+    "heroText": "As a regional garden care company, we stand for reliable service and honest advice.",
+    "sectionTitle": "How we work",
+    "sectionDescription": "We analyze your garden carefully and recommend only what helps.",
+    "body": "Our goal is a well-kept garden that fits your everyday life.",
+    "valuesEyebrow": "Our values",
+    "value1": "Personal advice with clear scope",
+    "value2": "Punctuality and clean work",
+    "value3": "Sustainable care for long-term results",
+    "value4": "Regional proximity and direct availability"
+  },
+  "contact": { "title": "Contact" },
+  "contactPage": {
+    "heroEyebrow": "Contact",
+    "heroTitle": "We look forward to your request",
+    "heroText": "Whether ongoing care or a one-time project, we respond quickly.",
+    "formTitle": "Send message",
+    "formDescription": "Tell us your request. We will contact you personally.",
+    "direct": "Directly reachable",
+    "serviceArea": "Service area"
+  },
+  "cta": {
+    "eyebrow": "Non-binding inquiry",
+    "title": "Would you like to place your garden in reliable hands?",
+    "text": "We prepare a clear offer and ensure clean, on-time execution.",
+    "button": "Contact us now"
+  }
+}

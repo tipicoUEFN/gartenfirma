@@ -1,0 +1,111 @@
+{
+  "navbar": {
+    "home": "Kezdolap",
+    "services": "Szolgaltatasok",
+    "about": "Rolunk",
+    "references": "Referenciak",
+    "contact": "Kapcsolat",
+    "callNow": "Hivjon most",
+    "toggleMenu": "Menu valtas"
+  },
+  "hero": {
+    "title": "Kertje a legjobb kezekben",
+    "cta": "Konzultacio keres"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Premium kertgondozas",
+      "title": "Kertje a legjobb kezekben. Rendezetten es professzionalisan gondozva.",
+      "text": "A(z) {{companyName}} magas szinvonalu kertgondozast nyujt magan- es uzleti ugyfeleknek.",
+      "serviceArea": "Szolgaltatasi terulet"
+    },
+    "services": {
+      "eyebrow": "Szolgaltatasok",
+      "title": "Minden egy rendezett kerthez",
+      "description": "Rendszeres gondozastol az idenymunkakig.",
+      "hedge": { "title": "Sovenynyiras", "description": "Szakertoi metszes az egeszseges novenyekert." },
+      "lawn": { "title": "Fu gondozasa", "description": "Funyiras, talajszelloztetes es tapanyagpotlas." },
+      "beds": { "title": "Agyasgondozas", "description": "Rendezett agyasok es ultetett teruletek a haz korul." },
+      "trees": { "title": "Fak es zoldfelulet nyirasa", "description": "Biztonsagos gondozas kisebb faknal es diszcserjeknel." },
+      "season": { "title": "Szezonalis szolgaltatas", "description": "Tavaszi es oszi kerti munkak." },
+      "ongoing": { "title": "Folyamatos gondozas", "description": "Rendszeres tamogatas magankertekhez es ingatlanokhoz." }
+    },
+    "why": {
+      "eyebrow": "Miert mi",
+      "title": "A bizalom a preciz munkabol szuletik",
+      "description": "Celunk a hosszu tavu minoseg.",
+      "reliable": { "title": "Megbizhato kivitelezes", "text": "Egyertelmu idopontok es tiszta munkavegzes." },
+      "punctual": { "title": "Pontos es tervezheto", "text": "Betartjuk a megbeszelt idopontokat." },
+      "personal": { "title": "Szemelyes tamogatas", "text": "Kozvetlen kapcsolattarto es szemelyre szabott megoldasok." }
+    },
+    "about": {
+      "eyebrow": "Rolunk",
+      "title": "Regionalisan jelen vagyunk. Szemelyes kapcsolattal.",
+      "description": "Ismerjuk a helyi adottsagokat es fenntarthatoan dolgozunk.",
+      "text": "Csapatunk tiszta folyamatokkal es oszinte tanacsadassal dolgozik.",
+      "link": "Tobbet a csapatunkrol",
+      "regionActive": "Aktiv a regioban"
+    },
+    "references": {
+      "eyebrow": "Referenciak",
+      "title": "Valogatott projektek a gyakorlatbol",
+      "description": "Tipikus projektek a regiobol."
+    },
+    "location": {
+      "eyebrow": "Szolgaltatasi terulet",
+      "title": "Helyszinen, az On regioban",
+      "text": "Ugyfeleinket a(z) {{serviceArea}} teruleten szolgaljuk ki.",
+      "phone": "Telefon",
+      "email": "E-mail",
+      "address": "Cim"
+    }
+  },
+  "servicesPage": {
+    "heroEyebrow": "Szolgaltatasok",
+    "heroTitle": "Egyedi kertgondozas standard csomag helyett",
+    "heroText": "Minden kert mas. Megfelelo gondozasi tervet keszitunk.",
+    "sectionTitle": "Fo szolgaltatasaink",
+    "sectionDescription": "A szolgaltatasok kulon vagy csomagban is kerhetok.",
+    "hedgeTitle": "Sovenynyiras",
+    "hedgeDescription": "Formazas es gondozas az egeszseges szerkezetert.",
+    "lawnTitle": "Fu gondozasa",
+    "lawnDescription": "Rendszeres funyiras, szelloztetes es tapanyagpotlas.",
+    "bedsTitle": "Agyasgondozas",
+    "bedsDescription": "Evelo- es diszagyasok gondozasa.",
+    "greenTitle": "Zoldfelulet nyirasa",
+    "greenDescription": "Biztonsagos metszes kisebb faknal es cserjeknel.",
+    "seasonTitle": "Szezonalis munkak",
+    "seasonDescription": "Tavaszi felkeszites, oszi szerviz es lombmunka.",
+    "ongoingTitle": "Folyamatos gondozas",
+    "ongoingDescription": "Rendszeres gondozas rogzitett utemterv szerint."
+  },
+  "aboutPage": {
+    "heroEyebrow": "Rolunk",
+    "heroTitle": "Professzionalis kertgondozas regionalis fókusszal",
+    "heroText": "Regionalis vallalkozaskent megbizhato szolgaltatast es oszinte tanacsadast nyujtunk.",
+    "sectionTitle": "Hogyan dolgozunk",
+    "sectionDescription": "Gondosan felmerjuk a kertet, es csak hasznos lepeseket ajanlunk.",
+    "body": "Celunk egy rendezett kert, amely az On mindennapjaihoz illik.",
+    "valuesEyebrow": "Ertekeink",
+    "value1": "Szemelyes tanacsadas egyertelmu tartalommal",
+    "value2": "Pontossag es tiszta munkavegzes",
+    "value3": "Fenntarthato gondozas hosszu tavu eredmenyert",
+    "value4": "Regionalis kozelseg es kozvetlen elerhetoseg"
+  },
+  "contact": { "title": "Kapcsolat" },
+  "contactPage": {
+    "heroEyebrow": "Kapcsolat",
+    "heroTitle": "Varjuk megkereseset",
+    "heroText": "Rendszeres gondozas vagy egyszeri projekt eseten gyorsan valaszolunk.",
+    "formTitle": "Uzenet kuldese",
+    "formDescription": "Irja le igenyet. Szemelyesen jelentkezunk.",
+    "direct": "Kozvetlenul elerheto",
+    "serviceArea": "Szolgaltatasi terulet"
+  },
+  "cta": {
+    "eyebrow": "Kotottsegmentes erdeklodes",
+    "title": "Szeretne kertjet megbizhato kezekre bizni?",
+    "text": "Vilagos ajanlatot adunk es tiszta, pontos kivitelezest biztositunk.",
+    "button": "Lepjen kapcsolatba velunk"
+  }
+}

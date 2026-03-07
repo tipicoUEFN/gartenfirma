@@ -1,13 +1,23 @@
 import { Menu, Phone, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Link, NavLink } from 'react-router-dom'
-import { businessData, navigationItems } from '../config/businessData'
+import { businessData } from '../config/businessData'
+import LanguageSwitcher from './LanguageSwitcher'
 
 function Navbar() {
+  const { t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
   const iconLogoSrc = `${import.meta.env.BASE_URL}images/logo/logo1024x1024.svg`
   const horizontalLogoSrc = `${import.meta.env.BASE_URL}images/logo/logo1600x400.svg`
   const mainContacts = businessData.phoneContacts.slice(0, 2)
+  const navigationItems = [
+    { label: t('navbar.home'), to: '/' },
+    { label: t('navbar.services'), to: '/leistungen' },
+    { label: t('navbar.about'), to: '/ueber-uns' },
+    { label: t('navbar.references'), to: '/referenzen' },
+    { label: t('navbar.contact'), to: '/kontakt' },
+  ]
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : ''
@@ -35,12 +45,13 @@ function Navbar() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-7 lg:flex">
+        <nav className="hidden items-center gap-5 lg:flex">
           {navigationItems.map((item) => (
             <NavLink key={item.to} to={item.to} className={linkClass}>
               {item.label}
             </NavLink>
           ))}
+          <LanguageSwitcher />
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
@@ -58,7 +69,7 @@ function Navbar() {
           type="button"
           className="rounded-lg border border-olive-300 p-2 text-olive-700 lg:hidden"
           onClick={() => setIsOpen((open) => !open)}
-          aria-label="Menue umschalten"
+          aria-label={t('navbar.toggleMenu')}
         >
           {isOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
@@ -67,6 +78,9 @@ function Navbar() {
       {isOpen ? (
         <div className="border-t border-olive-200 bg-white lg:hidden">
           <nav className="container-width flex max-h-[calc(100vh-5rem)] flex-col overflow-y-auto py-4">
+            <div className="mb-2 flex justify-end">
+              <LanguageSwitcher />
+            </div>
             {navigationItems.map((item) => (
               <NavLink
                 key={item.to}
@@ -81,7 +95,7 @@ function Navbar() {
             ))}
             {mainContacts.map((contact) => (
               <a key={contact.phone} href={`tel:${contact.phone}`} className="mt-2 rounded-lg bg-olive-700 px-4 py-3 text-sm font-semibold text-white">
-                Jetzt anrufen: {contact.label} {contact.phone}
+                {t('navbar.callNow')}: {contact.label} {contact.phone}
               </a>
             ))}
           </nav>
