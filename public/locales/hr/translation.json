@@ -124,7 +124,7 @@
       },
       {
         "question": "Koja mjesta pokrivate?",
-        "answer": "Radimo na podrucju Leibnitza, Graza, Wagne, Gralle, Tillmitscha, Stra�a i okolice."
+        "answer": "Radimo na podrucju Leibnitza, Graza, Wagne, Gralle, Tillmitscha, Straßa i okolice."
       },
       {
         "question": "Nudite li njegu vrtova za tvrtke?",
@@ -183,7 +183,7 @@
     "direct": "Izravno dostupni",
     "serviceArea": "Područje usluge",
     "seoTitle": "Kontakt i upit",
-    "seoDescription": "Zatrazite njegu vrta u Leibnitzu, Wagni, Gralli, Tillmitschu, Stra�u i okolici. Odgovaramo brzo.",
+    "seoDescription": "Zatrazite njegu vrta u Leibnitzu, Wagni, Gralli, Tillmitschu, Straßu i okolici. Odgovaramo brzo.",
     "quick": {
       "eyebrow": "Brzi kontakt",
       "title": "Najbrze: posaljite kratki upit",
@@ -230,7 +230,7 @@
     "copyright": "{{year}} {{companyName}}. Sva prava pridržana.",
     "popularPlaces": "Popularna mjesta",
     "gardenCareInTown": "Njega vrta {{town}}",
-    "dailyInAction": "Aktivni svakodnevno: Leibnitz � Wagna � Gralla � Tillmitsch � Stra� � Ehrenhausen � okolica Graza",
+    "dailyInAction": "Aktivni svakodnevno: Leibnitz - Wagna - Gralla - Tillmitsch - Straß - Ehrenhausen - okolica Graza",
     "openingHours": [
       "Pon - Pet: 07:00 - 17:00",
       "Sub: po dogovoru"
@@ -448,7 +448,7 @@
       "email": "E-posta",
       "phone": "Telefon",
       "address": "Adresa (opcionalno)",
-      "lawnSize": "Povrsina travnjaka (m�)",
+      "lawnSize": "Povrsina travnjaka (m²)",
       "hedgeLength": "Duljina zivice (tekuci metri)",
       "propertyType": "Vrsta objekta",
       "message": "Poruka (opcionalno)"
@@ -467,10 +467,10 @@
       "fenster": "Ciscenje prozora"
     },
     "lawnSizeOptions": [
-      "ispod 100 m�",
-      "100 - 300 m�",
-      "300 - 600 m�",
-      "iznad 600 m�",
+      "ispod 100 m²",
+      "100 - 300 m²",
+      "300 - 600 m²",
+      "iznad 600 m²",
       "ne znam"
     ],
     "frequencyOptions": [
@@ -575,3 +575,4 @@
     "quickRequest": "Brzi upit"
   }
 }
+

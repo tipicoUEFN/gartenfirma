@@ -124,7 +124,7 @@
       },
       {
         "question": "Katere kraje pokrivate?",
-        "answer": "Delamo na obmocju Leibnitz, Gradec, Wagna, Gralla, Tillmitsch, Stra� in okolica."
+        "answer": "Delamo na obmocju Leibnitz, Gradec, Wagna, Gralla, Tillmitsch, Straß in okolica."
       },
       {
         "question": "Ali nudite nego vrtov za podjetja?",
@@ -183,7 +183,7 @@
     "direct": "Neposredno dosegljivi",
     "serviceArea": "Območje storitev",
     "seoTitle": "Kontakt in povprasevanje",
-    "seoDescription": "Zaprosite za nego vrta v Leibnitzu, Wagni, Gralli, Tillmitschu, Stra�u in okolici. Hitro odgovorimo.",
+    "seoDescription": "Zaprosite za nego vrta v Leibnitzu, Wagni, Gralli, Tillmitschu, Straßu in okolici. Hitro odgovorimo.",
     "quick": {
       "eyebrow": "Hiter kontakt",
       "title": "Najhitreje: posljite kratko povprasevanje",
@@ -230,7 +230,7 @@
     "copyright": "{{year}} {{companyName}}. Vse pravice pridržane.",
     "popularPlaces": "Priljubljeni kraji",
     "gardenCareInTown": "Nega vrta {{town}}",
-    "dailyInAction": "Dnevno aktivni: Leibnitz � Wagna � Gralla � Tillmitsch � Stra� � Ehrenhausen � okolica Gradca",
+    "dailyInAction": "Dnevno aktivni: Leibnitz - Wagna - Gralla - Tillmitsch - Straß - Ehrenhausen - okolica Gradca",
     "openingHours": [
       "Pon - Pet: 07:00 - 17:00",
       "Sob: po dogovoru"
@@ -448,7 +448,7 @@
       "email": "E-posta",
       "phone": "Telefon",
       "address": "Naslov (neobvezno)",
-      "lawnSize": "Povrsina trate (m�)",
+      "lawnSize": "Povrsina trate (m²)",
       "hedgeLength": "Dolzina zive meje (tekoci metri)",
       "propertyType": "Vrsta objekta",
       "message": "Sporocilo (neobvezno)"
@@ -467,10 +467,10 @@
       "fenster": "Ciscenje oken"
     },
     "lawnSizeOptions": [
-      "pod 100 m�",
-      "100 - 300 m�",
-      "300 - 600 m�",
-      "nad 600 m�",
+      "pod 100 m²",
+      "100 - 300 m²",
+      "300 - 600 m²",
+      "nad 600 m²",
       "ne vem"
     ],
     "frequencyOptions": [
@@ -657,3 +657,4 @@
     "quickRequest": "Hitro povprasevanje"
   }
 }
+

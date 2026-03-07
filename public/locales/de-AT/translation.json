@@ -232,7 +232,7 @@
     "copyright": "{{year}} {{companyName}}. Alle Rechte vorbehalten.",
     "popularPlaces": "Beliebte Orte",
     "gardenCareInTown": "Gartenpflege {{town}}",
-    "dailyInAction": "Taeglich im Einsatz: Leibnitz � Wagna � Gralla � Tillmitsch � Strass � Ehrenhausen � Graz Umgebung",
+    "dailyInAction": "Taeglich im Einsatz: Leibnitz - Wagna - Gralla - Tillmitsch - Strass - Ehrenhausen - Graz Umgebung",
     "openingHours": [
       "Mo - Fr: 07:00 - 17:00 Uhr",
       "Sa: nach Vereinbarung"
@@ -484,7 +484,7 @@
       "email": "E-Mail",
       "phone": "Telefon",
       "address": "Adresse (optional)",
-      "lawnSize": "Rasenflaeche (m�)",
+      "lawnSize": "Rasenflaeche (m²)",
       "hedgeLength": "Heckenlaenge (laufende Meter)",
       "propertyType": "Objektart",
       "message": "Nachricht (optional)"
@@ -503,10 +503,10 @@
       "fenster": "Fensterreinigung"
     },
     "lawnSizeOptions": [
-      "unter 100 m�",
-      "100 - 300 m�",
-      "300 - 600 m�",
-      "ueber 600 m�",
+      "unter 100 m²",
+      "100 - 300 m²",
+      "300 - 600 m²",
+      "ueber 600 m²",
       "weiss nicht"
     ],
     "frequencyOptions": [
@@ -693,3 +693,4 @@
     "quickRequest": "Schnellanfrage"
   }
 }
+

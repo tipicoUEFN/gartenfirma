@@ -120,23 +120,23 @@
     "faq": [
       {
         "question": "Milyen gyakran kell nyirni a pazsitot?",
-        "answer": "A foszezonban a n�veked�stol f�ggoen �ltal�ban 7-14 napos �temet javaslunk."
+        "answer": "A főszezonban a növekedéstől függően általában 7-14 napos ütemet javaslunk."
       },
       {
-        "question": "Mely telep�l�seken dolgoznak?",
-        "answer": "Leibnitz, Graz, Wagna, Gralla, Tillmitsch, Stra� �s k�rny�k�n dolgozunk."
+        "question": "Mely településeken dolgoznak?",
+        "answer": "Leibnitz, Graz, Wagna, Gralla, Tillmitsch, Straß és környékén dolgozunk."
       },
       {
-        "question": "V�llalkoz�soknak is v�llalnak kertgondoz�st?",
-        "answer": "Igen, c�ges helysz�neket, lak�parkokat �s k�zint�zm�nyeket is gondozunk rendszeres idok�z�kkel."
+        "question": "Vállalkozásoknak is vállalnak kertgondozást?",
+        "answer": "Igen, céges helyszíneket, lakóparkokat és közintézményeket is gondozunk rendszeres időközökkel."
       },
       {
-        "question": "Hogyan k�rhetek aj�nlatot?",
-        "answer": "A leggyorsabb a kapcsolatfelv�teli urlapon vagy telefonon. �ltal�ban 24 �r�n bel�l v�laszolunk."
+        "question": "Hogyan kérhetek ajánlatot?",
+        "answer": "A leggyorsabb a kapcsolatfelvételi űrlapon vagy telefonon. Általában 24 órán belül válaszolunk."
       },
       {
-        "question": "Mennyibe ker�l a s�v�nygondoz�s?",
-        "answer": "A k�lts�g a hossz�s�gt�l, magass�gt�l �s megk�zel�thetos�gtol f�gg. R�vid egyeztet�s ut�n vil�gos aj�nlatot adunk."
+        "question": "Mennyibe kerül a sövénygondozás?",
+        "answer": "A költség a hosszúságtól, magasságtól és megközelíthetőségtől függ. Rövid egyeztetés után világos ajánlatot adunk."
       }
     ]
   },
@@ -158,16 +158,16 @@
     "highlight": "Kertgondozas Leibnitzbol. Megbizhato, tiszta es pontos.",
     "workflows": {
       "private": {
-        "title": "Mag�nkert - folyamatos gondoz�s",
-        "challenge": "Egyenetlen �llapot �s hi�nyz� rendszeress�g.",
-        "approach": "Fix �temterv a gyepre, s�v�nyre �s �gy�sokra.",
-        "result": "Folyamatosan rendezett kert, tervezheto r�ford�t�ssal."
+        "title": "Magánkert - folyamatos gondozás",
+        "challenge": "Egyenetlen állapot és hiányzó rendszeresség.",
+        "approach": "Fix ütemterv a gyepre, sövényre és ágyásokra.",
+        "result": "Folyamatosan rendezett kert, tervezhető ráfordítással."
       },
       "apartment": {
-        "title": "Lak�park - k�z�s ter�letek",
-        "challenge": "Nem egy�rtelmu feleloss�gek �s v�ltoz� helysz�ni minos�g.",
-        "approach": "Egy�rtelmu feladatok alkalmank�nt, tiszta visszajelz�ssel a munka ut�n.",
-        "result": "Megb�zhat� �llapot a lak�k �s az �zemeltet�s sz�m�ra."
+        "title": "Lakópark - közös területek",
+        "challenge": "Nem egyértelmű felelősségek és változó helyszíni minőség.",
+        "approach": "Egyértelmű feladatok alkalmanként, tiszta visszajelzéssel a munka után.",
+        "result": "Megbízható állapot a lakók és az üzemeltetés számára."
       }
     }
   },
@@ -183,7 +183,7 @@
     "direct": "Közvetlenül elérhető",
     "serviceArea": "Szolgáltatási terület",
     "seoTitle": "Kapcsolat es ajanlatkeres",
-    "seoDescription": "Kerjen kertgondozast Leibnitz, Wagna, Gralla, Tillmitsch, Stra� es kornyeke teruleten. Gyorsan valaszolunk.",
+    "seoDescription": "Kérjen kertgondozást Leibnitz, Wagna, Gralla, Tillmitsch, Straß és környéke területén. Gyorsan válaszolunk.",
     "quick": {
       "eyebrow": "Gyors kapcsolat",
       "title": "Leggyorsabb: kuldjon rovid kerest",
@@ -230,7 +230,7 @@
     "copyright": "{{year}} {{companyName}}. Minden jog fenntartva.",
     "popularPlaces": "Nepszeru helyek",
     "gardenCareInTown": "Kertgondozas {{town}}",
-    "dailyInAction": "Naponta aktivak: Leibnitz � Wagna � Gralla � Tillmitsch � Stra� � Ehrenhausen � Graz kornyeke",
+    "dailyInAction": "Naponta aktívak: Leibnitz - Wagna - Gralla - Tillmitsch - Straß - Ehrenhausen - Graz környéke",
     "openingHours": [
       "Hetfo - Pentek: 07:00 - 17:00",
       "Szombat: egyeztetes alapjan"
@@ -379,16 +379,16 @@
     "heroEyebrow": "PR Gartenservice",
     "testimonials": {
       "1": {
-        "quote": "Megb�zhat� �s tiszta munka. A megbesz�lt idopontot tartott�k, a kert rendezett maradt.",
-        "source": "K. csal�d, Leibnitz"
+        "quote": "Megbízható és tiszta munka. A megbeszélt időpontot tartották, a kert rendezett maradt.",
+        "source": "K. család, Leibnitz"
       },
       "2": {
-        "quote": "R�vid egyeztet�s, korrekt visszajelz�s, tiszta kivitelez�s. Pontosan �gy kell muk�dnie.",
-        "source": "M. k�z�s k�pviselet, Wagna"
+        "quote": "Rövid egyeztetés, korrekt visszajelzés, tiszta kivitelezés. Pontosan úgy kell működnie.",
+        "source": "M. közös képviselet, Wagna"
       },
       "3": {
-        "quote": "A folyamatos gondoz�s nagyon j�l muk�dik. Bar�ts�gos, pontos �s rendezett csapat.",
-        "source": "M. irodai helysz�n, Graz t�rs�ge"
+        "quote": "A folyamatos gondozás nagyon jól működik. Barátságos, pontos és rendezett csapat.",
+        "source": "M. irodai helyszín, Graz térsége"
       }
     }
   },
@@ -448,7 +448,7 @@
       "email": "E-mail",
       "phone": "Telefon",
       "address": "Cim (opcionalis)",
-      "lawnSize": "Fuves terulet (m�)",
+      "lawnSize": "Füves terület (m²)",
       "hedgeLength": "Soveny hossza (folyo meter)",
       "propertyType": "Objektum tipusa",
       "message": "Uzenet (opcionalis)"
@@ -467,10 +467,10 @@
       "fenster": "Ablaktisztitas"
     },
     "lawnSizeOptions": [
-      "100 m� alatt",
-      "100 - 300 m�",
-      "300 - 600 m�",
-      "600 m� felett",
+      "100 m² alatt",
+      "100 - 300 m²",
+      "300 - 600 m²",
+      "600 m² felett",
       "nem tudom"
     ],
     "frequencyOptions": [
@@ -521,25 +521,25 @@
     "ctaOffer": "Ajanlatkeres {{town}} telepulesre",
     "ctaServices": "Szolgaltatasok megtekintese",
     "servicesTitle": "Szolgaltatasaink itt: {{town}}",
-    "trustTitle": "Mi�rt biznak bennunk {{town}} ugyfelei",
+    "trustTitle": "Miért bíznak bennünk {{town}} ügyfelei",
     "regionalHintTitle": "Regionalis megjegyzes",
     "regionalHintText": "Sok kereses {{town}} telepulesen rendszeres kertgondozasra vonatkozik. A munkakat ugy tervezzuk, hogy az idopontok stabilak maradjanak es a kulso teruletek hosszu tavon rendezettek legyenek.",
     "faq": [
       {
-        "question": "Milyen szolg�ltat�sokat ny�jtanak {{town}} telep�l�sen?",
-        "answer": "{{town}} ter�let�n t�bbek k�z�tt gyepgondoz�st, s�v�nygondoz�st, lombmunk�t �s rendszeres k�lt�ri fenntart�st v�gz�nk."
+        "question": "Milyen szolgáltatásokat nyújtanak {{town}} településen?",
+        "answer": "{{town}} területén többek között gyepgondozást, sövénygondozást, lombmunkát és rendszeres kültéri fenntartást végzünk."
       },
       {
-        "question": "{{town}} telep�l�sen c�geket �s lak�parkokat is ell�tnak?",
-        "answer": "Igen, {{town}} telep�l�sen mag�nkerteket, c�ges ter�leteket, lak�parkokat, ig�ny eset�n k�zint�zm�nyeket is ell�tunk."
+        "question": "{{town}} településen cégeket és lakóparkokat is ellátnak?",
+        "answer": "Igen, {{town}} településen magánkerteket, céges területeket, lakóparkokat, igény esetén közintézményeket is ellátunk."
       },
       {
-        "question": "Milyen gyorsan kaphatok aj�nlatot {{town}} telep�l�sen?",
-        "answer": "Megkeres�s ut�n �ltal�ban 24 �r�n bel�l (H�tfo-P�ntek) visszajelz�nk egy elso �rt�kel�ssel."
+        "question": "Milyen gyorsan kaphatok ajánlatot {{town}} településen?",
+        "answer": "Megkeresés után általában 24 órán belül (Hétfő-Péntek) visszajelzünk egy első értékeléssel."
       },
       {
-        "question": "Lehets�ges rendszeres kertgondoz�s {{town}} telep�l�sen is?",
-        "answer": "Igen, {{town}} telep�l�sen tervezheto �temeket k�n�lunk, p�ld�ul heti, k�theti vagy havi rendszeress�ggel."
+        "question": "Lehetséges rendszeres kertgondozás {{town}} településen is?",
+        "answer": "Igen, {{town}} településen tervezhető ütemeket kínálunk, például heti, kétheti vagy havi rendszerességgel."
       }
     ]
   },
@@ -553,20 +553,20 @@
     "cta": "Megvalositasi tanacs kerese",
     "guides": [
       {
-        "title": "Tavaszi gyep�pol�s D�l-St�jerorsz�gban",
-        "text": "Mikor �rdemes tr�gy�zni, milyen gyakran ny�rni, �s hogyan surus�dj�n vissza a gyep t�l ut�n."
+        "title": "Tavaszi gyepápolás Dél-Stájerországban",
+        "text": "Mikor érdemes trágyázni, milyen gyakran nyírni, és hogyan sűrűsödjön vissza a gyep tél után."
       },
       {
-        "title": "S�v�nyny�r�s: idoz�t�s, �pol�s �s tiszta �lek",
-        "text": "Gyakorlati tan�csok eg�szs�ges s�v�nyhez �s rendezett �sszk�phez."
+        "title": "Sövénynyírás: időzítés, ápolás és tiszta élek",
+        "text": "Gyakorlati tanácsok egészséges sövényhez és rendezett összképhez."
       },
       {
-        "title": "Oszi lombmunka: biztons�gosan �s hat�konyan",
-        "text": "�gy maradnak rendezettek �s biztons�gosak az utak, bej�r�k �s z�ldfel�letek."
+        "title": "Őszi lombmunka: biztonságosan és hatékonyan",
+        "text": "Így maradnak rendezettek és biztonságosak az utak, bejárók és zöldfelületek."
       },
       {
-        "title": "Tavaszi kertfelk�sz�t�s: r�vid ellenorzolista",
-        "text": "A legfontosabb l�p�sek az eros szezonkezd�shez."
+        "title": "Tavaszi kertfelkészítés: rövid ellenőrzőlista",
+        "text": "A legfontosabb lépések az erős szezonkezdéshez."
       }
     ]
   },
@@ -575,3 +575,4 @@
     "quickRequest": "Gyors keres"
   }
 }
+

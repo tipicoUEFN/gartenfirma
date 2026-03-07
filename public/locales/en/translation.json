@@ -124,7 +124,7 @@
       },
       {
         "question": "Which areas do you cover?",
-        "answer": "We work in the Leibnitz, Graz, Wagna, Gralla, Tillmitsch and Stra� region and nearby."
+        "answer": "We work in the Leibnitz, Graz, Wagna, Gralla, Tillmitsch and Straß region and nearby."
       },
       {
         "question": "Do you offer garden care for businesses?",
@@ -183,7 +183,7 @@
     "direct": "Directly reachable",
     "serviceArea": "Service area",
     "seoTitle": "Contact and request",
-    "seoDescription": "Request garden care in Leibnitz, Wagna, Gralla, Tillmitsch, Stra� and surrounding areas. We reply quickly.",
+    "seoDescription": "Request garden care in Leibnitz, Wagna, Gralla, Tillmitsch, Straß and surrounding areas. We reply quickly.",
     "quick": {
       "eyebrow": "Fast contact",
       "title": "Fastest way: send a short request",
@@ -230,7 +230,7 @@
     "copyright": "{{year}} {{companyName}}. All rights reserved.",
     "popularPlaces": "Popular places",
     "gardenCareInTown": "Garden care {{town}}",
-    "dailyInAction": "Active daily: Leibnitz � Wagna � Gralla � Tillmitsch � Stra� � Ehrenhausen � Graz area",
+    "dailyInAction": "Active daily: Leibnitz - Wagna - Gralla - Tillmitsch - Straß - Ehrenhausen - Graz area",
     "openingHours": [
       "Mon - Fri: 07:00 - 17:00",
       "Sat: by appointment"
@@ -482,7 +482,7 @@
       "email": "Email",
       "phone": "Phone",
       "address": "Address (optional)",
-      "lawnSize": "Lawn area (m�)",
+      "lawnSize": "Lawn area (m²)",
       "hedgeLength": "Hedge length (running meters)",
       "propertyType": "Property type",
       "message": "Message (optional)"
@@ -501,10 +501,10 @@
       "fenster": "Window cleaning"
     },
     "lawnSizeOptions": [
-      "under 100 m�",
-      "100 - 300 m�",
-      "300 - 600 m�",
-      "over 600 m�",
+      "under 100 m²",
+      "100 - 300 m²",
+      "300 - 600 m²",
+      "over 600 m²",
       "not sure"
     ],
     "frequencyOptions": [
@@ -691,3 +691,4 @@
     "quickRequest": "Quick request"
   }
 }
+
