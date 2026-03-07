@@ -1,0 +1,34 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Footer from './components/Footer'
+import Navbar from './components/Navbar'
+import AboutPage from './pages/AboutPage'
+import ContactPage from './pages/ContactPage'
+import DatenschutzPage from './pages/DatenschutzPage'
+import HomePage from './pages/HomePage'
+import ImpressumPage from './pages/ImpressumPage'
+import ReferencesPage from './pages/ReferencesPage'
+import ServicesPage from './pages/ServicesPage'
+
+function App() {
+  return (
+    <BrowserRouter>
+      <div className="min-h-screen bg-olive-50 text-anthracite-900">
+        <Navbar />
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/leistungen" element={<ServicesPage />} />
+            <Route path="/ueber-uns" element={<AboutPage />} />
+            <Route path="/referenzen" element={<ReferencesPage />} />
+            <Route path="/kontakt" element={<ContactPage />} />
+            <Route path="/impressum" element={<ImpressumPage />} />
+            <Route path="/datenschutz" element={<DatenschutzPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </BrowserRouter>
+  )
+}
+
+export default App

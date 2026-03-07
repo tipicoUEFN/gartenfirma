@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-olive-50: #f7f8f4;
+  --color-olive-100: #eaeee0;
+  --color-olive-200: #d5dec3;
+  --color-olive-300: #b5c69d;
+  --color-olive-400: #8ea86f;
+  --color-olive-500: #6f8955;
+  --color-olive-600: #556b43;
+  --color-olive-700: #3f5033;
+  --color-olive-800: #2f3a27;
+  --color-anthracite-900: #1e2320;
+  --font-sans: 'Manrope', sans-serif;
+  --font-display: 'Cormorant Garamond', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  font-family: var(--font-sans);
+  color: var(--color-anthracite-900);
+  background:
+    radial-gradient(circle at 15% -10%, rgba(143, 167, 114, 0.2) 0%, transparent 55%),
+    radial-gradient(circle at 85% 5%, rgba(85, 107, 67, 0.12) 0%, transparent 45%),
+    var(--color-olive-50);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.container-width {
+  @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+}
+
+.glass-card {
+  @apply rounded-2xl border border-olive-200/70 bg-white/90 shadow-sm backdrop-blur-sm;
+}
+
+.section-spacing {
+  @apply py-14 sm:py-16 lg:py-24;
+}
+
+.headline {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+}
+
+.reveal {
+  animation: rise-in 600ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    animation: none;
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

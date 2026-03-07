@@ -1,0 +1,72 @@
+import { Mail, MapPin, Phone } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { businessData } from '../config/businessData'
+
+function Footer() {
+  return (
+    <footer className="mt-14 border-t border-olive-200 bg-olive-800 text-olive-100">
+      <div className="container-width grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <p className="headline text-2xl font-semibold text-white">{businessData.companyName}</p>
+          <p className="mt-3 text-sm leading-relaxed text-olive-200">{businessData.claim}</p>
+        </div>
+
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-olive-300">Kontakt</p>
+          <ul className="mt-4 space-y-3 text-sm">
+            <li className="flex items-start gap-2">
+              <Phone size={16} className="mt-0.5" />
+              <a href={`tel:${businessData.phone}`} className="hover:text-white">
+                {businessData.phone}
+              </a>
+            </li>
+            <li className="flex items-start gap-2">
+              <Mail size={16} className="mt-0.5" />
+              <a href={`mailto:${businessData.email}`} className="hover:text-white">
+                {businessData.email}
+              </a>
+            </li>
+            <li className="flex items-start gap-2">
+              <MapPin size={16} className="mt-0.5" />
+              <span>{businessData.address}</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-olive-300">Einsatzgebiet</p>
+          <p className="mt-4 text-sm leading-relaxed">{businessData.serviceArea}</p>
+          <p className="mt-6 text-sm font-semibold uppercase tracking-[0.2em] text-olive-300">Zeiten</p>
+          <ul className="mt-4 space-y-2 text-sm">
+            {businessData.openingHours.map((entry) => (
+              <li key={entry}>{entry}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-olive-300">Rechtliches</p>
+          <ul className="mt-4 space-y-3 text-sm">
+            <li>
+              <Link to="/impressum" className="hover:text-white">
+                Impressum
+              </Link>
+            </li>
+            <li>
+              <Link to="/datenschutz" className="hover:text-white">
+                Datenschutz
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="border-t border-olive-700 py-4">
+        <p className="container-width text-xs text-olive-300">
+          {new Date().getFullYear()} {businessData.companyName}. Alle Rechte vorbehalten.
+        </p>
+      </div>
+    </footer>
+  )
+}
+
+export default Footer
