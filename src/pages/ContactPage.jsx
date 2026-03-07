@@ -28,6 +28,11 @@ function ContactPage() {
 
       <section className="section-spacing pt-0">
         <div className="container-width">
+          <SectionTitle
+            eyebrow="Schneller Kontakt"
+            title="Am schnellsten: kurze Anfrage senden"
+            description="Fuer eine rasche Rueckmeldung reicht meist die Schnellanfrage. Die ausfuehrliche Anfrage finden Sie direkt darunter."
+          />
           <QuickRequestForm />
         </div>
       </section>
@@ -35,7 +40,11 @@ function ContactPage() {
       <section className="section-spacing">
         <div className="container-width grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
-            <SectionTitle title={t('contactPage.formTitle')} description={t('contactPage.formDescription')} />
+            <SectionTitle
+              eyebrow="Ausfuehrliche Anfrage"
+              title={t('contactPage.formTitle')}
+              description="Wenn Sie mehr Details angeben moechten, nutzen Sie dieses Formular fuer ein praeziseres Angebot."
+            />
             <ServiceRequestForm />
           </div>
 

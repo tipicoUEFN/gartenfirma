@@ -34,6 +34,9 @@ function AboutPage() {
               title={t('aboutPage.sectionTitle')}
               description={t('aboutPage.sectionDescription')}
             />
+            <p className="mb-4 rounded-xl border border-olive-200 bg-olive-100/50 px-4 py-3 text-sm font-semibold text-olive-800">
+              Gartenpflege aus Leibnitz. Zuverlaessig, sauber und puenktlich.
+            </p>
             <p className="text-sm leading-relaxed text-olive-700 sm:text-base">
               {t('aboutPage.body')}
             </p>

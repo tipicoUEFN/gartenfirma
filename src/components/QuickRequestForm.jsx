@@ -61,8 +61,9 @@ function QuickRequestForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4 rounded-2xl border border-olive-200 bg-white p-5">
-      <h3 className="text-base font-semibold text-olive-800">Schnellanfrage in 1 Minute</h3>
+    <form onSubmit={handleSubmit} className="space-y-4 rounded-2xl border border-olive-300 bg-olive-100/70 p-5 shadow-sm sm:p-6">
+      <p className="inline-flex rounded-full bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-olive-700">Empfohlen fuer schnelle Rueckmeldung</p>
+      <h3 className="text-xl font-semibold text-olive-800">Schnellanfrage in 1 Minute</h3>
       <p className="text-sm text-olive-700">Wir melden uns in der Regel innerhalb von 24 Stunden (Mo-Fr).</p>
 
       <div className="grid gap-4 md:grid-cols-2">
@@ -130,7 +131,7 @@ function QuickRequestForm() {
       <button
         type="submit"
         disabled={status === 'submitting'}
-        className="rounded-full bg-olive-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-olive-800 disabled:opacity-70"
+        className="rounded-full bg-olive-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-olive-800 disabled:opacity-70"
       >
         {status === 'submitting' ? 'Wird gesendet...' : 'Schnellanfrage senden'}
       </button>

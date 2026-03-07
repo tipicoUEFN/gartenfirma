@@ -92,7 +92,7 @@ function Footer() {
           {t('footer.copyright', { year: new Date().getFullYear(), companyName: businessData.companyName })}
         </p>
         <p className="container-width mt-2 text-xs text-olive-300">
-          Gartenpflege in Leibnitz, Graz, Wagna, Gralla, Tillmitsch, Straß, Ehrenhausen und Umgebung.
+          Täglich im Einsatz: Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz Umgebung
         </p>
       </div>
     </footer>

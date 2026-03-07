@@ -17,6 +17,7 @@ export const homepageImages = {
 }
 
 export const referenceProjects = [
+  // TODO: Replace/supplement these placeholders with real project photos (before/after, equipment, team-on-site) for stronger trust.
   {
     title: 'Rasen mähen',
     location: 'Südsteiermark',

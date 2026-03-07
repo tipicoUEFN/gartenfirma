@@ -10,20 +10,20 @@
   },
   "hero": {
     "title": "Ihr Garten in besten Händen",
-    "cta": "Jetzt Beratung anfragen"
+    "cta": "Jetzt unverbindlich anfragen"
   },
   "home": {
     "hero": {
       "eyebrow": "Premium Gartenpflege",
       "title": "Ihr Garten in besten Händen. Gepflegt, klar und professionell betreut.",
-      "text": "{{companyName}} bietet hochwertige Gartenpflege und Außenanlagenbetreuung für Privatkunden, Firmen und öffentliche Einrichtungen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark.",
+      "text": "{{companyName}} ist regional fuer Sie da: zuverlaessige Gartenpflege fuer Privatgaerten, Firmenflaechen und Wohnanlagen im Grossraum Leibnitz, Graz, Deutschlandsberg und der Suedoststeiermark.",
       "imageAlt": "Gärtner schiebt Schubkarre mit Pflanze durch gepflegten Garten.",
       "serviceArea": "Einsatzgebiet"
     },
     "services": {
       "eyebrow": "Leistungen",
       "title": "Unsere Leistungen",
-      "description": "Zuverlässige Gartenpflege und Außenanlagenbetreuung für Privatkunden, Firmen und öffentliche Einrichtungen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark.",
+      "description": "Von Rasenpflege bis Objektbetreuung: Wir arbeiten sauber, puenktlich und mit klarem Blick fuer Ihren Gartenalltag.",
       "hedge": {
         "title": "Pflege bestehender Hecken",
         "description": "Leichter Formschnitt und Nachschnitt bereits bestehender Hecken für ein gepflegtes Erscheinungsbild."
@@ -70,8 +70,8 @@
     "about": {
       "eyebrow": "Über uns",
       "title": "Regional verwurzelt. Persönlich im Kontakt.",
-      "description": "Wir kennen die Anforderungen von Gärten in der Region und setzen auf nachhaltige Pflege statt kurzfristiger Kosmetik.",
-      "text": "Unser Team arbeitet mit klaren Prozessen und ehrlicher Beratung. Sie erhalten nachvollziehbare Empfehlungen und ein Ergebnis, das Ihren Garten sichtbar aufwertet.",
+      "description": "Wir kennen die Boeden, das Klima und die typischen Anforderungen in der Region - und arbeiten mit Hausverstand statt Floskeln.",
+      "text": "Wir kuemmern uns um Ihren Garten, damit Sie Ihre Freizeit geniessen koennen. Persoenlich betreut, sauber umgesetzt und regional schnell erreichbar.",
       "link": "Mehr über unser Team",
       "regionActive": "Regional aktiv",
       "regionItem1": "Südsteiermark",
@@ -96,9 +96,9 @@
   "servicesPage": {
     "heroEyebrow": "Leistungen",
     "heroTitle": "Individuelle Gartenpflege statt Standardpaket",
-    "heroText": "Jeder Garten hat andere Anforderungen. Wir erstellen ein passendes Pflegekonzept und setzen dieses sorgfältig um.",
+    "heroText": "Jeder Garten ist anders. Wir schauen genau hin, stimmen die Pflege auf Ihren Bedarf ab und setzen verlaesslich um.",
     "sectionTitle": "Unsere Leistungen",
-    "sectionDescription": "Zuverlässige Gartenpflege und Außenanlagenbetreuung für Privatkunden, Firmen und öffentliche Einrichtungen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark.",
+    "sectionDescription": "Praktische Gartenpflege fuer Privat, Firmen und Wohnanlagen - regional, sauber und nachvollziehbar.",
     "hedgeTitle": "Pflege bestehender Hecken",
     "hedgeDescription": "Leichter Formschnitt und Nachschnitt bereits bestehender Hecken für ein gepflegtes Erscheinungsbild.",
     "lawnTitle": "Rasenmähen & Grünflächenpflege",
@@ -132,7 +132,7 @@
   "contactPage": {
     "heroEyebrow": "Kontakt",
     "heroTitle": "Wir freuen uns auf Ihre Anfrage",
-    "heroText": "Ob laufende Gartenpflege oder ein konkretes Einzelprojekt: Wir melden uns zeitnah mit einer fundierten Rückmeldung.",
+    "heroText": "Ob laufende Gartenpflege oder ein konkretes Einzelprojekt: Sie erhalten zeitnah eine klare und ehrliche Rueckmeldung.",
     "formTitle": "Nachricht senden",
     "formDescription": "Teilen Sie uns Ihr Anliegen mit. Wir melden uns persönlich bei Ihnen.",
     "direct": "Direkt erreichbar",
@@ -141,8 +141,8 @@
   "cta": {
     "eyebrow": "Unverbindlich anfragen",
     "title": "Sie möchten Ihren Garten in verlässliche Hände geben?",
-    "text": "Wir erstellen ein klares Angebot, beraten ehrlich und sorgen für eine saubere, termingerechte Umsetzung.",
-    "button": "Jetzt Kontakt aufnehmen"
+    "text": "Wir beraten persoenlich, erstellen ein klares Angebot und setzen sauber sowie termintreu um.",
+    "button": "Jetzt Angebot anfragen"
   },
   "footer": {
     "claim": "Professionelle Gartenpflege mit Handschlagqualität im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark.",
@@ -166,7 +166,7 @@
     "messageLabel": "Nachricht",
     "messagePlaceholder": "Beschreiben Sie kurz Ihr Anliegen (z. B. laufende Pflege, Heckenschnitt, saisonale Betreuung).",
     "submit": "Anfrage senden",
-    "notice": "Dieses Formular sendet derzeit keine Daten (Frontend-Demo)."
+    "notice": "Unverbindliche Anfrage - wir melden uns schnellstmoeglich zurueck."
   },
   "references": {
     "eyebrow": "Referenzen",

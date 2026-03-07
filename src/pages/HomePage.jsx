@@ -1,4 +1,4 @@
-import { ArrowRight, Clock3, Flower2, Leaf, Scissors, ShieldCheck, Shovel, Sprout, Trees, Users } from 'lucide-react'
+import { ArrowRight, CalendarCheck, Clock3, FileText, Flower2, Leaf, MapPin, Scissors, ShieldCheck, Shovel, Sprout, Star, Trees, Users } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import CTASection from '../components/CTASection'
@@ -73,6 +73,29 @@ function HomePage() {
     },
   ]
 
+  const heroTrustItems = [
+    { icon: ShieldCheck, label: 'Zuverlaessige Gartenpflege' },
+    { icon: MapPin, label: 'Regionale Betreuung' },
+    { icon: CalendarCheck, label: 'Schnelle Terminvergabe' },
+    { icon: FileText, label: 'Kostenloses Angebot' },
+  ]
+
+  // Demo cards only. Replace with real, permission-safe customer feedback later.
+  const demoTestimonials = [
+    {
+      quote: 'Zuverlaessig und sauber gearbeitet. Termin eingehalten und Garten tipptopp hinterlassen.',
+      source: 'Beispielkunde aus Leibnitz',
+    },
+    {
+      quote: 'Kurze Abstimmung, faire Rueckmeldung und dann sauber umgesetzt. Genau so soll es sein.',
+      source: 'Beispielkundin aus Wagna',
+    },
+    {
+      quote: 'Laufende Betreuung funktioniert sehr gut. Freundlich, puenktlich und ordentlich.',
+      source: 'Beispielobjekt im Raum Graz',
+    },
+  ]
+
   return (
     <>
       <SeoHead
@@ -101,6 +124,27 @@ function HomePage() {
           <span className="text-sm text-olive-700">{t('home.hero.serviceArea')}: {businessData.serviceArea}</span>
         </div>
       </PageHero>
+
+      <section className="section-spacing pt-0">
+        <div className="container-width">
+          <div className="rounded-2xl border border-olive-200 bg-olive-100/60 px-5 py-5 sm:px-6">
+            <h2 className="text-lg font-semibold text-olive-800 sm:text-xl">Warum PR Gartenservice?</h2>
+            <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {heroTrustItems.map((item) => {
+                const Icon = item.icon
+                return (
+                  <div key={item.label} className="flex items-center gap-3 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-olive-800">
+                    <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-olive-100 text-olive-700">
+                      <Icon size={16} />
+                    </span>
+                    <span>{item.label}</span>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="section-spacing pt-0">
         <div className="container-width">
@@ -167,6 +211,29 @@ function HomePage() {
       </section>
 
       <section className="section-spacing bg-olive-100/40">
+        <div className="container-width grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+          <div className="rounded-3xl border border-dashed border-olive-300 bg-white p-8 text-center text-olive-700">
+            {/* TODO: Replace this placeholder with a real team portrait/photo during private deployment. */}
+            <div className="mx-auto flex h-52 max-w-xs items-center justify-center rounded-2xl border border-olive-200 bg-olive-50 text-sm font-semibold">
+              Platzhalter fuer Teamfoto
+            </div>
+          </div>
+          <div>
+            <SectionTitle
+              eyebrow="Ihr Ansprechpartner"
+              title="PR Gartenservice Team"
+              description="Persoenlich erreichbar, regional unterwegs und mit einem klaren Blick fuer saubere Ergebnisse."
+            />
+            <ul className="space-y-3 text-sm text-olive-700 sm:text-base">
+              <li className="flex items-start gap-3"><ShieldCheck size={18} className="mt-0.5 text-olive-700" />Persoenliche Beratung statt Standardantworten</li>
+              <li className="flex items-start gap-3"><Clock3 size={18} className="mt-0.5 text-olive-700" />Schnelle Termine und klare Rueckmeldungen</li>
+              <li className="flex items-start gap-3"><MapPin size={18} className="mt-0.5 text-olive-700" />Regional betreut in Leibnitz und Umgebung</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing">
         <div className="container-width">
           <SectionTitle
             eyebrow={t('home.references.eyebrow')}
@@ -176,6 +243,28 @@ function HomePage() {
           <div className="grid gap-5 lg:grid-cols-3">
             {references.map((item) => (
               <ReferenceCard key={item.title} {...item} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing bg-olive-100/40">
+        <div className="container-width">
+          <SectionTitle
+            eyebrow="Vertrauen"
+            title="So aehnlich beschreiben uns Kundinnen und Kunden"
+            description="Beispielbewertungen zur Layout-Demo. Bitte spaeter mit echten, freigegebenen Bewertungen ersetzen."
+          />
+          <div className="grid gap-4 lg:grid-cols-3">
+            {demoTestimonials.map((item) => (
+              <article key={item.source} className="rounded-2xl border border-olive-200 bg-white p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-olive-600">Beispielbewertung</p>
+                <p className="mt-2 inline-flex gap-1 text-amber-500" aria-label="5 von 5 Sternen">
+                  {Array.from({ length: 5 }).map((_, idx) => <Star key={idx} size={14} fill="currentColor" />)}
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-olive-700">"{item.quote}"</p>
+                <p className="mt-3 text-sm font-semibold text-olive-800">- {item.source}</p>
+              </article>
             ))}
           </div>
         </div>
@@ -202,7 +291,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="section-spacing">
+      <section className="section-spacing bg-olive-100/40">
         <div className="container-width">
           <div className="glass-card grid gap-8 rounded-3xl px-6 py-8 sm:px-10 sm:py-10 lg:grid-cols-2">
             <div>
@@ -233,6 +322,19 @@ function HomePage() {
               <p className="mt-6 text-sm">{t('home.location.address')}</p>
               <p className="mt-1 text-base text-white">{businessData.address}</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing pt-0">
+        <div className="container-width">
+          <div className="rounded-2xl border border-olive-200 bg-white px-6 py-5">
+            <p className="text-sm font-semibold text-olive-800">
+              Privatgaerten, Firmenstandorte, Wohnanlagen und oeffentliche Einrichtungen im Grossraum Leibnitz, Graz, Deutschlandsberg und der Suedoststeiermark.
+            </p>
+            <p className="mt-2 text-sm text-olive-700">
+              Leibnitz · Wagna · Gralla · Tillmitsch · Strass · Ehrenhausen · Graz Umgebung
+            </p>
           </div>
         </div>
       </section>
