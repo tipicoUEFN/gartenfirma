@@ -23,12 +23,14 @@ function ContactPage() {
           <aside className="glass-card h-fit rounded-2xl p-6 sm:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-olive-600">Direkt erreichbar</p>
             <ul className="mt-5 space-y-4 text-sm text-olive-700 sm:text-base">
-              <li className="flex items-start gap-3">
-                <Phone size={18} className="mt-0.5 shrink-0 text-olive-700" />
-                <a href={`tel:${businessData.phone}`} className="font-semibold hover:text-olive-800">
-                  {businessData.phone}
-                </a>
-              </li>
+              {businessData.phoneContacts.map((contact) => (
+                <li key={contact.phone} className="flex items-start gap-3">
+                  <Phone size={18} className="mt-0.5 shrink-0 text-olive-700" />
+                  <a href={`tel:${contact.phone}`} className="font-semibold hover:text-olive-800">
+                    {contact.label}: {contact.phone}
+                  </a>
+                </li>
+              ))}
               <li className="flex items-start gap-3">
                 <Mail size={18} className="mt-0.5 shrink-0 text-olive-700" />
                 <a href={`mailto:${businessData.email}`} className="font-semibold hover:text-olive-800">

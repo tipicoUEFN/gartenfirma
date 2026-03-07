@@ -15,7 +15,14 @@ function ImpressumPage() {
           <div className="glass-card rounded-2xl p-6 text-sm leading-relaxed text-olive-700 sm:p-8">
             <p className="font-semibold text-olive-800">{businessData.companyName}</p>
             <p>{businessData.address}</p>
-            <p className="mt-4">Telefon: {businessData.phone}</p>
+            <div className="mt-4">
+              <p>Telefon:</p>
+              {businessData.phoneContacts.map((contact) => (
+                <p key={contact.phone}>
+                  {contact.label}: {contact.phone}
+                </p>
+              ))}
+            </div>
             <p>E-Mail: {businessData.email}</p>
             <p className="mt-4">Unternehmensgegenstand: Gartenpflege und Gruenflaechenbetreuung</p>
             <p>UID-Nummer: ATU12345678 (Platzhalter)</p>

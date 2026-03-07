@@ -19,11 +19,17 @@ function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-olive-200/70 bg-olive-50/90 backdrop-blur-md">
       <div className="container-width flex h-20 items-center justify-between">
-        <Link to="/" className="group">
-          <p className="headline text-2xl font-semibold text-olive-800 transition group-hover:text-olive-700">
-            {businessData.companyName}
-          </p>
-          <p className="-mt-1 hidden text-xs uppercase tracking-[0.2em] text-olive-600 sm:block">Gartenpflege in Oesterreich</p>
+        <Link to="/" className="group flex items-center gap-3" aria-label={businessData.companyName}>
+          <img
+            src="/images/logo/logo1024x1024.svg"
+            alt={`${businessData.companyName} Icon`}
+            className="h-10 w-10 sm:hidden"
+          />
+          <img
+            src="/images/logo/logo1600x400.svg"
+            alt={businessData.companyName}
+            className="hidden h-8 w-auto sm:block md:h-9 lg:h-10"
+          />
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex">
@@ -36,8 +42,8 @@ function Navbar() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <Phone size={16} className="text-olive-600" />
-          <a href={`tel:${businessData.phone}`} className="text-sm font-semibold text-olive-800 hover:text-olive-600">
-            {businessData.phone}
+          <a href={`tel:${businessData.primaryPhone}`} className="text-sm font-semibold text-olive-800 hover:text-olive-600">
+            {businessData.phoneContacts[0]?.label}: {businessData.primaryPhone}
           </a>
         </div>
 
@@ -66,8 +72,8 @@ function Navbar() {
                 {item.label}
               </NavLink>
             ))}
-            <a href={`tel:${businessData.phone}`} className="mt-2 rounded-lg bg-olive-700 px-4 py-3 text-sm font-semibold text-white">
-              Jetzt anrufen: {businessData.phone}
+            <a href={`tel:${businessData.primaryPhone}`} className="mt-2 rounded-lg bg-olive-700 px-4 py-3 text-sm font-semibold text-white">
+              Jetzt anrufen: {businessData.phoneContacts[0]?.label} {businessData.primaryPhone}
             </a>
           </nav>
         </div>

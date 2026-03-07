@@ -7,19 +7,30 @@ function Footer() {
     <footer className="mt-14 border-t border-olive-200 bg-olive-800 text-olive-100">
       <div className="container-width grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <p className="headline text-2xl font-semibold text-white">{businessData.companyName}</p>
+          <img
+            src="/images/logo/logo1024x1024_white.svg"
+            alt={`${businessData.companyName} Icon`}
+            className="h-12 w-12 sm:hidden"
+          />
+          <img
+            src="/images/logo/logo1600x400_white.svg"
+            alt={businessData.companyName}
+            className="hidden h-10 w-auto sm:block"
+          />
           <p className="mt-3 text-sm leading-relaxed text-olive-200">{businessData.claim}</p>
         </div>
 
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-olive-300">Kontakt</p>
           <ul className="mt-4 space-y-3 text-sm">
-            <li className="flex items-start gap-2">
-              <Phone size={16} className="mt-0.5" />
-              <a href={`tel:${businessData.phone}`} className="hover:text-white">
-                {businessData.phone}
-              </a>
-            </li>
+            {businessData.phoneContacts.map((contact) => (
+              <li key={contact.phone} className="flex items-start gap-2">
+                <Phone size={16} className="mt-0.5" />
+                <a href={`tel:${contact.phone}`} className="hover:text-white">
+                  {contact.label}: {contact.phone}
+                </a>
+              </li>
+            ))}
             <li className="flex items-start gap-2">
               <Mail size={16} className="mt-0.5" />
               <a href={`mailto:${businessData.email}`} className="hover:text-white">

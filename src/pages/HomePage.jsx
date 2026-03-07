@@ -191,9 +191,18 @@ function HomePage() {
             </div>
             <div className="rounded-2xl bg-olive-800 p-6 text-olive-100">
               <p className="text-sm">Telefon</p>
-              <a href={`tel:${businessData.phone}`} className="mt-1 block text-xl font-semibold text-white">
-                {businessData.phone}
+              <a href={`tel:${businessData.primaryPhone}`} className="mt-1 block text-xl font-semibold text-white">
+                {businessData.phoneContacts[0]?.label}: {businessData.primaryPhone}
               </a>
+              <ul className="mt-3 space-y-1 text-sm text-olive-200">
+                {businessData.phoneContacts.slice(1).map((contact) => (
+                  <li key={contact.phone}>
+                    <a href={`tel:${contact.phone}`} className="hover:text-white">
+                      {contact.label}: {contact.phone}
+                    </a>
+                  </li>
+                ))}
+              </ul>
               <p className="mt-6 text-sm">E-Mail</p>
               <a href={`mailto:${businessData.email}`} className="mt-1 block text-base font-semibold text-white">
                 {businessData.email}
