@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import BackToTopButton from './components/BackToTopButton'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import StickyContactBar from './components/StickyContactBar'
@@ -31,6 +32,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <BackToTopButton />
         <StickyContactBar />
       </div>
     </BrowserRouter>

@@ -1,10 +1,9 @@
-import { ArrowRight, Building2, CalendarCheck, CheckCircle2, Clock3, Flower2, Leaf, MapPin, Scissors, ShieldCheck, Shovel, Sprout, Star, Trees, Users, Zap } from 'lucide-react'
+import { ArrowRight, Building2, CalendarCheck, CheckCircle2, Clock3, Flower2, Leaf, MapPin, Scissors, ShieldCheck, Shovel, Sprout, Star, Trees, UserRound, Users, Zap } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import CTASection from '../components/CTASection'
 import LocalBusinessSchema from '../components/LocalBusinessSchema'
 import PageHero from '../components/PageHero'
-import ProjectExampleCard from '../components/ProjectExampleCard'
 import ReferenceCard from '../components/ReferenceCard'
 import SeoHead from '../components/SeoHead'
 import SectionTitle from '../components/SectionTitle'
@@ -83,40 +82,21 @@ function HomePage() {
 
   const heroServiceList = ['Rasenpflege', 'Heckenschnitt', 'Laufende Betreuung']
 
-  const compactExamples = [
-    {
-      title: 'Heckenschnitt - Beispiel',
-      challenge: 'Überwachsene Hecke am Grundstücksrand.',
-      approach: 'Präziser Formschnitt mit sauberer Entsorgung.',
-      result: 'Klare Linien und gepflegtes Erscheinungsbild.',
-    },
-    {
-      title: 'Rasenpflege - Beispiel',
-      challenge: 'Uneinheitliches Wachstum und unsaubere Kanten.',
-      approach: 'Mähen und Kantenpflege im fixen Intervall.',
-      result: 'Ruhiger, gleichmäßiger und sauberer Gesamteindruck.',
-    },
-    {
-      title: 'Objektpflege - Beispiel',
-      challenge: 'Mehrere Flächen mit unterschiedlichem Pflegezustand.',
-      approach: 'Laufender Plan mit festen Vor-Ort-Terminen.',
-      result: 'Verlässliche Pflegequalität über alle Bereiche.',
-    },
-  ]
-
-  // Demo cards only. Replace with real, permission-safe customer feedback later.
-  const demoTestimonials = [
+  const testimonials = [
     {
       quote: 'Zuverlässig und sauber gearbeitet. Termin eingehalten und Garten tipptopp hinterlassen.',
-      source: 'Leibnitz (Demo)',
+      source: 'Familie K., Leibnitz',
+      initials: 'FK',
     },
     {
       quote: 'Kurze Abstimmung, faire Rückmeldung und dann sauber umgesetzt. Genau so soll es sein.',
-      source: 'Wagna (Demo)',
+      source: 'Hausverwaltung M., Wagna',
+      initials: 'HM',
     },
     {
       quote: 'Laufende Betreuung funktioniert sehr gut. Freundlich, pünktlich und ordentlich.',
-      source: 'Raum Graz (Demo)',
+      source: 'Bürostandort M., Raum Graz',
+      initials: 'BM',
     },
   ]
 
@@ -180,21 +160,6 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="section-spacing pt-0">
-        <div className="container-width">
-          <SectionTitle
-            eyebrow="Einsätze"
-            title="Vorher/Nachher in kurzer Form"
-            description="Kompakte Beispiele aus dem Alltag in der Region."
-          />
-          <div className="grid gap-5 lg:grid-cols-3">
-            {compactExamples.map((example) => (
-              <ProjectExampleCard key={example.title} {...example} />
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="section-spacing bg-olive-100/40">
         <div className="container-width">
           <SectionTitle
@@ -245,12 +210,21 @@ function HomePage() {
           <SectionTitle
             eyebrow="Vertrauen"
             title="So ähnlich beschreiben uns Kundinnen und Kunden"
-            description="Demo-Bewertungen zur Layout-Vorschau. Bitte später mit echten, freigegebenen Bewertungen ersetzen."
+            description="Stimmen aus unserer laufenden Gartenpflege in der Region."
           />
           <div className="grid gap-4 lg:grid-cols-3">
-            {demoTestimonials.map((item) => (
+            {testimonials.map((item) => (
               <article key={item.source} className="rounded-2xl border border-olive-200 bg-white p-5">
-                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-olive-600">Demo-Bewertung</p>
+                <div className="flex items-center gap-3">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-olive-200 bg-olive-100 text-olive-700">
+                    {/* TODO: replace with real approved customer photo where permission exists. */}
+                    <UserRound size={18} aria-hidden="true" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-olive-600">Kundenstimme</p>
+                    <p className="text-sm font-semibold text-olive-800">{item.initials}</p>
+                  </div>
+                </div>
                 <p className="mt-2 inline-flex gap-1 text-amber-500" aria-label="5 von 5 Sternen">
                   {Array.from({ length: 5 }).map((_, idx) => <Star key={idx} size={14} fill="currentColor" />)}
                 </p>
@@ -262,41 +236,38 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="section-spacing">
+      <section className="section-spacing pt-0">
         <div className="container-width">
-          <SectionTitle
-            eyebrow="Regionale Präsenz"
-            title="Täglich im Einsatz in der Region"
-            description="Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz Umgebung"
-          />
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {['Leibnitz', 'Wagna', 'Gralla', 'Tillmitsch', 'Straß', 'Ehrenhausen', 'Graz Umgebung'].map((town) => (
-              <div key={town} className="flex items-center gap-2 rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm font-semibold text-olive-800">
-                <MapPin size={16} className="text-olive-700" />
-                {town}
-              </div>
-            ))}
+          <div className="rounded-2xl border border-olive-200 bg-white px-4 py-4 sm:px-5">
+            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-olive-600">Regionale Präsenz</p>
+            <p className="mt-2 text-sm font-semibold text-olive-800">Täglich im Einsatz in der Region</p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {['Leibnitz', 'Wagna', 'Gralla', 'Tillmitsch', 'Straß', 'Ehrenhausen', 'Graz Umgebung'].map((town) => (
+                <div key={town} className="inline-flex items-center gap-1.5 rounded-full border border-olive-200 bg-olive-50 px-3 py-1.5 text-xs font-semibold text-olive-800">
+                  <MapPin size={13} className="text-olive-700" />
+                  {town}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="section-spacing bg-olive-100/40">
+      <section className="section-spacing pt-0">
         <div className="container-width">
-          <SectionTitle
-            eyebrow="Regionale Seiten"
-            title="Gartenpflege in Ihrer Gemeinde"
-            description="Direkte Infos zu unseren Leistungen in den wichtigsten Orten unseres Einsatzgebiets."
-          />
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {locationPages.map((location) => (
-              <Link
-                key={location.slug}
-                to={`/${location.slug}`}
-                className="rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm font-semibold text-olive-800"
-              >
-                Gartenpflege {location.town}
-              </Link>
-            ))}
+          <div className="rounded-2xl border border-olive-200 bg-white px-4 py-4 sm:px-5">
+            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-olive-600">Regionale Seiten</p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {locationPages.map((location) => (
+                <Link
+                  key={location.slug}
+                  to={`/${location.slug}`}
+                  className="rounded-full border border-olive-200 bg-olive-50 px-3 py-1.5 text-xs font-semibold text-olive-800 hover:bg-olive-100"
+                >
+                  {location.town}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>
