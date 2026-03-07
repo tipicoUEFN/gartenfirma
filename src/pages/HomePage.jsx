@@ -1,4 +1,4 @@
-import { ArrowRight, CalendarCheck, CheckCircle2, Clock3, Flower2, Leaf, MapPin, Scissors, ShieldCheck, Shovel, Sprout, Star, Trees, Users } from 'lucide-react'
+import { ArrowRight, Building2, CalendarCheck, CheckCircle2, Clock3, Flower2, Leaf, MapPin, Scissors, ShieldCheck, Shovel, Sprout, Star, Trees, Users, Zap } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import CTASection from '../components/CTASection'
@@ -74,9 +74,10 @@ function HomePage() {
   ]
 
   const heroTrustItems = [
-    { icon: Star, label: 'Über 100 gepflegte Gärten in der Region' },
-    { icon: Star, label: 'Privat- und Firmenkunden' },
-    { icon: Star, label: 'Zuverlässig und pünktlich' },
+    { icon: Star, label: 'Über 100 gepflegte Gärten' },
+    { icon: Building2, label: 'Privat- und Firmenkunden' },
+    { icon: MapPin, label: 'Einsatz in Leibnitz & Umgebung' },
+    { icon: Zap, label: 'Schnelle Terminvergabe' },
   ]
 
   const heroServiceList = ['Rasenpflege', 'Heckenschnitt', 'Laufende Betreuung']
@@ -138,7 +139,7 @@ function HomePage() {
       <section className="section-spacing pt-0">
         <div className="container-width">
           <div className="rounded-2xl border border-olive-200 bg-white px-5 py-4 sm:px-6">
-            <div className="grid gap-3 md:grid-cols-3">
+            <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
               {heroTrustItems.map((item) => {
                 const Icon = item.icon
                 return (
