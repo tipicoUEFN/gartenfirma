@@ -131,25 +131,29 @@ function HomePage() {
             </Link>
           </div>
 
-          <div className="grid gap-5 lg:grid-cols-2 lg:items-start">
-            <div>
-              <ul className="space-y-2 text-sm font-semibold text-olive-800 sm:text-base">
-                {heroServiceList.map((item) => (
-                  <li key={item} className="flex items-center gap-2">
-                    <CheckCircle2 size={16} className="text-olive-700" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-4 inline-flex items-center gap-2 text-sm text-olive-700 sm:text-base">
-                <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-olive-100 text-amber-500">
-                  <MapPin size={14} fill="currentColor" />
-                </span>
-                <span>{t('home.hero.serviceArea')}: {t('common.serviceAreaValue')}</span>
-              </div>
+          <div>
+            <ul className="space-y-2 text-sm font-semibold text-olive-800 sm:text-base">
+              {heroServiceList.map((item) => (
+                <li key={item} className="flex items-center gap-2">
+                  <CheckCircle2 size={16} className="text-olive-700" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <div className="mt-4 inline-flex items-center gap-2 text-sm text-olive-700 sm:text-base">
+              <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-olive-100 text-amber-500">
+                <MapPin size={14} fill="currentColor" />
+              </span>
+              <span>{t('home.hero.serviceArea')}: {t('common.serviceAreaValue')}</span>
             </div>
+          </div>
+        </div>
+      </PageHero>
 
-            <div className="grid gap-2 sm:grid-cols-2">
+      <section className="section-spacing pt-0 pb-2 sm:pb-3 lg:pb-4">
+        <div className="container-width">
+          <div className="rounded-2xl border border-olive-200 bg-white px-4 py-3 sm:px-5">
+            <div className="grid gap-2 md:grid-cols-2 xl:grid-cols-4">
               {heroTrustItems.map((item) => {
                 const Icon = item.icon
                 return (
@@ -164,7 +168,7 @@ function HomePage() {
             </div>
           </div>
         </div>
-      </PageHero>
+      </section>
 
       <section className="section-spacing pt-2 sm:pt-3 lg:pt-4 bg-olive-100/40">
         <div className="container-width">
