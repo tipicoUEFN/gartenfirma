@@ -200,16 +200,16 @@
     },
     "flow": {
       "quick": {
-        "title": "Gyors megkeres�s - folyamat",
-        "challenge": "Gyors idopontra vagy visszah�v�sra van sz�ks�ge.",
-        "approach": "R�vid adatok az urlapon vagy k�zvetlen telefonos �rdeklod�s.",
-        "result": "Gyors visszajelz�s a k�vetkezo �rtelmes l�p�ssel."
+        "title": "Gyors megkeresés - folyamat",
+        "challenge": "Kiinduló helyzet: Gyors időpontra vagy visszahívásra van szüksége.",
+        "approach": "Megvalósítás: Rövid adatok az űrlapon vagy közvetlen telefonos érdeklődés.",
+        "result": "Eredmény: Gyors visszajelzés a következő értelmes lépéssel."
       },
       "detailed": {
-        "title": "R�szletes megkeres�s - folyamat",
-        "challenge": "T�bb ter�letrol vagy rendszeres gondoz�sr�l van sz�.",
-        "approach": "R�szletesen r�gz�tj�k a szolg�ltat�s tartalm�t �s a helysz�nt.",
-        "result": "Pontosabb aj�nlat megfelelo �temez�ssel."
+        "title": "Részletes megkeresés - folyamat",
+        "challenge": "Kiinduló helyzet: Több területről vagy rendszeres gondozásról van szó.",
+        "approach": "Megvalósítás: Részletesen rögzítjük a szolgáltatás tartalmát és a helyszínt.",
+        "result": "Eredmény: Pontosabb ajánlat megfelelő ütemezéssel."
       }
     }
   },
