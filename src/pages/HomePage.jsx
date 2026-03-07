@@ -60,26 +60,7 @@ const trustItems = [
   },
 ]
 
-const references = [
-  {
-    title: 'Privatgarten mit Hanglage',
-    location: 'Leibnitz',
-    text: 'Grundpflege und Neuordnung der Beete fuer ein ruhiges, klar strukturiertes Gartenbild.',
-    ...referenceProjects[0],
-  },
-  {
-    title: 'Familiengarten im Siedlungsgebiet',
-    location: 'Graz Umgebung',
-    text: 'Heckenkorrektur, Rasensanierung und laufende Pflege fuer eine dauerhaft gepflegte Aussenflaeche.',
-    ...referenceProjects[1],
-  },
-  {
-    title: 'Objektpflege Mehrparteienhaus',
-    location: 'Suedsteiermark',
-    text: 'Regelmaessiger Schnitt und saisonale Betreuung der Allgemeinflaechen.',
-    ...referenceProjects[2],
-  },
-]
+const references = referenceProjects.slice(0, 3)
 
 function HomePage() {
   return (
@@ -168,8 +149,8 @@ function HomePage() {
         <div className="container-width">
           <SectionTitle
             eyebrow="Referenzen"
-            title="Vorher und nachher: sichtbare Ergebnisse"
-            description="Beispielhafte Projekte aus der Region. Die Platzhalterflaechen koennen spaeter durch echte Vorher-Nachher-Fotos ersetzt werden."
+            title="Ausgewaehlte Projekte aus der Praxis"
+            description="Wir zeigen typische Arbeiten wie Rasenpflege, Heckschnitt und laufende Gartenbetreuung aus der Region."
           />
           <div className="grid gap-5 lg:grid-cols-3">
             {references.map((item) => (

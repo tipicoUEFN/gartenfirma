@@ -11,18 +11,39 @@ export const homepageImages = {
 
 export const referenceProjects = [
   {
-    comparisonImage: '/images/references/ref1.png',
-    beforeImage: '/images/references/ref1-before.jpg',
-    afterImage: '/images/references/ref1-after.jpg',
+    title: 'Rasen maehen',
+    location: 'Suedsteiermark',
+    text: 'Regelmaessige Rasenpflege fuer ein sauberes, gleichmaessiges Gesamtbild.',
+    image: '/images/references/ref1.png',
   },
   {
-    comparisonImage: '/images/references/ref2.png',
-    beforeImage: '/images/references/ref2-before.jpg',
-    afterImage: '/images/references/ref2-after.jpg',
+    title: 'Heckschnitt',
+    location: 'Leibnitz',
+    text: 'Praeziser Formschnitt fuer dichte, gesunde Hecken und klare Linien.',
+    image: '/images/references/ref2.png',
   },
   {
-    comparisonImage: '/images/references/ref3.png',
-    beforeImage: '/images/references/ref3-before.jpg',
-    afterImage: '/images/references/ref3-after.jpg',
+    title: 'Beetpflege',
+    location: 'Graz Umgebung',
+    text: 'Pflege von Beeten und Stauden fuer ein ordentliches Erscheinungsbild.',
+    image: '/images/references/ref3.png',
+  },
+  {
+    title: 'Objektpflege',
+    location: 'Raum Graz',
+    text: 'Laufende Pflege von Gruenflaechen mit festen Intervallen.',
+    image: '/images/references/ref4.png',
+  },
+  {
+    title: 'Saisonservice',
+    location: 'Suedsteiermark',
+    text: 'Fruehjahrs- und Herbstarbeiten fuer eine saubere Gartenstruktur.',
+    image: '/images/references/ref5.png',
+  },
+  {
+    title: 'Rueckschnitt & Pflege',
+    location: 'Leibnitz Umgebung',
+    text: 'Gezielter Rueckschnitt und Feinarbeiten fuer gesunde Pflanzen.',
+    image: '/images/references/ref6.png',
   },
 ]

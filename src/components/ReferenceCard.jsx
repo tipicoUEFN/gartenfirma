@@ -1,46 +1,24 @@
 import { useState } from 'react'
 
-function ReferenceCard({ title, location, text, comparisonImage, beforeImage, afterImage }) {
-  const [comparisonLoadFailed, setComparisonLoadFailed] = useState(false)
-  const useCombinedImage = comparisonImage && !comparisonLoadFailed
+function ReferenceCard({ title, location, text, image }) {
+  const [imageLoadFailed, setImageLoadFailed] = useState(false)
+  const showImage = image && !imageLoadFailed
 
   return (
     <article className="glass-card overflow-hidden rounded-2xl p-5">
-      {useCombinedImage ? (
+      {showImage ? (
         <div className="overflow-hidden rounded-xl border border-olive-200 bg-white">
           <img
-            src={comparisonImage}
-            alt={`Vorher und Nachher: ${title}`}
+            src={image}
+            alt={title}
             loading="lazy"
-            onError={() => setComparisonLoadFailed(true)}
+            onError={() => setImageLoadFailed(true)}
             className="aspect-[16/10] w-full object-cover"
           />
-          <p className="border-t border-olive-200 bg-olive-50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-olive-700">
-            Vorher | Nachher
-          </p>
         </div>
       ) : (
-        <div className="grid grid-cols-2 gap-3">
-          <div className="rounded-xl border border-dashed border-olive-300 bg-olive-100/60 p-4 text-xs font-semibold uppercase tracking-wider text-olive-700">
-            Vorher
-            <div className="mt-3 overflow-hidden rounded-md border border-olive-200">
-              {beforeImage ? (
-                <img src={beforeImage} alt={`Vorher: ${title}`} loading="lazy" className="aspect-[4/3] w-full object-cover" />
-              ) : (
-                <div className="h-20 rounded-md bg-olive-200/70" />
-              )}
-            </div>
-          </div>
-          <div className="rounded-xl border border-dashed border-olive-300 bg-white p-4 text-xs font-semibold uppercase tracking-wider text-olive-700">
-            Nachher
-            <div className="mt-3 overflow-hidden rounded-md border border-olive-200">
-              {afterImage ? (
-                <img src={afterImage} alt={`Nachher: ${title}`} loading="lazy" className="aspect-[4/3] w-full object-cover" />
-              ) : (
-                <div className="h-20 rounded-md bg-olive-300/65" />
-              )}
-            </div>
-          </div>
+        <div className="flex aspect-[16/10] items-center justify-center rounded-xl border border-dashed border-olive-300 bg-olive-100/60 px-4 text-center text-xs font-semibold uppercase tracking-[0.18em] text-olive-700">
+          Bild folgt: /images/references/refX.png
         </div>
       )}
       <h3 className="mt-5 text-base font-semibold text-olive-800">{title}</h3>
