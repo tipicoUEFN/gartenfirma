@@ -118,6 +118,7 @@ function HomePage() {
         eyebrow=""
         title={t('homeExtras.heroTitle')}
         text={t('homeExtras.heroText')}
+        compactBottom
         imageContent={<HeroSlider slides={heroSlides} />}
         footerContent={(
           <div className="rounded-2xl border border-olive-200 bg-white px-4 py-3 sm:px-5">

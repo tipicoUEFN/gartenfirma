@@ -1,8 +1,12 @@
-function PageHero({ eyebrow, title, text, children, imageSrc, imageAlt, imageSrcSet, imageContent, footerContent }) {
+function PageHero({ eyebrow, title, text, children, imageSrc, imageAlt, imageSrcSet, imageContent, footerContent, compactBottom = false }) {
+  const cardPaddingClass = compactBottom
+    ? 'reveal glass-card overflow-hidden px-6 pt-10 pb-6 sm:px-10 sm:pt-14 sm:pb-8'
+    : 'reveal glass-card overflow-hidden px-6 py-10 sm:px-10 sm:py-14'
+
   return (
     <section className="section-spacing pt-6 sm:pt-8 lg:pt-10">
       <div className="container-width">
-        <div className="reveal glass-card overflow-hidden px-6 py-10 sm:px-10 sm:py-14">
+        <div className={cardPaddingClass}>
           <div className={imageSrc || imageContent ? 'grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center' : ''}>
             <div>
               {eyebrow ? <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-olive-600">{eyebrow}</p> : null}
