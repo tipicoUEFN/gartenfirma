@@ -38,7 +38,7 @@ function QuickRequestForm({ firstInputRef }) {
           Telefon: formData.phone,
           Ort: formData.town,
           Service: formData.service,
-          Rueckrufzeit: formData.callbackTime || t('quickRequestForm.mail.notProvided'),
+          Rückrufzeit: formData.callbackTime || t('quickRequestForm.mail.notProvided'),
           Anfrageart: t('quickRequestForm.mail.requestType'),
         }),
       })

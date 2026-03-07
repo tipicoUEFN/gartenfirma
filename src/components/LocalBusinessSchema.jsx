@@ -22,7 +22,7 @@ function LocalBusinessSchema() {
         'Wagna',
         'Gralla',
         'Tillmitsch',
-        'Strass in Steiermark',
+        'Straß in Steiermark',
         'Graz',
         'Deutschlandsberg',
         'Südoststeiermark',
