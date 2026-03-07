@@ -6,20 +6,20 @@ export const businessData = {
 
   // Contact
   phoneContacts: [
-    { label: 'Timi', phone: '+4366499427820' },
-    { label: 'Mario', phone: '+4367763520488' },
-    { label: 'Buero: Renate', phone: '+436649145191' },
+    { label: 'Timi', phone: '+43664000000' },
+    { label: 'Mario', phone: '+43664111111' },
+    { label: 'Buero', phone: '+43664333333' },
   ],
   // Keep a primary contact for compact CTA placements like header buttons.
-  phone: '+4366499427820',
-  email: 'office@prgartenservice.at',
+  phone: '+43664000000',
+  email: 'office@pr-gartenservice.at',
   address: 'Musterstrasse 1, 8430 Musterort',
 
   // Local focus
   serviceArea: 'Suedsteiermark / Graz / Leibnitz / Umgebung',
 
   openingHours: [
-    'Mo - Fr: 07:30 - 18:00 Uhr',
+    'Mo - Fr: 07:00 - 17:00 Uhr',
     'Sa: nach Vereinbarung',
   ],
 }

@@ -9,7 +9,7 @@ function ReferencesPage() {
       <PageHero
         eyebrow="Referenzen"
         title="Sichtbare Resultate aus der Region"
-        text="Hier sehen Sie ausgewaehlte Arbeiten. Die Galerie nutzt 5 Projektbilder mit Dateinamen ref1.webp bis ref5.webp."
+        text=""
       />
 
       <section className="section-spacing pt-0">

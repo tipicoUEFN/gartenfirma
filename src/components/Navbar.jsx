@@ -7,6 +7,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const iconLogoSrc = `${import.meta.env.BASE_URL}images/logo/logo1024x1024.svg`
   const horizontalLogoSrc = `${import.meta.env.BASE_URL}images/logo/logo1600x400.svg`
+  const mainContacts = businessData.phoneContacts.slice(0, 2)
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : ''
@@ -44,9 +45,13 @@ function Navbar() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <Phone size={16} className="text-olive-600" />
-          <a href={`tel:${businessData.primaryPhone}`} className="text-sm font-semibold text-olive-800 hover:text-olive-600">
-            {businessData.phoneContacts[0]?.label}: {businessData.primaryPhone}
-          </a>
+          <div className="flex items-center gap-3 text-sm font-semibold text-olive-800">
+            {mainContacts.map((contact) => (
+              <a key={contact.phone} href={`tel:${contact.phone}`} className="hover:text-olive-600">
+                {contact.label}: {contact.phone}
+              </a>
+            ))}
+          </div>
         </div>
 
         <button
@@ -74,9 +79,11 @@ function Navbar() {
                 {item.label}
               </NavLink>
             ))}
-            <a href={`tel:${businessData.primaryPhone}`} className="mt-2 rounded-lg bg-olive-700 px-4 py-3 text-sm font-semibold text-white">
-              Jetzt anrufen: {businessData.phoneContacts[0]?.label} {businessData.primaryPhone}
-            </a>
+            {mainContacts.map((contact) => (
+              <a key={contact.phone} href={`tel:${contact.phone}`} className="mt-2 rounded-lg bg-olive-700 px-4 py-3 text-sm font-semibold text-white">
+                Jetzt anrufen: {contact.label} {contact.phone}
+              </a>
+            ))}
           </nav>
         </div>
       ) : null}
