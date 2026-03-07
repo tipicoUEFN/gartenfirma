@@ -45,7 +45,7 @@ body {
 }
 
 .section-spacing {
-  @apply py-8 sm:py-10 lg:py-12;
+  @apply py-6 sm:py-8 lg:py-10;
 }
 
 .headline {

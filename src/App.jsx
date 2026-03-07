@@ -1,4 +1,5 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { useEffect } from 'react'
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
 import BackToTopButton from './components/BackToTopButton'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
@@ -12,9 +13,20 @@ import LocationPage from './pages/LocationPage'
 import ReferencesPage from './pages/ReferencesPage'
 import ServicesPage from './pages/ServicesPage'
 
+function ScrollToTop() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+  }, [pathname])
+
+  return null
+}
+
 function App() {
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <ScrollToTop />
       <div className="min-h-screen bg-olive-50 text-anthracite-900">
         <Navbar />
         <main>
