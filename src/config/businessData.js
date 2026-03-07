@@ -2,7 +2,7 @@
 export const businessData = {
   // Branding
   companyName: 'PR Gartenservice',
-  claim: 'Professionelle Gartenpflege mit Handschlagqualität in der Südsteiermark.',
+  claim: 'Professionelle Gartenpflege mit Handschlagqualität im Großraum Leibnitz, Graz, Deutschlandsberg und Südoststeiermark.',
 
   // Contact (public repo): use placeholder data only, never real personal phone numbers.
   phoneContacts: [
@@ -16,7 +16,7 @@ export const businessData = {
   address: 'Musterstraße 1, 8430 Musterort',
 
   // Local focus
-  serviceArea: 'Südsteiermark / Graz / Leibnitz / Umgebung',
+  serviceArea: 'Großraum Leibnitz, Graz, Deutschlandsberg und Südoststeiermark',
 
   openingHours: [
     'Mo - Fr: 07:00 - 17:00 Uhr',

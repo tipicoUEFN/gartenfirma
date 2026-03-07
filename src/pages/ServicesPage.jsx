@@ -10,14 +10,14 @@ function ServicesPage() {
 
   const serviceList = [
     {
-      icon: Scissors,
-      title: t('servicesPage.hedgeTitle'),
-      description: t('servicesPage.hedgeDescription'),
-    },
-    {
       icon: Shovel,
       title: t('servicesPage.lawnTitle'),
       description: t('servicesPage.lawnDescription'),
+    },
+    {
+      icon: Scissors,
+      title: t('servicesPage.hedgeTitle'),
+      description: t('servicesPage.hedgeDescription'),
     },
     {
       icon: Flower2,
@@ -60,6 +60,9 @@ function ServicesPage() {
               <ServiceCard key={service.title} {...service} />
             ))}
           </div>
+          <p className="mt-6 text-sm leading-relaxed text-olive-700 sm:text-base">
+            {t('servicesPage.infoLine')}
+          </p>
         </div>
       </section>
 

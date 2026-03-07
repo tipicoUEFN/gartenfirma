@@ -21,14 +21,14 @@ function HomePage() {
 
   const services = [
     {
-      icon: Scissors,
-      title: t('home.services.hedge.title'),
-      description: t('home.services.hedge.description'),
-    },
-    {
       icon: Shovel,
       title: t('home.services.lawn.title'),
       description: t('home.services.lawn.description'),
+    },
+    {
+      icon: Scissors,
+      title: t('home.services.hedge.title'),
+      description: t('home.services.hedge.description'),
     },
     {
       icon: Flower2,
@@ -104,6 +104,9 @@ function HomePage() {
               <ServiceCard key={service.title} {...service} />
             ))}
           </div>
+          <p className="mt-6 text-sm leading-relaxed text-olive-700 sm:text-base">
+            {t('home.services.infoLine')}
+          </p>
         </div>
       </section>
 

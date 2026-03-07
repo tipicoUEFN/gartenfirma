@@ -80,6 +80,9 @@ function Footer() {
         <p className="container-width text-xs text-olive-300">
           {t('footer.copyright', { year: new Date().getFullYear(), companyName: businessData.companyName })}
         </p>
+        <p className="container-width mt-2 text-xs text-olive-300">
+          Gartenpflege in Leibnitz, Graz, Wagna, Gralla, Tillmitsch, Straß, Ehrenhausen und Umgebung.
+        </p>
       </div>
     </footer>
   )

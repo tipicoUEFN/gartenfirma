@@ -16,21 +16,21 @@
     "hero": {
       "eyebrow": "Premium Gartenpflege",
       "title": "Ihr Garten in besten Händen. Gepflegt, klar und professionell betreut.",
-      "text": "{{companyName}} bietet hochwertige Gartenpflege für Privat- und Firmenkunden in der Südsteiermark. Mit Fachwissen, Handschlagqualität und Blick fürs Detail.",
+      "text": "{{companyName}} bietet hochwertige Gartenpflege und Außenanlagenbetreuung für Privatkunden, Firmen und öffentliche Einrichtungen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark.",
       "imageAlt": "Gärtner schiebt Schubkarre mit Pflanze durch gepflegten Garten.",
       "serviceArea": "Einsatzgebiet"
     },
     "services": {
       "eyebrow": "Leistungen",
       "title": "Unsere Leistungen",
-      "description": "Zuverlässige Gartenpflege und Außenanlagenbetreuung für Privatkunden, Firmen und öffentliche Einrichtungen in der Südsteiermark.",
+      "description": "Zuverlässige Gartenpflege und Außenanlagenbetreuung für Privatkunden, Firmen und öffentliche Einrichtungen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark.",
       "hedge": {
         "title": "Pflege bestehender Hecken",
-        "description": "Leichter Formschnitt und Nachschnitt bereits bestehender Hecken für ein sauberes Erscheinungsbild."
+        "description": "Leichter Formschnitt und Nachschnitt bereits bestehender Hecken für ein gepflegtes Erscheinungsbild."
       },
       "lawn": {
         "title": "Rasenmähen & Grünflächenpflege",
-        "description": "Regelmäßiges Mähen und Pflegen von Rasenflächen bei privaten Grundstücken, Firmenanlagen und öffentlichen Einrichtungen."
+        "description": "Regelmäßiges Mähen und Pflegen von Rasenflächen bei Privatgärten, Firmenanlagen und öffentlichen Einrichtungen."
       },
       "beds": {
         "title": "Laubarbeiten & Außenflächen sauber halten",
@@ -42,12 +42,13 @@
       },
       "season": {
         "title": "Einfache Gartenpflege",
-        "description": "Allgemeine Pflegearbeiten wie Gießen, kleinere Schnittarbeiten und Sauberhalten von Gartenflächen."
+        "description": "Allgemeine Pflegearbeiten wie kleinere Schnittarbeiten, Gießen und Sauberhalten von Gartenflächen."
       },
       "ongoing": {
         "title": "Fensterreinigung",
         "description": "Fensterreinigung bei privaten Haushalten sowie kleineren Firmenobjekten vom Boden aus oder mit einfachen Steighilfen."
-      }
+      },
+      "infoLine": "Wir betreuen Privatgärten, Firmenstandorte, Wohnanlagen und öffentliche Einrichtungen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark."
     },
     "why": {
       "eyebrow": "Warum wir",
@@ -97,19 +98,20 @@
     "heroTitle": "Individuelle Gartenpflege statt Standardpaket",
     "heroText": "Jeder Garten hat andere Anforderungen. Wir erstellen ein passendes Pflegekonzept und setzen dieses sorgfältig um.",
     "sectionTitle": "Unsere Leistungen",
-    "sectionDescription": "Zuverlässige Gartenpflege und Außenanlagenbetreuung für Privatkunden, Firmen und öffentliche Einrichtungen in der Südsteiermark.",
+    "sectionDescription": "Zuverlässige Gartenpflege und Außenanlagenbetreuung für Privatkunden, Firmen und öffentliche Einrichtungen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark.",
     "hedgeTitle": "Pflege bestehender Hecken",
-    "hedgeDescription": "Leichter Formschnitt und Nachschnitt bereits bestehender Hecken für ein sauberes Erscheinungsbild.",
+    "hedgeDescription": "Leichter Formschnitt und Nachschnitt bereits bestehender Hecken für ein gepflegtes Erscheinungsbild.",
     "lawnTitle": "Rasenmähen & Grünflächenpflege",
-    "lawnDescription": "Regelmäßiges Mähen und Pflegen von Rasenflächen bei privaten Grundstücken, Firmenanlagen und öffentlichen Einrichtungen.",
+    "lawnDescription": "Regelmäßiges Mähen und Pflegen von Rasenflächen bei Privatgärten, Firmenanlagen und öffentlichen Einrichtungen.",
     "bedsTitle": "Laubarbeiten & Außenflächen sauber halten",
     "bedsDescription": "Entfernung von Laub sowie einfache Pflegearbeiten zur Sauberhaltung von Grünflächen und Außenbereichen.",
     "greenTitle": "Laufende Betreuung von Außenanlagen",
     "greenDescription": "Regelmäßige Pflege von Grünflächen bei Wohnanlagen, Firmenstandorten und öffentlichen Einrichtungen.",
     "seasonTitle": "Einfache Gartenpflege",
-    "seasonDescription": "Allgemeine Pflegearbeiten wie Gießen, kleinere Schnittarbeiten und Sauberhalten von Gartenflächen.",
+    "seasonDescription": "Allgemeine Pflegearbeiten wie kleinere Schnittarbeiten, Gießen und Sauberhalten von Gartenflächen.",
     "ongoingTitle": "Fensterreinigung",
-    "ongoingDescription": "Fensterreinigung bei privaten Haushalten sowie kleineren Firmenobjekten vom Boden aus oder mit einfachen Steighilfen."
+    "ongoingDescription": "Fensterreinigung bei privaten Haushalten sowie kleineren Firmenobjekten vom Boden aus oder mit einfachen Steighilfen.",
+    "infoLine": "Wir betreuen Privatgärten, Firmenstandorte, Wohnanlagen und öffentliche Einrichtungen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark."
   },
   "aboutPage": {
     "heroEyebrow": "Über uns",
@@ -143,7 +145,7 @@
     "button": "Jetzt Kontakt aufnehmen"
   },
   "footer": {
-    "claim": "Professionelle Gartenpflege mit Handschlagqualität in der Südsteiermark.",
+    "claim": "Professionelle Gartenpflege mit Handschlagqualität im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark.",
     "contactTitle": "Kontakt",
     "serviceAreaTitle": "Einsatzgebiet",
     "hoursTitle": "Zeiten",
