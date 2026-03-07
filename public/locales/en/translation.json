@@ -208,5 +208,46 @@
   },
   "language": {
     "label": "Language"
+  },
+  "projectLabels": {
+    "challenge": "Situation",
+    "approach": "Implementation",
+    "result": "Result",
+    "cadence": "Interval"
+  },
+  "common": {
+    "backToTop": "Back to top",
+    "ratingFiveStars": "5 out of 5 stars",
+    "heroSliderRegion": "Photos from completed jobs"
+  },
+  "homeExtras": {
+    "heroEyebrow": "PR Garden Service",
+    "heroTitle": "Garden care from Leibnitz",
+    "heroText": "Reliable support for private gardens, company grounds and residential complexes in Leibnitz, Graz, Deutschlandsberg and Southeast Styria.",
+    "heroService1": "Lawn care",
+    "heroService2": "Hedge trimming",
+    "heroService3": "Ongoing maintenance",
+    "heroTrust1": "100+ maintained gardens",
+    "heroTrust2": "Private and business clients",
+    "heroTrust3": "Active in Leibnitz & nearby",
+    "heroTrust4": "Fast appointment scheduling",
+    "servicesDescription": "Services clearly structured and easy to scan.",
+    "whyDescription": "What you can rely on for every job.",
+    "testimonialsEyebrow": "Trust",
+    "testimonialsTitle": "How clients describe our work",
+    "testimonialsDescription": "Voices from our ongoing garden maintenance in the region.",
+    "testimonialLabel": "Client voice",
+    "teamPlaceholder": "Placeholder for team photo",
+    "teamEyebrow": "Your contact",
+    "teamTitle": "PR Garden Service Team",
+    "teamDescription": "Personally reachable, regional and focused on clean results.",
+    "teamBullet1": "Personal advice instead of template replies",
+    "teamBullet2": "Fast appointments and clear feedback",
+    "teamBullet3": "Regional support in Leibnitz and surrounding area",
+    "regionalPresenceLabel": "Regional presence",
+    "regionalPresenceTitle": "Active daily in the region",
+    "regionalPagesLabel": "Regional pages",
+    "regionalProofLine1": "Private gardens, company sites, residential complexes and public facilities in Leibnitz, Graz, Deutschlandsberg and Southeast Styria.",
+    "regionalProofLine2": "Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz area"
   }
 }

@@ -188,6 +188,47 @@
   },
   "language": {
     "label": "Jezik"
+  },
+  "projectLabels": {
+    "challenge": "Početno stanje",
+    "approach": "Izvedba",
+    "result": "Rezultat",
+    "cadence": "Interval"
+  },
+  "common": {
+    "backToTop": "Natrag na vrh",
+    "ratingFiveStars": "5 od 5 zvjezdica",
+    "heroSliderRegion": "Fotografije izvedenih radova"
+  },
+  "homeExtras": {
+    "heroEyebrow": "PR Gartenservice",
+    "heroTitle": "Njega vrtova iz Leibnitza",
+    "heroText": "Pouzdana njega privatnih vrtova, poslovnih površina i stambenih objekata u Leibnitzu, Grazu, Deutschlandsbergu i jugoistočnoj Štajerskoj.",
+    "heroService1": "Njega travnjaka",
+    "heroService2": "Rezanje živice",
+    "heroService3": "Redovno održavanje",
+    "heroTrust1": "Više od 100 uređenih vrtova",
+    "heroTrust2": "Privatni i poslovni klijenti",
+    "heroTrust3": "Rad u Leibnitzu i okolici",
+    "heroTrust4": "Brzo ugovaranje termina",
+    "servicesDescription": "Usluge su jasno strukturirane i brzo pregledne.",
+    "whyDescription": "Na to se možete osloniti kod svakog posla.",
+    "testimonialsEyebrow": "Povjerenje",
+    "testimonialsTitle": "Kako nas opisuju klijenti",
+    "testimonialsDescription": "Iskustva iz redovnog održavanja vrtova u regiji.",
+    "testimonialLabel": "Mišljenje klijenta",
+    "teamPlaceholder": "Mjesto za fotografiju tima",
+    "teamEyebrow": "Vaš kontakt",
+    "teamTitle": "PR Gartenservice tim",
+    "teamDescription": "Osobno dostupni, regionalno prisutni i usmjereni na čiste rezultate.",
+    "teamBullet1": "Osobno savjetovanje umjesto generičkih odgovora",
+    "teamBullet2": "Brzi termini i jasne povratne informacije",
+    "teamBullet3": "Regionalna podrška u Leibnitzu i okolici",
+    "regionalPresenceLabel": "Regionalna prisutnost",
+    "regionalPresenceTitle": "Svakodnevno na terenu u regiji",
+    "regionalPagesLabel": "Regionalne stranice",
+    "regionalProofLine1": "Privatni vrtovi, poslovne lokacije, stambeni objekti i javne ustanove u Leibnitzu, Grazu, Deutschlandsbergu i jugoistočnoj Štajerskoj.",
+    "regionalProofLine2": "Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · okolica Graza"
   }
 }
 

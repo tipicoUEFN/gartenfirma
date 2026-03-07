@@ -188,6 +188,47 @@
   },
   "language": {
     "label": "Jezik"
+  },
+  "projectLabels": {
+    "challenge": "Izhodišče",
+    "approach": "Izvedba",
+    "result": "Rezultat",
+    "cadence": "Interval"
+  },
+  "common": {
+    "backToTop": "Na vrh",
+    "ratingFiveStars": "5 od 5 zvezdic",
+    "heroSliderRegion": "Fotografije izvedenih del"
+  },
+  "homeExtras": {
+    "heroEyebrow": "PR Gartenservice",
+    "heroTitle": "Nega vrtov iz Leibnitza",
+    "heroText": "Zanesljiva nega zasebnih vrtov, poslovnih površin in stanovanjskih objektov v Leibnitzu, Gradcu, Deutschlandsbergu in jugovzhodni Štajerski.",
+    "heroService1": "Nega trate",
+    "heroService2": "Obrezovanje žive meje",
+    "heroService3": "Redno vzdrževanje",
+    "heroTrust1": "Več kot 100 urejenih vrtov",
+    "heroTrust2": "Zasebne in poslovne stranke",
+    "heroTrust3": "Delo v Leibnitzu in okolici",
+    "heroTrust4": "Hitra dodelitev termina",
+    "servicesDescription": "Storitve so jasno razdeljene in hitro pregledne.",
+    "whyDescription": "Na to se lahko zanesete pri vsakem delu.",
+    "testimonialsEyebrow": "Zaupanje",
+    "testimonialsTitle": "Kako nas opisujejo stranke",
+    "testimonialsDescription": "Mnenja iz rednega vzdrževanja vrtov v regiji.",
+    "testimonialLabel": "Mnenje stranke",
+    "teamPlaceholder": "Nadomestna slika ekipe",
+    "teamEyebrow": "Vaš kontakt",
+    "teamTitle": "Ekipa PR Gartenservice",
+    "teamDescription": "Dosegljivi osebno, regionalno prisotni in usmerjeni v čiste rezultate.",
+    "teamBullet1": "Osebno svetovanje namesto splošnih odgovorov",
+    "teamBullet2": "Hitri termini in jasne povratne informacije",
+    "teamBullet3": "Regionalna oskrba v Leibnitzu in okolici",
+    "regionalPresenceLabel": "Regionalna prisotnost",
+    "regionalPresenceTitle": "Vsak dan na terenu v regiji",
+    "regionalPagesLabel": "Regionalne strani",
+    "regionalProofLine1": "Zasebni vrtovi, poslovne lokacije, stanovanjski objekti in javne ustanove v Leibnitzu, Gradcu, Deutschlandsbergu in jugovzhodni Štajerski.",
+    "regionalProofLine2": "Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · okolica Gradca"
   }
 }
 

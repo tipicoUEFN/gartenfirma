@@ -75,13 +75,17 @@ function HomePage() {
   ]
 
   const heroTrustItems = [
-    { icon: Star, label: 'Über 100 gepflegte Gärten' },
-    { icon: Building2, label: 'Privat- und Firmenkunden' },
-    { icon: MapPin, label: 'Einsatz in Leibnitz & Umgebung' },
-    { icon: Zap, label: 'Schnelle Terminvergabe' },
+    { icon: Star, label: t('homeExtras.heroTrust1') },
+    { icon: Building2, label: t('homeExtras.heroTrust2') },
+    { icon: MapPin, label: t('homeExtras.heroTrust3') },
+    { icon: Zap, label: t('homeExtras.heroTrust4') },
   ]
 
-  const heroServiceList = ['Rasenpflege', 'Heckenschnitt', 'Laufende Betreuung']
+  const heroServiceList = [
+    t('homeExtras.heroService1'),
+    t('homeExtras.heroService2'),
+    t('homeExtras.heroService3'),
+  ]
 
   const testimonials = [
     {
@@ -111,9 +115,9 @@ function HomePage() {
       <LocalBusinessSchema />
 
       <PageHero
-        eyebrow="PR Gartenservice"
-        title="Gartenpflege aus Leibnitz"
-        text="Zuverlässig für Privatgärten, Firmenflächen und Wohnanlagen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark."
+        eyebrow={t('homeExtras.heroEyebrow')}
+        title={t('homeExtras.heroTitle')}
+        text={t('homeExtras.heroText')}
         imageContent={<HeroSlider slides={heroSlides} />}
       >
         <ul className="space-y-2 text-sm font-semibold text-olive-800 sm:text-base">
@@ -130,14 +134,14 @@ function HomePage() {
             to="/kontakt"
             className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-olive-800 px-5 py-3 text-sm font-semibold text-white transition hover:bg-anthracite-900 sm:w-auto"
           >
-            Jetzt Angebot anfragen
+            {t('cta.button')}
             <ArrowRight size={18} />
           </Link>
           <span className="text-sm text-olive-700">{t('home.hero.serviceArea')}: {businessData.serviceArea}</span>
         </div>
       </PageHero>
 
-      <section className="section-spacing pt-0">
+      <section className="section-spacing pt-0 pb-4 sm:pb-5 lg:pb-6">
         <div className="container-width">
           <div className="rounded-2xl border border-olive-200 bg-white px-5 py-4 sm:px-6">
             <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
@@ -157,12 +161,12 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="section-spacing bg-olive-100/40">
+      <section className="section-spacing pt-4 sm:pt-5 lg:pt-6 bg-olive-100/40">
         <div className="container-width">
           <SectionTitle
             eyebrow={t('home.services.eyebrow')}
             title={t('home.services.title')}
-            description="Leistungen klar gegliedert und schnell erfassbar."
+            description={t('homeExtras.servicesDescription')}
           />
           <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
             {services.map((service) => (
@@ -172,7 +176,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="section-spacing">
+      <section className="section-spacing pt-6 sm:pt-8 lg:pt-10">
         <div className="container-width">
           <SectionTitle
             eyebrow={t('home.references.eyebrow')}
@@ -187,12 +191,12 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="section-spacing">
+      <section className="section-spacing pt-6 sm:pt-8 lg:pt-10">
         <div className="container-width">
           <SectionTitle
             eyebrow={t('home.why.eyebrow')}
             title={t('home.why.title')}
-            description="Darauf können Sie sich bei jedem Einsatz verlassen."
+            description={t('homeExtras.whyDescription')}
           />
           <div className="grid gap-5 md:grid-cols-3">
             {trustItems.map((item) => (
@@ -202,12 +206,12 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="section-spacing bg-olive-100/40">
+      <section className="section-spacing pt-6 sm:pt-8 lg:pt-10 bg-olive-100/40">
         <div className="container-width">
           <SectionTitle
-            eyebrow="Vertrauen"
-            title="So ähnlich beschreiben uns Kundinnen und Kunden"
-            description="Stimmen aus unserer laufenden Gartenpflege in der Region."
+            eyebrow={t('homeExtras.testimonialsEyebrow')}
+            title={t('homeExtras.testimonialsTitle')}
+            description={t('homeExtras.testimonialsDescription')}
           />
           <div className="grid gap-4 lg:grid-cols-3">
             {testimonials.map((item) => (
@@ -218,11 +222,11 @@ function HomePage() {
                     <UserRound size={18} aria-hidden="true" />
                   </div>
                   <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-olive-600">Kundenstimme</p>
+                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-olive-600">{t('homeExtras.testimonialLabel')}</p>
                     <p className="text-sm font-semibold text-olive-800">{item.initials}</p>
                   </div>
                 </div>
-                <p className="mt-2 inline-flex gap-1 text-amber-500" aria-label="5 von 5 Sternen">
+                <p className="mt-2 inline-flex gap-1 text-amber-500" aria-label={t('common.ratingFiveStars')}>
                   {Array.from({ length: 5 }).map((_, idx) => <Star key={idx} size={14} fill="currentColor" />)}
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-olive-700">"{item.quote}"</p>
@@ -233,7 +237,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="section-spacing">
+      <section className="section-spacing pt-6 sm:pt-8 lg:pt-10">
         <div className="container-width">
           <div className="glass-card grid gap-8 rounded-3xl px-6 py-8 sm:px-10 sm:py-10 lg:grid-cols-2">
             <div>
@@ -268,24 +272,24 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="section-spacing bg-olive-100/40">
+      <section className="section-spacing pt-6 sm:pt-8 lg:pt-10 bg-olive-100/40">
         <div className="container-width grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div className="rounded-3xl border border-dashed border-olive-300 bg-white p-8 text-center text-olive-700">
             {/* TODO: Replace this placeholder with a real team portrait/photo during private deployment. */}
             <div className="mx-auto flex h-52 max-w-xs items-center justify-center rounded-2xl border border-olive-200 bg-olive-50 text-sm font-semibold">
-              Platzhalter für Teamfoto
+              {t('homeExtras.teamPlaceholder')}
             </div>
           </div>
           <div>
             <SectionTitle
-              eyebrow="Ihr Ansprechpartner"
-              title="PR Gartenservice Team"
-              description="Persönlich erreichbar, regional unterwegs und mit einem klaren Blick für saubere Ergebnisse."
+              eyebrow={t('homeExtras.teamEyebrow')}
+              title={t('homeExtras.teamTitle')}
+              description={t('homeExtras.teamDescription')}
             />
             <ul className="space-y-3 text-sm text-olive-700 sm:text-base">
-              <li className="flex items-start gap-3"><ShieldCheck size={18} className="mt-0.5 text-olive-700" />Persönliche Beratung statt Standardantworten</li>
-              <li className="flex items-start gap-3"><Clock3 size={18} className="mt-0.5 text-olive-700" />Schnelle Termine und klare Rückmeldungen</li>
-              <li className="flex items-start gap-3"><MapPin size={18} className="mt-0.5 text-olive-700" />Regional betreut in Leibnitz und Umgebung</li>
+              <li className="flex items-start gap-3"><ShieldCheck size={18} className="mt-0.5 text-olive-700" />{t('homeExtras.teamBullet1')}</li>
+              <li className="flex items-start gap-3"><Clock3 size={18} className="mt-0.5 text-olive-700" />{t('homeExtras.teamBullet2')}</li>
+              <li className="flex items-start gap-3"><MapPin size={18} className="mt-0.5 text-olive-700" />{t('homeExtras.teamBullet3')}</li>
             </ul>
           </div>
         </div>
@@ -293,11 +297,11 @@ function HomePage() {
 
       <CTASection />
 
-      <section className="section-spacing pt-0">
+      <section className="pt-0 pb-3 sm:pb-4 lg:pb-5">
         <div className="container-width">
           <div className="rounded-2xl border border-olive-200 bg-white px-4 py-4 sm:px-5">
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-olive-600">Regionale Präsenz</p>
-            <p className="mt-2 text-sm font-semibold text-olive-800">Täglich im Einsatz in der Region</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-olive-600">{t('homeExtras.regionalPresenceLabel')}</p>
+            <p className="mt-2 text-sm font-semibold text-olive-800">{t('homeExtras.regionalPresenceTitle')}</p>
             <div className="mt-3 flex flex-wrap gap-2">
               {['Leibnitz', 'Wagna', 'Gralla', 'Tillmitsch', 'Straß', 'Ehrenhausen', 'Graz Umgebung'].map((town) => (
                 <div key={town} className="inline-flex items-center gap-1.5 rounded-full border border-olive-200 bg-olive-50 px-3 py-1.5 text-xs font-semibold text-olive-800">
@@ -310,10 +314,10 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="section-spacing pt-0">
+      <section className="pt-0 pb-3 sm:pb-4 lg:pb-5">
         <div className="container-width">
           <div className="rounded-2xl border border-olive-200 bg-white px-4 py-4 sm:px-5">
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-olive-600">Regionale Seiten</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-olive-600">{t('homeExtras.regionalPagesLabel')}</p>
             <div className="mt-3 flex flex-wrap gap-2">
               {locationPages.map((location) => (
                 <Link
@@ -329,14 +333,14 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="section-spacing pt-0">
+      <section className="pt-0 pb-4 sm:pb-5 lg:pb-6">
         <div className="container-width">
           <div className="rounded-2xl border border-olive-200 bg-white px-6 py-5">
             <p className="text-sm font-semibold text-olive-800">
-              Privatgärten, Firmenstandorte, Wohnanlagen und öffentliche Einrichtungen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark.
+              {t('homeExtras.regionalProofLine1')}
             </p>
             <p className="mt-2 text-sm text-olive-700">
-              Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz Umgebung
+              {t('homeExtras.regionalProofLine2')}
             </p>
           </div>
         </div>

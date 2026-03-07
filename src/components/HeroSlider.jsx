@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 function HeroSlider({ slides, intervalMs = 5000 }) {
   const [current, setCurrent] = useState(0)
+  const { t } = useTranslation()
 
   useEffect(() => {
     if (!slides || slides.length <= 1) {
@@ -22,7 +24,7 @@ function HeroSlider({ slides, intervalMs = 5000 }) {
   }
 
   return (
-    <div className="hero-slider" aria-label="Bilder aus Einsätzen" role="region">
+    <div className="hero-slider" aria-label={t('common.heroSliderRegion')} role="region">
       {slides.map((slide, index) => {
         const isActive = index === current
 

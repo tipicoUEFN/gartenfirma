@@ -188,6 +188,47 @@
   },
   "language": {
     "label": "Nyelv"
+  },
+  "projectLabels": {
+    "challenge": "Kiinduló helyzet",
+    "approach": "Megvalósítás",
+    "result": "Eredmény",
+    "cadence": "Intervallum"
+  },
+  "common": {
+    "backToTop": "Vissza a tetejére",
+    "ratingFiveStars": "5 / 5 csillag",
+    "heroSliderRegion": "Elvégzett munkák képei"
+  },
+  "homeExtras": {
+    "heroEyebrow": "PR Gartenservice",
+    "heroTitle": "Kertgondozás Leibnitzből",
+    "heroText": "Megbízható gondozás magánkertekhez, céges területekhez és lakóparkokhoz Leibnitz, Graz, Deutschlandsberg és Délkelet-Stájerország térségében.",
+    "heroService1": "Fűápolás",
+    "heroService2": "Sövénynyírás",
+    "heroService3": "Folyamatos karbantartás",
+    "heroTrust1": "Több mint 100 gondozott kert",
+    "heroTrust2": "Magán- és üzleti ügyfelek",
+    "heroTrust3": "Leibnitzben és környékén dolgozunk",
+    "heroTrust4": "Gyors időpont-egyeztetés",
+    "servicesDescription": "A szolgáltatások világosan felépítettek és gyorsan áttekinthetők.",
+    "whyDescription": "Erre számíthat minden munkánknál.",
+    "testimonialsEyebrow": "Bizalom",
+    "testimonialsTitle": "Így írnak rólunk ügyfeleink",
+    "testimonialsDescription": "Visszajelzések a régióban végzett folyamatos kertgondozásról.",
+    "testimonialLabel": "Ügyfélvélemény",
+    "teamPlaceholder": "Csapatfotó helye",
+    "teamEyebrow": "Kapcsolattartó",
+    "teamTitle": "PR Gartenservice csapat",
+    "teamDescription": "Személyesen elérhetők vagyunk, helyben dolgozunk és tiszta eredményekre törekszünk.",
+    "teamBullet1": "Személyes tanácsadás sablonválaszok helyett",
+    "teamBullet2": "Gyors időpontok és egyértelmű visszajelzések",
+    "teamBullet3": "Regionális kiszolgálás Leibnitzben és környékén",
+    "regionalPresenceLabel": "Regionális jelenlét",
+    "regionalPresenceTitle": "Naponta dolgozunk a térségben",
+    "regionalPagesLabel": "Regionális oldalak",
+    "regionalProofLine1": "Magánkertek, céges területek, lakóparkok és közintézmények Leibnitz, Graz, Deutschlandsberg és Délkelet-Stájerország térségében.",
+    "regionalProofLine2": "Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz környéke"
   }
 }
 

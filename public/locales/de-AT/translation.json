@@ -239,6 +239,47 @@
   },
   "language": {
     "label": "Sprache"
+  },
+  "projectLabels": {
+    "challenge": "Ausgangslage",
+    "approach": "Umsetzung",
+    "result": "Ergebnis",
+    "cadence": "Intervall"
+  },
+  "common": {
+    "backToTop": "Nach oben",
+    "ratingFiveStars": "5 von 5 Sternen",
+    "heroSliderRegion": "Bilder aus Einsätzen"
+  },
+  "homeExtras": {
+    "heroEyebrow": "PR Gartenservice",
+    "heroTitle": "Gartenpflege aus Leibnitz",
+    "heroText": "Zuverlässig für Privatgärten, Firmenflächen und Wohnanlagen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark.",
+    "heroService1": "Rasenpflege",
+    "heroService2": "Heckenschnitt",
+    "heroService3": "Laufende Betreuung",
+    "heroTrust1": "Über 100 gepflegte Gärten",
+    "heroTrust2": "Privat- und Firmenkunden",
+    "heroTrust3": "Einsatz in Leibnitz & Umgebung",
+    "heroTrust4": "Schnelle Terminvergabe",
+    "servicesDescription": "Leistungen klar gegliedert und schnell erfassbar.",
+    "whyDescription": "Darauf können Sie sich bei jedem Einsatz verlassen.",
+    "testimonialsEyebrow": "Vertrauen",
+    "testimonialsTitle": "So ähnlich beschreiben uns Kundinnen und Kunden",
+    "testimonialsDescription": "Stimmen aus unserer laufenden Gartenpflege in der Region.",
+    "testimonialLabel": "Kundenstimme",
+    "teamPlaceholder": "Platzhalter für Teamfoto",
+    "teamEyebrow": "Ihr Ansprechpartner",
+    "teamTitle": "PR Gartenservice Team",
+    "teamDescription": "Persönlich erreichbar, regional unterwegs und mit einem klaren Blick für saubere Ergebnisse.",
+    "teamBullet1": "Persönliche Beratung statt Standardantworten",
+    "teamBullet2": "Schnelle Termine und klare Rückmeldungen",
+    "teamBullet3": "Regional betreut in Leibnitz und Umgebung",
+    "regionalPresenceLabel": "Regionale Präsenz",
+    "regionalPresenceTitle": "Täglich im Einsatz in der Region",
+    "regionalPagesLabel": "Regionale Seiten",
+    "regionalProofLine1": "Privatgärten, Firmenstandorte, Wohnanlagen und öffentliche Einrichtungen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark.",
+    "regionalProofLine2": "Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz Umgebung"
   }
 }
 
