@@ -76,12 +76,12 @@ Notes:
 - [x] Content hub (`/ratgeber`) for long-tail growth
 
 ### LOW Impact / Ongoing
-- [ ] Expand references with location-tagged case studies
+- [x] Expand references with location-tagged case studies
 - [x] Add FAQ schema blocks per service/location page
-- [ ] Add monthly article publishing workflow
+- [x] Add monthly article publishing workflow
 
 ## 10) Deployment + Verification (Step 1 and 2)
-- [ ] Deploy latest changes to GitHub Pages (manual push)
+- [x] Deploy latest changes to GitHub Pages (manual push)
 - [ ] Submit/refresh sitemap in Google Search Console (manual account action)
 - [ ] Complete first FormSubmit verification email for `mariorozman88@gmail.com`
 
@@ -110,3 +110,5 @@ Notes:
 - `src/pages/GuidesPage.jsx`
 - `src/config/seo.js`
 - `src/config/locationPages.js`
+- `src/config/caseStudies.js`
+- `src/config/contentCalendar.js`

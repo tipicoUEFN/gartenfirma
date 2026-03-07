@@ -1,7 +1,9 @@
 import { CalendarClock, Sprout } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import SectionTitle from '../components/SectionTitle'
 import PageHero from '../components/PageHero'
 import SeoHead from '../components/SeoHead'
+import { contentCalendar } from '../config/contentCalendar'
 
 const guides = [
   {
@@ -53,6 +55,28 @@ function GuidesPage() {
               </Link>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="section-spacing bg-olive-100/40">
+        <div className="container-width">
+          <SectionTitle
+            title="Monatlicher Content-Plan"
+            description="Redaktionsworkflow fuer wiederkehrende SEO-Inhalte mit lokalem Fokus."
+          />
+          <div className="grid gap-4 lg:grid-cols-2">
+            {contentCalendar.map((entry) => (
+              <article key={entry.month} className="rounded-2xl border border-olive-200 bg-white p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-olive-600">{entry.month}</p>
+                <h2 className="mt-2 text-lg font-semibold text-olive-800">{entry.topic}</h2>
+                <p className="mt-2 text-sm text-olive-700"><span className="font-semibold text-olive-800">Keyword:</span> {entry.primaryKeyword}</p>
+                <p className="mt-1 text-sm text-olive-700"><span className="font-semibold text-olive-800">Format:</span> {entry.format}</p>
+              </article>
+            ))}
+          </div>
+          <p className="mt-5 text-sm text-olive-700">
+            Workflow: Thema am Monatsanfang planen, innerhalb von 7 Tagen veroeffentlichen, danach intern von Leistungs- und Ortsseiten verlinken.
+          </p>
         </div>
       </section>
     </>

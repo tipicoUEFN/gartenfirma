@@ -6,9 +6,9 @@ export const businessData = {
 
   // Contact (public repo): use placeholder data only, never real personal phone numbers.
   phoneContacts: [
-    { label: 'Timi', phone: '+43664000000' },
-    { label: 'Mario', phone: '+43664111111' },
     { label: 'Büro', phone: '+43664333333' },
+    { label: 'Mario', phone: '+43664111111' },
+    { label: 'Timi', phone: '+43664000000' },
   ],
   // Keep a primary contact for compact CTA placements like header buttons.
   phone: '+43664000000',
