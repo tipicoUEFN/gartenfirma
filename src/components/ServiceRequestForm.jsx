@@ -26,14 +26,17 @@ function ServiceRequestForm() {
     message: '',
   })
 
-  const serviceOptions = [
-    { key: 'rasen', label: t('serviceRequestForm.serviceOptions.rasen') },
-    { key: 'hecke', label: t('serviceRequestForm.serviceOptions.hecke') },
-    { key: 'laub', label: t('serviceRequestForm.serviceOptions.laub') },
-    { key: 'gartenpflege', label: t('serviceRequestForm.serviceOptions.gartenpflege') },
-    { key: 'aussenanlagen', label: t('serviceRequestForm.serviceOptions.aussenanlagen') },
-    { key: 'fenster', label: t('serviceRequestForm.serviceOptions.fenster') },
-  ]
+  const serviceOptions = useMemo(
+    () => [
+      { key: 'rasen', label: t('serviceRequestForm.serviceOptions.rasen') },
+      { key: 'hecke', label: t('serviceRequestForm.serviceOptions.hecke') },
+      { key: 'laub', label: t('serviceRequestForm.serviceOptions.laub') },
+      { key: 'gartenpflege', label: t('serviceRequestForm.serviceOptions.gartenpflege') },
+      { key: 'aussenanlagen', label: t('serviceRequestForm.serviceOptions.aussenanlagen') },
+      { key: 'fenster', label: t('serviceRequestForm.serviceOptions.fenster') },
+    ],
+    [t],
+  )
 
   const lawnSizeOptions = t('serviceRequestForm.lawnSizeOptions', { returnObjects: true })
   const frequencyOptions = t('serviceRequestForm.frequencyOptions', { returnObjects: true })
@@ -51,7 +54,7 @@ function ServiceRequestForm() {
 
   const selectedServiceLabels = useMemo(
     () => serviceOptions.filter((option) => formData.services.includes(option.key)).map((option) => option.label),
-    [formData.services],
+    [formData.services, serviceOptions],
   )
 
   const handleInputChange = (event) => {
