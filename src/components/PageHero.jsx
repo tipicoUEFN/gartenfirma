@@ -3,9 +3,9 @@ function PageHero({ eyebrow, title, text, children, imageSrc, imageAlt, imageSrc
     <section className="section-spacing pt-6 sm:pt-8 lg:pt-10">
       <div className="container-width">
         <div className="reveal glass-card overflow-hidden px-6 py-10 sm:px-10 sm:py-14">
-          <div className={imageSrc ? 'grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center' : ''}>
+          <div className={imageSrc || imageContent ? 'grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center' : ''}>
             <div>
-              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-olive-600">{eyebrow}</p>
+              {eyebrow ? <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-olive-600">{eyebrow}</p> : null}
               <h1 className="headline max-w-4xl text-3xl font-semibold text-olive-800 sm:text-4xl lg:text-5xl">{title}</h1>
               <p className="mt-5 max-w-2xl text-sm font-medium leading-relaxed text-olive-700 sm:text-base">{text}</p>
               {children ? <div className="mt-8">{children}</div> : null}

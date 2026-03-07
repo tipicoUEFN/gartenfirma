@@ -2,7 +2,6 @@ import { ArrowRight, Building2, CalendarCheck, CheckCircle2, Clock3, Flower2, Le
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import CTASection from '../components/CTASection'
-import HeroSlider from '../components/HeroSlider'
 import LocalBusinessSchema from '../components/LocalBusinessSchema'
 import PageHero from '../components/PageHero'
 import ReferenceCard from '../components/ReferenceCard'
@@ -12,7 +11,7 @@ import ServiceCard from '../components/ServiceCard'
 import TrustCard from '../components/TrustCard'
 import { businessData } from '../config/businessData'
 import { locationPages } from '../config/locationPages'
-import { heroSlides, referenceProjects } from '../config/imageLibrary'
+import { referenceProjects } from '../config/imageLibrary'
 
 function HomePage() {
   const { t } = useTranslation()
@@ -115,36 +114,40 @@ function HomePage() {
       <LocalBusinessSchema />
 
       <PageHero
-        eyebrow={t('homeExtras.heroEyebrow')}
+        eyebrow=""
         title={t('homeExtras.heroTitle')}
         text={t('homeExtras.heroText')}
-        imageContent={<HeroSlider slides={heroSlides} />}
       >
-        <ul className="space-y-2 text-sm font-semibold text-olive-800 sm:text-base">
-          {heroServiceList.map((item) => (
-            <li key={item} className="flex items-center gap-2">
-              <CheckCircle2 size={16} className="text-olive-700" />
-              {item}
-            </li>
-          ))}
-        </ul>
+        <div className="space-y-6">
+          <div className="flex justify-end">
+            <Link
+              to="/kontakt"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-olive-800 px-5 py-3 text-sm font-semibold text-white transition hover:bg-anthracite-900 sm:w-auto"
+            >
+              {t('cta.button')}
+              <ArrowRight size={18} />
+            </Link>
+          </div>
 
-        <div className="mt-6 flex flex-wrap items-center gap-4">
-          <Link
-            to="/kontakt"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-olive-800 px-5 py-3 text-sm font-semibold text-white transition hover:bg-anthracite-900 sm:w-auto"
-          >
-            {t('cta.button')}
-            <ArrowRight size={18} />
-          </Link>
-          <span className="text-sm text-olive-700">{t('home.hero.serviceArea')}: {t('common.serviceAreaValue')}</span>
-        </div>
-      </PageHero>
+          <div className="grid gap-5 lg:grid-cols-2 lg:items-start">
+            <div>
+              <ul className="space-y-2 text-sm font-semibold text-olive-800 sm:text-base">
+                {heroServiceList.map((item) => (
+                  <li key={item} className="flex items-center gap-2">
+                    <CheckCircle2 size={16} className="text-olive-700" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-4 inline-flex items-center gap-2 text-sm text-olive-700 sm:text-base">
+                <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-olive-100 text-amber-500">
+                  <MapPin size={14} fill="currentColor" />
+                </span>
+                <span>{t('home.hero.serviceArea')}: {t('common.serviceAreaValue')}</span>
+              </div>
+            </div>
 
-      <section className="section-spacing pt-0 pb-2 sm:pb-3 lg:pb-4">
-        <div className="container-width">
-          <div className="rounded-2xl border border-olive-200 bg-white px-4 py-3 sm:px-5">
-            <div className="grid gap-2 md:grid-cols-2 xl:grid-cols-4">
+            <div className="grid gap-2 sm:grid-cols-2">
               {heroTrustItems.map((item) => {
                 const Icon = item.icon
                 return (
@@ -159,7 +162,7 @@ function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </PageHero>
 
       <section className="section-spacing pt-2 sm:pt-3 lg:pt-4 bg-olive-100/40">
         <div className="container-width">
