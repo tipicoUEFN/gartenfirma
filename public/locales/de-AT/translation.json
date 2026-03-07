@@ -37,7 +37,7 @@
         "description": "Entfernung von Laub sowie einfache Pflegearbeiten zur Sauberhaltung von Grünflächen und Außenbereichen."
       },
       "trees": {
-        "title": "Laufende Betreuung von Außenanlagen",
+        "title": "Laufende Betreung von Außenanlagen",
         "description": "Regelmäßige Pflege von Grünflächen bei Wohnanlagen, Firmenstandorten und öffentlichen Einrichtungen."
       },
       "season": {
@@ -105,7 +105,7 @@
     "lawnDescription": "Regelmäßiges Mähen und Pflegen von Rasenflächen bei Privatgärten, Firmenanlagen und öffentlichen Einrichtungen.",
     "bedsTitle": "Laubarbeiten & Außenflächen sauber halten",
     "bedsDescription": "Entfernung von Laub sowie einfache Pflegearbeiten zur Sauberhaltung von Grünflächen und Außenbereichen.",
-    "greenTitle": "Laufende Betreuung von Außenanlagen",
+    "greenTitle": "Laufende Betreung von Außenanlagen",
     "greenDescription": "Regelmäßige Pflege von Grünflächen bei Wohnanlagen, Firmenstandorten und öffentlichen Einrichtungen.",
     "seasonTitle": "Einfache Gartenpflege",
     "seasonDescription": "Allgemeine Pflegearbeiten wie kleinere Schnittarbeiten, Gießen und Sauberhalten von Gartenflächen.",
@@ -113,7 +113,7 @@
     "ongoingDescription": "Fensterreinigung bei privaten Haushalten sowie kleineren Firmenobjekten vom Boden aus oder mit einfachen Steighilfen.",
     "infoLine": "Wir betreuen Privatgärten, Firmenstandorte, Wohnanlagen und öffentliche Einrichtungen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark.",
     "seoTitle": "Leistungen fuer Gartenpflege",
-    "seoDescription": "Unsere Leistungen: Rasenmaehen, Heckenpflege, Laubarbeiten und laufende Betreuung von Aussenanlagen in Leibnitz und Umgebung.",
+    "seoDescription": "Unsere Leistungen: Rasenmaehen, Heckenpflege, Laubarbeiten und laufende Betreung von Aussenanlagen in Leibnitz und Umgebung.",
     "sectionDescriptionShort": "Kurzer Ueberblick zu unseren Leistungen in der Region.",
     "locationLinksTitle": "Leistung + Ort",
     "locationLinksDescription": "Haeufig gesuchte Kombinationen in unserer Region.",
@@ -160,7 +160,7 @@
     "highlight": "Gartenpflege aus Leibnitz. Zuverlaessig, sauber und puenktlich.",
     "workflows": {
       "private": {
-        "title": "Privatgarten - laufende Betreuung",
+        "title": "Privatgarten - laufende Betreung",
         "challenge": "Uneinheitlicher Pflegezustand und fehlende Regelmaessigkeit.",
         "approach": "Fixer Intervallplan fuer Rasen, Hecke und Beete.",
         "result": "Konstant gepflegter Garten mit planbarem Aufwand."
@@ -387,7 +387,7 @@
     "heroText": "Zuverlässig für Privatgärten, Firmenflächen und Wohnanlagen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark.",
     "heroService1": "Rasenpflege",
     "heroService2": "Heckenschnitt",
-    "heroService3": "Laufende Betreuung",
+    "heroService3": "Laufende Betreung",
     "heroTrust1": "Über 100 gepflegte Gärten",
     "heroTrust2": "Privat- und Firmenkunden",
     "heroTrust3": "Einsatz in Leibnitz & Umgebung",
@@ -423,7 +423,7 @@
         "source": "Hausverwaltung M., Wagna"
       },
       "3": {
-        "quote": "Laufende Betreuung funktioniert sehr gut. Freundlich, puenktlich und ordentlich.",
+        "quote": "Laufende Betreung funktioniert sehr gut. Freundlich, puenktlich und ordentlich.",
         "source": "Buerostandort M., Raum Graz"
       }
     }
@@ -563,7 +563,7 @@
     "faq": [
       {
         "question": "Welche Leistungen bieten Sie in {{town}} an?",
-        "answer": "Wir bieten in {{town}} unter anderem Rasenpflege, Heckenpflege, Laubarbeiten und laufende Betreuung von Aussenanlagen an."
+        "answer": "Wir bieten in {{town}} unter anderem Rasenpflege, Heckenpflege, Laubarbeiten und laufende Betreung von Aussenanlagen an."
       },
       {
         "question": "Betreuen Sie in {{town}} auch Firmen und Wohnanlagen?",
@@ -635,7 +635,7 @@
       "services": [
         "Gruenflaechenpflege",
         "Heckenpflege",
-        "Laufende Betreuung",
+        "Laufende Betreung",
         "Fruehjahrs- und Herbstarbeiten"
       ],
       "trust": [
@@ -647,7 +647,7 @@
     "gartenpflege-strass": {
       "title": "Gartenpflege in {{town}}",
       "heroTitle": "Gartenservice in {{town}}",
-      "intro": "Wir bieten Gartenservice in {{town}} mit Fokus auf saubere Ausfuehrung, verlaessliche Termine und laufende Betreuung fuer verschiedene Objektarten.",
+      "intro": "Wir bieten Gartenservice in {{town}} mit Fokus auf saubere Ausfuehrung, verlaessliche Termine und laufende Betreung fuer verschiedene Objektarten.",
       "services": [
         "Heckenpflege",
         "Rasenmaehen",
