@@ -4,7 +4,7 @@ export const businessData = {
   companyName: 'PR Gartenservice',
   claim: 'Professionelle Gartenpflege mit Handschlagqualitaet in der Suedsteiermark.',
 
-  // Contact
+  // Contact (public repo): use placeholder data only, never real personal phone numbers.
   phoneContacts: [
     { label: 'Timi', phone: '+43664000000' },
     { label: 'Mario', phone: '+43664111111' },
