@@ -1,15 +1,9 @@
 import { useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { businessData } from '../config/businessData'
 
-const quickServiceOptions = [
-  'Rasenmaehen',
-  'Heckenpflege',
-  'Laubarbeiten',
-  'Laufende Aussenanlagenbetreuung',
-  'Einfache Gartenpflege',
-]
-
 function QuickRequestForm() {
+  const { t } = useTranslation()
   const HOLD_DURATION_MS = 3000
   const [status, setStatus] = useState('idle')
   const [errorText, setErrorText] = useState('')
@@ -25,6 +19,7 @@ function QuickRequestForm() {
     service: '',
     callbackTime: '',
   })
+  const quickServiceOptions = t('quickRequestForm.serviceOptions', { returnObjects: true })
 
   const handleChange = (event) => {
     const { name, value } = event.target
@@ -79,7 +74,7 @@ function QuickRequestForm() {
     event.preventDefault()
 
     if (!holdReady) {
-      setErrorText('Bitte Taste 3 Sekunden gedrückt halten.')
+      setErrorText(t('quickRequestForm.errors.holdToSend'))
       return
     }
 
@@ -96,13 +91,13 @@ function QuickRequestForm() {
           Accept: 'application/json',
         },
         body: JSON.stringify({
-          _subject: `Schnellanfrage von ${formData.name}`,
+          _subject: t('quickRequestForm.mail.subject', { name: formData.name }),
           Name: formData.name,
           Telefon: formData.phone,
           Ort: formData.town,
           Service: formData.service,
-          Rueckrufzeit: formData.callbackTime || 'nicht angegeben',
-          Anfrageart: 'Schnellanfrage',
+          Rueckrufzeit: formData.callbackTime || t('quickRequestForm.mail.notProvided'),
+          Anfrageart: t('quickRequestForm.mail.requestType'),
         }),
       })
 
@@ -114,19 +109,19 @@ function QuickRequestForm() {
       setFormData({ name: '', phone: '', town: '', service: '', callbackTime: '' })
     } catch {
       setStatus('error')
-      setErrorText('Senden fehlgeschlagen. Bitte rufen Sie uns direkt an.')
+      setErrorText(t('quickRequestForm.errors.submitFailed'))
     }
   }
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4 rounded-2xl border border-olive-300 bg-olive-100/70 p-5 shadow-sm sm:p-6">
-      <p className="inline-flex rounded-full bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-olive-700">Empfohlen fuer schnelle Rueckmeldung</p>
-      <h3 className="text-xl font-semibold text-olive-800">Schnellanfrage in 1 Minute</h3>
-      <p className="text-sm text-olive-700">Wir melden uns in der Regel innerhalb von 24 Stunden (Mo-Fr).</p>
+      <p className="inline-flex rounded-full bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-olive-700">{t('quickRequestForm.badge')}</p>
+      <h3 className="text-xl font-semibold text-olive-800">{t('quickRequestForm.title')}</h3>
+      <p className="text-sm text-olive-700">{t('quickRequestForm.subtitle')}</p>
 
       <div className="grid gap-4 md:grid-cols-2">
         <label className="text-sm font-medium text-olive-800">
-          Name
+          {t('quickRequestForm.fields.name')}
           <input
             required
             name="name"
@@ -136,7 +131,7 @@ function QuickRequestForm() {
           />
         </label>
         <label className="text-sm font-medium text-olive-800">
-          Telefon
+          {t('quickRequestForm.fields.phone')}
           <input
             required
             name="phone"
@@ -147,18 +142,18 @@ function QuickRequestForm() {
           />
         </label>
         <label className="text-sm font-medium text-olive-800">
-          Ort
+          {t('quickRequestForm.fields.town')}
           <input
             required
             name="town"
             value={formData.town}
             onChange={handleChange}
-            placeholder="z.B. Leibnitz"
+            placeholder={t('quickRequestForm.placeholders.town')}
             className="mt-1 w-full rounded-xl border border-olive-200 px-3 py-2 text-sm"
           />
         </label>
         <label className="text-sm font-medium text-olive-800">
-          Gewuenschter Service
+          {t('quickRequestForm.fields.service')}
           <select
             required
             name="service"
@@ -166,7 +161,7 @@ function QuickRequestForm() {
             onChange={handleChange}
             className="mt-1 w-full rounded-xl border border-olive-200 px-3 py-2 text-sm"
           >
-            <option value="">Bitte waehlen</option>
+            <option value="">{t('quickRequestForm.placeholders.select')}</option>
             {quickServiceOptions.map((option) => (
               <option key={option} value={option}>
                 {option}
@@ -177,7 +172,7 @@ function QuickRequestForm() {
       </div>
 
       <label className="text-sm font-medium text-olive-800">
-        Bevorzugte Rueckrufzeit (optional)
+        {t('quickRequestForm.fields.callbackTime')}
         <input
           name="callbackTime"
           value={formData.callbackTime}
@@ -209,14 +204,14 @@ function QuickRequestForm() {
         className="rounded-full bg-olive-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-olive-800 disabled:opacity-70"
       >
         {status === 'submitting'
-          ? 'Wird gesendet...'
+          ? t('quickRequestForm.submit.sending')
           : holdProgress > 0
-            ? `Gedrückt halten... ${holdProgress}%`
-            : 'Schnellanfrage senden'}
+            ? t('quickRequestForm.submit.holding', { progress: holdProgress })
+            : t('quickRequestForm.submit.default')}
       </button>
-      {status !== 'submitting' ? <p className="text-xs text-olive-600">Zum Senden Taste 3 Sekunden gedrückt halten.</p> : null}
+      {status !== 'submitting' ? <p className="text-xs text-olive-600">{t('quickRequestForm.holdHint')}</p> : null}
 
-      {status === 'success' ? <p className="text-sm text-emerald-700">Danke. Ihre Anfrage wurde gesendet.</p> : null}
+      {status === 'success' ? <p className="text-sm text-emerald-700">{t('quickRequestForm.success')}</p> : null}
       {status === 'error' ? <p className="text-sm text-red-700">{errorText}</p> : null}
     </form>
   )

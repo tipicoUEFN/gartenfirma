@@ -18,7 +18,7 @@ function LanguageSwitcher() {
   }
 
   return (
-    <div className="flex items-center" aria-label="Language switcher">
+    <div className="flex items-center" aria-label={t('language.switcherAria')}>
       <label htmlFor="language-select" className="sr-only">
         {t('language.label')}
       </label>

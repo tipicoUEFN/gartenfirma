@@ -21,8 +21,8 @@ function ReferencesPage() {
   return (
     <>
       <SeoHead
-        title="Referenzen aus der Region"
-        description="Ausgewählte Projekte zu Rasenpflege, Heckschnitt und Objektpflege im Raum Leibnitz, Graz und Südsteiermark."
+        title={t('references.seoTitle')}
+        description={t('references.seoDescription')}
         pathname="/referenzen"
       />
 
@@ -46,34 +46,37 @@ function ReferencesPage() {
       <section className="section-spacing bg-olive-100/40">
         <div className="container-width">
           <SectionTitle
-            title="Einsätze nach Ort"
-            description="Konkrete Projekte aus der Region mit Leistung, Objektart und Betreuungsrhythmus."
+            title={t('references.casesTitle')}
+            description={t('references.casesDescription')}
           />
           <div className="grid gap-5 lg:grid-cols-2">
-            {caseStudies.map((study) => (
+            {caseStudies.map((study) => {
+              const key = `references.caseStudies.${study.id}`
+
+              return (
               <article key={study.id} className="rounded-2xl border border-olive-200 bg-white p-6">
                 <div className="flex flex-wrap items-center gap-2">
                   <p className="rounded-full bg-olive-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-olive-700">
                     {study.town}
                   </p>
-                  <p className="rounded-full bg-olive-50 px-3 py-1 text-xs font-semibold text-olive-700">{study.service}</p>
-                  <p className="rounded-full bg-olive-50 px-3 py-1 text-xs font-semibold text-olive-700">{study.objectType}</p>
+                  <p className="rounded-full bg-olive-50 px-3 py-1 text-xs font-semibold text-olive-700">{t(`${key}.service`)}</p>
+                  <p className="rounded-full bg-olive-50 px-3 py-1 text-xs font-semibold text-olive-700">{t(`${key}.objectType`)}</p>
                 </div>
-                <h3 className="mt-4 text-lg font-semibold text-olive-800">Projekt in {study.town}</h3>
-                <p className="mt-3 text-sm text-olive-700"><span className="font-semibold text-olive-800">Ausgangslage:</span> {study.challenge}</p>
-                <p className="mt-2 text-sm text-olive-700"><span className="font-semibold text-olive-800">Umsetzung:</span> {study.approach}</p>
-                <p className="mt-2 text-sm text-olive-700"><span className="font-semibold text-olive-800">Ergebnis:</span> {study.result}</p>
-                <p className="mt-2 text-sm text-olive-700"><span className="font-semibold text-olive-800">Intervall:</span> {study.cadence}</p>
+                <h3 className="mt-4 text-lg font-semibold text-olive-800">{t('references.projectInTown', { town: study.town })}</h3>
+                <p className="mt-3 text-sm text-olive-700"><span className="font-semibold text-olive-800">{t('projectLabels.challenge')}:</span> {t(`${key}.challenge`)}</p>
+                <p className="mt-2 text-sm text-olive-700"><span className="font-semibold text-olive-800">{t('projectLabels.approach')}:</span> {t(`${key}.approach`)}</p>
+                <p className="mt-2 text-sm text-olive-700"><span className="font-semibold text-olive-800">{t('projectLabels.result')}:</span> {t(`${key}.result`)}</p>
+                <p className="mt-2 text-sm text-olive-700"><span className="font-semibold text-olive-800">{t('projectLabels.cadence')}:</span> {t(`${key}.cadence`)}</p>
                 {locationLinkByTown.get(study.town) ? (
                   <Link
                     to={locationLinkByTown.get(study.town)}
                     className="mt-4 inline-flex text-sm font-semibold text-olive-700 hover:text-olive-800"
                   >
-                    Mehr zu Gartenpflege in {study.town}
+                    {t('references.moreInTown', { town: study.town })}
                   </Link>
                 ) : null}
               </article>
-            ))}
+            )})}
           </div>
         </div>
       </section>

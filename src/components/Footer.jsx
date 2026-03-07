@@ -6,6 +6,7 @@ import { locationPages } from '../config/locationPages'
 
 function Footer() {
   const { t } = useTranslation()
+  const openingHours = t('footer.openingHours', { returnObjects: true })
   const iconLogoSrc = `${import.meta.env.BASE_URL}images/logo/logo1024x1024_white.svg`
   const horizontalLogoSrc = `${import.meta.env.BASE_URL}images/logo/logo1600x400_white.svg`
 
@@ -15,7 +16,7 @@ function Footer() {
         <div>
           <img
             src={iconLogoSrc}
-            alt={`${businessData.companyName} Icon`}
+            alt={t('common.logoIconAlt', { companyName: businessData.companyName })}
             className="h-12 w-12 sm:hidden"
           />
           <img
@@ -52,10 +53,10 @@ function Footer() {
 
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-olive-300">{t('footer.serviceAreaTitle')}</p>
-          <p className="mt-4 text-sm leading-relaxed">{businessData.serviceArea}</p>
+          <p className="mt-4 text-sm leading-relaxed">{t('common.serviceAreaValue')}</p>
           <p className="mt-6 text-sm font-semibold uppercase tracking-[0.2em] text-olive-300">{t('footer.hoursTitle')}</p>
           <ul className="mt-4 space-y-2 text-sm">
-            {businessData.openingHours.map((entry) => (
+            {openingHours.map((entry) => (
               <li key={entry}>{entry}</li>
             ))}
           </ul>
@@ -75,12 +76,12 @@ function Footer() {
               </Link>
             </li>
           </ul>
-          <p className="mt-6 text-sm font-semibold uppercase tracking-[0.2em] text-olive-300">Beliebte Orte</p>
+          <p className="mt-6 text-sm font-semibold uppercase tracking-[0.2em] text-olive-300">{t('footer.popularPlaces')}</p>
           <ul className="mt-4 space-y-2 text-sm">
             {locationPages.map((location) => (
               <li key={location.slug}>
                 <Link to={`/${location.slug}`} className="hover:text-white">
-                  Gartenpflege {location.town}
+                  {t('footer.gardenCareInTown', { town: location.town })}
                 </Link>
               </li>
             ))}
@@ -92,7 +93,7 @@ function Footer() {
           {t('footer.copyright', { year: new Date().getFullYear(), companyName: businessData.companyName })}
         </p>
         <p className="container-width mt-2 text-xs text-olive-300">
-          Täglich im Einsatz: Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz Umgebung
+          {t('footer.dailyInAction')}
         </p>
       </div>
     </footer>

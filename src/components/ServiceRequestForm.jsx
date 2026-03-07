@@ -1,35 +1,9 @@
 import { useMemo, useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { businessData } from '../config/businessData'
 
-const serviceOptions = [
-  { key: 'rasen', label: 'Rasenmähen / Grünflächenpflege' },
-  { key: 'hecke', label: 'Heckenschnitt' },
-  { key: 'laub', label: 'Laubarbeiten' },
-  { key: 'gartenpflege', label: 'Einfache Gartenpflege' },
-  { key: 'aussenanlagen', label: 'Betreung von Außenanlagen' },
-  { key: 'fenster', label: 'Fensterreinigung' },
-]
-
-const lawnSizeOptions = [
-  'unter 100 m²',
-  '100 - 300 m²',
-  '300 - 600 m²',
-  'über 600 m²',
-  'weiß nicht',
-]
-
-const frequencyOptions = ['einmalig', 'monatlich', 'alle 2 Wochen', 'wöchentlich', 'nach Vereinbarung']
-
-const propertyTypeOptions = [
-  { value: 'privat', label: 'Privatgarten' },
-  { value: 'firma', label: 'Firma / Betrieb' },
-  { value: 'wohnanlage', label: 'Wohnanlage' },
-  { value: 'kindergarten-schule', label: 'Kindergarten / Schule' },
-  { value: 'oeffentlich', label: 'öffentliche Einrichtung' },
-  { value: 'sonstiges', label: 'sonstiges' },
-]
-
 function ServiceRequestForm() {
+  const { t } = useTranslation()
   const HOLD_DURATION_MS = 3000
   const [status, setStatus] = useState('idle')
   const [errorText, setErrorText] = useState('')
@@ -51,6 +25,26 @@ function ServiceRequestForm() {
     propertyType: '',
     message: '',
   })
+
+  const serviceOptions = [
+    { key: 'rasen', label: t('serviceRequestForm.serviceOptions.rasen') },
+    { key: 'hecke', label: t('serviceRequestForm.serviceOptions.hecke') },
+    { key: 'laub', label: t('serviceRequestForm.serviceOptions.laub') },
+    { key: 'gartenpflege', label: t('serviceRequestForm.serviceOptions.gartenpflege') },
+    { key: 'aussenanlagen', label: t('serviceRequestForm.serviceOptions.aussenanlagen') },
+    { key: 'fenster', label: t('serviceRequestForm.serviceOptions.fenster') },
+  ]
+
+  const lawnSizeOptions = t('serviceRequestForm.lawnSizeOptions', { returnObjects: true })
+  const frequencyOptions = t('serviceRequestForm.frequencyOptions', { returnObjects: true })
+  const propertyTypeOptions = [
+    { value: 'privat', label: t('serviceRequestForm.propertyTypeOptions.privat') },
+    { value: 'firma', label: t('serviceRequestForm.propertyTypeOptions.firma') },
+    { value: 'wohnanlage', label: t('serviceRequestForm.propertyTypeOptions.wohnanlage') },
+    { value: 'kindergarten-schule', label: t('serviceRequestForm.propertyTypeOptions.kindergarten-schule') },
+    { value: 'oeffentlich', label: t('serviceRequestForm.propertyTypeOptions.oeffentlich') },
+    { value: 'sonstiges', label: t('serviceRequestForm.propertyTypeOptions.sonstiges') },
+  ]
 
   const isLawnSelected = formData.services.includes('rasen')
   const isHedgeSelected = formData.services.includes('hecke')
@@ -129,7 +123,7 @@ function ServiceRequestForm() {
     event.preventDefault()
 
     if (!holdReady) {
-      setErrorText('Bitte Taste 3 Sekunden gedrückt halten.')
+      setErrorText(t('serviceRequestForm.errors.holdToSend'))
       return
     }
 
@@ -139,19 +133,19 @@ function ServiceRequestForm() {
     setErrorText('')
 
     const payload = {
-      _subject: `Neue Service-Anfrage von ${formData.firstName} ${formData.lastName}`,
+      _subject: t('serviceRequestForm.mail.subject', { firstName: formData.firstName, lastName: formData.lastName }),
       Vorname: formData.firstName,
       Nachname: formData.lastName,
       Email: formData.email,
       Telefon: formData.phone,
-      Adresse: formData.address || 'nicht angegeben',
-      Service: selectedServiceLabels.length ? selectedServiceLabels.join(', ') : 'nicht angegeben',
-      Rasenflaeche: formData.lawnSize || 'nicht angegeben',
-      Heckenlaenge: formData.hedgeLength ? `${formData.hedgeLength} Meter` : 'nicht angegeben',
-      Haeufigkeit: formData.frequency || 'nicht angegeben',
-      Objektart: propertyTypeOptions.find((option) => option.value === formData.propertyType)?.label || 'nicht angegeben',
-      Nachricht: formData.message || 'keine Nachricht',
-      Anfrageart: 'Serviceanfrage',
+      Adresse: formData.address || t('serviceRequestForm.mail.notProvided'),
+      Service: selectedServiceLabels.length ? selectedServiceLabels.join(', ') : t('serviceRequestForm.mail.notProvided'),
+      Rasenflaeche: formData.lawnSize || t('serviceRequestForm.mail.notProvided'),
+      Heckenlaenge: formData.hedgeLength ? t('serviceRequestForm.mail.meters', { value: formData.hedgeLength }) : t('serviceRequestForm.mail.notProvided'),
+      Haeufigkeit: formData.frequency || t('serviceRequestForm.mail.notProvided'),
+      Objektart: propertyTypeOptions.find((option) => option.value === formData.propertyType)?.label || t('serviceRequestForm.mail.notProvided'),
+      Nachricht: formData.message || t('serviceRequestForm.mail.noMessage'),
+      Anfrageart: t('serviceRequestForm.mail.requestType'),
     }
 
     try {
@@ -184,17 +178,17 @@ function ServiceRequestForm() {
       })
     } catch {
       setStatus('error')
-      setErrorText('Senden fehlgeschlagen. Bitte rufen Sie uns direkt an.')
+      setErrorText(t('serviceRequestForm.errors.submitFailed'))
     }
   }
 
   return (
     <form onSubmit={handleSubmit} className="glass-card space-y-8 rounded-2xl p-6 sm:p-8">
       <div className="space-y-5">
-        <h3 className="text-base font-semibold text-olive-800">1. Basis-Kontaktdaten</h3>
+        <h3 className="text-base font-semibold text-olive-800">{t('serviceRequestForm.steps.contact')}</h3>
         <div className="grid gap-5 md:grid-cols-2">
           <label className="text-sm font-medium text-olive-800">
-            Vorname
+            {t('serviceRequestForm.fields.firstName')}
             <input
               name="firstName"
               type="text"
@@ -205,7 +199,7 @@ function ServiceRequestForm() {
             />
           </label>
           <label className="text-sm font-medium text-olive-800">
-            Nachname
+            {t('serviceRequestForm.fields.lastName')}
             <input
               name="lastName"
               type="text"
@@ -216,7 +210,7 @@ function ServiceRequestForm() {
             />
           </label>
           <label className="text-sm font-medium text-olive-800">
-            E-Mail
+            {t('serviceRequestForm.fields.email')}
             <input
               name="email"
               type="email"
@@ -227,7 +221,7 @@ function ServiceRequestForm() {
             />
           </label>
           <label className="text-sm font-medium text-olive-800">
-            Telefon
+            {t('serviceRequestForm.fields.phone')}
             <input
               name="phone"
               type="tel"
@@ -238,7 +232,7 @@ function ServiceRequestForm() {
             />
           </label>
           <label className="text-sm font-medium text-olive-800 md:col-span-2">
-            Adresse (optional)
+            {t('serviceRequestForm.fields.address')}
             <input
               name="address"
               type="text"
@@ -251,7 +245,7 @@ function ServiceRequestForm() {
       </div>
 
       <div className="space-y-5">
-        <h3 className="text-base font-semibold text-olive-800">2. Service-Auswahl</h3>
+        <h3 className="text-base font-semibold text-olive-800">{t('serviceRequestForm.steps.services')}</h3>
         <div className="grid gap-3 md:grid-cols-2">
           {serviceOptions.map((service) => (
             <label key={service.key} className="flex items-start gap-3 rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm text-olive-800">
@@ -269,8 +263,8 @@ function ServiceRequestForm() {
 
       {isLawnSelected && (
         <div className="space-y-5">
-          <h3 className="text-base font-semibold text-olive-800">3. Flächengröße</h3>
-          <p className="text-sm text-olive-700">Rasenfläche (m²)</p>
+          <h3 className="text-base font-semibold text-olive-800">{t('serviceRequestForm.steps.lawnSize')}</h3>
+          <p className="text-sm text-olive-700">{t('serviceRequestForm.fields.lawnSize')}</p>
           <div className="grid gap-3 md:grid-cols-2">
             {lawnSizeOptions.map((option) => (
               <label key={option} className="flex items-start gap-3 rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm text-olive-800">
@@ -291,16 +285,16 @@ function ServiceRequestForm() {
 
       {isHedgeSelected && (
         <div className="space-y-5">
-          <h3 className="text-base font-semibold text-olive-800">4. Heckenlänge</h3>
+          <h3 className="text-base font-semibold text-olive-800">{t('serviceRequestForm.steps.hedgeLength')}</h3>
           <label className="text-sm font-medium text-olive-800">
-            Heckenlänge (laufende Meter)
+            {t('serviceRequestForm.fields.hedgeLength')}
             <input
               name="hedgeLength"
               type="number"
               min="0"
               value={formData.hedgeLength}
               onChange={handleInputChange}
-              placeholder="z.B. 20"
+              placeholder={t('serviceRequestForm.placeholders.hedgeLength')}
               className="mt-2 w-full rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-olive-500"
             />
           </label>
@@ -308,7 +302,7 @@ function ServiceRequestForm() {
       )}
 
       <div className="space-y-5">
-        <h3 className="text-base font-semibold text-olive-800">5. Häufigkeit der Ausführung</h3>
+        <h3 className="text-base font-semibold text-olive-800">{t('serviceRequestForm.steps.frequency')}</h3>
         <div className="grid gap-3 md:grid-cols-2">
           {frequencyOptions.map((option) => (
             <label key={option} className="flex items-start gap-3 rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm text-olive-800">
@@ -327,16 +321,16 @@ function ServiceRequestForm() {
       </div>
 
       <div className="space-y-5">
-        <h3 className="text-base font-semibold text-olive-800">6. Objektart</h3>
+        <h3 className="text-base font-semibold text-olive-800">{t('serviceRequestForm.steps.propertyType')}</h3>
         <label className="text-sm font-medium text-olive-800">
-          Objektart
+          {t('serviceRequestForm.fields.propertyType')}
           <select
             name="propertyType"
             value={formData.propertyType}
             onChange={handleInputChange}
             className="mt-2 w-full rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-olive-500"
           >
-            <option value="">Bitte wählen</option>
+            <option value="">{t('serviceRequestForm.placeholders.select')}</option>
             {propertyTypeOptions.map((option) => (
               <option key={option.value} value={option.value}>
                 {option.label}
@@ -347,33 +341,33 @@ function ServiceRequestForm() {
       </div>
 
       <div className="space-y-5">
-        <h3 className="text-base font-semibold text-olive-800">7. Optionale Nachricht</h3>
+        <h3 className="text-base font-semibold text-olive-800">{t('serviceRequestForm.steps.message')}</h3>
         <label className="text-sm font-medium text-olive-800">
-          Nachricht (optional)
+          {t('serviceRequestForm.fields.message')}
           <textarea
             name="message"
             rows={5}
             value={formData.message}
             onChange={handleInputChange}
-            placeholder="Beschreiben Sie kurz Ihr Anliegen oder besondere Wünsche."
+            placeholder={t('serviceRequestForm.placeholders.message')}
             className="mt-2 w-full rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-olive-500"
           />
         </label>
       </div>
 
       <div className="space-y-4 rounded-2xl border border-olive-200 bg-olive-50/70 p-5">
-        <h3 className="text-base font-semibold text-olive-800">8. Anfrage Zusammenfassung</h3>
+        <h3 className="text-base font-semibold text-olive-800">{t('serviceRequestForm.steps.summary')}</h3>
         <div className="space-y-2 text-sm text-olive-700">
-          <p><span className="font-semibold text-olive-800">Service:</span> {selectedServiceLabels.length ? selectedServiceLabels.join(', ') : '-'}</p>
+          <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.service')}:</span> {selectedServiceLabels.length ? selectedServiceLabels.join(', ') : '-'}</p>
           {isLawnSelected && (
-            <p><span className="font-semibold text-olive-800">Rasenfläche:</span> {formData.lawnSize || '-'}</p>
+            <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.lawnSize')}:</span> {formData.lawnSize || '-'}</p>
           )}
           {isHedgeSelected && (
-            <p><span className="font-semibold text-olive-800">Hecke:</span> {formData.hedgeLength ? `${formData.hedgeLength} Meter` : '-'}</p>
+            <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.hedge')}:</span> {formData.hedgeLength ? t('serviceRequestForm.mail.meters', { value: formData.hedgeLength }) : '-'}</p>
           )}
-          <p><span className="font-semibold text-olive-800">Häufigkeit:</span> {formData.frequency || '-'}</p>
+          <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.frequency')}:</span> {formData.frequency || '-'}</p>
           <p>
-            <span className="font-semibold text-olive-800">Objekt:</span>{' '}
+            <span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.propertyType')}:</span>{' '}
             {propertyTypeOptions.find((option) => option.value === formData.propertyType)?.label || '-'}
           </p>
         </div>
@@ -403,14 +397,14 @@ function ServiceRequestForm() {
           className="w-full rounded-full bg-olive-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-olive-800 sm:w-auto"
         >
           {status === 'submitting'
-            ? 'Wird gesendet...'
+            ? t('serviceRequestForm.submit.sending')
             : holdProgress > 0
-              ? `Gedrückt halten... ${holdProgress}%`
-              : 'Anfrage senden'}
+              ? t('serviceRequestForm.submit.holding', { progress: holdProgress })
+              : t('serviceRequestForm.submit.default')}
         </button>
-        {status !== 'submitting' ? <p className="text-xs text-olive-600">Zum Senden Taste 3 Sekunden gedrückt halten.</p> : null}
-        <p className="text-xs text-olive-600">Unverbindliche Anfrage. Rueckmeldung in der Regel innerhalb von 24h (Mo-Fr).</p>
-        {status === 'success' ? <p className="text-sm text-emerald-700">Danke. Ihre Anfrage wurde gesendet.</p> : null}
+        {status !== 'submitting' ? <p className="text-xs text-olive-600">{t('serviceRequestForm.holdHint')}</p> : null}
+        <p className="text-xs text-olive-600">{t('serviceRequestForm.notice')}</p>
+        {status === 'success' ? <p className="text-sm text-emerald-700">{t('serviceRequestForm.success')}</p> : null}
         {status === 'error' ? <p className="text-sm text-red-700">{errorText}</p> : null}
       </div>
     </form>

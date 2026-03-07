@@ -24,20 +24,47 @@
       "eyebrow": "Storitve",
       "title": "Vse za urejen vrt",
       "description": "Od rednega vzdrževanja do sezonskih del.",
-      "hedge": { "title": "Obrezovanje živih mej", "description": "Strokovno obrezovanje za zdrav videz rastlin." },
-      "lawn": { "title": "Nega trate", "description": "Košnja, prezračevanje in gnojenje trate." },
-      "beds": { "title": "Nega gred", "description": "Urejene grede in zasaditve okoli doma." },
-      "trees": { "title": "Obrezovanje drevja", "description": "Varno obrezovanje manjših dreves in grmovnic." },
-      "season": { "title": "Sezonske storitve", "description": "Spomladanska in jesenska priprava vrta." },
-      "ongoing": { "title": "Redno vzdrževanje", "description": "Redna oskrba zasebnih vrtov in objektov." }
+      "hedge": {
+        "title": "Obrezovanje živih mej",
+        "description": "Strokovno obrezovanje za zdrav videz rastlin."
+      },
+      "lawn": {
+        "title": "Nega trate",
+        "description": "Košnja, prezračevanje in gnojenje trate."
+      },
+      "beds": {
+        "title": "Nega gred",
+        "description": "Urejene grede in zasaditve okoli doma."
+      },
+      "trees": {
+        "title": "Obrezovanje drevja",
+        "description": "Varno obrezovanje manjših dreves in grmovnic."
+      },
+      "season": {
+        "title": "Sezonske storitve",
+        "description": "Spomladanska in jesenska priprava vrta."
+      },
+      "ongoing": {
+        "title": "Redno vzdrževanje",
+        "description": "Redna oskrba zasebnih vrtov in objektov."
+      }
     },
     "why": {
       "eyebrow": "Zakaj mi",
       "title": "Zaupanje temelji na kakovostnem delu",
       "description": "Naš cilj je trajna kakovost.",
-      "reliable": { "title": "Zanesljiva izvedba", "text": "Jasni termini in čisto delo." },
-      "punctual": { "title": "Točno in načrtovano", "text": "Držimo se dogovorjenih terminov." },
-      "personal": { "title": "Osebni pristop", "text": "Neposreden kontakt in prilagojene rešitve." }
+      "reliable": {
+        "title": "Zanesljiva izvedba",
+        "text": "Jasni termini in čisto delo."
+      },
+      "punctual": {
+        "title": "Točno in načrtovano",
+        "text": "Držimo se dogovorjenih terminov."
+      },
+      "personal": {
+        "title": "Osebni pristop",
+        "text": "Neposreden kontakt in prilagojene rešitve."
+      }
     },
     "about": {
       "eyebrow": "O nas",
@@ -82,7 +109,14 @@
     "seasonTitle": "Sezonska dela",
     "seasonDescription": "Spomladanska priprava, jesenski servis in listje.",
     "ongoingTitle": "Redna oskrba",
-    "ongoingDescription": "Redna nega po dogovorjenem terminskem planu."
+    "ongoingDescription": "Redna nega po dogovorjenem terminskem planu.",
+    "seoTitle": "Storitve nege vrtov",
+    "seoDescription": "Nase storitve: kosnja trate, nega zivih mej, delo z listjem in redno vzdrzevanje zunanjih povrsin v Leibnitzu in okolici.",
+    "sectionDescriptionShort": "Kratek pregled nasih storitev v regiji.",
+    "locationLinksTitle": "Storitev + kraj",
+    "locationLinksDescription": "Pogosto iskane kombinacije v nasi regiji.",
+    "gardenCareInTown": "Nega vrta {{town}}",
+    "cardTagline": "Cisto. Zanesljivo. Regionalno."
   },
   "aboutPage": {
     "heroEyebrow": "O nas",
@@ -95,9 +129,15 @@
     "value1": "Osebno svetovanje z jasnim obsegom",
     "value2": "Točnost in čisto delo",
     "value3": "Trajnostna nega za dolgoročen učinek",
-    "value4": "Regionalna bližina in dosegljivost"
+    "value4": "Regionalna bližina in dosegljivost",
+    "seoTitle": "O nas",
+    "seoDescription": "Regionalna vrtnarska storitev na juznem Stajerskem z osebnim svetovanjem, jasnimi postopki in zanesljivo izvedbo.",
+    "sectionSubtitle": "Kratko, jasno in po stalnih postopkih.",
+    "highlight": "Nega vrta iz Leibnitza. Zanesljivo, cisto in tocno."
   },
-  "contact": { "title": "Kontakt" },
+  "contact": {
+    "title": "Kontakt"
+  },
   "contactPage": {
     "heroEyebrow": "Kontakt",
     "heroTitle": "Veselimo se vašega povpraševanja",
@@ -105,7 +145,23 @@
     "formTitle": "Pošljite sporočilo",
     "formDescription": "Sporočite nam vašo željo. Kontaktirali vas bomo osebno.",
     "direct": "Neposredno dosegljivi",
-    "serviceArea": "Območje storitev"
+    "serviceArea": "Območje storitev",
+    "seoTitle": "Kontakt in povprasevanje",
+    "seoDescription": "Zaprosite za nego vrta v Leibnitzu, Wagni, Gralli, Tillmitschu, Stra�u in okolici. Hitro odgovorimo.",
+    "quick": {
+      "eyebrow": "Hiter kontakt",
+      "title": "Najhitreje: posljite kratko povprasevanje",
+      "description": "Kratko povprasevanje in hitra povratna informacija."
+    },
+    "flowSection": {
+      "eyebrow": "Potek",
+      "title": "Kako poteka vase povprasevanje",
+      "description": "Jedrnato po izhodiscu, izvedbi in rezultatu."
+    },
+    "detailed": {
+      "eyebrow": "Podrobno povprasevanje",
+      "description": "Vec podrobnosti za natancnejsjo ponudbo."
+    }
   },
   "cta": {
     "eyebrow": "Nezavezujoča ponudba",
@@ -121,7 +177,14 @@
     "legalTitle": "Pravno",
     "impressum": "Impresum",
     "privacy": "Zasebnost",
-    "copyright": "{{year}} {{companyName}}. Vse pravice pridržane."
+    "copyright": "{{year}} {{companyName}}. Vse pravice pridržane.",
+    "popularPlaces": "Priljubljeni kraji",
+    "gardenCareInTown": "Nega vrta {{town}}",
+    "dailyInAction": "Dnevno aktivni: Leibnitz � Wagna � Gralla � Tillmitsch � Stra� � Ehrenhausen � okolica Gradca",
+    "openingHours": [
+      "Pon - Pet: 07:00 - 17:00",
+      "Sob: po dogovoru"
+    ]
   },
   "contactForm": {
     "firstNameLabel": "Ime",
@@ -145,12 +208,38 @@
     "sectionDescription": "Vpogled v tipična vrtna dela, kot so nega trate, obrezovanje žive meje in sezonski servis.",
     "imageComingSoon": "Slika sledi: /images/references/refX.webp",
     "projects": {
-      "1": { "title": "Košnja trate", "location": "Južna Štajerska", "text": "Redna nega trate za čist in enakomeren videz." },
-      "2": { "title": "Obrezovanje žive meje", "location": "Leibnitz", "text": "Natančen rez za gosto in zdravo živo mejo." },
-      "3": { "title": "Nega gred", "location": "Območje Gradca", "text": "Nega gred in trajnic za urejen videz." },
-      "4": { "title": "Nega objektov", "location": "Regija Gradec", "text": "Redna nega zelenih površin v dogovorjenih intervalih." },
-      "5": { "title": "Sezonski servis", "location": "Južna Štajerska", "text": "Spomladanska in jesenska dela za urejeno vrtno strukturo." }
-    }
+      "1": {
+        "title": "Košnja trate",
+        "location": "Južna Štajerska",
+        "text": "Redna nega trate za čist in enakomeren videz."
+      },
+      "2": {
+        "title": "Obrezovanje žive meje",
+        "location": "Leibnitz",
+        "text": "Natančen rez za gosto in zdravo živo mejo."
+      },
+      "3": {
+        "title": "Nega gred",
+        "location": "Območje Gradca",
+        "text": "Nega gred in trajnic za urejen videz."
+      },
+      "4": {
+        "title": "Nega objektov",
+        "location": "Regija Gradec",
+        "text": "Redna nega zelenih površin v dogovorjenih intervalih."
+      },
+      "5": {
+        "title": "Sezonski servis",
+        "location": "Južna Štajerska",
+        "text": "Spomladanska in jesenska dela za urejeno vrtno strukturo."
+      }
+    },
+    "seoTitle": "Reference iz regije",
+    "seoDescription": "Izbrani projekti nege trate, obrezovanja zivih mej in nege objektov v okolici Leibnitza, Gradca in juzne Stajerske.",
+    "casesTitle": "Projekti po krajih",
+    "casesDescription": "Konkretni regionalni projekti s storitvijo, vrsto objekta in ritmom oskrbe.",
+    "projectInTown": "Projekt v kraju {{town}}",
+    "moreInTown": "Vec o negi vrta v kraju {{town}}"
   },
   "impressum": {
     "eyebrow": "Impresum",
@@ -164,7 +253,9 @@
     "companyCourt": "Sodišče registra: Deželno sodišče Gradec (placeholder)",
     "authority": "Pristojni organ: Okrajna oblast (placeholder)",
     "membership": "Član: WKO Štajerska (placeholder)",
-    "tradeLaw": "Poklicno pravo: Gewerbeordnung (GewO)"
+    "tradeLaw": "Poklicno pravo: Gewerbeordnung (GewO)",
+    "seoTitle": "Impresum",
+    "seoDescription": "Pravne informacije podjetja PR Gartenservice za obmocje Leibnitz in juzne Stajerske."
   },
   "privacy": {
     "eyebrow": "Zasebnost",
@@ -178,7 +269,9 @@
     "section3Text": "Ob oddaji povpraševanja se lahko vneseni podatki uporabijo za obdelavo zahtevka.",
     "section4Title": "4. Vaše pravice",
     "section4Text": "Imate pravico do informacij, popravka, izbrisa, omejitve obdelave in ugovora.",
-    "notice": "Opomba: To je vzorčno besedilo in ne nadomešča pravnega svetovanja."
+    "notice": "Opomba: To je vzorčno besedilo in ne nadomešča pravnega svetovanja.",
+    "seoTitle": "Zasebnost",
+    "seoDescription": "Informacije o obdelavi podatkov za kontaktna povprasevanja pri PR Gartenservice."
   },
   "services": {
     "title": "Naše storitve"
@@ -187,7 +280,8 @@
     "title": "O nas"
   },
   "language": {
-    "label": "Jezik"
+    "label": "Jezik",
+    "switcherAria": "Izbira jezika"
   },
   "projectLabels": {
     "challenge": "Izhodišče",
@@ -198,7 +292,9 @@
   "common": {
     "backToTop": "Na vrh",
     "ratingFiveStars": "5 od 5 zvezdic",
-    "heroSliderRegion": "Fotografije izvedenih del"
+    "heroSliderRegion": "Fotografije izvedenih del",
+    "logoIconAlt": "Ikona {{companyName}}",
+    "serviceAreaValue": "Sirsje obmocje Leibnitz, Gradec, Deutschlandsberg in jugovzhodna Stajerska"
   },
   "homeExtras": {
     "heroTitle": "Nega vrtov iz Leibnitza",
@@ -227,9 +323,269 @@
     "regionalPresenceTitle": "Vsak dan na terenu v regiji",
     "regionalPagesLabel": "Regionalne strani",
     "regionalProofLine1": "Zasebni vrtovi, poslovne lokacije, stanovanjski objekti in javne ustanove v Leibnitzu, Gradcu, Deutschlandsbergu in jugovzhodni Štajerski.",
-    "regionalProofLine2": "Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · okolica Gradca"
+    "regionalProofLine2": "Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · okolica Gradca",
+    "seoTitle": "Nega vrtov v Leibnitzu in juznem Stajerskem",
+    "seoDescription": "PR Gartenservice nudi kosnjo trate, nego zivih mej in redno vzdrzevanje zunanjih povrsin v Leibnitzu, Gradcu in okolici.",
+    "heroEyebrow": "PR Gartenservice",
+    "testimonials": {
+      "1": {
+        "quote": "Zanesljivo in cisto opravljeno. Termin je bil spos?tovan in vrt je ostal odlic?en.",
+        "source": "Druzina K., Leibnitz"
+      },
+      "2": {
+        "quote": "Kratko usklajevanje, posten odziv in nato cista izvedba. Tocno tako mora biti.",
+        "source": "Upravljanje objektov M., Wagna"
+      },
+      "3": {
+        "quote": "Redna oskrba deluje zelo dobro. Prijazno, tocno in urejeno.",
+        "source": "Poslovna lokacija M., okolica Gradca"
+      }
+    }
+  },
+  "quickRequestForm": {
+    "badge": "Priporoceno za hiter odziv",
+    "title": "Hitro povprasevanje v 1 minuti",
+    "subtitle": "Obicajno odgovorimo v 24 urah (Pon-Pet).",
+    "fields": {
+      "name": "Ime",
+      "phone": "Telefon",
+      "town": "Kraj",
+      "service": "Zelena storitev",
+      "callbackTime": "Zeleni cas povratnega klica (neobvezno)"
+    },
+    "placeholders": {
+      "town": "npr. Leibnitz",
+      "select": "Izberite"
+    },
+    "submit": {
+      "default": "Poslji hitro povprasevanje",
+      "sending": "Posiljanje...",
+      "holding": "Drzite... {{progress}}%"
+    },
+    "holdHint": "Za posiljanje drzite gumb 3 sekunde.",
+    "success": "Hvala. Vase povprasevanje je poslano.",
+    "errors": {
+      "holdToSend": "Prosimo, drzite gumb 3 sekunde.",
+      "submitFailed": "Posiljanje ni uspelo. Poklicite nas neposredno."
+    },
+    "mail": {
+      "subject": "Hitro povprasevanje od {{name}}",
+      "notProvided": "ni navedeno",
+      "requestType": "Hitro povprasevanje"
+    },
+    "serviceOptions": [
+      "Kosnja trate",
+      "Nega zive meje",
+      "Delo z listjem",
+      "Redno vzdrzevanje zunanjih povrsin",
+      "Osnovna nega vrta"
+    ]
+  },
+  "serviceRequestForm": {
+    "steps": {
+      "contact": "1. Kontaktni podatki",
+      "services": "2. Izbira storitve",
+      "lawnSize": "3. Velikost povrsine",
+      "hedgeLength": "4. Dolzina zive meje",
+      "frequency": "5. Pogostost izvedbe",
+      "propertyType": "6. Vrsta objekta",
+      "message": "7. Neobvezno sporocilo",
+      "summary": "8. Povzetek povprasevanja"
+    },
+    "fields": {
+      "firstName": "Ime",
+      "lastName": "Priimek",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "address": "Naslov (neobvezno)",
+      "lawnSize": "Povrsina trate (m�)",
+      "hedgeLength": "Dolzina zive meje (tekoci metri)",
+      "propertyType": "Vrsta objekta",
+      "message": "Sporocilo (neobvezno)"
+    },
+    "placeholders": {
+      "hedgeLength": "npr. 20",
+      "select": "Izberite",
+      "message": "Na kratko opisite vaso zeljo ali posebne zahteve."
+    },
+    "serviceOptions": {
+      "rasen": "Kosnja trate / nega zelenih povrsin",
+      "hecke": "Obrezovanje zive meje",
+      "laub": "Delo z listjem",
+      "gartenpflege": "Osnovna nega vrta",
+      "aussenanlagen": "Vzdrzevanje zunanjih povrsin",
+      "fenster": "Ciscenje oken"
+    },
+    "lawnSizeOptions": [
+      "pod 100 m�",
+      "100 - 300 m�",
+      "300 - 600 m�",
+      "nad 600 m�",
+      "ne vem"
+    ],
+    "frequencyOptions": [
+      "enkratno",
+      "mesecno",
+      "vsaka 2 tedna",
+      "tedensko",
+      "po dogovoru"
+    ],
+    "propertyTypeOptions": {
+      "privat": "Zasebni vrt",
+      "firma": "Podjetje",
+      "wohnanlage": "Stanovanjski objekt",
+      "kindergarten-schule": "Vrtec / sola",
+      "oeffentlich": "Javna ustanova",
+      "sonstiges": "Drugo"
+    },
+    "summary": {
+      "service": "Storitev",
+      "lawnSize": "Povrsina trate",
+      "hedge": "Ziva meja",
+      "frequency": "Pogostost",
+      "propertyType": "Objekt"
+    },
+    "submit": {
+      "default": "Poslji povprasevanje",
+      "sending": "Posiljanje...",
+      "holding": "Drzite... {{progress}}%"
+    },
+    "holdHint": "Za posiljanje drzite gumb 3 sekunde.",
+    "notice": "Neobvezno povprasevanje. Obicajno odgovorimo v 24h (Pon-Pet).",
+    "success": "Hvala. Vase povprasevanje je poslano.",
+    "errors": {
+      "holdToSend": "Prosimo, drzite gumb 3 sekunde.",
+      "submitFailed": "Posiljanje ni uspelo. Poklicite nas neposredno."
+    },
+    "mail": {
+      "subject": "Novo servisno povprasevanje od {{firstName}} {{lastName}}",
+      "notProvided": "ni navedeno",
+      "noMessage": "brez sporocila",
+      "requestType": "Servisno povprasevanje",
+      "meters": "{{value}} metrov"
+    }
+  },
+  "locationPage": {
+    "seoDescription": "Nega vrtov za zasebne stranke, podjetja in stanovanjske objekte v kraju {{town}} in okolici.",
+    "heroEyebrow": "Regionalna vrtnarska storitev",
+    "ctaOffer": "Zahtevajte ponudbo za {{town}}",
+    "ctaServices": "Poglej storitve",
+    "servicesTitle": "Nase storitve v kraju {{town}}",
+    "trustTitle": "Zakaj nam stranke v kraju {{town}} zaupajo",
+    "regionalHintTitle": "Regionalni namig",
+    "regionalHintText": "Veliko povprasevanj v kraju {{town}} se nanasa na redno nego vrtov. Termine nacrtujemo tako, da ostanejo stabilni in povrsine trajno urejene."
+  },
+  "locationPages": {
+    "gartenpflege-leibnitz": {
+      "title": "Nega vrta v kraju {{town}}",
+      "heroTitle": "Nega vrta v kraju {{town}} za zasebne in poslovne stranke",
+      "intro": "V kraju {{town}} vzdrzujemo vrtove in zunanje povrsine z jasnimi intervali ter cisto izvedbo.",
+      "services": [
+        "Kosnja trate",
+        "Nega obstojecih zivih mej",
+        "Delo z listjem",
+        "Redno vzdrzevanje zunanjih povrsin"
+      ],
+      "trust": [
+        "Kratke poti v okolici Leibnitza",
+        "Hitro usklajevanje terminov",
+        "Osebni kontakt"
+      ]
+    },
+    "gartenpflege-wagna": {
+      "title": "Nega vrta v kraju {{town}}",
+      "heroTitle": "Vas vrtni servis v kraju {{town}}",
+      "intro": "Za stranke v kraju {{town}} prevzamemo redno nego vrtov in sezonska dela.",
+      "services": [
+        "Sezonska dela",
+        "Nega gred in povrsin",
+        "Kosnja trate",
+        "Delo z listjem"
+      ],
+      "trust": [
+        "Regionalno v okraju Leibnitz",
+        "Nacrtovani intervali",
+        "Cista in zanesljiva izvedba"
+      ]
+    },
+    "gartenpflege-gralla": {
+      "title": "Nega vrta v kraju {{town}}",
+      "heroTitle": "Profesionalna nega vrta v kraju {{town}}",
+      "intro": "V kraju {{town}} nudimo stalno nego vrtov za zasebne in poslovne objekte.",
+      "services": [
+        "Nega trate",
+        "Oblikovanje obstojecih zivih mej",
+        "Nega objekta",
+        "Ciscenje zunanjih povrsin"
+      ],
+      "trust": [
+        "Izkusnje z zasebnimi in poslovnimi objekti",
+        "Neposreden stik z ekipo",
+        "Terminirana izvedba"
+      ]
+    },
+    "gartenpflege-tillmitsch": {
+      "title": "Nega vrta v kraju {{town}}",
+      "heroTitle": "Nega vrta v kraju {{town}} z zanesljivo kakovostjo",
+      "intro": "V kraju {{town}} trajnostno skrbimo za zelene povrsine in vrtove skozi vse leto.",
+      "services": [
+        "Nega zelenih povrsin",
+        "Nega zivih mej",
+        "Redna oskrba",
+        "Spomladanska in jesenska dela"
+      ],
+      "trust": [
+        "Regionalna ekipa iz juzne Stajerske",
+        "Jasna komunikacija",
+        "Fleksibilna podpora"
+      ]
+    },
+    "gartenpflege-strass": {
+      "title": "Nega vrta v kraju {{town}}",
+      "heroTitle": "Vrtni servis v kraju {{town}}",
+      "intro": "V kraju {{town}} ponujamo cisto izvedbo, zanesljive termine in redno oskrbo.",
+      "services": [
+        "Nega zivih mej",
+        "Kosnja trate",
+        "Sezonski servis",
+        "Vzdrzevanje zunanjih povrsin"
+      ],
+      "trust": [
+        "Hitro na terenu v okraju Leibnitz",
+        "Cist nacin dela",
+        "Neobvezno prvo svetovanje"
+      ]
+    }
+  },
+  "guidesPage": {
+    "seoTitle": "Vodici za nego vrtov",
+    "seoDescription": "Sezonski nasveti za nego trate, zive meje in vrtna dela v Leibnitzu in okolici.",
+    "heroEyebrow": "Vodici",
+    "heroTitle": "Nasveti za nego vrta v Leibnitzu in okolici",
+    "heroText": "Tu najdete kratka sezonska priporocila za urejene zelene povrsine.",
+    "tipLabel": "Sezonski nasvet",
+    "cta": "Zahtevajte svetovanje za izvedbo",
+    "guides": [
+      {
+        "title": "Spomladanska nega trate na juznem Stajerskem",
+        "text": "Kdaj gnojiti, kako pogosto kositi in kako trato po zimi zgostiti."
+      },
+      {
+        "title": "Obrezovanje zive meje: cas, nega in cisti robovi",
+        "text": "Prakticni nasveti za zdrave zive meje in urejen videz."
+      },
+      {
+        "title": "Jesensko delo z listjem: varno in ucinkovito",
+        "text": "Kako ohraniti poti, dovoze in zelene povrsine urejene in varne."
+      },
+      {
+        "title": "Priprava vrta spomladi: kratek kontrolni seznam",
+        "text": "Najpomembnejsi koraki za mocan zacetek sezone."
+      }
+    ]
+  },
+  "stickyBar": {
+    "callNow": "Poklicite zdaj",
+    "quickRequest": "Hitro povprasevanje"
   }
 }
-
-
-

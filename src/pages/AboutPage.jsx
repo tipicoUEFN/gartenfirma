@@ -16,24 +16,24 @@ function AboutPage() {
 
   const workFlowExamples = [
     {
-      title: 'Privatgarten - laufende Betreuung',
-      challenge: 'Uneinheitlicher Pflegezustand und fehlende Regelmäßigkeit.',
-      approach: 'Fixer Intervallplan für Rasen, Hecke und Beete.',
-      result: 'Konstant gepflegter Garten mit planbarem Aufwand.',
+      title: t('aboutPage.workflows.private.title'),
+      challenge: t('aboutPage.workflows.private.challenge'),
+      approach: t('aboutPage.workflows.private.approach'),
+      result: t('aboutPage.workflows.private.result'),
     },
     {
-      title: 'Wohnanlage - Gemeinschaftsflächen',
-      challenge: 'Unklare Zuständigkeiten und wechselnde Qualität vor Ort.',
-      approach: 'Klare Aufgaben pro Termin und saubere Rückmeldung nach Einsatz.',
-      result: 'Verlässlicher Zustand der Flächen für Bewohner und Verwaltung.',
+      title: t('aboutPage.workflows.apartment.title'),
+      challenge: t('aboutPage.workflows.apartment.challenge'),
+      approach: t('aboutPage.workflows.apartment.approach'),
+      result: t('aboutPage.workflows.apartment.result'),
     },
   ]
 
   return (
     <>
       <SeoHead
-        title="Ueber uns"
-        description="Regionaler Gartenservice in der Suedsteiermark mit persoenlicher Beratung, klaren Prozessen und verlaesslicher Ausfuehrung."
+        title={t('aboutPage.seoTitle')}
+        description={t('aboutPage.seoDescription')}
         pathname="/ueber-uns"
       />
 
@@ -48,10 +48,10 @@ function AboutPage() {
           <div>
             <SectionTitle
               title={t('aboutPage.sectionTitle')}
-              description="Kurz, klar und nach festen Abläufen."
+              description={t('aboutPage.sectionSubtitle')}
             />
             <p className="mb-4 rounded-xl border border-olive-200 bg-olive-100/50 px-4 py-3 text-sm font-semibold text-olive-800">
-              Gartenpflege aus Leibnitz. Zuverlässig, sauber und pünktlich.
+              {t('aboutPage.highlight')}
             </p>
             <div className="grid gap-4">
               {workFlowExamples.map((item) => (

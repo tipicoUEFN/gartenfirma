@@ -35,7 +35,7 @@ function Navbar() {
         <Link to="/" className="group flex items-center gap-3" aria-label={businessData.companyName}>
           <img
             src={iconLogoSrc}
-            alt={`${businessData.companyName} Icon`}
+            alt={t('common.logoIconAlt', { companyName: businessData.companyName })}
             className="h-10 w-10 sm:hidden"
           />
           <img

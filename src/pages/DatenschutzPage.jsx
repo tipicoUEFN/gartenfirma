@@ -8,8 +8,8 @@ function DatenschutzPage() {
   return (
     <>
       <SeoHead
-        title="Datenschutz"
-        description="Informationen zur Datenverarbeitung bei Kontaktanfragen von PR Gartenservice."
+        title={t('privacy.seoTitle')}
+        description={t('privacy.seoDescription')}
         pathname="/datenschutz"
       />
 

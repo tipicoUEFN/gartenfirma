@@ -9,8 +9,8 @@ function ImpressumPage() {
   return (
     <>
       <SeoHead
-        title="Impressum"
-        description="Rechtliche Angaben von PR Gartenservice im Raum Leibnitz und Suedsteiermark."
+        title={t('impressum.seoTitle')}
+        description={t('impressum.seoDescription')}
         pathname="/impressum"
       />
 

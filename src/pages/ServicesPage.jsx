@@ -14,48 +14,14 @@ function ServicesPage() {
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'Wie oft sollte man Rasen maehen?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'In der Hauptsaison empfehlen wir je nach Wachstum meist einen Rhythmus von 7 bis 14 Tagen.',
-        },
+    mainEntity: t('servicesPage.faq', { returnObjects: true }).map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
       },
-      {
-        '@type': 'Question',
-        name: 'Welche Orte betreuen Sie?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Wir arbeiten im Raum Leibnitz, Graz, Wagna, Gralla, Tillmitsch, Strass und Umgebung.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Bieten Sie Gartenpflege fuer Firmen an?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Ja, wir betreuen auch Firmenstandorte, Wohnanlagen und oeffentliche Einrichtungen mit laufenden Intervallen.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Wie kann ich ein Angebot anfragen?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Am schnellsten ueber unser Kontaktformular oder telefonisch. Wir melden uns in der Regel innerhalb von 24 Stunden zurueck.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Was kostet Heckenpflege?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Die Kosten haengen von Laenge, Hoehe und Zugaenglichkeit der Hecke ab. Nach kurzer Abstimmung erstellen wir ein klares Angebot.',
-        },
-      },
-    ],
+    })),
   }
 
   const serviceList = [
@@ -94,8 +60,8 @@ function ServicesPage() {
   return (
     <>
       <SeoHead
-        title="Leistungen fuer Gartenpflege"
-        description="Unsere Leistungen: Rasenmaehen, Heckenpflege, Laubarbeiten und laufende Betreuung von Aussenanlagen in Leibnitz und Umgebung."
+        title={t('servicesPage.seoTitle')}
+        description={t('servicesPage.seoDescription')}
         pathname="/leistungen"
         structuredData={faqSchema}
       />
@@ -110,7 +76,7 @@ function ServicesPage() {
         <div className="container-width">
           <SectionTitle
             title={t('servicesPage.sectionTitle')}
-            description="Kurzer Überblick zu unseren Leistungen in der Region."
+            description={t('servicesPage.sectionDescriptionShort')}
           />
           <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
             {serviceList.map((service) => (
@@ -123,8 +89,8 @@ function ServicesPage() {
       <section className="section-spacing">
         <div className="container-width">
           <SectionTitle
-            title="Leistung + Ort"
-            description="Häufig gesuchte Kombinationen in unserer Region."
+            title={t('servicesPage.locationLinksTitle')}
+            description={t('servicesPage.locationLinksDescription')}
           />
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {locationPages.map((location) => (
@@ -133,7 +99,7 @@ function ServicesPage() {
                 to={`/${location.slug}`}
                 className="rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm font-medium text-olive-800"
               >
-                Gartenpflege {location.town}
+                {t('servicesPage.gardenCareInTown', { town: location.town })}
               </Link>
             ))}
           </div>

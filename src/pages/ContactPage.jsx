@@ -14,24 +14,24 @@ function ContactPage() {
 
   const requestFlow = [
     {
-      title: 'Schnellanfrage - Ablauf',
-      challenge: 'Sie brauchen rasch einen Termin oder Rückruf.',
-      approach: 'Kurze Angaben im Formular oder direkte telefonische Anfrage.',
-      result: 'Zeitnahe Rückmeldung mit nächstem sinnvollen Schritt.',
+      title: t('contactPage.flow.quick.title'),
+      challenge: t('contactPage.flow.quick.challenge'),
+      approach: t('contactPage.flow.quick.approach'),
+      result: t('contactPage.flow.quick.result'),
     },
     {
-      title: 'Detaillierte Anfrage - Ablauf',
-      challenge: 'Es geht um mehrere Flächen oder regelmäßige Betreuung.',
-      approach: 'Leistungsumfang und Ort im Detail erfassen.',
-      result: 'Klareres Angebot mit passendem Intervall.',
+      title: t('contactPage.flow.detailed.title'),
+      challenge: t('contactPage.flow.detailed.challenge'),
+      approach: t('contactPage.flow.detailed.approach'),
+      result: t('contactPage.flow.detailed.result'),
     },
   ]
 
   return (
     <>
       <SeoHead
-        title="Kontakt und Anfrage"
-        description="Jetzt Gartenpflege in Leibnitz, Wagna, Gralla, Tillmitsch, Strass und Umgebung anfragen. Wir melden uns zeitnah zurueck."
+        title={t('contactPage.seoTitle')}
+        description={t('contactPage.seoDescription')}
         pathname="/kontakt"
       />
       <LocalBusinessSchema />
@@ -45,9 +45,9 @@ function ContactPage() {
       <section className="section-spacing pt-0">
         <div className="container-width">
           <SectionTitle
-            eyebrow="Schneller Kontakt"
-            title="Am schnellsten: kurze Anfrage senden"
-            description="Kurz anfragen, schnell Rückmeldung erhalten."
+            eyebrow={t('contactPage.quick.eyebrow')}
+            title={t('contactPage.quick.title')}
+            description={t('contactPage.quick.description')}
           />
           <QuickRequestForm />
         </div>
@@ -56,9 +56,9 @@ function ContactPage() {
       <section className="section-spacing pt-0">
         <div className="container-width">
           <SectionTitle
-            eyebrow="Ablauf"
-            title="So läuft Ihre Anfrage ab"
-            description="Kompakt nach Ausgangslage, Umsetzung und Ergebnis."
+            eyebrow={t('contactPage.flowSection.eyebrow')}
+            title={t('contactPage.flowSection.title')}
+            description={t('contactPage.flowSection.description')}
           />
           <div className="grid gap-5 lg:grid-cols-2">
             {requestFlow.map((item) => (
@@ -72,9 +72,9 @@ function ContactPage() {
         <div className="container-width grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <SectionTitle
-              eyebrow="Ausführliche Anfrage"
+              eyebrow={t('contactPage.detailed.eyebrow')}
               title={t('contactPage.formTitle')}
-              description="Mehr Details für ein präziseres Angebot."
+              description={t('contactPage.detailed.description')}
             />
             <ServiceRequestForm />
           </div>
@@ -102,7 +102,7 @@ function ContactPage() {
               </li>
             </ul>
             <p className="mt-7 text-xs uppercase tracking-[0.2em] text-olive-600">{t('contactPage.serviceArea')}</p>
-            <p className="mt-3 text-sm text-olive-700">{businessData.serviceArea}</p>
+            <p className="mt-3 text-sm text-olive-700">{t('common.serviceAreaValue')}</p>
           </aside>
         </div>
       </section>

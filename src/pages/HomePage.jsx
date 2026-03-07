@@ -89,18 +89,18 @@ function HomePage() {
 
   const testimonials = [
     {
-      quote: 'Zuverlässig und sauber gearbeitet. Termin eingehalten und Garten tipptopp hinterlassen.',
-      source: 'Familie K., Leibnitz',
+      quote: t('homeExtras.testimonials.1.quote'),
+      source: t('homeExtras.testimonials.1.source'),
       initials: 'FK',
     },
     {
-      quote: 'Kurze Abstimmung, faire Rückmeldung und dann sauber umgesetzt. Genau so soll es sein.',
-      source: 'Hausverwaltung M., Wagna',
+      quote: t('homeExtras.testimonials.2.quote'),
+      source: t('homeExtras.testimonials.2.source'),
       initials: 'HM',
     },
     {
-      quote: 'Laufende Betreuung funktioniert sehr gut. Freundlich, pünktlich und ordentlich.',
-      source: 'Bürostandort M., Raum Graz',
+      quote: t('homeExtras.testimonials.3.quote'),
+      source: t('homeExtras.testimonials.3.source'),
       initials: 'BM',
     },
   ]
@@ -108,14 +108,14 @@ function HomePage() {
   return (
     <>
       <SeoHead
-        title="Gartenpflege in Leibnitz und Südsteiermark"
-        description="PR Gartenservice bietet Rasenmähen, Heckenpflege und laufende Außenanlagenbetreuung in Leibnitz, Graz und Umgebung."
+        title={t('homeExtras.seoTitle')}
+        description={t('homeExtras.seoDescription')}
         pathname="/"
       />
       <LocalBusinessSchema />
 
       <PageHero
-        eyebrow="PR Gartenservice"
+        eyebrow={t('homeExtras.heroEyebrow')}
         title={t('homeExtras.heroTitle')}
         text={t('homeExtras.heroText')}
         imageContent={<HeroSlider slides={heroSlides} />}
@@ -137,7 +137,7 @@ function HomePage() {
             {t('cta.button')}
             <ArrowRight size={18} />
           </Link>
-          <span className="text-sm text-olive-700">{t('home.hero.serviceArea')}: {businessData.serviceArea}</span>
+          <span className="text-sm text-olive-700">{t('home.hero.serviceArea')}: {t('common.serviceAreaValue')}</span>
         </div>
       </PageHero>
 
@@ -244,7 +244,7 @@ function HomePage() {
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-olive-600">{t('home.location.eyebrow')}</p>
               <h2 className="headline mt-3 text-3xl font-semibold text-olive-800">{t('home.location.title')}</h2>
               <p className="mt-4 max-w-xl text-sm leading-relaxed text-olive-700 sm:text-base">
-                {t('home.location.text', { serviceArea: businessData.serviceArea })}
+                {t('home.location.text', { serviceArea: t('common.serviceAreaValue') })}
               </p>
             </div>
             <div className="rounded-2xl bg-olive-800 p-6 text-olive-100">

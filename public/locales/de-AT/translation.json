@@ -111,7 +111,36 @@
     "seasonDescription": "Allgemeine Pflegearbeiten wie kleinere Schnittarbeiten, Gießen und Sauberhalten von Gartenflächen.",
     "ongoingTitle": "Fensterreinigung",
     "ongoingDescription": "Fensterreinigung bei privaten Haushalten sowie kleineren Firmenobjekten vom Boden aus oder mit einfachen Steighilfen.",
-    "infoLine": "Wir betreuen Privatgärten, Firmenstandorte, Wohnanlagen und öffentliche Einrichtungen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark."
+    "infoLine": "Wir betreuen Privatgärten, Firmenstandorte, Wohnanlagen und öffentliche Einrichtungen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark.",
+    "seoTitle": "Leistungen fuer Gartenpflege",
+    "seoDescription": "Unsere Leistungen: Rasenmaehen, Heckenpflege, Laubarbeiten und laufende Betreuung von Aussenanlagen in Leibnitz und Umgebung.",
+    "sectionDescriptionShort": "Kurzer Ueberblick zu unseren Leistungen in der Region.",
+    "locationLinksTitle": "Leistung + Ort",
+    "locationLinksDescription": "Haeufig gesuchte Kombinationen in unserer Region.",
+    "gardenCareInTown": "Gartenpflege {{town}}",
+    "cardTagline": "Sauber. Verlaesslich. Regional.",
+    "faq": [
+      {
+        "question": "Wie oft sollte man Rasen maehen?",
+        "answer": "In der Hauptsaison empfehlen wir je nach Wachstum meist einen Rhythmus von 7 bis 14 Tagen."
+      },
+      {
+        "question": "Welche Orte betreuen Sie?",
+        "answer": "Wir arbeiten im Raum Leibnitz, Graz, Wagna, Gralla, Tillmitsch, Strass und Umgebung."
+      },
+      {
+        "question": "Bieten Sie Gartenpflege fuer Firmen an?",
+        "answer": "Ja, wir betreuen auch Firmenstandorte, Wohnanlagen und oeffentliche Einrichtungen mit laufenden Intervallen."
+      },
+      {
+        "question": "Wie kann ich ein Angebot anfragen?",
+        "answer": "Am schnellsten ueber unser Kontaktformular oder telefonisch. Wir melden uns in der Regel innerhalb von 24 Stunden zurueck."
+      },
+      {
+        "question": "Was kostet Heckenpflege?",
+        "answer": "Die Kosten haengen von Laenge, Hoehe und Zugaenglichkeit der Hecke ab. Nach kurzer Abstimmung erstellen wir ein klares Angebot."
+      }
+    ]
   },
   "aboutPage": {
     "heroEyebrow": "Über uns",
@@ -124,7 +153,25 @@
     "value1": "Persönliche Beratung mit klarem Leistungsumfang",
     "value2": "Termintreue und saubere Arbeitsweise",
     "value3": "Nachhaltige Pflege mit Blick auf langfristige Wirkung",
-    "value4": "Regionale Nähe und direkte Erreichbarkeit"
+    "value4": "Regionale Nähe und direkte Erreichbarkeit",
+    "seoTitle": "Ueber uns",
+    "seoDescription": "Regionaler Gartenservice in der Suedsteiermark mit persoenlicher Beratung, klaren Prozessen und verlaesslicher Ausfuehrung.",
+    "sectionSubtitle": "Kurz, klar und nach festen Ablaeufen.",
+    "highlight": "Gartenpflege aus Leibnitz. Zuverlaessig, sauber und puenktlich.",
+    "workflows": {
+      "private": {
+        "title": "Privatgarten - laufende Betreuung",
+        "challenge": "Uneinheitlicher Pflegezustand und fehlende Regelmaessigkeit.",
+        "approach": "Fixer Intervallplan fuer Rasen, Hecke und Beete.",
+        "result": "Konstant gepflegter Garten mit planbarem Aufwand."
+      },
+      "apartment": {
+        "title": "Wohnanlage - Gemeinschaftsflaechen",
+        "challenge": "Unklare Zustaendigkeiten und wechselnde Qualitaet vor Ort.",
+        "approach": "Klare Aufgaben pro Termin und saubere Rueckmeldung nach Einsatz.",
+        "result": "Verlaesslicher Zustand der Flaechen fuer Bewohner und Verwaltung."
+      }
+    }
   },
   "contact": {
     "title": "Kontakt"
@@ -136,7 +183,37 @@
     "formTitle": "Nachricht senden",
     "formDescription": "Teilen Sie uns Ihr Anliegen mit. Wir melden uns persönlich bei Ihnen.",
     "direct": "Direkt erreichbar",
-    "serviceArea": "Einsatzgebiet"
+    "serviceArea": "Einsatzgebiet",
+    "seoTitle": "Kontakt und Anfrage",
+    "seoDescription": "Jetzt Gartenpflege in Leibnitz, Wagna, Gralla, Tillmitsch, Strass und Umgebung anfragen. Wir melden uns zeitnah zurueck.",
+    "quick": {
+      "eyebrow": "Schneller Kontakt",
+      "title": "Am schnellsten: kurze Anfrage senden",
+      "description": "Kurz anfragen, schnell Rueckmeldung erhalten."
+    },
+    "flowSection": {
+      "eyebrow": "Ablauf",
+      "title": "So laeuft Ihre Anfrage ab",
+      "description": "Kompakt nach Ausgangslage, Umsetzung und Ergebnis."
+    },
+    "detailed": {
+      "eyebrow": "Ausfuehrliche Anfrage",
+      "description": "Mehr Details fuer ein praeziseres Angebot."
+    },
+    "flow": {
+      "quick": {
+        "title": "Schnellanfrage - Ablauf",
+        "challenge": "Sie brauchen rasch einen Termin oder Rueckruf.",
+        "approach": "Kurze Angaben im Formular oder direkte telefonische Anfrage.",
+        "result": "Zeitnahe Rueckmeldung mit naechstem sinnvollen Schritt."
+      },
+      "detailed": {
+        "title": "Detaillierte Anfrage - Ablauf",
+        "challenge": "Es geht um mehrere Flaechen oder regelmaessige Betreuung.",
+        "approach": "Leistungsumfang und Ort im Detail erfassen.",
+        "result": "Klareres Angebot mit passendem Intervall."
+      }
+    }
   },
   "cta": {
     "eyebrow": "Unverbindlich anfragen",
@@ -152,7 +229,14 @@
     "legalTitle": "Rechtliches",
     "impressum": "Impressum",
     "privacy": "Datenschutz",
-    "copyright": "{{year}} {{companyName}}. Alle Rechte vorbehalten."
+    "copyright": "{{year}} {{companyName}}. Alle Rechte vorbehalten.",
+    "popularPlaces": "Beliebte Orte",
+    "gardenCareInTown": "Gartenpflege {{town}}",
+    "dailyInAction": "Taeglich im Einsatz: Leibnitz � Wagna � Gralla � Tillmitsch � Strass � Ehrenhausen � Graz Umgebung",
+    "openingHours": [
+      "Mo - Fr: 07:00 - 17:00 Uhr",
+      "Sa: nach Vereinbarung"
+    ]
   },
   "contactForm": {
     "firstNameLabel": "Vorname",
@@ -201,6 +285,46 @@
         "location": "Südsteiermark",
         "text": "Frühjahrs- und Herbstarbeiten für eine saubere Gartenstruktur."
       }
+    },
+    "seoTitle": "Referenzen aus der Region",
+    "seoDescription": "Ausgewaehlte Projekte zu Rasenpflege, Heckschnitt und Objektpflege im Raum Leibnitz, Graz und Suedsteiermark.",
+    "casesTitle": "Einsaetze nach Ort",
+    "casesDescription": "Konkrete Projekte aus der Region mit Leistung, Objektart und Betreuungsrhythmus.",
+    "projectInTown": "Projekt in {{town}}",
+    "moreInTown": "Mehr zu Gartenpflege in {{town}}",
+    "caseStudies": {
+      "leibnitz-rasen": {
+        "service": "Rasenpflege",
+        "objectType": "Privatgarten",
+        "challenge": "Unregelmaessiges Wachstum und unsaubere Kanten.",
+        "approach": "Fixer 14-Tage-Rhythmus mit Kantenpflege und Laubentfernung.",
+        "result": "Gleichmaessiges Gesamtbild waehrend der gesamten Hauptsaison.",
+        "cadence": "14-taegig"
+      },
+      "wagna-hecke": {
+        "service": "Heckenpflege",
+        "objectType": "Einfamilienhaus",
+        "challenge": "Ueberwachsene Hecke an Gehweg und Einfahrt.",
+        "approach": "Schonender Formschnitt in zwei Durchgaengen und saubere Entsorgung.",
+        "result": "Klare Linien, bessere Sicht und gepflegter Eingangsbereich.",
+        "cadence": "2x pro Jahr"
+      },
+      "gralla-objekt": {
+        "service": "Aussenanlagenbetreuung",
+        "objectType": "Wohnanlage",
+        "challenge": "Schwankende Pflegequalitaet durch wechselnde Anbieter.",
+        "approach": "Monatlicher Pflegeplan mit fixer Ansprechpartnerin und Checkliste.",
+        "result": "Konstant gepflegte Gruenflaechen und planbare Betreuung.",
+        "cadence": "monatlich"
+      },
+      "tillmitsch-saison": {
+        "service": "Saisonservice",
+        "objectType": "Firmenflaeche",
+        "challenge": "Hoher Pflegebedarf in Fruehling und Herbst.",
+        "approach": "Saisonale Intensivtermine mit Fokus auf Sauberkeit und Sicherheit.",
+        "result": "Aussenflaechen wirken ganzjaehrig ordentlich und einladend.",
+        "cadence": "saisonal"
+      }
     }
   },
   "impressum": {
@@ -215,7 +339,9 @@
     "companyCourt": "Firmenbuchgericht: Landesgericht Graz (Platzhalter)",
     "authority": "Zuständige Aufsichtsbehörde: Bezirkshauptmannschaft (Platzhalter)",
     "membership": "Mitglied bei: WKO Steiermark (Platzhalter)",
-    "tradeLaw": "Berufsrecht: Gewerbeordnung (GewO)"
+    "tradeLaw": "Berufsrecht: Gewerbeordnung (GewO)",
+    "seoTitle": "Impressum",
+    "seoDescription": "Rechtliche Angaben von PR Gartenservice im Raum Leibnitz und Suedsteiermark."
   },
   "privacy": {
     "eyebrow": "Datenschutz",
@@ -229,7 +355,9 @@
     "section3Text": "Beim Absenden einer Anfrage können eingegebene Daten zur Bearbeitung der Anfrage verwendet werden.",
     "section4Title": "4. Ihre Rechte",
     "section4Text": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Widerspruch.",
-    "notice": "Hinweis: Dieser Text ist ein Platzhalter und ersetzt keine rechtliche Beratung."
+    "notice": "Hinweis: Dieser Text ist ein Platzhalter und ersetzt keine rechtliche Beratung.",
+    "seoTitle": "Datenschutz",
+    "seoDescription": "Informationen zur Datenverarbeitung bei Kontaktanfragen von PR Gartenservice."
   },
   "services": {
     "title": "Unsere Leistungen"
@@ -238,7 +366,8 @@
     "title": "Über uns"
   },
   "language": {
-    "label": "Sprache"
+    "label": "Sprache",
+    "switcherAria": "Sprachauswahl"
   },
   "projectLabels": {
     "challenge": "Ausgangslage",
@@ -249,7 +378,9 @@
   "common": {
     "backToTop": "Nach oben",
     "ratingFiveStars": "5 von 5 Sternen",
-    "heroSliderRegion": "Bilder aus Einsätzen"
+    "heroSliderRegion": "Bilder aus Einsätzen",
+    "logoIconAlt": "{{companyName}} Icon",
+    "serviceAreaValue": "Grossraum Leibnitz, Graz, Deutschlandsberg und Suedoststeiermark"
   },
   "homeExtras": {
     "heroTitle": "Gartenpflege aus Leibnitz",
@@ -278,8 +409,287 @@
     "regionalPresenceTitle": "Täglich im Einsatz in der Region",
     "regionalPagesLabel": "Regionale Seiten",
     "regionalProofLine1": "Privatgärten, Firmenstandorte, Wohnanlagen und öffentliche Einrichtungen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark.",
-    "regionalProofLine2": "Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz Umgebung"
+    "regionalProofLine2": "Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz Umgebung",
+    "seoTitle": "Gartenpflege in Leibnitz und Suedsteiermark",
+    "seoDescription": "PR Gartenservice bietet Rasenmaehen, Heckenpflege und laufende Aussenanlagenbetreuung in Leibnitz, Graz und Umgebung.",
+    "heroEyebrow": "PR Gartenservice",
+    "testimonials": {
+      "1": {
+        "quote": "Zuverlaessig und sauber gearbeitet. Termin eingehalten und Garten tipptopp hinterlassen.",
+        "source": "Familie K., Leibnitz"
+      },
+      "2": {
+        "quote": "Kurze Abstimmung, faire Rueckmeldung und dann sauber umgesetzt. Genau so soll es sein.",
+        "source": "Hausverwaltung M., Wagna"
+      },
+      "3": {
+        "quote": "Laufende Betreuung funktioniert sehr gut. Freundlich, puenktlich und ordentlich.",
+        "source": "Buerostandort M., Raum Graz"
+      }
+    }
+  },
+  "quickRequestForm": {
+    "badge": "Empfohlen fuer schnelle Rueckmeldung",
+    "title": "Schnellanfrage in 1 Minute",
+    "subtitle": "Wir melden uns in der Regel innerhalb von 24 Stunden (Mo-Fr).",
+    "fields": {
+      "name": "Name",
+      "phone": "Telefon",
+      "town": "Ort",
+      "service": "Gewuenschter Service",
+      "callbackTime": "Bevorzugte Rueckrufzeit (optional)"
+    },
+    "placeholders": {
+      "town": "z.B. Leibnitz",
+      "select": "Bitte waehlen"
+    },
+    "submit": {
+      "default": "Schnellanfrage senden",
+      "sending": "Wird gesendet...",
+      "holding": "Gedrueckt halten... {{progress}}%"
+    },
+    "holdHint": "Zum Senden Taste 3 Sekunden gedrueckt halten.",
+    "success": "Danke. Ihre Anfrage wurde gesendet.",
+    "errors": {
+      "holdToSend": "Bitte Taste 3 Sekunden gedrueckt halten.",
+      "submitFailed": "Senden fehlgeschlagen. Bitte rufen Sie uns direkt an."
+    },
+    "mail": {
+      "subject": "Schnellanfrage von {{name}}",
+      "notProvided": "nicht angegeben",
+      "requestType": "Schnellanfrage"
+    },
+    "serviceOptions": [
+      "Rasenmaehen",
+      "Heckenpflege",
+      "Laubarbeiten",
+      "Laufende Aussenanlagenbetreuung",
+      "Einfache Gartenpflege"
+    ]
+  },
+  "serviceRequestForm": {
+    "steps": {
+      "contact": "1. Basis-Kontaktdaten",
+      "services": "2. Service-Auswahl",
+      "lawnSize": "3. Flaechengroesse",
+      "hedgeLength": "4. Heckenlaenge",
+      "frequency": "5. Haeufigkeit der Ausfuehrung",
+      "propertyType": "6. Objektart",
+      "message": "7. Optionale Nachricht",
+      "summary": "8. Anfrage Zusammenfassung"
+    },
+    "fields": {
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "address": "Adresse (optional)",
+      "lawnSize": "Rasenflaeche (m�)",
+      "hedgeLength": "Heckenlaenge (laufende Meter)",
+      "propertyType": "Objektart",
+      "message": "Nachricht (optional)"
+    },
+    "placeholders": {
+      "hedgeLength": "z.B. 20",
+      "select": "Bitte waehlen",
+      "message": "Beschreiben Sie kurz Ihr Anliegen oder besondere Wuensche."
+    },
+    "serviceOptions": {
+      "rasen": "Rasenmaehen / Gruenflaechenpflege",
+      "hecke": "Heckenschnitt",
+      "laub": "Laubarbeiten",
+      "gartenpflege": "Einfache Gartenpflege",
+      "aussenanlagen": "Betreung von Aussenanlagen",
+      "fenster": "Fensterreinigung"
+    },
+    "lawnSizeOptions": [
+      "unter 100 m�",
+      "100 - 300 m�",
+      "300 - 600 m�",
+      "ueber 600 m�",
+      "weiss nicht"
+    ],
+    "frequencyOptions": [
+      "einmalig",
+      "monatlich",
+      "alle 2 Wochen",
+      "woechentlich",
+      "nach Vereinbarung"
+    ],
+    "propertyTypeOptions": {
+      "privat": "Privatgarten",
+      "firma": "Firma / Betrieb",
+      "wohnanlage": "Wohnanlage",
+      "kindergarten-schule": "Kindergarten / Schule",
+      "oeffentlich": "oeffentliche Einrichtung",
+      "sonstiges": "sonstiges"
+    },
+    "summary": {
+      "service": "Service",
+      "lawnSize": "Rasenflaeche",
+      "hedge": "Hecke",
+      "frequency": "Haeufigkeit",
+      "propertyType": "Objekt"
+    },
+    "submit": {
+      "default": "Anfrage senden",
+      "sending": "Wird gesendet...",
+      "holding": "Gedrueckt halten... {{progress}}%"
+    },
+    "holdHint": "Zum Senden Taste 3 Sekunden gedrueckt halten.",
+    "notice": "Unverbindliche Anfrage. Rueckmeldung in der Regel innerhalb von 24h (Mo-Fr).",
+    "success": "Danke. Ihre Anfrage wurde gesendet.",
+    "errors": {
+      "holdToSend": "Bitte Taste 3 Sekunden gedrueckt halten.",
+      "submitFailed": "Senden fehlgeschlagen. Bitte rufen Sie uns direkt an."
+    },
+    "mail": {
+      "subject": "Neue Service-Anfrage von {{firstName}} {{lastName}}",
+      "notProvided": "nicht angegeben",
+      "noMessage": "keine Nachricht",
+      "requestType": "Serviceanfrage",
+      "meters": "{{value}} Meter"
+    }
+  },
+  "locationPage": {
+    "seoDescription": "Gartenpflege fuer Privatkunden, Firmen und Wohnanlagen in {{town}} und Umgebung.",
+    "heroEyebrow": "Regionaler Gartenservice",
+    "ctaOffer": "Angebot fuer {{town}} anfragen",
+    "ctaServices": "Leistungen ansehen",
+    "servicesTitle": "Unsere Leistungen in {{town}}",
+    "trustTitle": "Warum Kundinnen und Kunden in {{town}} uns vertrauen",
+    "regionalHintTitle": "Regionaler Hinweis",
+    "regionalHintText": "Viele Anfragen in {{town}} betreffen laufende Gartenpflege und regelmaessige Betreuung. Wir planen die Einsaetze so, dass Termine stabil bleiben und Aussenbereiche dauerhaft gepflegt wirken.",
+    "faq": [
+      {
+        "question": "Welche Leistungen bieten Sie in {{town}} an?",
+        "answer": "Wir bieten in {{town}} unter anderem Rasenpflege, Heckenpflege, Laubarbeiten und laufende Betreuung von Aussenanlagen an."
+      },
+      {
+        "question": "Betreuen Sie in {{town}} auch Firmen und Wohnanlagen?",
+        "answer": "Ja, wir betreuen in {{town}} Privatgaerten, Firmenflaechen, Wohnanlagen und auf Anfrage auch oeffentliche Einrichtungen."
+      },
+      {
+        "question": "Wie schnell kann ich in {{town}} ein Angebot erhalten?",
+        "answer": "Nach Ihrer Anfrage melden wir uns in der Regel innerhalb von 24 Stunden (Mo-Fr) mit einer ersten Rueckmeldung."
+      },
+      {
+        "question": "Ist auch eine laufende Gartenpflege in {{town}} moeglich?",
+        "answer": "Ja, wir bieten in {{town}} planbare Pflegeintervalle wie woechentlich, 14-taegig oder monatlich an."
+      }
+    ]
+  },
+  "locationPages": {
+    "gartenpflege-leibnitz": {
+      "title": "Gartenpflege in {{town}}",
+      "heroTitle": "Gartenpflege in {{town}} fuer Privat, Firmen und Wohnanlagen",
+      "intro": "Wir betreuen Gaerten, Gruenflaechen und Aussenanlagen in {{town}} mit klaren Intervallen, sauberer Ausfuehrung und persoenlicher Abstimmung.",
+      "services": [
+        "Rasenmaehen",
+        "Pflege bestehender Hecken",
+        "Laubarbeiten",
+        "Laufende Aussenanlagenbetreuung"
+      ],
+      "trust": [
+        "Kurze Wege im Raum Leibnitz",
+        "Schnelle Terminabstimmung",
+        "Persoenlicher Ansprechpartner"
+      ]
+    },
+    "gartenpflege-wagna": {
+      "title": "Gartenpflege in {{town}}",
+      "heroTitle": "Ihr Gartenservice in {{town}} - zuverlaessig und termintreu",
+      "intro": "Fuer Kundinnen und Kunden in {{town}} uebernehmen wir laufende Gartenpflege, Saisonarbeiten und saubere Betreuung von Aussenflaechen.",
+      "services": [
+        "Saisonarbeiten",
+        "Beet- und Flaechenpflege",
+        "Rasenmaehen",
+        "Laubarbeiten"
+      ],
+      "trust": [
+        "Regional im Bezirk Leibnitz",
+        "Planbare Pflegeintervalle",
+        "Saubere und verlaessliche Ausfuehrung"
+      ]
+    },
+    "gartenpflege-gralla": {
+      "title": "Gartenpflege in {{town}}",
+      "heroTitle": "Professionelle Gartenpflege in {{town}}",
+      "intro": "Ob Privatgarten, Firmenflaeche oder Wohnanlage: Wir bieten in {{town}} laufende Gartenpflege mit verstaendlichen Leistungen und fairen Angeboten.",
+      "services": [
+        "Rasenpflege",
+        "Formschnitt bestehender Hecken",
+        "Objektpflege",
+        "Aussenflaechen sauber halten"
+      ],
+      "trust": [
+        "Erfahrung mit Privat- und Objektpflege",
+        "Direkter Draht zum Team",
+        "Termingerechte Erledigung"
+      ]
+    },
+    "gartenpflege-tillmitsch": {
+      "title": "Gartenpflege in {{town}}",
+      "heroTitle": "Gartenpflege in {{town}} mit Handschlagqualitaet",
+      "intro": "In {{town}} betreuen wir Gruenflaechen und Gaerten nachhaltig, damit Ihre Aussenbereiche das ganze Jahr gepflegt und einladend bleiben.",
+      "services": [
+        "Gruenflaechenpflege",
+        "Heckenpflege",
+        "Laufende Betreuung",
+        "Fruehjahrs- und Herbstarbeiten"
+      ],
+      "trust": [
+        "Regionales Team aus der Suedsteiermark",
+        "Klare Kommunikation",
+        "Flexible Betreuung"
+      ]
+    },
+    "gartenpflege-strass": {
+      "title": "Gartenpflege in {{town}}",
+      "heroTitle": "Gartenservice in {{town}}",
+      "intro": "Wir bieten Gartenservice in {{town}} mit Fokus auf saubere Ausfuehrung, verlaessliche Termine und laufende Betreuung fuer verschiedene Objektarten.",
+      "services": [
+        "Heckenpflege",
+        "Rasenmaehen",
+        "Saisonservice",
+        "Aussenanlagenbetreuung"
+      ],
+      "trust": [
+        "Schnell vor Ort im Bezirk Leibnitz",
+        "Saubere Arbeitsweise",
+        "Unverbindliche Erstberatung"
+      ]
+    }
+  },
+  "guidesPage": {
+    "seoTitle": "Ratgeber fuer Gartenpflege",
+    "seoDescription": "Saisonale Tipps zu Rasenpflege, Heckenpflege und Gartenarbeiten in Leibnitz und Umgebung.",
+    "heroEyebrow": "Ratgeber",
+    "heroTitle": "Tipps fuer Gartenpflege in Leibnitz und Umgebung",
+    "heroText": "Hier finden Sie kompakte, saisonale Empfehlungen fuer gepflegte Gruenflaechen.",
+    "tipLabel": "Saison-Tipp",
+    "cta": "Beratung zur Umsetzung anfragen",
+    "guides": [
+      {
+        "title": "Rasenpflege im Fruehling in der Suedsteiermark",
+        "text": "Wann duengen, wie oft maehen und wie der Rasen nach dem Winter wieder dicht wird."
+      },
+      {
+        "title": "Hecke schneiden: Zeitpunkt, Pflege und saubere Kanten",
+        "text": "Praxisnahe Hinweise fuer gesunde Hecken und ein gepflegtes Gesamtbild."
+      },
+      {
+        "title": "Laubarbeiten im Herbst: sicher und effizient",
+        "text": "So bleiben Wege, Einfahrten und Gruenflaechen ordentlich und rutschfest."
+      },
+      {
+        "title": "Garten im Fruehjahr vorbereiten: kompakte Checkliste",
+        "text": "Die wichtigsten Schritte fuer einen starken Start in die Saison."
+      }
+    ]
+  },
+  "stickyBar": {
+    "callNow": "Jetzt anrufen",
+    "quickRequest": "Schnellanfrage"
   }
 }
-
-

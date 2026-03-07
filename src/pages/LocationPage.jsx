@@ -1,4 +1,5 @@
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import CTASection from '../components/CTASection'
 import PageHero from '../components/PageHero'
@@ -7,6 +8,7 @@ import SectionTitle from '../components/SectionTitle'
 import { locationPages } from '../config/locationPages'
 
 function LocationPage() {
+  const { t } = useTranslation()
   const { slug } = useParams()
   const location = locationPages.find((item) => item.slug === slug)
 
@@ -14,73 +16,54 @@ function LocationPage() {
     return <Navigate to="/" replace />
   }
 
-  const description = `${location.title} fuer Privatkunden, Firmen und Wohnanlagen. Rasenpflege, Heckenpflege und laufende Betreuung in ${location.town} und Umgebung.`
+  const title = t(`locationPages.${slug}.title`, { town: location.town })
+  const heroTitle = t(`locationPages.${slug}.heroTitle`, { town: location.town })
+  const intro = t(`locationPages.${slug}.intro`, { town: location.town })
+  const services = t(`locationPages.${slug}.services`, { returnObjects: true })
+  const trust = t(`locationPages.${slug}.trust`, { returnObjects: true })
+  const description = t('locationPage.seoDescription', { town: location.town })
+  const faq = t('locationPage.faq', { returnObjects: true, town: location.town })
+
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: `Welche Leistungen bieten Sie in ${location.town} an?`,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: `Wir bieten in ${location.town} unter anderem Rasenpflege, Heckenpflege, Laubarbeiten und laufende Betreuung von Aussenanlagen an.`,
-        },
+    mainEntity: faq.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
       },
-      {
-        '@type': 'Question',
-        name: `Betreuen Sie in ${location.town} auch Firmen und Wohnanlagen?`,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: `Ja, wir betreuen in ${location.town} Privatgaerten, Firmenflaechen, Wohnanlagen und auf Anfrage auch oeffentliche Einrichtungen.`,
-        },
-      },
-      {
-        '@type': 'Question',
-        name: `Wie schnell kann ich in ${location.town} ein Angebot erhalten?`,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Nach Ihrer Anfrage melden wir uns in der Regel innerhalb von 24 Stunden (Mo-Fr) mit einer ersten Rueckmeldung.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: `Ist auch eine laufende Gartenpflege in ${location.town} moeglich?`,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: `Ja, wir bieten in ${location.town} planbare Pflegeintervalle wie woechentlich, 14-taegig oder monatlich an.`,
-        },
-      },
-    ],
+    })),
   }
 
   return (
     <>
       <SeoHead
-        title={location.title}
+        title={title}
         description={description}
         pathname={`/${location.slug}`}
         structuredData={faqSchema}
       />
 
       <PageHero
-        eyebrow="Regionaler Gartenservice"
-        title={location.heroTitle}
-        text={location.intro}
+        eyebrow={t('locationPage.heroEyebrow')}
+        title={heroTitle}
+        text={intro}
       >
         <div className="flex flex-wrap gap-3">
           <Link
             to="/kontakt"
             className="inline-flex items-center gap-2 rounded-full bg-olive-700 px-5 py-3 text-sm font-semibold text-white hover:bg-olive-800"
           >
-            Angebot fuer {location.town} anfragen
+            {t('locationPage.ctaOffer', { town: location.town })}
             <ArrowRight size={16} />
           </Link>
           <Link
             to="/leistungen"
             className="inline-flex items-center gap-2 rounded-full border border-olive-300 bg-white px-5 py-3 text-sm font-semibold text-olive-800"
           >
-            Leistungen ansehen
+            {t('locationPage.ctaServices')}
           </Link>
         </div>
       </PageHero>
@@ -88,9 +71,9 @@ function LocationPage() {
       <section className="section-spacing pt-0">
         <div className="container-width grid gap-8 lg:grid-cols-2">
           <div>
-            <SectionTitle title={`Unsere Leistungen in ${location.town}`} />
+            <SectionTitle title={t('locationPage.servicesTitle', { town: location.town })} />
             <ul className="space-y-3">
-              {location.services.map((service) => (
+              {services.map((service) => (
                 <li key={service} className="flex items-start gap-3 rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm text-olive-800">
                   <CheckCircle2 size={18} className="mt-0.5 shrink-0 text-olive-700" />
                   <span>{service}</span>
@@ -100,9 +83,9 @@ function LocationPage() {
           </div>
 
           <div>
-            <SectionTitle title={`Warum Kundinnen und Kunden in ${location.town} uns vertrauen`} />
+            <SectionTitle title={t('locationPage.trustTitle', { town: location.town })} />
             <ul className="space-y-3">
-              {location.trust.map((point) => (
+              {trust.map((point) => (
                 <li key={point} className="rounded-xl border border-olive-200 bg-olive-50/70 px-4 py-3 text-sm text-olive-700">
                   {point}
                 </li>
@@ -110,10 +93,9 @@ function LocationPage() {
             </ul>
 
             <div className="mt-6 rounded-2xl bg-olive-800 p-6 text-olive-100">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-olive-200">Regionaler Hinweis</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-olive-200">{t('locationPage.regionalHintTitle')}</p>
               <p className="mt-3 text-sm leading-relaxed">
-                Viele Anfragen in {location.town} betreffen laufende Gartenpflege und regelmaessige Betreuung. Wir planen die Einsaetze so,
-                dass Termine stabil bleiben und Aussenbereiche dauerhaft gepflegt wirken.
+                {t('locationPage.regionalHintText', { town: location.town })}
               </p>
             </div>
           </div>

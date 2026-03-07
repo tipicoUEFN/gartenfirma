@@ -24,20 +24,47 @@
       "eyebrow": "Services",
       "title": "Everything for a well-kept garden",
       "description": "From regular care to targeted seasonal support.",
-      "hedge": { "title": "Hedge and shrub trimming", "description": "Professional pruning for healthy plants and a neat overall look." },
-      "lawn": { "title": "Lawn care", "description": "Mowing, scarifying, fertilizing and soil improvement tailored to the season." },
-      "beds": { "title": "Flower bed care", "description": "Clean beds and structured planting areas around your home." },
-      "trees": { "title": "Tree and green trimming", "description": "Safe and clean maintenance for smaller trees and ornamental shrubs." },
-      "season": { "title": "Seasonal service", "description": "Spring and autumn service including leaf work and winter preparation." },
-      "ongoing": { "title": "Ongoing property care", "description": "Regular support for private gardens, residential complexes and small businesses." }
+      "hedge": {
+        "title": "Hedge and shrub trimming",
+        "description": "Professional pruning for healthy plants and a neat overall look."
+      },
+      "lawn": {
+        "title": "Lawn care",
+        "description": "Mowing, scarifying, fertilizing and soil improvement tailored to the season."
+      },
+      "beds": {
+        "title": "Flower bed care",
+        "description": "Clean beds and structured planting areas around your home."
+      },
+      "trees": {
+        "title": "Tree and green trimming",
+        "description": "Safe and clean maintenance for smaller trees and ornamental shrubs."
+      },
+      "season": {
+        "title": "Seasonal service",
+        "description": "Spring and autumn service including leaf work and winter preparation."
+      },
+      "ongoing": {
+        "title": "Ongoing property care",
+        "description": "Regular support for private gardens, residential complexes and small businesses."
+      }
     },
     "why": {
       "eyebrow": "Why us",
       "title": "Trust comes from clean work",
       "description": "Our goal is long-lasting quality in every detail.",
-      "reliable": { "title": "Reliable execution", "text": "Clear schedules, transparent services and clean work." },
-      "punctual": { "title": "Punctual & plannable", "text": "We work in a structured way and keep agreed time slots." },
-      "personal": { "title": "Personal support", "text": "Direct contact person and tailored solutions for your garden." }
+      "reliable": {
+        "title": "Reliable execution",
+        "text": "Clear schedules, transparent services and clean work."
+      },
+      "punctual": {
+        "title": "Punctual & plannable",
+        "text": "We work in a structured way and keep agreed time slots."
+      },
+      "personal": {
+        "title": "Personal support",
+        "text": "Direct contact person and tailored solutions for your garden."
+      }
     },
     "about": {
       "eyebrow": "About us",
@@ -82,7 +109,36 @@
     "seasonTitle": "Seasonal work",
     "seasonDescription": "Spring prep, autumn service, leaf work and winter prep.",
     "ongoingTitle": "Ongoing care",
-    "ongoingDescription": "Regular maintenance based on a fixed interval plan."
+    "ongoingDescription": "Regular maintenance based on a fixed interval plan.",
+    "seoTitle": "Garden care services",
+    "seoDescription": "Our services: lawn mowing, hedge care, leaf work and ongoing outdoor area maintenance in Leibnitz and surrounding areas.",
+    "sectionDescriptionShort": "Short overview of our services in the region.",
+    "locationLinksTitle": "Service + town",
+    "locationLinksDescription": "Frequently requested combinations in our region.",
+    "gardenCareInTown": "Garden care {{town}}",
+    "cardTagline": "Clean. Reliable. Regional.",
+    "faq": [
+      {
+        "question": "How often should the lawn be mowed?",
+        "answer": "In peak season we usually recommend an interval of 7 to 14 days, depending on growth."
+      },
+      {
+        "question": "Which areas do you cover?",
+        "answer": "We work in the Leibnitz, Graz, Wagna, Gralla, Tillmitsch and Stra� region and nearby."
+      },
+      {
+        "question": "Do you offer garden care for businesses?",
+        "answer": "Yes, we also support company sites, residential complexes and public facilities with recurring intervals."
+      },
+      {
+        "question": "How can I request a quote?",
+        "answer": "The fastest way is through our contact form or by phone. We usually respond within 24 hours."
+      },
+      {
+        "question": "How much does hedge care cost?",
+        "answer": "Costs depend on length, height and accessibility. After a short coordination, we provide a clear quote."
+      }
+    ]
   },
   "aboutPage": {
     "heroEyebrow": "About us",
@@ -95,9 +151,29 @@
     "value1": "Personal advice with clear scope",
     "value2": "Punctuality and clean work",
     "value3": "Sustainable care for long-term results",
-    "value4": "Regional proximity and direct availability"
+    "value4": "Regional proximity and direct availability",
+    "seoTitle": "About us",
+    "seoDescription": "Regional garden service in Southern Styria with personal consultation, clear processes and reliable execution.",
+    "sectionSubtitle": "Short, clear and process-driven.",
+    "highlight": "Garden care from Leibnitz. Reliable, clean and punctual.",
+    "workflows": {
+      "private": {
+        "title": "Private garden - ongoing care",
+        "challenge": "Inconsistent maintenance and missing regularity.",
+        "approach": "Fixed interval plan for lawn, hedge and beds.",
+        "result": "Consistently maintained garden with predictable effort."
+      },
+      "apartment": {
+        "title": "Residential complex - shared areas",
+        "challenge": "Unclear responsibilities and changing on-site quality.",
+        "approach": "Clear tasks per appointment and clean feedback after each visit.",
+        "result": "Reliable condition of areas for residents and management."
+      }
+    }
   },
-  "contact": { "title": "Contact" },
+  "contact": {
+    "title": "Contact"
+  },
   "contactPage": {
     "heroEyebrow": "Contact",
     "heroTitle": "We look forward to your request",
@@ -105,7 +181,37 @@
     "formTitle": "Send message",
     "formDescription": "Tell us your request. We will contact you personally.",
     "direct": "Directly reachable",
-    "serviceArea": "Service area"
+    "serviceArea": "Service area",
+    "seoTitle": "Contact and request",
+    "seoDescription": "Request garden care in Leibnitz, Wagna, Gralla, Tillmitsch, Stra� and surrounding areas. We reply quickly.",
+    "quick": {
+      "eyebrow": "Fast contact",
+      "title": "Fastest way: send a short request",
+      "description": "Send a short request and receive a quick reply."
+    },
+    "flowSection": {
+      "eyebrow": "Process",
+      "title": "How your request works",
+      "description": "Compactly explained by situation, implementation and result."
+    },
+    "detailed": {
+      "eyebrow": "Detailed request",
+      "description": "More details for a more precise offer."
+    },
+    "flow": {
+      "quick": {
+        "title": "Quick request - process",
+        "challenge": "You need a quick appointment or callback.",
+        "approach": "Short details in the form or direct phone inquiry.",
+        "result": "Prompt response with the next useful step."
+      },
+      "detailed": {
+        "title": "Detailed request - process",
+        "challenge": "You need support for multiple areas or recurring care.",
+        "approach": "Capture scope and location in detail.",
+        "result": "Clearer offer with a matching interval."
+      }
+    }
   },
   "cta": {
     "eyebrow": "Non-binding inquiry",
@@ -121,7 +227,14 @@
     "legalTitle": "Legal",
     "impressum": "Imprint",
     "privacy": "Privacy",
-    "copyright": "{{year}} {{companyName}}. All rights reserved."
+    "copyright": "{{year}} {{companyName}}. All rights reserved.",
+    "popularPlaces": "Popular places",
+    "gardenCareInTown": "Garden care {{town}}",
+    "dailyInAction": "Active daily: Leibnitz � Wagna � Gralla � Tillmitsch � Stra� � Ehrenhausen � Graz area",
+    "openingHours": [
+      "Mon - Fri: 07:00 - 17:00",
+      "Sat: by appointment"
+    ]
   },
   "contactForm": {
     "firstNameLabel": "First name",
@@ -170,6 +283,46 @@
         "location": "Southern Styria",
         "text": "Spring and autumn work for a clean garden structure."
       }
+    },
+    "seoTitle": "References from the region",
+    "seoDescription": "Selected projects in lawn care, hedge trimming and property care in the Leibnitz, Graz and Southern Styria area.",
+    "casesTitle": "Jobs by location",
+    "casesDescription": "Specific regional projects including service, property type and maintenance rhythm.",
+    "projectInTown": "Project in {{town}}",
+    "moreInTown": "More about garden care in {{town}}",
+    "caseStudies": {
+      "leibnitz-rasen": {
+        "service": "Lawn care",
+        "objectType": "Private garden",
+        "challenge": "Irregular growth and messy edges.",
+        "approach": "Fixed 14-day rhythm with edge trimming and leaf removal.",
+        "result": "Consistent overall look throughout the main season.",
+        "cadence": "every 14 days"
+      },
+      "wagna-hecke": {
+        "service": "Hedge care",
+        "objectType": "Single-family home",
+        "challenge": "Overgrown hedge at sidewalk and driveway.",
+        "approach": "Gentle shaping in two rounds with clean disposal.",
+        "result": "Clear lines, better visibility and neat entrance area.",
+        "cadence": "2x per year"
+      },
+      "gralla-objekt": {
+        "service": "Outdoor maintenance",
+        "objectType": "Residential complex",
+        "challenge": "Fluctuating quality due to changing providers.",
+        "approach": "Monthly maintenance plan with fixed contact and checklist.",
+        "result": "Consistently maintained green areas and predictable support.",
+        "cadence": "monthly"
+      },
+      "tillmitsch-saison": {
+        "service": "Seasonal service",
+        "objectType": "Company site",
+        "challenge": "High maintenance demand in spring and autumn.",
+        "approach": "Seasonal intensive visits focused on cleanliness and safety.",
+        "result": "Outdoor areas stay neat and inviting all year.",
+        "cadence": "seasonal"
+      }
     }
   },
   "impressum": {
@@ -184,7 +337,9 @@
     "companyCourt": "Register court: Regional Court Graz (placeholder)",
     "authority": "Supervisory authority: District authority (placeholder)",
     "membership": "Member of: WKO Styria (placeholder)",
-    "tradeLaw": "Trade law: Gewerbeordnung (GewO)"
+    "tradeLaw": "Trade law: Gewerbeordnung (GewO)",
+    "seoTitle": "Imprint",
+    "seoDescription": "Legal information from PR Gartenservice in the Leibnitz and Southern Styria region."
   },
   "privacy": {
     "eyebrow": "Privacy",
@@ -198,7 +353,9 @@
     "section3Text": "When submitting a request, entered data may be used to process the request.",
     "section4Title": "4. Your rights",
     "section4Text": "You have the right to information, correction, deletion, restriction of processing and objection.",
-    "notice": "Note: This text is a placeholder and does not replace legal advice."
+    "notice": "Note: This text is a placeholder and does not replace legal advice.",
+    "seoTitle": "Privacy",
+    "seoDescription": "Information on data processing for contact requests at PR Gartenservice."
   },
   "services": {
     "title": "Our services"
@@ -207,7 +364,8 @@
     "title": "About us"
   },
   "language": {
-    "label": "Language"
+    "label": "Language",
+    "switcherAria": "Language switcher"
   },
   "projectLabels": {
     "challenge": "Situation",
@@ -218,7 +376,9 @@
   "common": {
     "backToTop": "Back to top",
     "ratingFiveStars": "5 out of 5 stars",
-    "heroSliderRegion": "Photos from completed jobs"
+    "heroSliderRegion": "Photos from completed jobs",
+    "logoIconAlt": "{{companyName}} icon",
+    "serviceAreaValue": "Greater Leibnitz, Graz, Deutschlandsberg and Southeast Styria"
   },
   "homeExtras": {
     "heroTitle": "Garden care from Leibnitz",
@@ -247,6 +407,287 @@
     "regionalPresenceTitle": "Active daily in the region",
     "regionalPagesLabel": "Regional pages",
     "regionalProofLine1": "Private gardens, company sites, residential complexes and public facilities in Leibnitz, Graz, Deutschlandsberg and Southeast Styria.",
-    "regionalProofLine2": "Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz area"
+    "regionalProofLine2": "Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz area",
+    "seoTitle": "Garden care in Leibnitz and Southern Styria",
+    "seoDescription": "PR Gartenservice offers lawn mowing, hedge care and ongoing outdoor maintenance in Leibnitz, Graz and nearby.",
+    "heroEyebrow": "PR Gartenservice",
+    "testimonials": {
+      "1": {
+        "quote": "Reliable and clean work. Appointment kept and the garden left spotless.",
+        "source": "Family K., Leibnitz"
+      },
+      "2": {
+        "quote": "Quick coordination, fair feedback and clean execution. Exactly as it should be.",
+        "source": "Property management M., Wagna"
+      },
+      "3": {
+        "quote": "Ongoing support works very well. Friendly, punctual and tidy.",
+        "source": "Office site M., Graz area"
+      }
+    }
+  },
+  "quickRequestForm": {
+    "badge": "Recommended for fast response",
+    "title": "Quick request in 1 minute",
+    "subtitle": "We usually reply within 24 hours (Mon-Fri).",
+    "fields": {
+      "name": "Name",
+      "phone": "Phone",
+      "town": "Town",
+      "service": "Desired service",
+      "callbackTime": "Preferred callback time (optional)"
+    },
+    "placeholders": {
+      "town": "e.g. Leibnitz",
+      "select": "Please select"
+    },
+    "submit": {
+      "default": "Send quick request",
+      "sending": "Sending...",
+      "holding": "Hold... {{progress}}%"
+    },
+    "holdHint": "Hold the button for 3 seconds to send.",
+    "success": "Thank you. Your request has been sent.",
+    "errors": {
+      "holdToSend": "Please hold the button for 3 seconds.",
+      "submitFailed": "Sending failed. Please call us directly."
+    },
+    "mail": {
+      "subject": "Quick request from {{name}}",
+      "notProvided": "not provided",
+      "requestType": "Quick request"
+    },
+    "serviceOptions": [
+      "Lawn mowing",
+      "Hedge care",
+      "Leaf work",
+      "Ongoing outdoor maintenance",
+      "Basic garden care"
+    ]
+  },
+  "serviceRequestForm": {
+    "steps": {
+      "contact": "1. Contact details",
+      "services": "2. Service selection",
+      "lawnSize": "3. Area size",
+      "hedgeLength": "4. Hedge length",
+      "frequency": "5. Service frequency",
+      "propertyType": "6. Property type",
+      "message": "7. Optional message",
+      "summary": "8. Request summary"
+    },
+    "fields": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address (optional)",
+      "lawnSize": "Lawn area (m�)",
+      "hedgeLength": "Hedge length (running meters)",
+      "propertyType": "Property type",
+      "message": "Message (optional)"
+    },
+    "placeholders": {
+      "hedgeLength": "e.g. 20",
+      "select": "Please select",
+      "message": "Briefly describe your request or special wishes."
+    },
+    "serviceOptions": {
+      "rasen": "Lawn mowing / green area care",
+      "hecke": "Hedge trimming",
+      "laub": "Leaf work",
+      "gartenpflege": "Basic garden care",
+      "aussenanlagen": "Outdoor area maintenance",
+      "fenster": "Window cleaning"
+    },
+    "lawnSizeOptions": [
+      "under 100 m�",
+      "100 - 300 m�",
+      "300 - 600 m�",
+      "over 600 m�",
+      "not sure"
+    ],
+    "frequencyOptions": [
+      "one-time",
+      "monthly",
+      "every 2 weeks",
+      "weekly",
+      "by arrangement"
+    ],
+    "propertyTypeOptions": {
+      "privat": "Private garden",
+      "firma": "Company / business",
+      "wohnanlage": "Residential complex",
+      "kindergarten-schule": "Kindergarten / school",
+      "oeffentlich": "Public institution",
+      "sonstiges": "Other"
+    },
+    "summary": {
+      "service": "Service",
+      "lawnSize": "Lawn area",
+      "hedge": "Hedge",
+      "frequency": "Frequency",
+      "propertyType": "Property"
+    },
+    "submit": {
+      "default": "Send request",
+      "sending": "Sending...",
+      "holding": "Hold... {{progress}}%"
+    },
+    "holdHint": "Hold the button for 3 seconds to send.",
+    "notice": "Non-binding inquiry. We usually respond within 24h (Mon-Fri).",
+    "success": "Thank you. Your request has been sent.",
+    "errors": {
+      "holdToSend": "Please hold the button for 3 seconds.",
+      "submitFailed": "Sending failed. Please call us directly."
+    },
+    "mail": {
+      "subject": "New service request from {{firstName}} {{lastName}}",
+      "notProvided": "not provided",
+      "noMessage": "no message",
+      "requestType": "Service request",
+      "meters": "{{value}} meters"
+    }
+  },
+  "locationPage": {
+    "seoDescription": "Garden care for private clients, businesses and residential complexes in {{town}} and surrounding areas.",
+    "heroEyebrow": "Regional garden service",
+    "ctaOffer": "Request an offer for {{town}}",
+    "ctaServices": "View services",
+    "servicesTitle": "Our services in {{town}}",
+    "trustTitle": "Why clients in {{town}} trust us",
+    "regionalHintTitle": "Regional note",
+    "regionalHintText": "Many requests in {{town}} concern ongoing garden care and regular support. We plan visits so appointments stay stable and outdoor areas remain maintained.",
+    "faq": [
+      {
+        "question": "Which services do you offer in {{town}}?",
+        "answer": "In {{town}} we offer lawn care, hedge care, leaf work and ongoing outdoor maintenance, among others."
+      },
+      {
+        "question": "Do you support businesses and residential complexes in {{town}}?",
+        "answer": "Yes, in {{town}} we support private gardens, business sites, residential complexes and public institutions on request."
+      },
+      {
+        "question": "How quickly can I get a quote in {{town}}?",
+        "answer": "After your request, we usually respond within 24 hours (Mon-Fri) with an initial feedback."
+      },
+      {
+        "question": "Is recurring garden care possible in {{town}}?",
+        "answer": "Yes, in {{town}} we offer plannable intervals such as weekly, biweekly or monthly."
+      }
+    ]
+  },
+  "locationPages": {
+    "gartenpflege-leibnitz": {
+      "title": "Garden care in {{town}}",
+      "heroTitle": "Garden care in {{town}} for private, business and residential clients",
+      "intro": "We maintain gardens, green areas and outdoor spaces in {{town}} with clear intervals, clean execution and personal coordination.",
+      "services": [
+        "Lawn mowing",
+        "Care of existing hedges",
+        "Leaf work",
+        "Ongoing outdoor maintenance"
+      ],
+      "trust": [
+        "Short routes in the Leibnitz area",
+        "Fast appointment coordination",
+        "Personal contact person"
+      ]
+    },
+    "gartenpflege-wagna": {
+      "title": "Garden care in {{town}}",
+      "heroTitle": "Your garden service in {{town}} - reliable and on schedule",
+      "intro": "For clients in {{town}}, we handle ongoing garden care, seasonal tasks and clean maintenance of outdoor areas.",
+      "services": [
+        "Seasonal tasks",
+        "Bed and area care",
+        "Lawn mowing",
+        "Leaf work"
+      ],
+      "trust": [
+        "Regional in Leibnitz district",
+        "Plannable maintenance intervals",
+        "Clean and reliable execution"
+      ]
+    },
+    "gartenpflege-gralla": {
+      "title": "Garden care in {{town}}",
+      "heroTitle": "Professional garden care in {{town}}",
+      "intro": "Whether private garden, business area or residential complex: in {{town}} we provide ongoing care with clear services and fair offers.",
+      "services": [
+        "Lawn care",
+        "Shaping existing hedges",
+        "Property care",
+        "Keep outdoor areas clean"
+      ],
+      "trust": [
+        "Experience with private and property care",
+        "Direct line to the team",
+        "On-time completion"
+      ]
+    },
+    "gartenpflege-tillmitsch": {
+      "title": "Garden care in {{town}}",
+      "heroTitle": "Garden care in {{town}} with dependable quality",
+      "intro": "In {{town}} we maintain green spaces and gardens sustainably so your outdoor areas stay tidy and inviting all year.",
+      "services": [
+        "Green area care",
+        "Hedge care",
+        "Ongoing support",
+        "Spring and autumn tasks"
+      ],
+      "trust": [
+        "Regional team from Southern Styria",
+        "Clear communication",
+        "Flexible support"
+      ]
+    },
+    "gartenpflege-strass": {
+      "title": "Garden care in {{town}}",
+      "heroTitle": "Garden service in {{town}}",
+      "intro": "We offer garden service in {{town}} focused on clean work, reliable scheduling and ongoing support for different property types.",
+      "services": [
+        "Hedge care",
+        "Lawn mowing",
+        "Seasonal service",
+        "Outdoor maintenance"
+      ],
+      "trust": [
+        "Quickly on site in Leibnitz district",
+        "Clean working methods",
+        "Non-binding initial consultation"
+      ]
+    }
+  },
+  "guidesPage": {
+    "seoTitle": "Garden care guides",
+    "seoDescription": "Seasonal tips on lawn care, hedge care and garden work in Leibnitz and nearby.",
+    "heroEyebrow": "Guides",
+    "heroTitle": "Tips for garden care in Leibnitz and nearby",
+    "heroText": "Here you will find compact seasonal recommendations for well-kept green areas.",
+    "tipLabel": "Seasonal tip",
+    "cta": "Request implementation advice",
+    "guides": [
+      {
+        "title": "Spring lawn care in Southern Styria",
+        "text": "When to fertilize, how often to mow and how the lawn becomes dense again after winter."
+      },
+      {
+        "title": "Hedge trimming: timing, care and clean edges",
+        "text": "Practical tips for healthy hedges and a neat overall look."
+      },
+      {
+        "title": "Leaf work in autumn: safe and efficient",
+        "text": "How to keep paths, driveways and green areas tidy and non-slip."
+      },
+      {
+        "title": "Prepare your garden in spring: compact checklist",
+        "text": "The most important steps for a strong start to the season."
+      }
+    ]
+  },
+  "stickyBar": {
+    "callNow": "Call now",
+    "quickRequest": "Quick request"
   }
 }
