@@ -1,8 +1,8 @@
 import { Mail, MapPin, Phone } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
-import ContactForm from '../components/ContactForm'
 import PageHero from '../components/PageHero'
 import SectionTitle from '../components/SectionTitle'
+import ServiceRequestForm from '../components/ServiceRequestForm'
 import { businessData } from '../config/businessData'
 
 function ContactPage() {
@@ -20,7 +20,7 @@ function ContactPage() {
         <div className="container-width grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <SectionTitle title={t('contactPage.formTitle')} description={t('contactPage.formDescription')} />
-            <ContactForm />
+            <ServiceRequestForm />
           </div>
 
           <aside className="glass-card h-fit rounded-2xl p-6 sm:p-8">
