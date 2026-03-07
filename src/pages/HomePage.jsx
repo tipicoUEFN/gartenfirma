@@ -2,6 +2,7 @@ import { ArrowRight, Building2, CalendarCheck, CheckCircle2, Clock3, Flower2, Le
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import CTASection from '../components/CTASection'
+import HeroSlider from '../components/HeroSlider'
 import LocalBusinessSchema from '../components/LocalBusinessSchema'
 import PageHero from '../components/PageHero'
 import ReferenceCard from '../components/ReferenceCard'
@@ -11,7 +12,7 @@ import ServiceCard from '../components/ServiceCard'
 import TrustCard from '../components/TrustCard'
 import { businessData } from '../config/businessData'
 import { locationPages } from '../config/locationPages'
-import { referenceProjects } from '../config/imageLibrary'
+import { heroSlides, referenceProjects } from '../config/imageLibrary'
 
 function HomePage() {
   const { t } = useTranslation()
@@ -117,6 +118,7 @@ function HomePage() {
         eyebrow=""
         title={t('homeExtras.heroTitle')}
         text={t('homeExtras.heroText')}
+        imageContent={<HeroSlider slides={heroSlides} />}
       >
         <div className="space-y-6">
           <div className="flex justify-end">
