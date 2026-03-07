@@ -1,6 +1,6 @@
 function PageHero({ eyebrow, title, text, children, imageSrc, imageAlt, imageSrcSet, imageContent }) {
   return (
-    <section className="section-spacing pt-28 sm:pt-32">
+    <section className="section-spacing pt-6 sm:pt-8 lg:pt-10">
       <div className="container-width">
         <div className="reveal glass-card overflow-hidden px-6 py-10 sm:px-10 sm:py-14">
           <div className={imageSrc ? 'grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center' : ''}>

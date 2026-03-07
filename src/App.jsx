@@ -35,7 +35,7 @@ function App() {
       <ScrollToTop />
       <div className="min-h-screen bg-olive-50 text-anthracite-900">
         <Navbar />
-        <main>
+        <main className="pt-20">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/leistungen" element={<ServicesPage />} />
