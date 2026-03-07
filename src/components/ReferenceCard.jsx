@@ -21,16 +21,22 @@ function ReferenceCard({ title, location, text, image, fallbackImage }) {
   return (
     <article className="glass-card overflow-hidden rounded-2xl p-5">
       {showImage ? (
-        <div className="overflow-hidden rounded-xl border border-olive-200 bg-white">
+        <a
+          href={currentImage}
+          target="_blank"
+          rel="noreferrer"
+          title={title}
+          className="block overflow-hidden rounded-xl border border-olive-200 bg-white"
+        >
           {/* TODO: replace with real project photos (before/after, hedge trimming, mowing, on-site work) for stronger authenticity. */}
           <img
             src={currentImage}
             alt={title}
             loading="lazy"
             onError={handleImageError}
-            className="aspect-[3/2] w-full object-cover"
+            className="aspect-[3/2] w-full object-cover transition duration-200 hover:scale-[1.01]"
           />
-        </div>
+        </a>
       ) : (
         <div className="flex aspect-[3/2] items-center justify-center rounded-xl border border-dashed border-olive-300 bg-olive-100/60 px-4 text-center text-xs font-semibold uppercase tracking-[0.18em] text-olive-700">
           {t('references.imageComingSoon')}

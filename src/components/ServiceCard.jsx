@@ -7,7 +7,7 @@ function ServiceCard({ icon, title, description }) {
         {createElement(icon, { size: 22, strokeWidth: 2.1 })}
       </div>
       <h3 className="text-lg font-semibold leading-snug text-olive-800">{title}</h3>
-      <p className="mt-2 text-xs font-semibold uppercase tracking-[0.14em] text-olive-600">Sauber. Verlaesslich. Regional.</p>
+      <p className="mt-2 text-xs font-semibold uppercase tracking-[0.14em] text-olive-600">Sauber. Verlässlich. Regional.</p>
       <p className="mt-3 text-sm leading-relaxed text-olive-700">{description}</p>
     </article>
   )

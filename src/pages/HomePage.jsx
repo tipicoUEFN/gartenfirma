@@ -115,7 +115,7 @@ function HomePage() {
       <LocalBusinessSchema />
 
       <PageHero
-        eyebrow={t('homeExtras.heroEyebrow')}
+        eyebrow="PR Gartenservice"
         title={t('homeExtras.heroTitle')}
         text={t('homeExtras.heroText')}
         imageContent={<HeroSlider slides={heroSlides} />}
@@ -141,16 +141,16 @@ function HomePage() {
         </div>
       </PageHero>
 
-      <section className="section-spacing pt-0 pb-4 sm:pb-5 lg:pb-6">
+      <section className="section-spacing pt-0 pb-2 sm:pb-3 lg:pb-4">
         <div className="container-width">
-          <div className="rounded-2xl border border-olive-200 bg-white px-5 py-4 sm:px-6">
-            <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+          <div className="rounded-2xl border border-olive-200 bg-white px-4 py-3 sm:px-5">
+            <div className="grid gap-2 md:grid-cols-2 xl:grid-cols-4">
               {heroTrustItems.map((item) => {
                 const Icon = item.icon
                 return (
-                  <div key={item.label} className="flex items-center gap-3 rounded-xl bg-olive-100/60 px-4 py-3 text-sm font-semibold text-olive-800">
-                    <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white text-amber-500">
-                      <Icon size={15} fill="currentColor" />
+                  <div key={item.label} className="flex items-center gap-2 rounded-xl bg-olive-100/60 px-3 py-2 text-sm font-semibold text-olive-800">
+                    <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white text-amber-500">
+                      <Icon size={14} fill="currentColor" />
                     </span>
                     <span>{item.label}</span>
                   </div>
@@ -161,7 +161,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="section-spacing pt-4 sm:pt-5 lg:pt-6 bg-olive-100/40">
+      <section className="section-spacing pt-2 sm:pt-3 lg:pt-4 bg-olive-100/40">
         <div className="container-width">
           <SectionTitle
             eyebrow={t('home.services.eyebrow')}
