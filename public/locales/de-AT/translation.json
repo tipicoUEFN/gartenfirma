@@ -178,27 +178,27 @@
   },
   "contactPage": {
     "heroEyebrow": "Kontakt",
-    "heroTitle": "Wir freuen uns auf Ihre Anfrage",
-    "heroText": "Ob laufende Gartenpflege oder ein konkretes Einzelprojekt: Sie erhalten zeitnah eine klare und ehrliche Rückmeldung.",
+    "heroTitle": "",
+    "heroText": "",
     "formTitle": "Nachricht senden",
-    "formDescription": "Teilen Sie uns Ihr Anliegen mit. Wir melden uns persönlich bei Ihnen.",
+    "formDescription": "Kurz schildern, wir melden uns.",
     "direct": "Direkt erreichbar",
     "serviceArea": "Einsatzgebiet",
     "seoTitle": "Kontakt und Anfrage",
     "seoDescription": "Jetzt Gartenpflege in Leibnitz, Wagna, Gralla, Tillmitsch, Strass und Umgebung anfragen. Wir melden uns zeitnah zurueck.",
     "quick": {
       "eyebrow": "Schneller Kontakt",
-      "title": "Am schnellsten: kurze Anfrage senden",
-      "description": "Kurz anfragen, schnell Rueckmeldung erhalten."
+      "title": "Kurz anfragen",
+      "description": "Rueckmeldung meist in 24h."
     },
     "flowSection": {
       "eyebrow": "Ablauf",
-      "title": "So laeuft Ihre Anfrage ab",
-      "description": "Kompakt nach Ausgangslage, Umsetzung und Ergebnis."
+      "title": "So geht es",
+      "description": "Kurz in 3 Schritten."
     },
     "detailed": {
       "eyebrow": "Ausfuehrliche Anfrage",
-      "description": "Mehr Details fuer ein praeziseres Angebot."
+      "description": "Mehr Details, genaueres Angebot."
     },
     "flow": {
       "quick": {
@@ -431,7 +431,7 @@
   "quickRequestForm": {
     "badge": "Empfohlen fuer schnelle Rueckmeldung",
     "title": "Schnellanfrage in 1 Minute",
-    "subtitle": "Wir melden uns in der Regel innerhalb von 24 Stunden (Mo-Fr).",
+    "subtitle": "Antwort meist innerhalb von 24h (Mo-Fr).",
     "fields": {
       "name": "Name",
       "phone": "Telefon",
@@ -531,13 +531,24 @@
       "frequency": "Haeufigkeit",
       "propertyType": "Objekt"
     },
+    "upload": {
+      "label": "Bilder hochladen (optional)",
+      "help": "Bis zu 3 Bilder. Nur JPG/PNG/WebP. Max. 5 MB pro Bild.",
+      "selected": "{{count}} von {{max}} Bildern ausgewaehlt.",
+      "errors": {
+        "tooMany": "Bitte maximal {{max}} Bilder auswaehlen.",
+        "invalidType": "Bitte nur Bilddateien hochladen.",
+        "fileTooLarge": "Ein Bild ist zu gross (max. 5 MB pro Bild).",
+        "totalTooLarge": "Gesamtgroesse zu hoch (max. 15 MB)."
+      }
+    },
     "submit": {
       "default": "Anfrage senden",
       "sending": "Wird gesendet...",
       "holding": "Gedrueckt halten... {{progress}}%"
     },
     "holdHint": "Zum Senden Taste 3 Sekunden gedrueckt halten.",
-    "notice": "Unverbindliche Anfrage. Rueckmeldung in der Regel innerhalb von 24h (Mo-Fr).",
+    "notice": "Unverbindlich. Rueckmeldung meist in 24h (Mo-Fr).",
     "success": "Danke. Ihre Anfrage wurde gesendet.",
     "errors": {
       "holdToSend": "Bitte Taste 3 Sekunden gedrueckt halten.",

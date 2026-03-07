@@ -176,23 +176,23 @@
   },
   "contactPage": {
     "heroEyebrow": "Kontakt",
-    "heroTitle": "Veselimo se vašega povpraševanja",
-    "heroText": "Za redno nego ali enkratni projekt vam hitro odgovorimo.",
+    "heroTitle": "",
+    "heroText": "",
     "formTitle": "Pošljite sporočilo",
-    "formDescription": "Sporočite nam vašo željo. Kontaktirali vas bomo osebno.",
+    "formDescription": "Na kratko opisite zeljo. Odgovorimo hitro.",
     "direct": "Neposredno dosegljivi",
     "serviceArea": "Območje storitev",
     "seoTitle": "Kontakt in povprasevanje",
     "seoDescription": "Zaprosite za nego vrta v Leibnitzu, Wagni, Gralli, Tillmitschu, Straßu in okolici. Hitro odgovorimo.",
     "quick": {
       "eyebrow": "Hiter kontakt",
-      "title": "Najhitreje: posljite kratko povprasevanje",
-      "description": "Kratko povprasevanje in hitra povratna informacija."
+      "title": "Posljite kratko povprasevanje",
+      "description": "Odgovor obicajno v 24h."
     },
     "flowSection": {
       "eyebrow": "Potek",
-      "title": "Kako poteka vase povprasevanje",
-      "description": "Jedrnato po izhodiscu, izvedbi in rezultatu."
+      "title": "Kako poteka",
+      "description": "Trije kratki koraki."
     },
     "detailed": {
       "eyebrow": "Podrobno povprasevanje",
@@ -395,7 +395,7 @@
   "quickRequestForm": {
     "badge": "Priporoceno za hiter odziv",
     "title": "Hitro povprasevanje v 1 minuti",
-    "subtitle": "Obicajno odgovorimo v 24 urah (Pon-Pet).",
+    "subtitle": "Odgovor obicajno v 24h (Pon-Pet).",
     "fields": {
       "name": "Ime",
       "phone": "Telefon",
@@ -495,13 +495,24 @@
       "frequency": "Pogostost",
       "propertyType": "Objekt"
     },
+    "upload": {
+      "label": "Nalozite slike (neobvezno)",
+      "help": "Do 3 slike. Samo JPG/PNG/WebP. Najvec 5 MB na sliko.",
+      "selected": "Izbranih {{count}} od {{max}} slik.",
+      "errors": {
+        "tooMany": "Izberite najvec {{max}} slike.",
+        "invalidType": "Nalozite samo slikovne datoteke.",
+        "fileTooLarge": "Ena slika je prevelika (max 5 MB).",
+        "totalTooLarge": "Skupna velikost je prevelika (max 15 MB)."
+      }
+    },
     "submit": {
       "default": "Poslji povprasevanje",
       "sending": "Posiljanje...",
       "holding": "Drzite... {{progress}}%"
     },
     "holdHint": "Za posiljanje drzite gumb 3 sekunde.",
-    "notice": "Neobvezno povprasevanje. Obicajno odgovorimo v 24h (Pon-Pet).",
+    "notice": "Neobvezno povprasevanje. Odgovor obicajno v 24h (Pon-Pet).",
     "success": "Hvala. Vase povprasevanje je poslano.",
     "errors": {
       "holdToSend": "Prosimo, drzite gumb 3 sekunde.",

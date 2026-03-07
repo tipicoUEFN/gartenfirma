@@ -176,23 +176,23 @@
   },
   "contactPage": {
     "heroEyebrow": "Kapcsolat",
-    "heroTitle": "Várjuk megkeresését",
-    "heroText": "Rendszeres gondozás vagy egyszeri projekt esetén gyorsan válaszolunk.",
+    "heroTitle": "",
+    "heroText": "",
     "formTitle": "Üzenet küldése",
-    "formDescription": "Írja le igényét. Személyesen jelentkezünk.",
+    "formDescription": "Irja le roviden. Gyorsan visszajelzunk.",
     "direct": "Közvetlenül elérhető",
     "serviceArea": "Szolgáltatási terület",
     "seoTitle": "Kapcsolat es ajanlatkeres",
     "seoDescription": "Kérjen kertgondozást Leibnitz, Wagna, Gralla, Tillmitsch, Straß és környéke területén. Gyorsan válaszolunk.",
     "quick": {
       "eyebrow": "Gyors kapcsolat",
-      "title": "Leggyorsabb: kuldjon rovid kerest",
-      "description": "Rovid keres, gyors visszajelzes."
+      "title": "Kuldjon rovid kerest",
+      "description": "Valasz altalaban 24h-on belul."
     },
     "flowSection": {
       "eyebrow": "Folyamat",
-      "title": "Igy zajlik az on keresese",
-      "description": "Tomoren: helyzet, megvalositas, eredmeny."
+      "title": "Igy mukodik",
+      "description": "Harom rovid lepes."
     },
     "detailed": {
       "eyebrow": "Reszletes keres",
@@ -395,7 +395,7 @@
   "quickRequestForm": {
     "badge": "Gyors visszajelzeshez ajanlott",
     "title": "Gyors keres 1 perc alatt",
-    "subtitle": "Altalaban 24 oran belul valaszolunk (Hetfo-Pentek).",
+    "subtitle": "Valasz altalaban 24 oran belul (Hetfo-Pentek).",
     "fields": {
       "name": "Nev",
       "phone": "Telefon",
@@ -495,13 +495,24 @@
       "frequency": "Gyakorisag",
       "propertyType": "Objektum"
     },
+    "upload": {
+      "label": "Kepek feltoltese (opcionalis)",
+      "help": "Legfeljebb 3 kep. Csak JPG/PNG/WebP. Max 5 MB/kep.",
+      "selected": "{{count}} / {{max}} kep kivalasztva.",
+      "errors": {
+        "tooMany": "Legfeljebb {{max}} kepet valasszon.",
+        "invalidType": "Csak kepfajlok tolthetők fel.",
+        "fileTooLarge": "Az egyik kep tul nagy (max 5 MB).",
+        "totalTooLarge": "A teljes meret tul nagy (max 15 MB)."
+      }
+    },
     "submit": {
       "default": "Keres kuldese",
       "sending": "Kuldes...",
       "holding": "Tartsa nyomva... {{progress}}%"
     },
     "holdHint": "Kuldeshez tartsa nyomva a gombot 3 masodpercig.",
-    "notice": "Kotottsegmentes kereses. Altalaban 24 oran belul valaszolunk (Hetfo-Pentek).",
+    "notice": "Kotottsegmentes kereses. Valasz altalaban 24 oran belul.",
     "success": "Koszonjuk. A kerese el lett kuldve.",
     "errors": {
       "holdToSend": "Kerjuk, tartsa nyomva a gombot 3 masodpercig.",

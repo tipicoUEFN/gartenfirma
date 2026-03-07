@@ -1,7 +1,6 @@
 import { Mail, MapPin, Phone } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import LocalBusinessSchema from '../components/LocalBusinessSchema'
-import PageHero from '../components/PageHero'
 import ProjectExampleCard from '../components/ProjectExampleCard'
 import QuickRequestForm from '../components/QuickRequestForm'
 import SeoHead from '../components/SeoHead'
@@ -36,23 +35,6 @@ function ContactPage() {
       />
       <LocalBusinessSchema />
 
-      <PageHero
-        eyebrow={t('contactPage.heroEyebrow')}
-        title={t('contactPage.heroTitle')}
-        text={t('contactPage.heroText')}
-      />
-
-      <section className="section-spacing pt-0">
-        <div className="container-width">
-          <SectionTitle
-            eyebrow={t('contactPage.quick.eyebrow')}
-            title={t('contactPage.quick.title')}
-            description={t('contactPage.quick.description')}
-          />
-          <QuickRequestForm />
-        </div>
-      </section>
-
       <section className="section-spacing pt-0">
         <div className="container-width">
           <SectionTitle
@@ -65,6 +47,17 @@ function ContactPage() {
               <ProjectExampleCard key={item.title} {...item} />
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="section-spacing pt-0">
+        <div className="container-width">
+          <SectionTitle
+            eyebrow={t('contactPage.quick.eyebrow')}
+            title={t('contactPage.quick.title')}
+            description={t('contactPage.quick.description')}
+          />
+          <QuickRequestForm />
         </div>
       </section>
 

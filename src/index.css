@@ -88,6 +88,10 @@ body {
   animation: rise-in 600ms ease-out both;
 }
 
+.cta-pulse {
+  animation: cta-scale-loop 1.2s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -98,6 +102,10 @@ body {
   }
 
   .phone-ring-icon {
+    animation: none;
+  }
+
+  .cta-pulse {
     animation: none;
   }
 }
@@ -130,5 +138,15 @@ body {
   }
   92% {
     transform: rotate(5deg) scale(1.01);
+  }
+}
+
+@keyframes cta-scale-loop {
+  0%,
+  100% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
   }
 }

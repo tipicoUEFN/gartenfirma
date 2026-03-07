@@ -4,14 +4,14 @@ import { businessData } from '../config/businessData'
 
 function ServiceRequestForm() {
   const { t } = useTranslation()
-  const HOLD_DURATION_MS = 3000
+  const MAX_FILES = 3
+  const MAX_FILE_SIZE_BYTES = 5 * 1024 * 1024
+  const MAX_TOTAL_SIZE_BYTES = 15 * 1024 * 1024
   const [status, setStatus] = useState('idle')
   const [errorText, setErrorText] = useState('')
-  const [holdProgress, setHoldProgress] = useState(0)
-  const [holdReady, setHoldReady] = useState(false)
-  const holdTimeoutRef = useRef(null)
-  const holdIntervalRef = useRef(null)
-  const submitButtonRef = useRef(null)
+  const [uploadError, setUploadError] = useState('')
+  const [uploadedImages, setUploadedImages] = useState([])
+  const fileInputRef = useRef(null)
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -78,60 +78,53 @@ function ServiceRequestForm() {
     })
   }
 
-  const clearHoldTimers = () => {
-    if (holdTimeoutRef.current) {
-      window.clearTimeout(holdTimeoutRef.current)
-      holdTimeoutRef.current = null
+  const validateUploadedImages = (files) => {
+    if (files.length > MAX_FILES) {
+      return t('serviceRequestForm.upload.errors.tooMany', { max: MAX_FILES })
     }
-    if (holdIntervalRef.current) {
-      window.clearInterval(holdIntervalRef.current)
-      holdIntervalRef.current = null
+
+    const hasInvalidType = files.some((file) => !file.type.startsWith('image/'))
+    if (hasInvalidType) {
+      return t('serviceRequestForm.upload.errors.invalidType')
     }
+
+    const hasOversizedFile = files.some((file) => file.size > MAX_FILE_SIZE_BYTES)
+    if (hasOversizedFile) {
+      return t('serviceRequestForm.upload.errors.fileTooLarge')
+    }
+
+    const totalSize = files.reduce((sum, file) => sum + file.size, 0)
+    if (totalSize > MAX_TOTAL_SIZE_BYTES) {
+      return t('serviceRequestForm.upload.errors.totalTooLarge')
+    }
+
+    return ''
   }
 
-  const startHold = () => {
-    if (status === 'submitting' || holdReady) {
+  const handleImagesChange = (event) => {
+    const nextFiles = Array.from(event.target.files || [])
+    const validationError = validateUploadedImages(nextFiles)
+
+    if (validationError) {
+      setUploadError(validationError)
+      setUploadedImages([])
+      event.target.value = ''
       return
     }
 
-    setErrorText('')
-    setHoldProgress(0)
-
-    const startTime = Date.now()
-
-    clearHoldTimers()
-    holdIntervalRef.current = window.setInterval(() => {
-      const elapsed = Date.now() - startTime
-      const progress = Math.min(100, Math.round((elapsed / HOLD_DURATION_MS) * 100))
-      setHoldProgress(progress)
-    }, 50)
-
-    holdTimeoutRef.current = window.setTimeout(() => {
-      clearHoldTimers()
-      setHoldReady(true)
-      setHoldProgress(100)
-      submitButtonRef.current?.form?.requestSubmit()
-    }, HOLD_DURATION_MS)
-  }
-
-  const stopHold = () => {
-    if (holdReady || status === 'submitting') {
-      return
-    }
-    clearHoldTimers()
-    setHoldProgress(0)
+    setUploadError('')
+    setUploadedImages(nextFiles)
   }
 
   const handleSubmit = async (event) => {
     event.preventDefault()
 
-    if (!holdReady) {
-      setErrorText(t('serviceRequestForm.errors.holdToSend'))
+    const validationError = validateUploadedImages(uploadedImages)
+    if (validationError) {
+      setUploadError(validationError)
       return
     }
 
-    setHoldReady(false)
-    setHoldProgress(0)
     setStatus('submitting')
     setErrorText('')
 
@@ -151,14 +144,21 @@ function ServiceRequestForm() {
       Anfrageart: t('serviceRequestForm.mail.requestType'),
     }
 
+    const submitData = new FormData()
+    Object.entries(payload).forEach(([key, value]) => {
+      submitData.append(key, value)
+    })
+    uploadedImages.forEach((file) => {
+      submitData.append('attachment', file)
+    })
+
     try {
       const response = await fetch(`https://formsubmit.co/ajax/${businessData.email}`, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
           Accept: 'application/json',
         },
-        body: JSON.stringify(payload),
+        body: submitData,
       })
 
       if (!response.ok) {
@@ -179,6 +179,11 @@ function ServiceRequestForm() {
         propertyType: '',
         message: '',
       })
+      setUploadedImages([])
+      setUploadError('')
+      if (fileInputRef.current) {
+        fileInputRef.current.value = ''
+      }
     } catch {
       setStatus('error')
       setErrorText(t('serviceRequestForm.errors.submitFailed'))
@@ -356,6 +361,25 @@ function ServiceRequestForm() {
             className="mt-2 w-full rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-olive-500"
           />
         </label>
+        <label className="text-sm font-medium text-olive-800">
+          {t('serviceRequestForm.upload.label')}
+          <input
+            ref={fileInputRef}
+            name="images"
+            type="file"
+            accept="image/*"
+            multiple
+            onChange={handleImagesChange}
+            className="mt-2 w-full rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-olive-500"
+          />
+        </label>
+        <p className="text-xs text-olive-600">{t('serviceRequestForm.upload.help')}</p>
+        {uploadedImages.length > 0 ? (
+          <p className="text-xs text-olive-700">
+            {t('serviceRequestForm.upload.selected', { count: uploadedImages.length, max: MAX_FILES })}
+          </p>
+        ) : null}
+        {uploadError ? <p className="text-sm text-red-700">{uploadError}</p> : null}
       </div>
 
       <div className="space-y-4 rounded-2xl border border-olive-200 bg-olive-50/70 p-5">
@@ -378,34 +402,12 @@ function ServiceRequestForm() {
 
       <div className="space-y-3">
         <button
-          ref={submitButtonRef}
-          type="button"
+          type="submit"
           disabled={status === 'submitting'}
-          onMouseDown={startHold}
-          onMouseUp={stopHold}
-          onMouseLeave={stopHold}
-          onTouchStart={startHold}
-          onTouchEnd={stopHold}
-          onTouchCancel={stopHold}
-          onKeyDown={(event) => {
-            if ((event.key === ' ' || event.key === 'Enter') && !event.repeat) {
-              startHold()
-            }
-          }}
-          onKeyUp={(event) => {
-            if (event.key === ' ' || event.key === 'Enter') {
-              stopHold()
-            }
-          }}
           className="w-full rounded-full bg-olive-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-olive-800 sm:w-auto"
         >
-          {status === 'submitting'
-            ? t('serviceRequestForm.submit.sending')
-            : holdProgress > 0
-              ? t('serviceRequestForm.submit.holding', { progress: holdProgress })
-              : t('serviceRequestForm.submit.default')}
+          {status === 'submitting' ? t('serviceRequestForm.submit.sending') : t('serviceRequestForm.submit.default')}
         </button>
-        {status !== 'submitting' ? <p className="text-xs text-olive-600">{t('serviceRequestForm.holdHint')}</p> : null}
         <p className="text-xs text-olive-600">{t('serviceRequestForm.notice')}</p>
         {status === 'success' ? <p className="text-sm text-emerald-700">{t('serviceRequestForm.success')}</p> : null}
         {status === 'error' ? <p className="text-sm text-red-700">{errorText}</p> : null}

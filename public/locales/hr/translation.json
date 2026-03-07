@@ -176,23 +176,23 @@
   },
   "contactPage": {
     "heroEyebrow": "Kontakt",
-    "heroTitle": "Veselimo se vašem upitu",
-    "heroText": "Za redovitu njegu ili jednokratni projekt odgovaramo brzo.",
+    "heroTitle": "",
+    "heroText": "",
     "formTitle": "Pošaljite poruku",
-    "formDescription": "Recite nam svoju potrebu. Javit ćemo vam se osobno.",
+    "formDescription": "Kratko opišite potrebu. Javljamo se brzo.",
     "direct": "Izravno dostupni",
     "serviceArea": "Područje usluge",
     "seoTitle": "Kontakt i upit",
     "seoDescription": "Zatrazite njegu vrta u Leibnitzu, Wagni, Gralli, Tillmitschu, Straßu i okolici. Odgovaramo brzo.",
     "quick": {
       "eyebrow": "Brzi kontakt",
-      "title": "Najbrze: posaljite kratki upit",
-      "description": "Kratki upit i brza povratna informacija."
+      "title": "Posaljite kratki upit",
+      "description": "Odgovor obicno u 24h."
     },
     "flowSection": {
       "eyebrow": "Tijek",
-      "title": "Kako izgleda vas upit",
-      "description": "Sazeto kroz pocetno stanje, izvedbu i rezultat."
+      "title": "Kako ide",
+      "description": "Tri kratka koraka."
     },
     "detailed": {
       "eyebrow": "Detaljni upit",
@@ -395,7 +395,7 @@
   "quickRequestForm": {
     "badge": "Preporuceno za brzi odgovor",
     "title": "Brzi upit u 1 minuti",
-    "subtitle": "Obicno odgovaramo unutar 24 sata (Pon-Pet).",
+    "subtitle": "Odgovor obicno u 24h (Pon-Pet).",
     "fields": {
       "name": "Ime",
       "phone": "Telefon",
@@ -495,13 +495,24 @@
       "frequency": "Ucestalost",
       "propertyType": "Objekt"
     },
+    "upload": {
+      "label": "Prenesite slike (opcionalno)",
+      "help": "Do 3 slike. Samo JPG/PNG/WebP. Max 5 MB po slici.",
+      "selected": "Odabrano {{count}} od {{max}} slika.",
+      "errors": {
+        "tooMany": "Odaberite najvise {{max}} slike.",
+        "invalidType": "Prenesite samo slikovne datoteke.",
+        "fileTooLarge": "Jedna slika je prevelika (max 5 MB).",
+        "totalTooLarge": "Ukupna velicina je prevelika (max 15 MB)."
+      }
+    },
     "submit": {
       "default": "Posalji upit",
       "sending": "Slanje...",
       "holding": "Drzite... {{progress}}%"
     },
     "holdHint": "Za slanje drzite tipku 3 sekunde.",
-    "notice": "Neobvezujuci upit. Obicno odgovaramo unutar 24h (Pon-Pet).",
+    "notice": "Neobvezujuci upit. Odgovor obicno u 24h (Pon-Pet).",
     "success": "Hvala. Vas upit je poslan.",
     "errors": {
       "holdToSend": "Molimo drzite tipku 3 sekunde.",

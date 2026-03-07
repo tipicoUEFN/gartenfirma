@@ -23,8 +23,6 @@ function ReferenceCard({ title, location, text, image, fallbackImage }) {
       {showImage ? (
         <a
           href={currentImage}
-          target="_blank"
-          rel="noreferrer"
           title={title}
           className="block overflow-hidden rounded-xl border border-olive-200 bg-white"
         >

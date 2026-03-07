@@ -176,27 +176,27 @@
   },
   "contactPage": {
     "heroEyebrow": "Contact",
-    "heroTitle": "We look forward to your request",
-    "heroText": "Whether ongoing care or a one-time project, we respond quickly.",
+    "heroTitle": "",
+    "heroText": "",
     "formTitle": "Send message",
-    "formDescription": "Tell us your request. We will contact you personally.",
+    "formDescription": "Tell us briefly. We reply fast.",
     "direct": "Directly reachable",
     "serviceArea": "Service area",
     "seoTitle": "Contact and request",
     "seoDescription": "Request garden care in Leibnitz, Wagna, Gralla, Tillmitsch, Straß and surrounding areas. We reply quickly.",
     "quick": {
       "eyebrow": "Fast contact",
-      "title": "Fastest way: send a short request",
-      "description": "Send a short request and receive a quick reply."
+      "title": "Send a short request",
+      "description": "Usually answered within 24h."
     },
     "flowSection": {
       "eyebrow": "Process",
-      "title": "How your request works",
-      "description": "Compactly explained by situation, implementation and result."
+      "title": "How it works",
+      "description": "Three quick steps."
     },
     "detailed": {
       "eyebrow": "Detailed request",
-      "description": "More details for a more precise offer."
+      "description": "More details, more precise quote."
     },
     "flow": {
       "quick": {
@@ -429,7 +429,7 @@
   "quickRequestForm": {
     "badge": "Recommended for fast response",
     "title": "Quick request in 1 minute",
-    "subtitle": "We usually reply within 24 hours (Mon-Fri).",
+    "subtitle": "Usually answered within 24h (Mon-Fri).",
     "fields": {
       "name": "Name",
       "phone": "Phone",
@@ -529,13 +529,24 @@
       "frequency": "Frequency",
       "propertyType": "Property"
     },
+    "upload": {
+      "label": "Upload images (optional)",
+      "help": "Up to 3 images. JPG/PNG/WebP only. Max 5 MB each.",
+      "selected": "{{count}} of {{max}} images selected.",
+      "errors": {
+        "tooMany": "Please select up to {{max}} images.",
+        "invalidType": "Please upload image files only.",
+        "fileTooLarge": "One image is too large (max 5 MB each).",
+        "totalTooLarge": "Total upload size is too large (max 15 MB)."
+      }
+    },
     "submit": {
       "default": "Send request",
       "sending": "Sending...",
       "holding": "Hold... {{progress}}%"
     },
     "holdHint": "Hold the button for 3 seconds to send.",
-    "notice": "Non-binding inquiry. We usually respond within 24h (Mon-Fri).",
+    "notice": "Non-binding inquiry. Usually answered within 24h (Mon-Fri).",
     "success": "Thank you. Your request has been sent.",
     "errors": {
       "holdToSend": "Please hold the button for 3 seconds.",
