@@ -10,10 +10,14 @@ import TrustCard from '../components/TrustCard'
 import { businessData } from '../config/businessData'
 import { homepageImages, referenceProjects } from '../config/imageLibrary'
 
-const references = referenceProjects.slice(0, 3)
-
 function HomePage() {
   const { t } = useTranslation()
+  const references = referenceProjects.slice(0, 3).map((project, index) => ({
+    ...project,
+    title: t(`references.projects.${index + 1}.title`),
+    location: t(`references.projects.${index + 1}.location`),
+    text: t(`references.projects.${index + 1}.text`),
+  }))
 
   const services = [
     {
@@ -74,7 +78,7 @@ function HomePage() {
         text={t('home.hero.text', { companyName: businessData.companyName })}
         imageSrc={homepageImages.hero.src}
         imageSrcSet={homepageImages.hero.srcSet}
-        imageAlt={homepageImages.hero.alt}
+        imageAlt={t('home.hero.imageAlt')}
       >
         <div className="flex flex-wrap items-center gap-4">
           <Link
@@ -140,10 +144,10 @@ function HomePage() {
           <div className="glass-card rounded-3xl p-6 sm:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-olive-600">{t('home.about.regionActive')}</p>
             <ul className="mt-4 space-y-3 text-sm text-olive-700 sm:text-base">
-              <li>Suedsteiermark</li>
-              <li>Graz</li>
-              <li>Leibnitz</li>
-              <li>Umgebung</li>
+              <li>{t('home.about.regionItem1')}</li>
+              <li>{t('home.about.regionItem2')}</li>
+              <li>{t('home.about.regionItem3')}</li>
+              <li>{t('home.about.regionItem4')}</li>
             </ul>
           </div>
         </div>

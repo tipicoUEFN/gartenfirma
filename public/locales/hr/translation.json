@@ -17,6 +17,7 @@
       "eyebrow": "Premium njega vrta",
       "title": "Vas vrt u najboljim rukama. Uredan i profesionalno odrzavan.",
       "text": "{{companyName}} pruza kvalitetnu njegu vrtova za privatne i poslovne klijente.",
+      "imageAlt": "Vrtlar gura kolica s biljkom kroz uredan vrt.",
       "serviceArea": "Podrucje usluge"
     },
     "services": {
@@ -44,7 +45,11 @@
       "description": "Poznajemo lokalne uvjete i radimo odrzivo.",
       "text": "Nas tim radi s jasnim procesima i postenim savjetovanjem.",
       "link": "Vise o nasem timu",
-      "regionActive": "Aktivni u regiji"
+      "regionActive": "Aktivni u regiji",
+      "regionItem1": "Juzna Stajerska",
+      "regionItem2": "Graz",
+      "regionItem3": "Leibnitz",
+      "regionItem4": "Okolica"
     },
     "references": {
       "eyebrow": "Reference",
@@ -107,5 +112,81 @@
     "title": "Zelite svoj vrt prepustiti pouzdanim rukama?",
     "text": "Pripremamo jasnu ponudu i osiguravamo cistu, pravovremenu izvedbu.",
     "button": "Kontaktirajte nas"
+  },
+  "footer": {
+    "claim": "Profesionalna njega vrta s pouzdanom kvalitetom u Juznoj Stajerskoj.",
+    "contactTitle": "Kontakt",
+    "serviceAreaTitle": "Podrucje usluge",
+    "hoursTitle": "Radno vrijeme",
+    "legalTitle": "Pravno",
+    "impressum": "Impresum",
+    "privacy": "Privatnost",
+    "copyright": "{{year}} {{companyName}}. Sva prava pridrzana."
+  },
+  "contactForm": {
+    "firstNameLabel": "Ime",
+    "firstNamePlaceholder": "Vase ime",
+    "lastNameLabel": "Prezime",
+    "lastNamePlaceholder": "Vase prezime",
+    "emailLabel": "E-posta",
+    "emailPlaceholder": "ime@primjer.hr",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "+43 ...",
+    "messageLabel": "Poruka",
+    "messagePlaceholder": "Kratko opisite svoj zahtjev (npr. redovna njega, rezanje zivice, sezonske usluge).",
+    "submit": "Posalji upit",
+    "notice": "Ovaj obrazac trenutno ne salje podatke (frontend demo)."
+  },
+  "references": {
+    "eyebrow": "Reference",
+    "title": "Vidljivi rezultati iz regije",
+    "heroText": "",
+    "sectionTitle": "Odabrani projekti",
+    "sectionDescription": "Uvid u tipicne vrtne radove kao sto su njega travnjaka, rezanje zivice i sezonski servis.",
+    "imageComingSoon": "Slika uskoro: /images/references/refX.webp",
+    "projects": {
+      "1": { "title": "Kosnja travnjaka", "location": "Juzna Stajerska", "text": "Redovna njega travnjaka za cist i ujednacen izgled." },
+      "2": { "title": "Rezanje zivice", "location": "Leibnitz", "text": "Precizno oblikovanje za gustu i zdravu zivicu." },
+      "3": { "title": "Njega gredica", "location": "Okolica Graza", "text": "Njega gredica i trajnica za uredan izgled." },
+      "4": { "title": "Njega objekta", "location": "Regija Graz", "text": "Kontinuirano odrzavanje zelenih povrsina u fiksnim intervalima." },
+      "5": { "title": "Sezonski servis", "location": "Juzna Stajerska", "text": "Proljetni i jesenski radovi za urednu strukturu vrta." }
+    }
+  },
+  "impressum": {
+    "eyebrow": "Impresum",
+    "title": "Pravne informacije",
+    "heroText": "Molimo zamijenite sljedece placeholder podatke svojim potpunim pravnim podacima.",
+    "phoneLabel": "Telefon:",
+    "emailLabel": "E-posta:",
+    "businessPurpose": "Predmet poslovanja: njega vrtova i odrzavanje zelenih povrsina",
+    "uid": "UID broj: ATU12345678 (placeholder)",
+    "companyNumber": "Broj registra: FN123456x (placeholder)",
+    "companyCourt": "Trgovacki sud: Zemaljski sud Graz (placeholder)",
+    "authority": "Nadlezno tijelo: Okruzna uprava (placeholder)",
+    "membership": "Clanstvo: WKO Stajerska (placeholder)",
+    "tradeLaw": "Strukovno pravo: Gewerbeordnung (GewO)"
+  },
+  "privacy": {
+    "eyebrow": "Privatnost",
+    "title": "Informacije o obradi podataka",
+    "heroText": "Ova stranica je polazna tocka i mora biti zamijenjena pravno provjerenom izjavom o privatnosti.",
+    "section1Title": "1. Odgovorna osoba",
+    "section1Text": "Odgovorna osoba za obradu podataka je operater ove web stranice.",
+    "section2Title": "2. Prikupljanje i obrada",
+    "section2Text": "Osobni podaci obraduju se samo u potrebnom opsegu, npr. kod kontakt upita.",
+    "section3Title": "3. Kontakt obrazac",
+    "section3Text": "Pri slanju upita uneseni podaci mogu se koristiti za obradu upita.",
+    "section4Title": "4. Vasa prava",
+    "section4Text": "Imate pravo na pristup, ispravak, brisanje, ogranicenje obrade i prigovor.",
+    "notice": "Napomena: Ovaj tekst je placeholder i ne zamjenjuje pravni savjet."
+  },
+  "services": {
+    "title": "Nase usluge"
+  },
+  "about": {
+    "title": "O nama"
+  },
+  "language": {
+    "label": "Jezik"
   }
 }

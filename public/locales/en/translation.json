@@ -17,6 +17,7 @@
       "eyebrow": "Premium garden care",
       "title": "Your garden in the best hands. Well-kept, clear and professionally maintained.",
       "text": "{{companyName}} provides high-quality garden care for private and business clients in Southern Styria.",
+      "imageAlt": "Gardener pushes a wheelbarrow with a plant through a well-kept garden.",
       "serviceArea": "Service area"
     },
     "services": {
@@ -44,7 +45,11 @@
       "description": "We know the regional conditions and focus on sustainable care.",
       "text": "Our team works with clear processes and honest advice.",
       "link": "More about our team",
-      "regionActive": "Active regionally"
+      "regionActive": "Active regionally",
+      "regionItem1": "Southern Styria",
+      "regionItem2": "Graz",
+      "regionItem3": "Leibnitz",
+      "regionItem4": "Surroundings"
     },
     "references": {
       "eyebrow": "References",
@@ -107,5 +112,101 @@
     "title": "Would you like to place your garden in reliable hands?",
     "text": "We prepare a clear offer and ensure clean, on-time execution.",
     "button": "Contact us now"
+  },
+  "footer": {
+    "claim": "Professional garden care with dependable quality in Southern Styria.",
+    "contactTitle": "Contact",
+    "serviceAreaTitle": "Service area",
+    "hoursTitle": "Hours",
+    "legalTitle": "Legal",
+    "impressum": "Imprint",
+    "privacy": "Privacy",
+    "copyright": "{{year}} {{companyName}}. All rights reserved."
+  },
+  "contactForm": {
+    "firstNameLabel": "First name",
+    "firstNamePlaceholder": "Your first name",
+    "lastNameLabel": "Last name",
+    "lastNamePlaceholder": "Your last name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "name@example.com",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "+43 ...",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Describe your request briefly (e.g. ongoing care, hedge trimming, seasonal support).",
+    "submit": "Send request",
+    "notice": "This form currently does not send data (frontend demo)."
+  },
+  "references": {
+    "eyebrow": "References",
+    "title": "Visible results from the region",
+    "heroText": "",
+    "sectionTitle": "Selected projects",
+    "sectionDescription": "An insight into typical garden tasks such as lawn care, hedge trimming and seasonal service.",
+    "imageComingSoon": "Image coming soon: /images/references/refX.webp",
+    "projects": {
+      "1": {
+        "title": "Lawn mowing",
+        "location": "Southern Styria",
+        "text": "Regular lawn care for a clean and even overall appearance."
+      },
+      "2": {
+        "title": "Hedge trimming",
+        "location": "Leibnitz",
+        "text": "Precise shaping cut for dense, healthy hedges and clean lines."
+      },
+      "3": {
+        "title": "Bed care",
+        "location": "Graz area",
+        "text": "Care of beds and perennials for a tidy appearance."
+      },
+      "4": {
+        "title": "Property care",
+        "location": "Graz region",
+        "text": "Ongoing green area maintenance with fixed intervals."
+      },
+      "5": {
+        "title": "Seasonal service",
+        "location": "Southern Styria",
+        "text": "Spring and autumn work for a clean garden structure."
+      }
+    }
+  },
+  "impressum": {
+    "eyebrow": "Imprint",
+    "title": "Legal information",
+    "heroText": "Please replace the following placeholders with your complete legal company data.",
+    "phoneLabel": "Phone:",
+    "emailLabel": "Email:",
+    "businessPurpose": "Business purpose: Garden care and green area maintenance",
+    "uid": "VAT ID: ATU12345678 (placeholder)",
+    "companyNumber": "Company register number: FN123456x (placeholder)",
+    "companyCourt": "Register court: Regional Court Graz (placeholder)",
+    "authority": "Supervisory authority: District authority (placeholder)",
+    "membership": "Member of: WKO Styria (placeholder)",
+    "tradeLaw": "Trade law: Gewerbeordnung (GewO)"
+  },
+  "privacy": {
+    "eyebrow": "Privacy",
+    "title": "Information on data processing",
+    "heroText": "This page is a starting point and must be replaced by a legally reviewed privacy policy.",
+    "section1Title": "1. Responsible entity",
+    "section1Text": "The responsible entity for data processing is the operator of this website.",
+    "section2Title": "2. Collection and processing",
+    "section2Text": "Personal data is processed only to the necessary extent, for example in contact inquiries.",
+    "section3Title": "3. Contact form",
+    "section3Text": "When submitting a request, entered data may be used to process the request.",
+    "section4Title": "4. Your rights",
+    "section4Text": "You have the right to information, correction, deletion, restriction of processing and objection.",
+    "notice": "Note: This text is a placeholder and does not replace legal advice."
+  },
+  "services": {
+    "title": "Our services"
+  },
+  "about": {
+    "title": "About us"
+  },
+  "language": {
+    "label": "Language"
   }
 }

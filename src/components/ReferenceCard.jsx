@@ -1,6 +1,8 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 function ReferenceCard({ title, location, text, image, fallbackImage }) {
+  const { t } = useTranslation()
   const [fallbackUsed, setFallbackUsed] = useState(false)
   const [imageLoadFailed, setImageLoadFailed] = useState(false)
 
@@ -30,7 +32,7 @@ function ReferenceCard({ title, location, text, image, fallbackImage }) {
         </div>
       ) : (
         <div className="flex aspect-[3/2] items-center justify-center rounded-xl border border-dashed border-olive-300 bg-olive-100/60 px-4 text-center text-xs font-semibold uppercase tracking-[0.18em] text-olive-700">
-          Bild folgt: /images/references/refX.webp
+          {t('references.imageComingSoon')}
         </div>
       )}
       <h3 className="mt-5 text-base font-semibold text-olive-800">{title}</h3>

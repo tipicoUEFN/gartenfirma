@@ -1,47 +1,50 @@
 import PageHero from '../components/PageHero'
+import { useTranslation } from 'react-i18next'
 
 function DatenschutzPage() {
+  const { t } = useTranslation()
+
   return (
     <>
       <PageHero
-        eyebrow="Datenschutz"
-        title="Information zur Datenverarbeitung"
-        text="Diese Seite ist ein Startpunkt und muss durch eine rechtlich gepruefte Datenschutzerklaerung ersetzt werden."
+        eyebrow={t('privacy.eyebrow')}
+        title={t('privacy.title')}
+        text={t('privacy.heroText')}
       />
 
       <section className="section-spacing pt-0">
         <div className="container-width">
           <div className="glass-card space-y-5 rounded-2xl p-6 text-sm leading-relaxed text-olive-700 sm:p-8">
             <div>
-              <h2 className="text-base font-semibold text-olive-800">1. Verantwortliche Stelle</h2>
+              <h2 className="text-base font-semibold text-olive-800">{t('privacy.section1Title')}</h2>
               <p className="mt-2">
-                Die verantwortliche Stelle fuer die Datenverarbeitung ist der Betreiber dieser Website.
+                {t('privacy.section1Text')}
               </p>
             </div>
 
             <div>
-              <h2 className="text-base font-semibold text-olive-800">2. Erhebung und Verarbeitung</h2>
+              <h2 className="text-base font-semibold text-olive-800">{t('privacy.section2Title')}</h2>
               <p className="mt-2">
-                Personenbezogene Daten werden nur im erforderlichen Umfang verarbeitet, etwa bei Kontaktanfragen.
+                {t('privacy.section2Text')}
               </p>
             </div>
 
             <div>
-              <h2 className="text-base font-semibold text-olive-800">3. Kontaktformular</h2>
+              <h2 className="text-base font-semibold text-olive-800">{t('privacy.section3Title')}</h2>
               <p className="mt-2">
-                Beim Absenden einer Anfrage koennen eingegebene Daten zur Bearbeitung der Anfrage verwendet werden.
+                {t('privacy.section3Text')}
               </p>
             </div>
 
             <div>
-              <h2 className="text-base font-semibold text-olive-800">4. Ihre Rechte</h2>
+              <h2 className="text-base font-semibold text-olive-800">{t('privacy.section4Title')}</h2>
               <p className="mt-2">
-                Sie haben das Recht auf Auskunft, Berichtigung, Loeschung, Einschraenkung der Verarbeitung und Widerspruch.
+                {t('privacy.section4Text')}
               </p>
             </div>
 
             <p className="rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 text-xs text-amber-900">
-              Hinweis: Dieser Text ist ein Platzhalter und ersetzt keine rechtliche Beratung.
+              {t('privacy.notice')}
             </p>
           </div>
         </div>

@@ -1,13 +1,16 @@
 import PageHero from '../components/PageHero'
+import { useTranslation } from 'react-i18next'
 import { businessData } from '../config/businessData'
 
 function ImpressumPage() {
+  const { t } = useTranslation()
+
   return (
     <>
       <PageHero
-        eyebrow="Impressum"
-        title="Rechtliche Angaben"
-        text="Bitte ersetzen Sie die folgenden Platzhalter durch Ihre vollstaendigen rechtlichen Unternehmensdaten."
+        eyebrow={t('impressum.eyebrow')}
+        title={t('impressum.title')}
+        text={t('impressum.heroText')}
       />
 
       <section className="section-spacing pt-0">
@@ -16,21 +19,21 @@ function ImpressumPage() {
             <p className="font-semibold text-olive-800">{businessData.companyName}</p>
             <p>{businessData.address}</p>
             <div className="mt-4">
-              <p>Telefon:</p>
+              <p>{t('impressum.phoneLabel')}</p>
               {businessData.phoneContacts.map((contact) => (
                 <p key={contact.phone}>
                   {contact.label}: {contact.phone}
                 </p>
               ))}
             </div>
-            <p>E-Mail: {businessData.email}</p>
-            <p className="mt-4">Unternehmensgegenstand: Gartenpflege und Gruenflaechenbetreuung</p>
-            <p>UID-Nummer: ATU12345678 (Platzhalter)</p>
-            <p>Firmenbuchnummer: FN123456x (Platzhalter)</p>
-            <p>Firmenbuchgericht: Landesgericht Graz (Platzhalter)</p>
-            <p className="mt-4">Zustaendige Aufsichtsbehoerde: Bezirkshauptmannschaft (Platzhalter)</p>
-            <p>Mitglied bei: WKO Steiermark (Platzhalter)</p>
-            <p className="mt-4">Berufsrecht: Gewerbeordnung (GewO)</p>
+            <p>{t('impressum.emailLabel')} {businessData.email}</p>
+            <p className="mt-4">{t('impressum.businessPurpose')}</p>
+            <p>{t('impressum.uid')}</p>
+            <p>{t('impressum.companyNumber')}</p>
+            <p>{t('impressum.companyCourt')}</p>
+            <p className="mt-4">{t('impressum.authority')}</p>
+            <p>{t('impressum.membership')}</p>
+            <p className="mt-4">{t('impressum.tradeLaw')}</p>
           </div>
         </div>
       </section>

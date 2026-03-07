@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 const languages = ['de', 'sl', 'hr', 'hu', 'en']
 
 function LanguageSwitcher() {
-  const { i18n } = useTranslation()
+  const { i18n, t } = useTranslation()
   const currentLanguage = i18n.resolvedLanguage || i18n.language || 'de'
 
   const handleLanguageChange = (lng) => {
@@ -14,7 +14,7 @@ function LanguageSwitcher() {
   return (
     <div className="flex items-center" aria-label="Language switcher">
       <label htmlFor="language-select" className="sr-only">
-        Sprache
+        {t('language.label')}
       </label>
       <select
         id="language-select"

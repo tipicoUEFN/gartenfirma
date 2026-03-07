@@ -17,6 +17,7 @@
       "eyebrow": "Premium Gartenpflege",
       "title": "Ihr Garten in besten Haenden. Gepflegt, klar und professionell betreut.",
       "text": "{{companyName}} bietet hochwertige Gartenpflege fuer Privat- und Firmenkunden in der Suedsteiermark. Mit Fachwissen, Handschlagqualitaet und Blick fuers Detail.",
+      "imageAlt": "Gaertner schiebt Schubkarre mit Pflanze durch gepflegten Garten.",
       "serviceArea": "Einsatzgebiet"
     },
     "services": {
@@ -71,7 +72,11 @@
       "description": "Wir kennen die Anforderungen von Gaerten in der Region und setzen auf nachhaltige Pflege statt kurzfristiger Kosmetik.",
       "text": "Unser Team arbeitet mit klaren Prozessen und ehrlicher Beratung. Sie erhalten nachvollziehbare Empfehlungen und ein Ergebnis, das Ihren Garten sichtbar aufwertet.",
       "link": "Mehr ueber unser Team",
-      "regionActive": "Regional aktiv"
+      "regionActive": "Regional aktiv",
+      "regionItem1": "Suedsteiermark",
+      "regionItem2": "Graz",
+      "regionItem3": "Leibnitz",
+      "regionItem4": "Umgebung"
     },
     "references": {
       "eyebrow": "Referenzen",
@@ -136,5 +141,101 @@
     "title": "Sie moechten Ihren Garten in verlaessliche Haende geben?",
     "text": "Wir erstellen ein klares Angebot, beraten ehrlich und sorgen fuer eine saubere, termingerechte Umsetzung.",
     "button": "Jetzt Kontakt aufnehmen"
+  },
+  "footer": {
+    "claim": "Professionelle Gartenpflege mit Handschlagqualitaet in der Suedsteiermark.",
+    "contactTitle": "Kontakt",
+    "serviceAreaTitle": "Einsatzgebiet",
+    "hoursTitle": "Zeiten",
+    "legalTitle": "Rechtliches",
+    "impressum": "Impressum",
+    "privacy": "Datenschutz",
+    "copyright": "{{year}} {{companyName}}. Alle Rechte vorbehalten."
+  },
+  "contactForm": {
+    "firstNameLabel": "Vorname",
+    "firstNamePlaceholder": "Ihr Vorname",
+    "lastNameLabel": "Nachname",
+    "lastNamePlaceholder": "Ihr Nachname",
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "name@beispiel.at",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "+43 ...",
+    "messageLabel": "Nachricht",
+    "messagePlaceholder": "Beschreiben Sie kurz Ihr Anliegen (z. B. laufende Pflege, Heckenschnitt, saisonale Betreuung).",
+    "submit": "Anfrage senden",
+    "notice": "Dieses Formular sendet derzeit keine Daten (Frontend-Demo)."
+  },
+  "references": {
+    "eyebrow": "Referenzen",
+    "title": "Sichtbare Resultate aus der Region",
+    "heroText": "",
+    "sectionTitle": "Ausgewaehlte Projekte",
+    "sectionDescription": "Ein Einblick in typische Gartenarbeiten wie Rasenpflege, Heckschnitt und Saisonservice.",
+    "imageComingSoon": "Bild folgt: /images/references/refX.webp",
+    "projects": {
+      "1": {
+        "title": "Rasen maehen",
+        "location": "Suedsteiermark",
+        "text": "Regelmaessige Rasenpflege fuer ein sauberes, gleichmaessiges Gesamtbild."
+      },
+      "2": {
+        "title": "Heckschnitt",
+        "location": "Leibnitz",
+        "text": "Praeziser Formschnitt fuer dichte, gesunde Hecken und klare Linien."
+      },
+      "3": {
+        "title": "Beetpflege",
+        "location": "Graz Umgebung",
+        "text": "Pflege von Beeten und Stauden fuer ein ordentliches Erscheinungsbild."
+      },
+      "4": {
+        "title": "Objektpflege",
+        "location": "Raum Graz",
+        "text": "Laufende Pflege von Gruenflaechen mit festen Intervallen."
+      },
+      "5": {
+        "title": "Saisonservice",
+        "location": "Suedsteiermark",
+        "text": "Fruehjahrs- und Herbstarbeiten fuer eine saubere Gartenstruktur."
+      }
+    }
+  },
+  "impressum": {
+    "eyebrow": "Impressum",
+    "title": "Rechtliche Angaben",
+    "heroText": "Bitte ersetzen Sie die folgenden Platzhalter durch Ihre vollstaendigen rechtlichen Unternehmensdaten.",
+    "phoneLabel": "Telefon:",
+    "emailLabel": "E-Mail:",
+    "businessPurpose": "Unternehmensgegenstand: Gartenpflege und Gruenflaechenbetreuung",
+    "uid": "UID-Nummer: ATU12345678 (Platzhalter)",
+    "companyNumber": "Firmenbuchnummer: FN123456x (Platzhalter)",
+    "companyCourt": "Firmenbuchgericht: Landesgericht Graz (Platzhalter)",
+    "authority": "Zustaendige Aufsichtsbehoerde: Bezirkshauptmannschaft (Platzhalter)",
+    "membership": "Mitglied bei: WKO Steiermark (Platzhalter)",
+    "tradeLaw": "Berufsrecht: Gewerbeordnung (GewO)"
+  },
+  "privacy": {
+    "eyebrow": "Datenschutz",
+    "title": "Information zur Datenverarbeitung",
+    "heroText": "Diese Seite ist ein Startpunkt und muss durch eine rechtlich gepruefte Datenschutzerklaerung ersetzt werden.",
+    "section1Title": "1. Verantwortliche Stelle",
+    "section1Text": "Die verantwortliche Stelle fuer die Datenverarbeitung ist der Betreiber dieser Website.",
+    "section2Title": "2. Erhebung und Verarbeitung",
+    "section2Text": "Personenbezogene Daten werden nur im erforderlichen Umfang verarbeitet, etwa bei Kontaktanfragen.",
+    "section3Title": "3. Kontaktformular",
+    "section3Text": "Beim Absenden einer Anfrage koennen eingegebene Daten zur Bearbeitung der Anfrage verwendet werden.",
+    "section4Title": "4. Ihre Rechte",
+    "section4Text": "Sie haben das Recht auf Auskunft, Berichtigung, Loeschung, Einschraenkung der Verarbeitung und Widerspruch.",
+    "notice": "Hinweis: Dieser Text ist ein Platzhalter und ersetzt keine rechtliche Beratung."
+  },
+  "services": {
+    "title": "Unsere Leistungen"
+  },
+  "about": {
+    "title": "Ueber uns"
+  },
+  "language": {
+    "label": "Sprache"
   }
 }

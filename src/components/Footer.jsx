@@ -1,8 +1,10 @@
 import { Mail, MapPin, Phone } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { businessData } from '../config/businessData'
 
 function Footer() {
+  const { t } = useTranslation()
   const iconLogoSrc = `${import.meta.env.BASE_URL}images/logo/logo1024x1024_white.svg`
   const horizontalLogoSrc = `${import.meta.env.BASE_URL}images/logo/logo1600x400_white.svg`
 
@@ -20,11 +22,11 @@ function Footer() {
             alt={businessData.companyName}
             className="hidden h-10 w-auto sm:block"
           />
-          <p className="mt-3 text-sm leading-relaxed text-olive-200">{businessData.claim}</p>
+          <p className="mt-3 text-sm leading-relaxed text-olive-200">{t('footer.claim')}</p>
         </div>
 
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-olive-300">Kontakt</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-olive-300">{t('footer.contactTitle')}</p>
           <ul className="mt-4 space-y-3 text-sm">
             {businessData.phoneContacts.map((contact) => (
               <li key={contact.phone} className="flex items-start gap-2">
@@ -48,9 +50,9 @@ function Footer() {
         </div>
 
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-olive-300">Einsatzgebiet</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-olive-300">{t('footer.serviceAreaTitle')}</p>
           <p className="mt-4 text-sm leading-relaxed">{businessData.serviceArea}</p>
-          <p className="mt-6 text-sm font-semibold uppercase tracking-[0.2em] text-olive-300">Zeiten</p>
+          <p className="mt-6 text-sm font-semibold uppercase tracking-[0.2em] text-olive-300">{t('footer.hoursTitle')}</p>
           <ul className="mt-4 space-y-2 text-sm">
             {businessData.openingHours.map((entry) => (
               <li key={entry}>{entry}</li>
@@ -59,16 +61,16 @@ function Footer() {
         </div>
 
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-olive-300">Rechtliches</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-olive-300">{t('footer.legalTitle')}</p>
           <ul className="mt-4 space-y-3 text-sm">
             <li>
               <Link to="/impressum" className="hover:text-white">
-                Impressum
+                {t('footer.impressum')}
               </Link>
             </li>
             <li>
               <Link to="/datenschutz" className="hover:text-white">
-                Datenschutz
+                {t('footer.privacy')}
               </Link>
             </li>
           </ul>
@@ -76,7 +78,7 @@ function Footer() {
       </div>
       <div className="border-t border-olive-700 py-4">
         <p className="container-width text-xs text-olive-300">
-          {new Date().getFullYear()} {businessData.companyName}. Alle Rechte vorbehalten.
+          {t('footer.copyright', { year: new Date().getFullYear(), companyName: businessData.companyName })}
         </p>
       </div>
     </footer>

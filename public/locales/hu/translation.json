@@ -17,6 +17,7 @@
       "eyebrow": "Premium kertgondozas",
       "title": "Kertje a legjobb kezekben. Rendezetten es professzionalisan gondozva.",
       "text": "A(z) {{companyName}} magas szinvonalu kertgondozast nyujt magan- es uzleti ugyfeleknek.",
+      "imageAlt": "Kertesz talicskat tol novennyel egy rendezett kertben.",
       "serviceArea": "Szolgaltatasi terulet"
     },
     "services": {
@@ -44,7 +45,11 @@
       "description": "Ismerjuk a helyi adottsagokat es fenntarthatoan dolgozunk.",
       "text": "Csapatunk tiszta folyamatokkal es oszinte tanacsadassal dolgozik.",
       "link": "Tobbet a csapatunkrol",
-      "regionActive": "Aktiv a regioban"
+      "regionActive": "Aktiv a regioban",
+      "regionItem1": "Del-Stajerorszag",
+      "regionItem2": "Graz",
+      "regionItem3": "Leibnitz",
+      "regionItem4": "Kornyek"
     },
     "references": {
       "eyebrow": "Referenciak",
@@ -107,5 +112,81 @@
     "title": "Szeretne kertjet megbizhato kezekre bizni?",
     "text": "Vilagos ajanlatot adunk es tiszta, pontos kivitelezest biztositunk.",
     "button": "Lepjen kapcsolatba velunk"
+  },
+  "footer": {
+    "claim": "Professzionalis kertgondozas megbizhato minoseggel Del-Stajerorszagban.",
+    "contactTitle": "Kapcsolat",
+    "serviceAreaTitle": "Szolgaltatasi terulet",
+    "hoursTitle": "Idopontok",
+    "legalTitle": "Jogi",
+    "impressum": "Impresszum",
+    "privacy": "Adatvedelem",
+    "copyright": "{{year}} {{companyName}}. Minden jog fenntartva."
+  },
+  "contactForm": {
+    "firstNameLabel": "Keresztnev",
+    "firstNamePlaceholder": "Az On keresztneve",
+    "lastNameLabel": "Vezeteknev",
+    "lastNamePlaceholder": "Az On vezetekneve",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "nev@pelda.hu",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "+43 ...",
+    "messageLabel": "Uzenet",
+    "messagePlaceholder": "Rovid leiras az igenyerol (pl. rendszeres gondozas, sovenynyiras, szezonalis munka).",
+    "submit": "Kerelem kuldese",
+    "notice": "Ez az urlap jelenleg nem kuld adatot (frontend demo)."
+  },
+  "references": {
+    "eyebrow": "Referenciak",
+    "title": "Lathato eredmenyek a regiobol",
+    "heroText": "",
+    "sectionTitle": "Valogatott projektek",
+    "sectionDescription": "Betekintes a tipikus kerti munkakba, mint fu gondozasa, sovenynyiras es szezonalis szerviz.",
+    "imageComingSoon": "Kep hamarosan: /images/references/refX.webp",
+    "projects": {
+      "1": { "title": "Funyiras", "location": "Del-Stajerorszag", "text": "Rendszeres fuapolas a tiszta es egyenletes osszkephez." },
+      "2": { "title": "Sovenynyiras", "location": "Leibnitz", "text": "Preciz formas metszes suru es egeszseges sovenyhez." },
+      "3": { "title": "Agyasgondozas", "location": "Graz kornyeke", "text": "Agyasok es evelok gondozasa rendezett megjelenesert." },
+      "4": { "title": "Ingatlangondozas", "location": "Graz regio", "text": "Folyamatos zoldterulet-gondozas rogzitett idokozokkel." },
+      "5": { "title": "Szezonalis szerviz", "location": "Del-Stajerorszag", "text": "Tavaszi es oszi munkak a rendezett kertszerkezetert." }
+    }
+  },
+  "impressum": {
+    "eyebrow": "Impresszum",
+    "title": "Jogi adatok",
+    "heroText": "Kerjuk, cserelje le az alabbi helyorzo adatokat a vallalkozas teljes jogi adataira.",
+    "phoneLabel": "Telefon:",
+    "emailLabel": "E-mail:",
+    "businessPurpose": "Tevekenyseg: kertgondozas es zoldfelulet-kezeles",
+    "uid": "UID szam: ATU12345678 (helyorzo)",
+    "companyNumber": "Cegjegyzekszam: FN123456x (helyorzo)",
+    "companyCourt": "Cegbirosag: Graz tartomanyi birosag (helyorzo)",
+    "authority": "Illetekes hatosag: Jarasi hivatal (helyorzo)",
+    "membership": "Tagsag: WKO Stajerorszag (helyorzo)",
+    "tradeLaw": "Szakmai jog: Gewerbeordnung (GewO)"
+  },
+  "privacy": {
+    "eyebrow": "Adatvedelem",
+    "title": "Tajekoztatas az adatkezelesrol",
+    "heroText": "Ez az oldal kiindulopont, es jogilag ellenorzott adatvedelmi tajekoztatora kell cserelni.",
+    "section1Title": "1. Adatkezelo",
+    "section1Text": "Az adatkezelesert a weboldal uzemeltetoje felelos.",
+    "section2Title": "2. Gyujtes es feldolgozas",
+    "section2Text": "Szemelyes adatokat csak a szukseges mertekben dolgozunk fel, peldaul kapcsolatfelvetelkor.",
+    "section3Title": "3. Kapcsolati urlap",
+    "section3Text": "Az urlap elkuldese soran a megadott adatok felhasznalhatok a kerelem feldolgozasara.",
+    "section4Title": "4. Az On jogai",
+    "section4Text": "Onnek joga van tajekoztatashoz, helyesbiteshez, torleshez, korlatozashoz es tiltakozashoz.",
+    "notice": "Megjegyzes: Ez a szoveg helyorzo, es nem helyettesit jogi tanacsadast."
+  },
+  "services": {
+    "title": "Szolgaltatasaink"
+  },
+  "about": {
+    "title": "Rolunk"
+  },
+  "language": {
+    "label": "Nyelv"
   }
 }
