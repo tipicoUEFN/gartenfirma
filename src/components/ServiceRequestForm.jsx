@@ -2,7 +2,7 @@ import { useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { businessData } from '../config/businessData'
 
-function ServiceRequestForm() {
+function ServiceRequestForm({ firstInputRef }) {
   const { t } = useTranslation()
   const MAX_FILES = 3
   const MAX_FILE_SIZE_BYTES = 5 * 1024 * 1024
@@ -191,13 +191,14 @@ function ServiceRequestForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="glass-card space-y-8 rounded-2xl p-6 sm:p-8">
+    <form onSubmit={handleSubmit} className="space-y-8 rounded-2xl border border-olive-300 bg-olive-100/70 p-6 shadow-sm sm:p-8">
       <div className="space-y-5">
         <h3 className="text-base font-semibold text-olive-800">{t('serviceRequestForm.steps.contact')}</h3>
         <div className="grid gap-5 md:grid-cols-2">
           <label className="text-sm font-medium text-olive-800">
             {t('serviceRequestForm.fields.firstName')}
             <input
+              ref={firstInputRef}
               name="firstName"
               type="text"
               value={formData.firstName}

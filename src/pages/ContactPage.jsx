@@ -1,7 +1,7 @@
+import { useRef } from 'react'
 import { Mail, MapPin, Phone } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import LocalBusinessSchema from '../components/LocalBusinessSchema'
-import ProjectExampleCard from '../components/ProjectExampleCard'
 import QuickRequestForm from '../components/QuickRequestForm'
 import SeoHead from '../components/SeoHead'
 import SectionTitle from '../components/SectionTitle'
@@ -10,6 +10,10 @@ import { businessData } from '../config/businessData'
 
 function ContactPage() {
   const { t } = useTranslation()
+  const quickSectionRef = useRef(null)
+  const detailedSectionRef = useRef(null)
+  const quickFirstInputRef = useRef(null)
+  const detailedFirstInputRef = useRef(null)
 
   const requestFlow = [
     {
@@ -25,6 +29,13 @@ function ContactPage() {
       result: t('contactPage.flow.detailed.result'),
     },
   ]
+
+  const scrollToForm = (sectionRef, inputRef) => {
+    sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    window.setTimeout(() => {
+      inputRef.current?.focus()
+    }, 350)
+  }
 
   return (
     <>
@@ -43,35 +54,55 @@ function ContactPage() {
             description={t('contactPage.flowSection.description')}
           />
           <div className="grid gap-5 lg:grid-cols-2">
-            {requestFlow.map((item) => (
-              <ProjectExampleCard key={item.title} {...item} />
-            ))}
+            <button
+              type="button"
+              onClick={() => scrollToForm(quickSectionRef, quickFirstInputRef)}
+              className="rounded-2xl border border-olive-200 bg-white p-6 text-left shadow-sm transition hover:border-olive-400 hover:bg-olive-50"
+            >
+              <p className="text-sm font-semibold text-olive-800">1 {requestFlow[0].title}</p>
+              <p className="mt-3 text-sm text-olive-700"><span className="font-semibold">{t('projectLabels.challenge')}:</span> {requestFlow[0].challenge}</p>
+              <p className="mt-2 text-sm text-olive-700"><span className="font-semibold">{t('projectLabels.approach')}:</span> {requestFlow[0].approach}</p>
+              <p className="mt-2 text-sm text-olive-700"><span className="font-semibold">{t('projectLabels.result')}:</span> {requestFlow[0].result}</p>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => scrollToForm(detailedSectionRef, detailedFirstInputRef)}
+              className="rounded-2xl border border-olive-200 bg-white p-6 text-left shadow-sm transition hover:border-olive-400 hover:bg-olive-50"
+            >
+              <p className="text-sm font-semibold text-olive-800">2 {requestFlow[1].title}</p>
+              <p className="mt-3 text-sm text-olive-700"><span className="font-semibold">{t('projectLabels.challenge')}:</span> {requestFlow[1].challenge}</p>
+              <p className="mt-2 text-sm text-olive-700"><span className="font-semibold">{t('projectLabels.approach')}:</span> {requestFlow[1].approach}</p>
+              <p className="mt-2 text-sm text-olive-700"><span className="font-semibold">{t('projectLabels.result')}:</span> {requestFlow[1].result}</p>
+            </button>
           </div>
         </div>
       </section>
 
-      <section className="section-spacing pt-0">
+      <section ref={quickSectionRef} className="section-spacing pt-0">
         <div className="container-width">
           <SectionTitle
             eyebrow={t('contactPage.quick.eyebrow')}
             title={t('contactPage.quick.title')}
             description={t('contactPage.quick.description')}
           />
-          <QuickRequestForm />
+          <QuickRequestForm firstInputRef={quickFirstInputRef} />
         </div>
       </section>
 
-      <section className="section-spacing">
-        <div className="container-width grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-          <div>
-            <SectionTitle
-              eyebrow={t('contactPage.detailed.eyebrow')}
-              title={t('contactPage.formTitle')}
-              description={t('contactPage.detailed.description')}
-            />
-            <ServiceRequestForm />
-          </div>
+      <section ref={detailedSectionRef} className="section-spacing">
+        <div className="container-width">
+          <SectionTitle
+            eyebrow={t('contactPage.detailed.eyebrow')}
+            title={t('contactPage.formTitle')}
+            description={t('contactPage.detailed.description')}
+          />
+          <ServiceRequestForm firstInputRef={detailedFirstInputRef} />
+        </div>
+      </section>
 
+      <section className="section-spacing pt-0">
+        <div className="container-width">
           <aside className="glass-card h-fit rounded-2xl p-6 sm:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-olive-600">{t('contactPage.direct')}</p>
             <ul className="mt-5 space-y-4 text-sm text-olive-700 sm:text-base">

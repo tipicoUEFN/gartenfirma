@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { businessData } from '../config/businessData'
 
-function QuickRequestForm() {
+function QuickRequestForm({ firstInputRef }) {
   const { t } = useTranslation()
   const [status, setStatus] = useState('idle')
   const [errorText, setErrorText] = useState('')
@@ -65,6 +65,7 @@ function QuickRequestForm() {
         <label className="text-sm font-medium text-olive-800">
           {t('quickRequestForm.fields.name')}
           <input
+            ref={firstInputRef}
             required
             name="name"
             value={formData.name}
