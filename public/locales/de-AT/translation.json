@@ -441,7 +441,7 @@
     },
     "placeholders": {
       "town": "z.B. Leibnitz",
-      "select": "Bitte waehlen"
+      "select": "Bitte wählen"
     },
     "submit": {
       "default": "Schnellanfrage senden",
@@ -491,7 +491,7 @@
     },
     "placeholders": {
       "hedgeLength": "z.B. 20",
-      "select": "Bitte waehlen",
+      "select": "Bitte wählen",
       "message": "Beschreiben Sie kurz Ihr Anliegen oder besondere Wuensche."
     },
     "serviceOptions": {
@@ -536,7 +536,7 @@
       "help": "Bis zu 3 Bilder. Nur JPG/PNG/WebP. Max. 5 MB pro Bild.",
       "selected": "{{count}} von {{max}} Bildern ausgewählt.",
       "errors": {
-        "tooMany": "Bitte maximal {{max}} Bilder auswaehlen.",
+        "tooMany": "Bitte maximal {{max}} Bilder auswählen.",
         "invalidType": "Bitte nur Bilddateien hochladen.",
         "fileTooLarge": "Ein Bild ist zu gross (max. 5 MB pro Bild).",
         "totalTooLarge": "Gesamtgroesse zu hoch (max. 15 MB)."
