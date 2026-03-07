@@ -46,8 +46,8 @@ function ReferencesPage() {
       <section className="section-spacing bg-olive-100/40">
         <div className="container-width">
           <SectionTitle
-            title="Einsatzbeispiele nach Ort"
-            description="Konkrete Fallbeispiele aus der Region mit Leistung, Objektart und Betreuungsrhythmus."
+            title="Einsaetze nach Ort"
+            description="Konkrete Projekte aus der Region mit Leistung, Objektart und Betreuungsrhythmus."
           />
           <div className="grid gap-5 lg:grid-cols-2">
             {caseStudies.map((study) => (
@@ -59,7 +59,7 @@ function ReferencesPage() {
                   <p className="rounded-full bg-olive-50 px-3 py-1 text-xs font-semibold text-olive-700">{study.service}</p>
                   <p className="rounded-full bg-olive-50 px-3 py-1 text-xs font-semibold text-olive-700">{study.objectType}</p>
                 </div>
-                <h3 className="mt-4 text-lg font-semibold text-olive-800">Fallbeispiel {study.town}</h3>
+                <h3 className="mt-4 text-lg font-semibold text-olive-800">Projekt in {study.town}</h3>
                 <p className="mt-3 text-sm text-olive-700"><span className="font-semibold text-olive-800">Ausgangslage:</span> {study.challenge}</p>
                 <p className="mt-2 text-sm text-olive-700"><span className="font-semibold text-olive-800">Umsetzung:</span> {study.approach}</p>
                 <p className="mt-2 text-sm text-olive-700"><span className="font-semibold text-olive-800">Ergebnis:</span> {study.result}</p>

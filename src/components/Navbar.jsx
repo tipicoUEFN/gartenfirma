@@ -10,7 +10,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const iconLogoSrc = `${import.meta.env.BASE_URL}images/logo/logo1024x1024.svg`
   const horizontalLogoSrc = `${import.meta.env.BASE_URL}images/logo/logo1600x400.svg`
-  const mainContacts = businessData.phoneContacts.slice(0, 2)
+  const headerPhone = businessData.primaryPhone
   const navigationItems = [
     { label: t('navbar.home'), to: '/' },
     { label: t('navbar.services'), to: '/leistungen' },
@@ -57,13 +57,9 @@ function Navbar() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <Phone size={16} className="text-olive-600" />
-          <div className="flex items-center gap-3 text-sm font-semibold text-olive-800">
-            {mainContacts.map((contact) => (
-              <a key={contact.phone} href={`tel:${contact.phone}`} className="hover:text-olive-600">
-                {contact.label}: {contact.phone}
-              </a>
-            ))}
-          </div>
+          <a href={`tel:${headerPhone}`} className="text-sm font-semibold text-olive-800 hover:text-olive-600">
+            {headerPhone}
+          </a>
         </div>
 
         <button
@@ -94,11 +90,9 @@ function Navbar() {
                 {item.label}
               </NavLink>
             ))}
-            {mainContacts.map((contact) => (
-              <a key={contact.phone} href={`tel:${contact.phone}`} className="mt-2 rounded-lg bg-olive-700 px-4 py-3 text-sm font-semibold text-white">
-                {t('navbar.callNow')}: {contact.label} {contact.phone}
-              </a>
-            ))}
+            <a href={`tel:${headerPhone}`} className="mt-2 rounded-lg bg-olive-700 px-4 py-3 text-sm font-semibold text-white">
+              {t('navbar.callNow')}: {headerPhone}
+            </a>
           </nav>
         </div>
       ) : null}
