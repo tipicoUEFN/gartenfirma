@@ -9,16 +9,19 @@ export const homepageImages = {
   },
 }
 
-export const referenceImagePairs = [
+export const referenceProjects = [
   {
+    comparisonImage: '/images/references/ref1.png',
     beforeImage: '/images/references/ref1-before.jpg',
     afterImage: '/images/references/ref1-after.jpg',
   },
   {
+    comparisonImage: '/images/references/ref2.png',
     beforeImage: '/images/references/ref2-before.jpg',
     afterImage: '/images/references/ref2-after.jpg',
   },
   {
+    comparisonImage: '/images/references/ref3.png',
     beforeImage: '/images/references/ref3-before.jpg',
     afterImage: '/images/references/ref3-after.jpg',
   },

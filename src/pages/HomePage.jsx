@@ -7,7 +7,7 @@ import SectionTitle from '../components/SectionTitle'
 import ServiceCard from '../components/ServiceCard'
 import TrustCard from '../components/TrustCard'
 import { businessData } from '../config/businessData'
-import { homepageImages, referenceImagePairs } from '../config/imageLibrary'
+import { homepageImages, referenceProjects } from '../config/imageLibrary'
 
 const services = [
   {
@@ -65,19 +65,19 @@ const references = [
     title: 'Privatgarten mit Hanglage',
     location: 'Leibnitz',
     text: 'Grundpflege und Neuordnung der Beete fuer ein ruhiges, klar strukturiertes Gartenbild.',
-    ...referenceImagePairs[0],
+    ...referenceProjects[0],
   },
   {
     title: 'Familiengarten im Siedlungsgebiet',
     location: 'Graz Umgebung',
     text: 'Heckenkorrektur, Rasensanierung und laufende Pflege fuer eine dauerhaft gepflegte Aussenflaeche.',
-    ...referenceImagePairs[1],
+    ...referenceProjects[1],
   },
   {
     title: 'Objektpflege Mehrparteienhaus',
     location: 'Suedsteiermark',
     text: 'Regelmaessiger Schnitt und saisonale Betreuung der Allgemeinflaechen.',
-    ...referenceImagePairs[2],
+    ...referenceProjects[2],
   },
 ]
 
