@@ -22,7 +22,7 @@ function ReferencesPage() {
     <>
       <SeoHead
         title="Referenzen aus der Region"
-        description="Ausgewaehlte Projekte zu Rasenpflege, Heckschnitt und Objektpflege im Raum Leibnitz, Graz und Suedsteiermark."
+        description="Ausgewählte Projekte zu Rasenpflege, Heckschnitt und Objektpflege im Raum Leibnitz, Graz und Südsteiermark."
         pathname="/referenzen"
       />
 
@@ -46,7 +46,7 @@ function ReferencesPage() {
       <section className="section-spacing bg-olive-100/40">
         <div className="container-width">
           <SectionTitle
-            title="Einsaetze nach Ort"
+            title="Einsätze nach Ort"
             description="Konkrete Projekte aus der Region mit Leistung, Objektart und Betreuungsrhythmus."
           />
           <div className="grid gap-5 lg:grid-cols-2">

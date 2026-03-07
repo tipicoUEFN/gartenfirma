@@ -6,8 +6,8 @@ function PageHero({ eyebrow, title, text, children, imageSrc, imageAlt, imageSrc
           <div className={imageSrc ? 'grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center' : ''}>
             <div>
               <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-olive-600">{eyebrow}</p>
-              <h1 className="headline max-w-4xl text-4xl font-semibold text-olive-800 sm:text-5xl lg:text-6xl">{title}</h1>
-              <p className="mt-5 max-w-2xl text-sm leading-relaxed text-olive-700 sm:text-base">{text}</p>
+              <h1 className="headline max-w-4xl text-3xl font-semibold text-olive-800 sm:text-4xl lg:text-5xl">{title}</h1>
+              <p className="mt-5 max-w-2xl text-sm font-medium leading-relaxed text-olive-700 sm:text-base">{text}</p>
               {children ? <div className="mt-8">{children}</div> : null}
             </div>
 

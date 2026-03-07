@@ -8,7 +8,7 @@ function CTASection() {
   return (
     <section className="section-spacing">
       <div className="container-width">
-        <div className="overflow-hidden rounded-3xl bg-olive-800 px-7 py-10 text-white shadow-xl sm:px-12 sm:py-14">
+        <div className="overflow-hidden rounded-3xl bg-anthracite-900 px-7 py-10 text-white shadow-xl sm:px-12 sm:py-14">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-olive-200">{t('cta.eyebrow')}</p>
           <h2 className="headline mt-4 max-w-3xl text-3xl sm:text-4xl">
             {t('cta.title')}

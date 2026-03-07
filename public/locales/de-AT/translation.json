@@ -16,14 +16,14 @@
     "hero": {
       "eyebrow": "Premium Gartenpflege",
       "title": "Ihr Garten in besten Händen. Gepflegt, klar und professionell betreut.",
-      "text": "{{companyName}} ist regional fuer Sie da: zuverlaessige Gartenpflege fuer Privatgaerten, Firmenflaechen und Wohnanlagen im Grossraum Leibnitz, Graz, Deutschlandsberg und der Suedoststeiermark.",
+      "text": "{{companyName}} ist regional für Sie da: zuverlässige Gartenpflege für Privatgärten, Firmenflächen und Wohnanlagen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark.",
       "imageAlt": "Gärtner schiebt Schubkarre mit Pflanze durch gepflegten Garten.",
       "serviceArea": "Einsatzgebiet"
     },
     "services": {
       "eyebrow": "Leistungen",
       "title": "Unsere Leistungen",
-      "description": "Von Rasenpflege bis Objektbetreuung: Wir arbeiten sauber, puenktlich und mit klarem Blick fuer Ihren Gartenalltag.",
+      "description": "Von Rasenpflege bis Objektbetreuung: Wir arbeiten sauber, pünktlich und mit klarem Blick für Ihren Gartenalltag.",
       "hedge": {
         "title": "Pflege bestehender Hecken",
         "description": "Leichter Formschnitt und Nachschnitt bereits bestehender Hecken für ein gepflegtes Erscheinungsbild."
@@ -70,8 +70,8 @@
     "about": {
       "eyebrow": "Über uns",
       "title": "Regional verwurzelt. Persönlich im Kontakt.",
-      "description": "Wir kennen die Boeden, das Klima und die typischen Anforderungen in der Region - und arbeiten mit Hausverstand statt Floskeln.",
-      "text": "Wir kuemmern uns um Ihren Garten, damit Sie Ihre Freizeit geniessen koennen. Persoenlich betreut, sauber umgesetzt und regional schnell erreichbar.",
+      "description": "Wir kennen die Böden, das Klima und die typischen Anforderungen in der Region - und arbeiten mit Hausverstand statt Floskeln.",
+      "text": "Wir kümmern uns um Ihren Garten, damit Sie Ihre Freizeit genießen können. Persönlich betreut, sauber umgesetzt und regional schnell erreichbar.",
       "link": "Mehr über unser Team",
       "regionActive": "Regional aktiv",
       "regionItem1": "Südsteiermark",
@@ -96,9 +96,9 @@
   "servicesPage": {
     "heroEyebrow": "Leistungen",
     "heroTitle": "Individuelle Gartenpflege statt Standardpaket",
-    "heroText": "Jeder Garten ist anders. Wir schauen genau hin, stimmen die Pflege auf Ihren Bedarf ab und setzen verlaesslich um.",
+    "heroText": "Jeder Garten ist anders. Wir schauen genau hin, stimmen die Pflege auf Ihren Bedarf ab und setzen verlässlich um.",
     "sectionTitle": "Unsere Leistungen",
-    "sectionDescription": "Praktische Gartenpflege fuer Privat, Firmen und Wohnanlagen - regional, sauber und nachvollziehbar.",
+    "sectionDescription": "Praktische Gartenpflege für Privat, Firmen und Wohnanlagen - regional, sauber und nachvollziehbar.",
     "hedgeTitle": "Pflege bestehender Hecken",
     "hedgeDescription": "Leichter Formschnitt und Nachschnitt bereits bestehender Hecken für ein gepflegtes Erscheinungsbild.",
     "lawnTitle": "Rasenmähen & Grünflächenpflege",
@@ -132,7 +132,7 @@
   "contactPage": {
     "heroEyebrow": "Kontakt",
     "heroTitle": "Wir freuen uns auf Ihre Anfrage",
-    "heroText": "Ob laufende Gartenpflege oder ein konkretes Einzelprojekt: Sie erhalten zeitnah eine klare und ehrliche Rueckmeldung.",
+    "heroText": "Ob laufende Gartenpflege oder ein konkretes Einzelprojekt: Sie erhalten zeitnah eine klare und ehrliche Rückmeldung.",
     "formTitle": "Nachricht senden",
     "formDescription": "Teilen Sie uns Ihr Anliegen mit. Wir melden uns persönlich bei Ihnen.",
     "direct": "Direkt erreichbar",
@@ -141,7 +141,7 @@
   "cta": {
     "eyebrow": "Unverbindlich anfragen",
     "title": "Sie möchten Ihren Garten in verlässliche Hände geben?",
-    "text": "Wir beraten persoenlich, erstellen ein klares Angebot und setzen sauber sowie termintreu um.",
+    "text": "Wir beraten persönlich, erstellen ein klares Angebot und setzen sauber sowie termintreu um.",
     "button": "Jetzt Angebot anfragen"
   },
   "footer": {
@@ -166,7 +166,7 @@
     "messageLabel": "Nachricht",
     "messagePlaceholder": "Beschreiben Sie kurz Ihr Anliegen (z. B. laufende Pflege, Heckenschnitt, saisonale Betreuung).",
     "submit": "Anfrage senden",
-    "notice": "Unverbindliche Anfrage - wir melden uns schnellstmoeglich zurueck."
+    "notice": "Unverbindliche Anfrage - wir melden uns schnellstmöglich zurück."
   },
   "references": {
     "eyebrow": "Referenzen",

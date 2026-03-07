@@ -61,7 +61,7 @@
       "title": "Na terenu u vašoj regiji",
       "text": "Klijente podržavamo na području {{serviceArea}}.",
       "phone": "Telefon",
-      "email": "E-posta",
+      "email": "E-pošta",
       "address": "Adresa"
     }
   },
@@ -109,8 +109,8 @@
   },
   "cta": {
     "eyebrow": "Neobavezni upit",
-    "title": "Zelite svoj vrt prepustiti pouzdanim rukama?",
-    "text": "Pripremamo jasnu ponudu i osiguravamo cistu, pravovremenu izvedbu.",
+    "title": "Želite svoj vrt prepustiti pouzdanim rukama?",
+    "text": "Pripremamo jasnu ponudu i osiguravamo čistu, pravovremenu izvedbu.",
     "button": "Kontaktirajte nas"
   },
   "footer": {
@@ -121,14 +121,14 @@
     "legalTitle": "Pravno",
     "impressum": "Impresum",
     "privacy": "Privatnost",
-    "copyright": "{{year}} {{companyName}}. Sva prava pridrzana."
+    "copyright": "{{year}} {{companyName}}. Sva prava pridržana."
   },
   "contactForm": {
     "firstNameLabel": "Ime",
     "firstNamePlaceholder": "Vaše ime",
     "lastNameLabel": "Prezime",
     "lastNamePlaceholder": "Vaše prezime",
-    "emailLabel": "E-posta",
+    "emailLabel": "E-pošta",
     "emailPlaceholder": "ime@primjer.hr",
     "phoneLabel": "Telefon",
     "phonePlaceholder": "+43 ...",
@@ -157,7 +157,7 @@
     "title": "Pravne informacije",
     "heroText": "Molimo zamijenite sljedeće placeholder podatke svojim potpunim pravnim podacima.",
     "phoneLabel": "Telefon:",
-    "emailLabel": "E-posta:",
+    "emailLabel": "E-pošta:",
     "businessPurpose": "Predmet poslovanja: njega vrtova i održavanje zelenih površina",
     "uid": "UID broj: ATU12345678 (placeholder)",
     "companyNumber": "Broj registra: FN123456x (placeholder)",

@@ -22,6 +22,7 @@ function ReferenceCard({ title, location, text, image, fallbackImage }) {
     <article className="glass-card overflow-hidden rounded-2xl p-5">
       {showImage ? (
         <div className="overflow-hidden rounded-xl border border-olive-200 bg-white">
+          {/* TODO: replace with real project photos (before/after, hedge trimming, mowing, on-site work) for stronger authenticity. */}
           <img
             src={currentImage}
             alt={title}

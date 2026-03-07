@@ -1,4 +1,4 @@
-import { ArrowRight, CalendarCheck, Clock3, FileText, Flower2, Leaf, MapPin, Scissors, ShieldCheck, Shovel, Sprout, Star, Trees, Users } from 'lucide-react'
+import { ArrowRight, CalendarCheck, CheckCircle2, Clock3, Flower2, Leaf, MapPin, Scissors, ShieldCheck, Shovel, Sprout, Star, Trees, Users } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import CTASection from '../components/CTASection'
@@ -74,51 +74,61 @@ function HomePage() {
   ]
 
   const heroTrustItems = [
-    { icon: ShieldCheck, label: 'Zuverlaessige Gartenpflege' },
-    { icon: MapPin, label: 'Regionale Betreuung' },
-    { icon: CalendarCheck, label: 'Schnelle Terminvergabe' },
-    { icon: FileText, label: 'Kostenloses Angebot' },
+    { icon: Star, label: 'Über 100 gepflegte Gärten in der Region' },
+    { icon: Star, label: 'Privat- und Firmenkunden' },
+    { icon: Star, label: 'Zuverlässig und pünktlich' },
   ]
+
+  const heroServiceList = ['Rasenpflege', 'Heckenschnitt', 'Laufende Betreuung']
 
   // Demo cards only. Replace with real, permission-safe customer feedback later.
   const demoTestimonials = [
     {
-      quote: 'Zuverlaessig und sauber gearbeitet. Termin eingehalten und Garten tipptopp hinterlassen.',
-      source: 'Beispielkunde aus Leibnitz',
+      quote: 'Zuverlässig und sauber gearbeitet. Termin eingehalten und Garten tipptopp hinterlassen.',
+      source: 'Leibnitz (Demo)',
     },
     {
-      quote: 'Kurze Abstimmung, faire Rueckmeldung und dann sauber umgesetzt. Genau so soll es sein.',
-      source: 'Beispielkundin aus Wagna',
+      quote: 'Kurze Abstimmung, faire Rückmeldung und dann sauber umgesetzt. Genau so soll es sein.',
+      source: 'Wagna (Demo)',
     },
     {
-      quote: 'Laufende Betreuung funktioniert sehr gut. Freundlich, puenktlich und ordentlich.',
-      source: 'Beispielobjekt im Raum Graz',
+      quote: 'Laufende Betreuung funktioniert sehr gut. Freundlich, pünktlich und ordentlich.',
+      source: 'Raum Graz (Demo)',
     },
   ]
 
   return (
     <>
       <SeoHead
-        title="Gartenpflege in Leibnitz und Suedsteiermark"
-        description="PR Gartenservice bietet Rasenmaehen, Heckenpflege und laufende Aussenanlagenbetreuung in Leibnitz, Graz und Umgebung."
+        title="Gartenpflege in Leibnitz und Südsteiermark"
+        description="PR Gartenservice bietet Rasenmähen, Heckenpflege und laufende Außenanlagenbetreuung in Leibnitz, Graz und Umgebung."
         pathname="/"
       />
       <LocalBusinessSchema />
 
       <PageHero
-        eyebrow={t('home.hero.eyebrow')}
-        title={t('home.hero.title')}
-        text={t('home.hero.text', { companyName: businessData.companyName })}
+        eyebrow="PR Gartenservice"
+        title="Gartenpflege aus Leibnitz"
+        text="Zuverlässig für Privatgärten, Firmenflächen und Wohnanlagen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark."
         imageSrc={homepageImages.hero.src}
         imageSrcSet={homepageImages.hero.srcSet}
         imageAlt={t('home.hero.imageAlt')}
       >
-        <div className="flex flex-wrap items-center gap-4">
+        <ul className="space-y-2 text-sm font-semibold text-olive-800 sm:text-base">
+          {heroServiceList.map((item) => (
+            <li key={item} className="flex items-center gap-2">
+              <CheckCircle2 size={16} className="text-olive-700" />
+              {item}
+            </li>
+          ))}
+        </ul>
+
+        <div className="mt-6 flex flex-wrap items-center gap-4">
           <Link
             to="/kontakt"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-olive-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-olive-800 sm:w-auto"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-olive-800 px-5 py-3 text-sm font-semibold text-white transition hover:bg-anthracite-900 sm:w-auto"
           >
-            {t('hero.cta')}
+            Jetzt Angebot anfragen
             <ArrowRight size={18} />
           </Link>
           <span className="text-sm text-olive-700">{t('home.hero.serviceArea')}: {businessData.serviceArea}</span>
@@ -127,15 +137,14 @@ function HomePage() {
 
       <section className="section-spacing pt-0">
         <div className="container-width">
-          <div className="rounded-2xl border border-olive-200 bg-olive-100/60 px-5 py-5 sm:px-6">
-            <h2 className="text-lg font-semibold text-olive-800 sm:text-xl">Warum PR Gartenservice?</h2>
-            <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="rounded-2xl border border-olive-200 bg-white px-5 py-4 sm:px-6">
+            <div className="grid gap-3 md:grid-cols-3">
               {heroTrustItems.map((item) => {
                 const Icon = item.icon
                 return (
-                  <div key={item.label} className="flex items-center gap-3 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-olive-800">
-                    <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-olive-100 text-olive-700">
-                      <Icon size={16} />
+                  <div key={item.label} className="flex items-center gap-3 rounded-xl bg-olive-100/60 px-4 py-3 text-sm font-semibold text-olive-800">
+                    <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white text-amber-500">
+                      <Icon size={15} fill="currentColor" />
                     </span>
                     <span>{item.label}</span>
                   </div>
@@ -149,24 +158,6 @@ function HomePage() {
       <section className="section-spacing pt-0">
         <div className="container-width">
           <SectionTitle
-            eyebrow={t('home.services.eyebrow')}
-            title={t('home.services.title')}
-            description={t('home.services.description')}
-          />
-          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-            {services.map((service) => (
-              <ServiceCard key={service.title} {...service} />
-            ))}
-          </div>
-          <p className="mt-6 text-sm leading-relaxed text-olive-700 sm:text-base">
-            {t('home.services.infoLine')}
-          </p>
-        </div>
-      </section>
-
-      <section className="section-spacing bg-olive-100/40">
-        <div className="container-width">
-          <SectionTitle
             eyebrow={t('home.why.eyebrow')}
             title={t('home.why.title')}
             description={t('home.why.description')}
@@ -175,60 +166,6 @@ function HomePage() {
             {trustItems.map((item) => (
               <TrustCard key={item.title} {...item} />
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section-spacing">
-        <div className="container-width grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div>
-            <SectionTitle
-              eyebrow={t('home.about.eyebrow')}
-              title={t('home.about.title')}
-              description={t('home.about.description')}
-            />
-            <p className="max-w-xl text-sm leading-relaxed text-olive-700 sm:text-base">
-              {t('home.about.text')}
-            </p>
-            <Link
-              to="/ueber-uns"
-              className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-olive-700 hover:text-olive-800"
-            >
-              {t('home.about.link')}
-              <ArrowRight size={17} />
-            </Link>
-          </div>
-          <div className="glass-card rounded-3xl p-6 sm:p-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-olive-600">{t('home.about.regionActive')}</p>
-            <ul className="mt-4 space-y-3 text-sm text-olive-700 sm:text-base">
-              <li>{t('home.about.regionItem1')}</li>
-              <li>{t('home.about.regionItem2')}</li>
-              <li>{t('home.about.regionItem3')}</li>
-              <li>{t('home.about.regionItem4')}</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section className="section-spacing bg-olive-100/40">
-        <div className="container-width grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-          <div className="rounded-3xl border border-dashed border-olive-300 bg-white p-8 text-center text-olive-700">
-            {/* TODO: Replace this placeholder with a real team portrait/photo during private deployment. */}
-            <div className="mx-auto flex h-52 max-w-xs items-center justify-center rounded-2xl border border-olive-200 bg-olive-50 text-sm font-semibold">
-              Platzhalter fuer Teamfoto
-            </div>
-          </div>
-          <div>
-            <SectionTitle
-              eyebrow="Ihr Ansprechpartner"
-              title="PR Gartenservice Team"
-              description="Persoenlich erreichbar, regional unterwegs und mit einem klaren Blick fuer saubere Ergebnisse."
-            />
-            <ul className="space-y-3 text-sm text-olive-700 sm:text-base">
-              <li className="flex items-start gap-3"><ShieldCheck size={18} className="mt-0.5 text-olive-700" />Persoenliche Beratung statt Standardantworten</li>
-              <li className="flex items-start gap-3"><Clock3 size={18} className="mt-0.5 text-olive-700" />Schnelle Termine und klare Rueckmeldungen</li>
-              <li className="flex items-start gap-3"><MapPin size={18} className="mt-0.5 text-olive-700" />Regional betreut in Leibnitz und Umgebung</li>
-            </ul>
           </div>
         </div>
       </section>
@@ -251,14 +188,32 @@ function HomePage() {
       <section className="section-spacing bg-olive-100/40">
         <div className="container-width">
           <SectionTitle
+            eyebrow={t('home.services.eyebrow')}
+            title={t('home.services.title')}
+            description={t('home.services.description')}
+          />
+          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+            {services.map((service) => (
+              <ServiceCard key={service.title} {...service} />
+            ))}
+          </div>
+          <p className="mt-6 text-sm leading-relaxed text-olive-700 sm:text-base">
+            {t('home.services.infoLine')}
+          </p>
+        </div>
+      </section>
+
+      <section className="section-spacing bg-olive-100/40">
+        <div className="container-width">
+          <SectionTitle
             eyebrow="Vertrauen"
-            title="So aehnlich beschreiben uns Kundinnen und Kunden"
-            description="Beispielbewertungen zur Layout-Demo. Bitte spaeter mit echten, freigegebenen Bewertungen ersetzen."
+            title="So ähnlich beschreiben uns Kundinnen und Kunden"
+            description="Demo-Bewertungen zur Layout-Vorschau. Bitte später mit echten, freigegebenen Bewertungen ersetzen."
           />
           <div className="grid gap-4 lg:grid-cols-3">
             {demoTestimonials.map((item) => (
               <article key={item.source} className="rounded-2xl border border-olive-200 bg-white p-5">
-                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-olive-600">Beispielbewertung</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-olive-600">Demo-Bewertung</p>
                 <p className="mt-2 inline-flex gap-1 text-amber-500" aria-label="5 von 5 Sternen">
                   {Array.from({ length: 5 }).map((_, idx) => <Star key={idx} size={14} fill="currentColor" />)}
                 </p>
@@ -271,6 +226,24 @@ function HomePage() {
       </section>
 
       <section className="section-spacing">
+        <div className="container-width">
+          <SectionTitle
+            eyebrow="Regionale Präsenz"
+            title="Täglich im Einsatz in der Region"
+            description="Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz Umgebung"
+          />
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {['Leibnitz', 'Wagna', 'Gralla', 'Tillmitsch', 'Straß', 'Ehrenhausen', 'Graz Umgebung'].map((town) => (
+              <div key={town} className="flex items-center gap-2 rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm font-semibold text-olive-800">
+                <MapPin size={16} className="text-olive-700" />
+                {town}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing bg-olive-100/40">
         <div className="container-width">
           <SectionTitle
             eyebrow="Regionale Seiten"
@@ -291,7 +264,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="section-spacing bg-olive-100/40">
+      <section className="section-spacing">
         <div className="container-width">
           <div className="glass-card grid gap-8 rounded-3xl px-6 py-8 sm:px-10 sm:py-10 lg:grid-cols-2">
             <div>
@@ -326,14 +299,37 @@ function HomePage() {
         </div>
       </section>
 
+      <section className="section-spacing bg-olive-100/40">
+        <div className="container-width grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+          <div className="rounded-3xl border border-dashed border-olive-300 bg-white p-8 text-center text-olive-700">
+            {/* TODO: Replace this placeholder with a real team portrait/photo during private deployment. */}
+            <div className="mx-auto flex h-52 max-w-xs items-center justify-center rounded-2xl border border-olive-200 bg-olive-50 text-sm font-semibold">
+              Platzhalter für Teamfoto
+            </div>
+          </div>
+          <div>
+            <SectionTitle
+              eyebrow="Ihr Ansprechpartner"
+              title="PR Gartenservice Team"
+              description="Persönlich erreichbar, regional unterwegs und mit einem klaren Blick für saubere Ergebnisse."
+            />
+            <ul className="space-y-3 text-sm text-olive-700 sm:text-base">
+              <li className="flex items-start gap-3"><ShieldCheck size={18} className="mt-0.5 text-olive-700" />Persönliche Beratung statt Standardantworten</li>
+              <li className="flex items-start gap-3"><Clock3 size={18} className="mt-0.5 text-olive-700" />Schnelle Termine und klare Rückmeldungen</li>
+              <li className="flex items-start gap-3"><MapPin size={18} className="mt-0.5 text-olive-700" />Regional betreut in Leibnitz und Umgebung</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section className="section-spacing pt-0">
         <div className="container-width">
           <div className="rounded-2xl border border-olive-200 bg-white px-6 py-5">
             <p className="text-sm font-semibold text-olive-800">
-              Privatgaerten, Firmenstandorte, Wohnanlagen und oeffentliche Einrichtungen im Grossraum Leibnitz, Graz, Deutschlandsberg und der Suedoststeiermark.
+              Privatgärten, Firmenstandorte, Wohnanlagen und öffentliche Einrichtungen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark.
             </p>
             <p className="mt-2 text-sm text-olive-700">
-              Leibnitz · Wagna · Gralla · Tillmitsch · Strass · Ehrenhausen · Graz Umgebung
+              Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz Umgebung
             </p>
           </div>
         </div>

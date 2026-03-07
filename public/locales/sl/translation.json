@@ -27,7 +27,7 @@
       "hedge": { "title": "Obrezovanje živih mej", "description": "Strokovno obrezovanje za zdrav videz rastlin." },
       "lawn": { "title": "Nega trate", "description": "Košnja, prezračevanje in gnojenje trate." },
       "beds": { "title": "Nega gred", "description": "Urejene grede in zasaditve okoli doma." },
-      "trees": { "title": "Obrezovanje drevja", "description": "Varno obrezovanje manjsih dreves in grmovnic." },
+      "trees": { "title": "Obrezovanje drevja", "description": "Varno obrezovanje manjših dreves in grmovnic." },
       "season": { "title": "Sezonske storitve", "description": "Spomladanska in jesenska priprava vrta." },
       "ongoing": { "title": "Redno vzdrževanje", "description": "Redna oskrba zasebnih vrtov in objektov." }
     },
@@ -44,7 +44,7 @@
       "title": "Lokalno prisotni. Osebni v stiku.",
       "description": "Poznamo regionalne pogoje in stavimo na trajnost.",
       "text": "Naša ekipa dela z jasnimi procesi in poštenim svetovanjem.",
-      "link": "Več o nasi ekipi",
+      "link": "Več o naši ekipi",
       "regionActive": "Aktivni v regiji",
       "regionItem1": "Južna Štajerska",
       "regionItem2": "Gradec",
@@ -54,7 +54,7 @@
     "references": {
       "eyebrow": "Reference",
       "title": "Izbrani projekti iz prakse",
-      "description": "Tipicni projekti iz nase regije."
+      "description": "Tipični projekti iz naše regije."
     },
     "location": {
       "eyebrow": "Območje storitev",
@@ -78,7 +78,7 @@
     "bedsTitle": "Nega gred",
     "bedsDescription": "Nega trajnic in okrasnih gred.",
     "greenTitle": "Obrezovanje zelenja",
-    "greenDescription": "Varno obrezovanje manjsih dreves in grmovnic.",
+    "greenDescription": "Varno obrezovanje manjših dreves in grmovnic.",
     "seasonTitle": "Sezonska dela",
     "seasonDescription": "Spomladanska priprava, jesenski servis in listje.",
     "ongoingTitle": "Redna oskrba",
@@ -117,11 +117,11 @@
     "claim": "Profesionalna nega vrtov z zanesljivo kakovostjo v Južni Štajerski.",
     "contactTitle": "Kontakt",
     "serviceAreaTitle": "Območje storitev",
-    "hoursTitle": "Delovni cas",
+    "hoursTitle": "Delovni čas",
     "legalTitle": "Pravno",
     "impressum": "Impresum",
     "privacy": "Zasebnost",
-    "copyright": "{{year}} {{companyName}}. Vse pravice pridrzane."
+    "copyright": "{{year}} {{companyName}}. Vse pravice pridržane."
   },
   "contactForm": {
     "firstNameLabel": "Ime",
@@ -159,7 +159,7 @@
     "phoneLabel": "Telefon:",
     "emailLabel": "E-pošta:",
     "businessPurpose": "Dejavnost: nega vrtov in vzdrževanje zelenih površin",
-    "uid": "UID stevilka: ATU12345678 (placeholder)",
+    "uid": "UID številka: ATU12345678 (placeholder)",
     "companyNumber": "Številka registra: FN123456x (placeholder)",
     "companyCourt": "Sodišče registra: Deželno sodišče Gradec (placeholder)",
     "authority": "Pristojni organ: Okrajna oblast (placeholder)",
@@ -169,7 +169,7 @@
   "privacy": {
     "eyebrow": "Zasebnost",
     "title": "Informacije o obdelavi podatkov",
-    "heroText": "Ta stran je izhodisce in jo je treba zamenjati s pravno preverjeno izjavo o zasebnosti.",
+    "heroText": "Ta stran je izhodišče in jo je treba zamenjati s pravno preverjeno izjavo o zasebnosti.",
     "section1Title": "1. Odgovorna oseba",
     "section1Text": "Za obdelavo podatkov je odgovoren upravljavec te spletne strani.",
     "section2Title": "2. Zbiranje in obdelava",

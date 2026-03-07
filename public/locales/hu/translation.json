@@ -5,7 +5,7 @@
     "about": "Rólunk",
     "references": "Referenciák",
     "contact": "Kapcsolat",
-    "callNow": "Hivjon most",
+    "callNow": "Hívjon most",
     "toggleMenu": "Menü váltás"
   },
   "hero": {
@@ -33,7 +33,7 @@
     },
     "why": {
       "eyebrow": "Miért mi",
-      "title": "A bizalom a preciz munkából születik",
+      "title": "A bizalom a precíz munkából születik",
       "description": "Célunk a hosszú távú minőség.",
       "reliable": { "title": "Megbízható kivitelezés", "text": "Egyértelmű időpontok és tiszta munkavégzés." },
       "punctual": { "title": "Pontos és tervezhető", "text": "Betartjuk a megbeszélt időpontokat." },
@@ -139,7 +139,7 @@
   },
   "references": {
     "eyebrow": "Referenciák",
-    "title": "Látható eredmenyek a régióból",
+    "title": "Látható eredmények a régióból",
     "heroText": "",
     "sectionTitle": "Válogatott projektek",
     "sectionDescription": "Betekintés a tipikus kerti munkákba, mint fű gondozása, sövénynyírás és szezonális szerviz.",

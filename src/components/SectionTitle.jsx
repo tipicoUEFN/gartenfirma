@@ -8,8 +8,8 @@ function SectionTitle({ eyebrow, title, description, align = 'left' }) {
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="headline text-3xl font-semibold text-olive-800 sm:text-4xl">{title}</h2>
-      {description ? <p className="mt-4 text-sm leading-relaxed text-olive-700 sm:text-base">{description}</p> : null}
+      <h2 className="headline text-2xl font-semibold text-olive-800 sm:text-3xl">{title}</h2>
+      {description ? <p className="mt-4 text-sm font-medium leading-relaxed text-olive-700 sm:text-base">{description}</p> : null}
     </div>
   )
 }
