@@ -18,7 +18,7 @@ i18n
       loadPath: `${import.meta.env.BASE_URL}locales/{{lng}}/translation.json`,
     },
     detection: {
-      order: ['localStorage', 'navigator', 'htmlTag'],
+      order: ['localStorage'],
       caches: ['localStorage'],
     },
   })

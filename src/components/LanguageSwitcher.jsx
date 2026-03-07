@@ -12,24 +12,22 @@ function LanguageSwitcher() {
   }
 
   return (
-    <div className="flex items-center gap-2" aria-label="Language switcher">
-      {languages.map((lng) => {
-        const isActive = currentLanguage.startsWith(lng)
-
-        return (
-          <button
-            key={lng}
-            type="button"
-            onClick={() => handleLanguageChange(lng)}
-            className={`rounded px-1.5 py-0.5 text-xs font-semibold uppercase tracking-wide transition ${
-              isActive ? 'bg-olive-700 text-white' : 'text-olive-700 hover:bg-olive-100'
-            }`}
-            aria-pressed={isActive}
-          >
-            {lng}
-          </button>
-        )
-      })}
+    <div className="flex items-center" aria-label="Language switcher">
+      <label htmlFor="language-select" className="sr-only">
+        Sprache
+      </label>
+      <select
+        id="language-select"
+        value={currentLanguage.slice(0, 2)}
+        onChange={(event) => handleLanguageChange(event.target.value)}
+        className="rounded border border-olive-300 bg-white px-2 py-1 text-xs font-semibold uppercase tracking-wide text-olive-800 outline-none transition focus:border-olive-500"
+      >
+        {languages.map((lng) => (
+          <option key={lng} value={lng}>
+            {lng.toUpperCase()}
+          </option>
+        ))}
+      </select>
     </div>
   )
 }
