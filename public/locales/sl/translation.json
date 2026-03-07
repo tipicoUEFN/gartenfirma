@@ -116,7 +116,29 @@
     "locationLinksTitle": "Storitev + kraj",
     "locationLinksDescription": "Pogosto iskane kombinacije v nasi regiji.",
     "gardenCareInTown": "Nega vrta {{town}}",
-    "cardTagline": "Cisto. Zanesljivo. Regionalno."
+    "cardTagline": "Cisto. Zanesljivo. Regionalno.",
+    "faq": [
+      {
+        "question": "Kako pogosto je treba kositi trato?",
+        "answer": "V glavni sezoni glede na rast obicajno priporocamo interval 7 do 14 dni."
+      },
+      {
+        "question": "Katere kraje pokrivate?",
+        "answer": "Delamo na obmocju Leibnitz, Gradec, Wagna, Gralla, Tillmitsch, Stra� in okolica."
+      },
+      {
+        "question": "Ali nudite nego vrtov za podjetja?",
+        "answer": "Da, skrbimo tudi za poslovne lokacije, stanovanjske objekte in javne ustanove v rednih intervalih."
+      },
+      {
+        "question": "Kako lahko zaprosim za ponudbo?",
+        "answer": "Najhitreje preko kontaktnega obrazca ali telefona. Obicajno odgovorimo v 24 urah."
+      },
+      {
+        "question": "Koliko stane nega zive meje?",
+        "answer": "Cena je odvisna od dolzine, visine in dostopnosti. Po kratkem usklajevanju pripravimo jasno ponudbo."
+      }
+    ]
   },
   "aboutPage": {
     "heroEyebrow": "O nas",
@@ -133,7 +155,21 @@
     "seoTitle": "O nas",
     "seoDescription": "Regionalna vrtnarska storitev na juznem Stajerskem z osebnim svetovanjem, jasnimi postopki in zanesljivo izvedbo.",
     "sectionSubtitle": "Kratko, jasno in po stalnih postopkih.",
-    "highlight": "Nega vrta iz Leibnitza. Zanesljivo, cisto in tocno."
+    "highlight": "Nega vrta iz Leibnitza. Zanesljivo, cisto in tocno.",
+    "workflows": {
+      "private": {
+        "title": "Zasebni vrt - redna oskrba",
+        "challenge": "Neenotno stanje nege in pomanjkanje rednosti.",
+        "approach": "Fiksni intervalni nacrt za trato, zivo mejo in grede.",
+        "result": "Stalno urejen vrt s predvidljivim obsegom dela."
+      },
+      "apartment": {
+        "title": "Stanovanjski objekt - skupne povrsine",
+        "challenge": "Nejasne odgovornosti in nihajoca kakovost na terenu.",
+        "approach": "Jasne naloge na termin in cista povratna informacija po izvedbi.",
+        "result": "Zanesljivo stanje povrsin za stanovalce in upravljanje."
+      }
+    }
   },
   "contact": {
     "title": "Kontakt"
@@ -161,6 +197,20 @@
     "detailed": {
       "eyebrow": "Podrobno povprasevanje",
       "description": "Vec podrobnosti za natancnejsjo ponudbo."
+    },
+    "flow": {
+      "quick": {
+        "title": "Hitro povprasevanje - potek",
+        "challenge": "Potrebujete hiter termin ali povratni klic.",
+        "approach": "Kratki podatki v obrazcu ali neposredno telefonsko povprasevanje.",
+        "result": "Hitra povratna informacija z naslednjim smiselnim korakom."
+      },
+      "detailed": {
+        "title": "Podrobno povprasevanje - potek",
+        "challenge": "Gre za vec povrsin ali redno oskrbo.",
+        "approach": "Podrobno zajamemo obseg storitev in lokacijo.",
+        "result": "Jasnejsa ponudba z ustreznim intervalom."
+      }
     }
   },
   "cta": {
@@ -473,7 +523,25 @@
     "servicesTitle": "Nase storitve v kraju {{town}}",
     "trustTitle": "Zakaj nam stranke v kraju {{town}} zaupajo",
     "regionalHintTitle": "Regionalni namig",
-    "regionalHintText": "Veliko povprasevanj v kraju {{town}} se nanasa na redno nego vrtov. Termine nacrtujemo tako, da ostanejo stabilni in povrsine trajno urejene."
+    "regionalHintText": "Veliko povprasevanj v kraju {{town}} se nanasa na redno nego vrtov. Termine nacrtujemo tako, da ostanejo stabilni in povrsine trajno urejene.",
+    "faq": [
+      {
+        "question": "Katere storitve nudite v kraju {{town}}?",
+        "answer": "V kraju {{town}} med drugim nudimo nego trate, nego zivih mej, delo z listjem in redno vzdrzevanje zunanjih povrsin."
+      },
+      {
+        "question": "Ali v kraju {{town}} skrbite tudi za podjetja in stanovanjske objekte?",
+        "answer": "Da, v kraju {{town}} skrbimo za zasebne vrtove, poslovne povrsine, stanovanjske objekte in po dogovoru tudi javne ustanove."
+      },
+      {
+        "question": "Kako hitro lahko v kraju {{town}} prejmem ponudbo?",
+        "answer": "Po oddaji povprasevanja se obicajno oglasimo v 24 urah (Pon-Pet) s prvim odzivom."
+      },
+      {
+        "question": "Ali je v kraju {{town}} mozna tudi redna nega vrta?",
+        "answer": "Da, v kraju {{town}} nudimo nacrtovane intervale nege, na primer tedensko, na 14 dni ali mesecno."
+      }
+    ]
   },
   "locationPages": {
     "gartenpflege-leibnitz": {

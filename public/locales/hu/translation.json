@@ -116,7 +116,29 @@
     "locationLinksTitle": "Szolgaltatas + telepules",
     "locationLinksDescription": "Gyakran keresett kombinaciok a regioban.",
     "gardenCareInTown": "Kertgondozas {{town}}",
-    "cardTagline": "Tiszta. Megbizhato. Regionalis."
+    "cardTagline": "Tiszta. Megbizhato. Regionalis.",
+    "faq": [
+      {
+        "question": "Milyen gyakran kell nyirni a pazsitot?",
+        "answer": "A foszezonban a n�veked�stol f�ggoen �ltal�ban 7-14 napos �temet javaslunk."
+      },
+      {
+        "question": "Mely telep�l�seken dolgoznak?",
+        "answer": "Leibnitz, Graz, Wagna, Gralla, Tillmitsch, Stra� �s k�rny�k�n dolgozunk."
+      },
+      {
+        "question": "V�llalkoz�soknak is v�llalnak kertgondoz�st?",
+        "answer": "Igen, c�ges helysz�neket, lak�parkokat �s k�zint�zm�nyeket is gondozunk rendszeres idok�z�kkel."
+      },
+      {
+        "question": "Hogyan k�rhetek aj�nlatot?",
+        "answer": "A leggyorsabb a kapcsolatfelv�teli urlapon vagy telefonon. �ltal�ban 24 �r�n bel�l v�laszolunk."
+      },
+      {
+        "question": "Mennyibe ker�l a s�v�nygondoz�s?",
+        "answer": "A k�lts�g a hossz�s�gt�l, magass�gt�l �s megk�zel�thetos�gtol f�gg. R�vid egyeztet�s ut�n vil�gos aj�nlatot adunk."
+      }
+    ]
   },
   "aboutPage": {
     "heroEyebrow": "Rólunk",
@@ -133,7 +155,21 @@
     "seoTitle": "Rolunk",
     "seoDescription": "Regionalis kertszolgaltatas Del-Stajerorszagban szemelyes tanacsadassal, atlathato folyamatokkal es megbizhato kivitelezessel.",
     "sectionSubtitle": "Roviden, vilagosan, fix folyamatok menten.",
-    "highlight": "Kertgondozas Leibnitzbol. Megbizhato, tiszta es pontos."
+    "highlight": "Kertgondozas Leibnitzbol. Megbizhato, tiszta es pontos.",
+    "workflows": {
+      "private": {
+        "title": "Mag�nkert - folyamatos gondoz�s",
+        "challenge": "Egyenetlen �llapot �s hi�nyz� rendszeress�g.",
+        "approach": "Fix �temterv a gyepre, s�v�nyre �s �gy�sokra.",
+        "result": "Folyamatosan rendezett kert, tervezheto r�ford�t�ssal."
+      },
+      "apartment": {
+        "title": "Lak�park - k�z�s ter�letek",
+        "challenge": "Nem egy�rtelmu feleloss�gek �s v�ltoz� helysz�ni minos�g.",
+        "approach": "Egy�rtelmu feladatok alkalmank�nt, tiszta visszajelz�ssel a munka ut�n.",
+        "result": "Megb�zhat� �llapot a lak�k �s az �zemeltet�s sz�m�ra."
+      }
+    }
   },
   "contact": {
     "title": "Kapcsolat"
@@ -161,6 +197,20 @@
     "detailed": {
       "eyebrow": "Reszletes keres",
       "description": "Tobb reszlet a pontosabb ajanlathoz."
+    },
+    "flow": {
+      "quick": {
+        "title": "Gyors megkeres�s - folyamat",
+        "challenge": "Gyors idopontra vagy visszah�v�sra van sz�ks�ge.",
+        "approach": "R�vid adatok az urlapon vagy k�zvetlen telefonos �rdeklod�s.",
+        "result": "Gyors visszajelz�s a k�vetkezo �rtelmes l�p�ssel."
+      },
+      "detailed": {
+        "title": "R�szletes megkeres�s - folyamat",
+        "challenge": "T�bb ter�letrol vagy rendszeres gondoz�sr�l van sz�.",
+        "approach": "R�szletesen r�gz�tj�k a szolg�ltat�s tartalm�t �s a helysz�nt.",
+        "result": "Pontosabb aj�nlat megfelelo �temez�ssel."
+      }
     }
   },
   "cta": {
@@ -326,7 +376,21 @@
     "regionalProofLine2": "Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz környéke",
     "seoTitle": "Kertgondozas Leibnitzben es Del-Stajerorszagban",
     "seoDescription": "A PR Gartenservice funyirast, sovenygondozast es rendszeres kulteri fenntartast kinal Leibnitz, Graz es kornyeken.",
-    "heroEyebrow": "PR Gartenservice"
+    "heroEyebrow": "PR Gartenservice",
+    "testimonials": {
+      "1": {
+        "quote": "Megb�zhat� �s tiszta munka. A megbesz�lt idopontot tartott�k, a kert rendezett maradt.",
+        "source": "K. csal�d, Leibnitz"
+      },
+      "2": {
+        "quote": "R�vid egyeztet�s, korrekt visszajelz�s, tiszta kivitelez�s. Pontosan �gy kell muk�dnie.",
+        "source": "M. k�z�s k�pviselet, Wagna"
+      },
+      "3": {
+        "quote": "A folyamatos gondoz�s nagyon j�l muk�dik. Bar�ts�gos, pontos �s rendezett csapat.",
+        "source": "M. irodai helysz�n, Graz t�rs�ge"
+      }
+    }
   },
   "quickRequestForm": {
     "badge": "Gyors visszajelzeshez ajanlott",
@@ -459,7 +523,25 @@
     "servicesTitle": "Szolgaltatasaink itt: {{town}}",
     "trustTitle": "Mi�rt biznak bennunk {{town}} ugyfelei",
     "regionalHintTitle": "Regionalis megjegyzes",
-    "regionalHintText": "Sok kereses {{town}} telepulesen rendszeres kertgondozasra vonatkozik. A munkakat ugy tervezzuk, hogy az idopontok stabilak maradjanak es a kulso teruletek hosszu tavon rendezettek legyenek."
+    "regionalHintText": "Sok kereses {{town}} telepulesen rendszeres kertgondozasra vonatkozik. A munkakat ugy tervezzuk, hogy az idopontok stabilak maradjanak es a kulso teruletek hosszu tavon rendezettek legyenek.",
+    "faq": [
+      {
+        "question": "Milyen szolg�ltat�sokat ny�jtanak {{town}} telep�l�sen?",
+        "answer": "{{town}} ter�let�n t�bbek k�z�tt gyepgondoz�st, s�v�nygondoz�st, lombmunk�t �s rendszeres k�lt�ri fenntart�st v�gz�nk."
+      },
+      {
+        "question": "{{town}} telep�l�sen c�geket �s lak�parkokat is ell�tnak?",
+        "answer": "Igen, {{town}} telep�l�sen mag�nkerteket, c�ges ter�leteket, lak�parkokat, ig�ny eset�n k�zint�zm�nyeket is ell�tunk."
+      },
+      {
+        "question": "Milyen gyorsan kaphatok aj�nlatot {{town}} telep�l�sen?",
+        "answer": "Megkeres�s ut�n �ltal�ban 24 �r�n bel�l (H�tfo-P�ntek) visszajelz�nk egy elso �rt�kel�ssel."
+      },
+      {
+        "question": "Lehets�ges rendszeres kertgondoz�s {{town}} telep�l�sen is?",
+        "answer": "Igen, {{town}} telep�l�sen tervezheto �temeket k�n�lunk, p�ld�ul heti, k�theti vagy havi rendszeress�ggel."
+      }
+    ]
   },
   "guidesPage": {
     "seoTitle": "Kertgondozasi utmutatok",
@@ -468,7 +550,25 @@
     "heroTitle": "Tippek kertgondozashoz Leibnitzben es kornyeken",
     "heroText": "Itt rovid, szezonalis ajanlasokat talal rendezett zoldfeluletekhez.",
     "tipLabel": "Szezonalis tipp",
-    "cta": "Megvalositasi tanacs kerese"
+    "cta": "Megvalositasi tanacs kerese",
+    "guides": [
+      {
+        "title": "Tavaszi gyep�pol�s D�l-St�jerorsz�gban",
+        "text": "Mikor �rdemes tr�gy�zni, milyen gyakran ny�rni, �s hogyan surus�dj�n vissza a gyep t�l ut�n."
+      },
+      {
+        "title": "S�v�nyny�r�s: idoz�t�s, �pol�s �s tiszta �lek",
+        "text": "Gyakorlati tan�csok eg�szs�ges s�v�nyhez �s rendezett �sszk�phez."
+      },
+      {
+        "title": "Oszi lombmunka: biztons�gosan �s hat�konyan",
+        "text": "�gy maradnak rendezettek �s biztons�gosak az utak, bej�r�k �s z�ldfel�letek."
+      },
+      {
+        "title": "Tavaszi kertfelk�sz�t�s: r�vid ellenorzolista",
+        "text": "A legfontosabb l�p�sek az eros szezonkezd�shez."
+      }
+    ]
   },
   "stickyBar": {
     "callNow": "Hivjon most",

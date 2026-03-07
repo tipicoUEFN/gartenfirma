@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run i18n:audit && vite build",
+    "i18n:audit": "node scripts/i18n-audit.cjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },

@@ -116,7 +116,29 @@
     "locationLinksTitle": "Usluga + mjesto",
     "locationLinksDescription": "Cesto trazene kombinacije u nasoj regiji.",
     "gardenCareInTown": "Njega vrta {{town}}",
-    "cardTagline": "Cisto. Pouzdano. Regionalno."
+    "cardTagline": "Cisto. Pouzdano. Regionalno.",
+    "faq": [
+      {
+        "question": "Koliko cesto treba kositi travnjak?",
+        "answer": "U glavnoj sezoni, ovisno o rastu, obicno preporucujemo ritam od 7 do 14 dana."
+      },
+      {
+        "question": "Koja mjesta pokrivate?",
+        "answer": "Radimo na podrucju Leibnitza, Graza, Wagne, Gralle, Tillmitscha, Stra�a i okolice."
+      },
+      {
+        "question": "Nudite li njegu vrtova za tvrtke?",
+        "answer": "Da, odrzavamo i poslovne lokacije, stambene komplekse i javne ustanove u redovitim intervalima."
+      },
+      {
+        "question": "Kako mogu zatraziti ponudu?",
+        "answer": "Najbrze putem kontakt obrasca ili telefonom. Obicno odgovaramo unutar 24 sata."
+      },
+      {
+        "question": "Koliko kosta njega zivice?",
+        "answer": "Cijena ovisi o duljini, visini i pristupacnosti. Nakon kratkog uskladivanja dajemo jasnu ponudu."
+      }
+    ]
   },
   "aboutPage": {
     "heroEyebrow": "O nama",
@@ -133,7 +155,21 @@
     "seoTitle": "O nama",
     "seoDescription": "Regionalna vrtna usluga u juznoj Stajerskoj s osobnim savjetovanjem, jasnim procesima i pouzdanom izvedbom.",
     "sectionSubtitle": "Kratko, jasno i po definiranim koracima.",
-    "highlight": "Njega vrta iz Leibnitza. Pouzdano, cisto i tocno."
+    "highlight": "Njega vrta iz Leibnitza. Pouzdano, cisto i tocno.",
+    "workflows": {
+      "private": {
+        "title": "Privatni vrt - redovita njega",
+        "challenge": "Neujednaceno stanje odrzavanja i manjak redovitosti.",
+        "approach": "Fiksni intervalni plan za travnjak, zivicu i gredice.",
+        "result": "Stalno uredan vrt uz predvidiv opseg rada."
+      },
+      "apartment": {
+        "title": "Stambeni kompleks - zajednicke povrsine",
+        "challenge": "Nejasne odgovornosti i promjenjiva kvaliteta na lokaciji.",
+        "approach": "Jasni zadaci po terminu i cista povratna informacija nakon izvedbe.",
+        "result": "Pouzdano stanje povrsina za stanare i upravu."
+      }
+    }
   },
   "contact": {
     "title": "Kontakt"
@@ -161,6 +197,20 @@
     "detailed": {
       "eyebrow": "Detaljni upit",
       "description": "Vise detalja za precizniju ponudu."
+    },
+    "flow": {
+      "quick": {
+        "title": "Brzi upit - tijek",
+        "challenge": "Trebate brzo termin ili povratni poziv.",
+        "approach": "Kratki podaci u obrascu ili izravni telefonski upit.",
+        "result": "Brza povratna informacija sa sljedecim smislenim korakom."
+      },
+      "detailed": {
+        "title": "Detaljni upit - tijek",
+        "challenge": "Radi se o vise povrsina ili redovitom odrzavanju.",
+        "approach": "Detaljno definiramo opseg usluge i lokaciju.",
+        "result": "Jasnija ponuda s odgovarajucim intervalom."
+      }
     }
   },
   "cta": {
@@ -326,7 +376,21 @@
     "regionalProofLine2": "Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · okolica Graza",
     "seoTitle": "Njega vrtova u Leibnitzu i juznoj Stajerskoj",
     "seoDescription": "PR Gartenservice nudi kosnju travnjaka, njegu zivice i redovno odrzavanje vanjskih povrsina u Leibnitzu, Grazu i okolici.",
-    "heroEyebrow": "PR Gartenservice"
+    "heroEyebrow": "PR Gartenservice",
+    "testimonials": {
+      "1": {
+        "quote": "Pouzdano i cisto odradeno. Termin je ispostovan, a vrt ostavljen urednim.",
+        "source": "Obitelj K., Leibnitz"
+      },
+      "2": {
+        "quote": "Kratko uskladivanje, korektna povratna informacija i cista izvedba. Upravo tako treba biti.",
+        "source": "Uprava zgrade M., Wagna"
+      },
+      "3": {
+        "quote": "Redovita briga funkcionira odlicno. Ljubazno, tocno i uredno.",
+        "source": "Poslovna lokacija M., podrucje Graza"
+      }
+    }
   },
   "quickRequestForm": {
     "badge": "Preporuceno za brzi odgovor",
@@ -459,7 +523,25 @@
     "servicesTitle": "Nase usluge u mjestu {{town}}",
     "trustTitle": "Zasto nam klijenti u mjestu {{town}} vjeruju",
     "regionalHintTitle": "Regionalna napomena",
-    "regionalHintText": "Mnogi upiti u mjestu {{town}} odnose se na redovitu njegu vrtova. Termine planiramo tako da ostanu stabilni i vanjske povrsine trajno uredne."
+    "regionalHintText": "Mnogi upiti u mjestu {{town}} odnose se na redovitu njegu vrtova. Termine planiramo tako da ostanu stabilni i vanjske povrsine trajno uredne.",
+    "faq": [
+      {
+        "question": "Koje usluge nudite u mjestu {{town}}?",
+        "answer": "U mjestu {{town}} nudimo, izmedu ostalog, njegu travnjaka, njegu zivice, radove s liscem i redovno odrzavanje vanjskih povrsina."
+      },
+      {
+        "question": "Odrzavate li u mjestu {{town}} i tvrtke te stambene komplekse?",
+        "answer": "Da, u mjestu {{town}} odrzavamo privatne vrtove, poslovne povrsine, stambene komplekse te po upitu i javne ustanove."
+      },
+      {
+        "question": "Koliko brzo mogu dobiti ponudu u mjestu {{town}}?",
+        "answer": "Nakon upita obicno se javljamo unutar 24 sata (Pon-Pet) s prvom povratnom informacijom."
+      },
+      {
+        "question": "Je li moguca i redovita njega vrta u mjestu {{town}}?",
+        "answer": "Da, u mjestu {{town}} nudimo planirane intervale njege, primjerice tjedno, svaka 2 tjedna ili mjesecno."
+      }
+    ]
   },
   "guidesPage": {
     "seoTitle": "Savjeti za njegu vrtova",
@@ -468,7 +550,25 @@
     "heroTitle": "Savjeti za njegu vrtova u Leibnitzu i okolici",
     "heroText": "Ovdje cete pronaci kratke sezonske preporuke za uredene zelene povrsine.",
     "tipLabel": "Sezonski savjet",
-    "cta": "Zatrazi savjet za izvedbu"
+    "cta": "Zatrazi savjet za izvedbu",
+    "guides": [
+      {
+        "title": "Proljetna njega travnjaka u juznoj Stajerskoj",
+        "text": "Kada gnojiti, koliko cesto kositi i kako travnjak nakon zime ponovno zgusnuti."
+      },
+      {
+        "title": "Rezanje zivice: vrijeme, njega i cisti rubovi",
+        "text": "Prakticni savjeti za zdravu zivicu i uredan ukupni dojam."
+      },
+      {
+        "title": "Jesenski radovi s liscem: sigurno i ucinkovito",
+        "text": "Kako odrzati staze, prilaze i zelene povrsine urednima i sigurnima."
+      },
+      {
+        "title": "Priprema vrta u proljece: kratka kontrolna lista",
+        "text": "Najvazniji koraci za snazan pocetak sezone."
+      }
+    ]
   },
   "stickyBar": {
     "callNow": "Nazovite sada",
