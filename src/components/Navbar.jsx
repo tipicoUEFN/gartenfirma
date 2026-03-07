@@ -55,7 +55,7 @@ function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <Phone size={16} className="text-olive-600" />
+          <Phone size={16} className="phone-ring-icon text-olive-600" />
           <a href={`tel:${headerPhone}`} className="text-sm font-semibold text-olive-800 hover:text-olive-600">
             {headerPhone}
           </a>

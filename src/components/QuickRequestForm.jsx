@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { businessData } from '../config/businessData'
 
 const quickServiceOptions = [
@@ -10,8 +10,14 @@ const quickServiceOptions = [
 ]
 
 function QuickRequestForm() {
+  const HOLD_DURATION_MS = 3000
   const [status, setStatus] = useState('idle')
   const [errorText, setErrorText] = useState('')
+  const [holdProgress, setHoldProgress] = useState(0)
+  const [holdReady, setHoldReady] = useState(false)
+  const holdTimeoutRef = useRef(null)
+  const holdIntervalRef = useRef(null)
+  const submitButtonRef = useRef(null)
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -25,8 +31,60 @@ function QuickRequestForm() {
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
+  const clearHoldTimers = () => {
+    if (holdTimeoutRef.current) {
+      window.clearTimeout(holdTimeoutRef.current)
+      holdTimeoutRef.current = null
+    }
+    if (holdIntervalRef.current) {
+      window.clearInterval(holdIntervalRef.current)
+      holdIntervalRef.current = null
+    }
+  }
+
+  const startHold = () => {
+    if (status === 'submitting' || holdReady) {
+      return
+    }
+
+    setErrorText('')
+    setHoldProgress(0)
+
+    const startTime = Date.now()
+
+    clearHoldTimers()
+    holdIntervalRef.current = window.setInterval(() => {
+      const elapsed = Date.now() - startTime
+      const progress = Math.min(100, Math.round((elapsed / HOLD_DURATION_MS) * 100))
+      setHoldProgress(progress)
+    }, 50)
+
+    holdTimeoutRef.current = window.setTimeout(() => {
+      clearHoldTimers()
+      setHoldReady(true)
+      setHoldProgress(100)
+      submitButtonRef.current?.form?.requestSubmit()
+    }, HOLD_DURATION_MS)
+  }
+
+  const stopHold = () => {
+    if (holdReady || status === 'submitting') {
+      return
+    }
+    clearHoldTimers()
+    setHoldProgress(0)
+  }
+
   const handleSubmit = async (event) => {
     event.preventDefault()
+
+    if (!holdReady) {
+      setErrorText('Bitte Taste 3 Sekunden gedrückt halten.')
+      return
+    }
+
+    setHoldReady(false)
+    setHoldProgress(0)
     setStatus('submitting')
     setErrorText('')
 
@@ -129,12 +187,34 @@ function QuickRequestForm() {
       </label>
 
       <button
-        type="submit"
+        ref={submitButtonRef}
+        type="button"
         disabled={status === 'submitting'}
+        onMouseDown={startHold}
+        onMouseUp={stopHold}
+        onMouseLeave={stopHold}
+        onTouchStart={startHold}
+        onTouchEnd={stopHold}
+        onTouchCancel={stopHold}
+        onKeyDown={(event) => {
+          if ((event.key === ' ' || event.key === 'Enter') && !event.repeat) {
+            startHold()
+          }
+        }}
+        onKeyUp={(event) => {
+          if (event.key === ' ' || event.key === 'Enter') {
+            stopHold()
+          }
+        }}
         className="rounded-full bg-olive-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-olive-800 disabled:opacity-70"
       >
-        {status === 'submitting' ? 'Wird gesendet...' : 'Schnellanfrage senden'}
+        {status === 'submitting'
+          ? 'Wird gesendet...'
+          : holdProgress > 0
+            ? `Gedrückt halten... ${holdProgress}%`
+            : 'Schnellanfrage senden'}
       </button>
+      {status !== 'submitting' ? <p className="text-xs text-olive-600">Zum Senden Taste 3 Sekunden gedrückt halten.</p> : null}
 
       {status === 'success' ? <p className="text-sm text-emerald-700">Danke. Ihre Anfrage wurde gesendet.</p> : null}
       {status === 'error' ? <p className="text-sm text-red-700">{errorText}</p> : null}
