@@ -1,6 +1,6 @@
 function PageHero({ eyebrow, title, text, children, imageSrc, imageAlt, imageSrcSet, imageContent, footerContent, compactBottom = false }) {
   const cardPaddingClass = compactBottom
-    ? 'reveal glass-card overflow-hidden px-6 pt-10 pb-6 sm:px-10 sm:pt-14 sm:pb-8'
+    ? 'reveal glass-card overflow-hidden px-6 pt-10 pb-4 sm:px-10 sm:pt-14 sm:pb-6'
     : 'reveal glass-card overflow-hidden px-6 py-10 sm:px-10 sm:py-14'
 
   return (
