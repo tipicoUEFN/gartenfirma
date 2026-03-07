@@ -1,6 +1,5 @@
 import { CheckCircle2 } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
-import PageHero from '../components/PageHero'
 import ProjectExampleCard from '../components/ProjectExampleCard'
 import SeoHead from '../components/SeoHead'
 import SectionTitle from '../components/SectionTitle'
@@ -37,13 +36,7 @@ function AboutPage() {
         pathname="/ueber-uns"
       />
 
-      <PageHero
-        eyebrow={t('aboutPage.heroEyebrow')}
-        title={t('aboutPage.heroTitle')}
-        text={t('aboutPage.heroText')}
-      />
-
-      <section className="section-spacing pt-0">
+      <section className="section-spacing">
         <div className="container-width grid gap-10 lg:grid-cols-2 lg:items-start">
           <div>
             <SectionTitle
