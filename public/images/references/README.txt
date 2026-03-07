@@ -1,9 +1,9 @@
 Lege deine Referenzbilder hier ab mit diesen Dateinamen:
-- ref1.png (Rasen maehen)
-- ref2.png (Heckschnitt)
-- ref3.png
-- ref4.png
-- ref5.png
-- ref6.png
+- ref1.webp (Rasen maehen)
+- ref2.webp (Heckschnitt)
+- ref3.webp Rasenkanten schneiden
+- ref4.webp Garten aufraeumen / Laub entfernen
+- ref5.webp Fensterreinigung
 
-Empfehlung: gleiche Bildgroesse fuer alle Referenzen, z. B. 1600x1000 px.
+Fallback (optional): ref1.png bis ref5.png werden ebenfalls unterstuetzt.
+Empfehlung: gleiche Bildgroesse fuer alle Referenzen, z. B. 1536x1024 px.

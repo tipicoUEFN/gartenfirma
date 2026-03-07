@@ -1,4 +1,4 @@
-function PageHero({ eyebrow, title, text, children, imageSrc, imageAlt }) {
+function PageHero({ eyebrow, title, text, children, imageSrc, imageAlt, imageSrcSet }) {
   return (
     <section className="section-spacing pt-28 sm:pt-32">
       <div className="container-width">
@@ -15,6 +15,7 @@ function PageHero({ eyebrow, title, text, children, imageSrc, imageAlt }) {
               <div className="overflow-hidden rounded-2xl border border-olive-200 shadow-md">
                 <img
                   src={imageSrc}
+                  srcSet={imageSrcSet}
                   alt={imageAlt}
                   loading="lazy"
                   className="aspect-[4/3] w-full object-cover"

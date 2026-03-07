@@ -70,6 +70,7 @@ function HomePage() {
         title="Ihr Garten in besten Haenden. Gepflegt, klar und professionell betreut."
         text={`${businessData.companyName} bietet hochwertige Gartenpflege fuer Privat- und Firmenkunden in der Suedsteiermark. Mit Fachwissen, Handschlagqualitaet und Blick fuers Detail.`}
         imageSrc={homepageImages.hero.src}
+        imageSrcSet={homepageImages.hero.srcSet}
         imageAlt={homepageImages.hero.alt}
       >
         <div className="flex flex-wrap items-center gap-4">
