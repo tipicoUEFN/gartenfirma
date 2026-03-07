@@ -10,7 +10,7 @@
   },
   "hero": {
     "title": "Kertje a legjobb kezekben",
-    "cta": "Konzultáció keres"
+    "cta": "Konzultáció kérése"
   },
   "home": {
     "hero": {
@@ -110,12 +110,12 @@
     "seasonDescription": "Tavaszi felkészítés, őszi szerviz és lombmunka.",
     "ongoingTitle": "Folyamatos gondozás",
     "ongoingDescription": "Rendszeres gondozás rögzített ütemterv szerint.",
-    "seoTitle": "Kertgondozasi szolgaltatasok",
-    "seoDescription": "Szolgaltatasaink: funyiras, sovenygondozas, lombmunka es rendszeres kulteri fenntartas Leibnitzben es kornyeken.",
-    "sectionDescriptionShort": "Rovid attekintes szolgaltatasainkrol a regioban.",
-    "locationLinksTitle": "Szolgaltatas + telepules",
+    "seoTitle": "Kertgondozási szolgáltatások",
+    "seoDescription": "Szolgáltatásaink: fűnyírás, sövénygondozas, lombmunka es rendszeres kültéri fenntartas Leibnitzben es környéken.",
+    "sectionDescriptionShort": "Rovid attekintes szolgáltatásainkrol a regioban.",
+    "locationLinksTitle": "Szolgáltatás + telepules",
     "locationLinksDescription": "Gyakran keresett kombinaciok a regioban.",
-    "gardenCareInTown": "Kertgondozas {{town}}",
+    "gardenCareInTown": "Kertgondozás {{town}}",
     "cardTagline": "Tiszta. Megbizhato. Regionalis.",
     "faq": [
       {
@@ -153,9 +153,9 @@
     "value3": "Fenntartható gondozás hosszú távú eredményért",
     "value4": "Regionális közelség és közvetlen elérhetőség",
     "seoTitle": "Rolunk",
-    "seoDescription": "Regionalis kertszolgaltatas Del-Stajerorszagban szemelyes tanacsadassal, atlathato folyamatokkal es megbizhato kivitelezessel.",
+    "seoDescription": "Regionalis kertszolgáltatás Dél-Stájerországban szemelyes tanacsadassal, atlathato folyamatokkal es megbizhato kivitelezessel.",
     "sectionSubtitle": "Roviden, vilagosan, fix folyamatok menten.",
-    "highlight": "Kertgondozas Leibnitzbol. Megbizhato, tiszta es pontos.",
+    "highlight": "Kertgondozás Leibnitzbol. Megbizhato, tiszta es pontos.",
     "workflows": {
       "private": {
         "title": "Magánkert - folyamatos gondozás",
@@ -182,12 +182,12 @@
     "formDescription": "Irja le roviden. Gyorsan visszajelzunk.",
     "direct": "Közvetlenül elérhető",
     "serviceArea": "Szolgáltatási terület",
-    "seoTitle": "Kapcsolat es ajanlatkeres",
+    "seoTitle": "Kapcsolat es ajánlatkérés",
     "seoDescription": "Kérjen kertgondozást Leibnitz, Wagna, Gralla, Tillmitsch, Straß és környéke területén. Gyorsan válaszolunk.",
     "quick": {
       "eyebrow": "Gyors kapcsolat",
-      "title": "Kuldjon rovid kerest",
-      "description": "Valasz altalaban 24h-on belul."
+      "title": "Küldjön rövid kérést",
+      "description": "Válasz altalaban 24h-on belul."
     },
     "flowSection": {
       "eyebrow": "Folyamat",
@@ -229,10 +229,10 @@
     "privacy": "Adatvédelem",
     "copyright": "{{year}} {{companyName}}. Minden jog fenntartva.",
     "popularPlaces": "Nepszeru helyek",
-    "gardenCareInTown": "Kertgondozas {{town}}",
+    "gardenCareInTown": "Kertgondozás {{town}}",
     "dailyInAction": "Naponta aktívak: Leibnitz - Wagna - Gralla - Tillmitsch - Straß - Ehrenhausen - Graz környéke",
     "openingHours": [
-      "Hetfo - Pentek: 07:00 - 17:00",
+      "Hétfő - Péntek: 07:00 - 17:00",
       "Szombat: egyeztetes alapjan"
     ]
   },
@@ -285,11 +285,45 @@
       }
     },
     "seoTitle": "Regionalis referenciak",
-    "seoDescription": "Valogatott projektek funyiras, sovenyvagas es objektumgondozas temaban Leibnitz, Graz es Del-Stajerorszag teruleten.",
+    "seoDescription": "Valogatott projektek fűnyírás, sövényvagas es objektumgondozas temaban Leibnitz, Graz es Dél-Stájerország teruleten.",
     "casesTitle": "Munkak helyszin szerint",
-    "casesDescription": "Konkrett projektek szolgaltatassal, objektumtippussal es gondozasi ritmussal.",
+    "casesDescription": "Konkrett projektek szolgáltatással, objektumtippussal es gondozasi ritmussal.",
     "projectInTown": "Projekt itt: {{town}}",
-    "moreInTown": "Tovabb a kertgondozashoz itt: {{town}}"
+    "moreInTown": "Tovabb a kertgondozáshoz itt: {{town}}",
+    "caseStudies": {
+      "leibnitz-rasen": {
+        "service": "Gyepgondozás",
+        "objectType": "Magánkert",
+        "challenge": "Egyenetlen növekedés és rendezetlen szélek.",
+        "approach": "Fix 14 napos ütemezés szegélyvágással és lombeltávolítással.",
+        "result": "Egyenletes összkép a teljes főszezonban.",
+        "cadence": "14 naponta"
+      },
+      "wagna-hecke": {
+        "service": "Sövénygondozás",
+        "objectType": "Családi ház",
+        "challenge": "Túlnőtt sövény a járda és a felhajtó mentén.",
+        "approach": "Kíméletes formázás két menetben, tiszta elszállítással.",
+        "result": "Tiszta vonalak, jobb beláthatóság és rendezett bejárat.",
+        "cadence": "évente 2x"
+      },
+      "gralla-objekt": {
+        "service": "Kültéri területfenntartás",
+        "objectType": "Lakóegyüttes",
+        "challenge": "Váltakozó minőség a szolgáltatóváltások miatt.",
+        "approach": "Havi gondozási terv fix kapcsolattartóval és ellenőrzőlistával.",
+        "result": "Folyamatosan rendezett zöldfelületek és tervezhető fenntartás.",
+        "cadence": "havonta"
+      },
+      "tillmitsch-saison": {
+        "service": "Szezonális szerviz",
+        "objectType": "Céges telephely",
+        "challenge": "Magasabb fenntartási igény tavasszal és ősszel.",
+        "approach": "Szezonális intenzív beavatkozások tisztasági és biztonsági fókuszszal.",
+        "result": "A kültéri területek egész évben rendezettek és hívogatók maradnak.",
+        "cadence": "szezonálisan"
+      }
+    }
   },
   "impressum": {
     "eyebrow": "Impresszum",
@@ -305,7 +339,7 @@
     "membership": "Tagság: WKO Stájerország (helyőrző)",
     "tradeLaw": "Szakmai jog: Gewerbeordnung (GewO)",
     "seoTitle": "Impresszum",
-    "seoDescription": "Jogi informaciok a PR Gartenservice-tol Leibnitz es Del-Stajerorszag teruleten."
+    "seoDescription": "Jogi informaciok a PR Gartenservice-tol Leibnitz es Dél-Stájerország teruleten."
   },
   "privacy": {
     "eyebrow": "Adatvédelem",
@@ -331,7 +365,7 @@
   },
   "language": {
     "label": "Nyelv",
-    "switcherAria": "Nyelvvalaszto"
+    "switcherAria": "Nyelvválasztó"
   },
   "projectLabels": {
     "challenge": "Kiinduló helyzet",
@@ -374,8 +408,8 @@
     "regionalPagesLabel": "Regionális oldalak",
     "regionalProofLine1": "Magánkertek, céges területek, lakóparkok és közintézmények Leibnitz, Graz, Deutschlandsberg és Délkelet-Stájerország térségében.",
     "regionalProofLine2": "Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz környéke",
-    "seoTitle": "Kertgondozas Leibnitzben es Del-Stajerorszagban",
-    "seoDescription": "A PR Gartenservice funyirast, sovenygondozast es rendszeres kulteri fenntartast kinal Leibnitz, Graz es kornyeken.",
+    "seoTitle": "Kertgondozás Leibnitzben es Dél-Stájerországban",
+    "seoDescription": "A PR Gartenservice fűnyírást, sövénygondozast es rendszeres kültéri fenntartast kinal Leibnitz, Graz es környéken.",
     "heroEyebrow": "PR Gartenservice",
     "testimonials": {
       "1": {
@@ -394,13 +428,13 @@
   },
   "quickRequestForm": {
     "badge": "Gyors visszajelzeshez ajanlott",
-    "title": "Gyors keres 1 perc alatt",
-    "subtitle": "Valasz altalaban 24 oran belul (Hetfo-Pentek).",
+    "title": "Gyors kérés 1 perc alatt",
+    "subtitle": "Válasz altalaban 24 oran belul (Hétfő-Péntek).",
     "fields": {
       "name": "Nev",
       "phone": "Telefon",
       "town": "Telepules",
-      "service": "Kivant szolgaltatas",
+      "service": "Kivant szolgáltatás",
       "callbackTime": "Preferalt visszahivasi ido (opcionalis)"
     },
     "placeholders": {
@@ -408,7 +442,7 @@
       "select": "Valasszon"
     },
     "submit": {
-      "default": "Gyors keres kuldese",
+      "default": "Gyors kérés kuldese",
       "sending": "Kuldes...",
       "holding": "Tartsa nyomva... {{progress}}%"
     },
@@ -419,24 +453,24 @@
       "submitFailed": "A kuldes sikertelen. Kerjuk, hivjon minket kozvetlenul."
     },
     "mail": {
-      "subject": "Gyors keres erkezett: {{name}}",
+      "subject": "Gyors kérés erkezett: {{name}}",
       "notProvided": "nincs megadva",
-      "requestType": "Gyors keres"
+      "requestType": "Gyors kérés"
     },
     "serviceOptions": [
-      "Funyiras",
-      "Sovenygondozas",
+      "Fűnyírás",
+      "Sövénygondozas",
       "Lombmunka",
-      "Rendszeres kulteri fenntartas",
-      "Alap kertgondozas"
+      "Rendszeres kültéri fenntartas",
+      "Alap kertgondozás"
     ]
   },
   "serviceRequestForm": {
     "steps": {
       "contact": "1. Kapcsolati adatok",
-      "services": "2. Szolgaltatas valasztas",
+      "services": "2. Szolgáltatás választas",
       "lawnSize": "3. Terulet merete",
-      "hedgeLength": "4. Soveny hossza",
+      "hedgeLength": "4. Sövény hossza",
       "frequency": "5. Vegrehajtas gyakorisaga",
       "propertyType": "6. Objektum tipusa",
       "message": "7. Opcionis uzenet",
@@ -449,7 +483,7 @@
       "phone": "Telefon",
       "address": "Cim (opcionalis)",
       "lawnSize": "Füves terület (m²)",
-      "hedgeLength": "Soveny hossza (folyo meter)",
+      "hedgeLength": "Sövény hossza (folyo meter)",
       "propertyType": "Objektum tipusa",
       "message": "Uzenet (opcionalis)"
     },
@@ -459,10 +493,10 @@
       "message": "Roviden irja le igenyet vagy kulonleges kivansagat."
     },
     "serviceOptions": {
-      "rasen": "Funyiras / zoldfelulet-gondozas",
-      "hecke": "Sovenyvagas",
+      "rasen": "Fűnyírás / zoldfelulet-gondozas",
+      "hecke": "Sövényvagas",
       "laub": "Lombmunka",
-      "gartenpflege": "Alap kertgondozas",
+      "gartenpflege": "Alap kertgondozás",
       "aussenanlagen": "Kulteri terulet fenntartasa",
       "fenster": "Ablaktisztitas"
     },
@@ -489,16 +523,16 @@
       "sonstiges": "Egyeb"
     },
     "summary": {
-      "service": "Szolgaltatas",
+      "service": "Szolgáltatás",
       "lawnSize": "Fuves terulet",
-      "hedge": "Soveny",
+      "hedge": "Sövény",
       "frequency": "Gyakorisag",
       "propertyType": "Objektum"
     },
     "upload": {
       "label": "Kepek feltoltese (opcionalis)",
       "help": "Legfeljebb 3 kep. Csak JPG/PNG/WebP. Max 5 MB/kep.",
-      "selected": "{{count}} / {{max}} kep kivalasztva.",
+      "selected": "{{count}} / {{max}} kep kiválasztva.",
       "errors": {
         "tooMany": "Legfeljebb {{max}} kepet valasszon.",
         "invalidType": "Csak kepfajlok tolthetők fel.",
@@ -512,7 +546,7 @@
       "holding": "Tartsa nyomva... {{progress}}%"
     },
     "holdHint": "Kuldeshez tartsa nyomva a gombot 3 masodpercig.",
-    "notice": "Kotottsegmentes kereses. Valasz altalaban 24 oran belul.",
+    "notice": "Kotottsegmentes kereses. Válasz altalaban 24 oran belul.",
     "success": "Koszonjuk. A kerese el lett kuldve.",
     "errors": {
       "holdToSend": "Kerjuk, tartsa nyomva a gombot 3 masodpercig.",
@@ -527,14 +561,14 @@
     }
   },
   "locationPage": {
-    "seoDescription": "Kertgondozas maganugyfeleknek, cegeknek es lakoegyutteseknek {{town}} es kornyeken.",
-    "heroEyebrow": "Regionalis kertszolgaltatas",
+    "seoDescription": "Kertgondozás maganugyfeleknek, cegeknek es lakoegyutteseknek {{town}} es környéken.",
+    "heroEyebrow": "Regionalis kertszolgáltatás",
     "ctaOffer": "Ajanlatkeres {{town}} telepulesre",
-    "ctaServices": "Szolgaltatasok megtekintese",
-    "servicesTitle": "Szolgaltatasaink itt: {{town}}",
+    "ctaServices": "Szolgáltatások megtekintese",
+    "servicesTitle": "Szolgáltatásaink itt: {{town}}",
     "trustTitle": "Miért bíznak bennünk {{town}} ügyfelei",
     "regionalHintTitle": "Regionalis megjegyzes",
-    "regionalHintText": "Sok kereses {{town}} telepulesen rendszeres kertgondozasra vonatkozik. A munkakat ugy tervezzuk, hogy az idopontok stabilak maradjanak es a kulso teruletek hosszu tavon rendezettek legyenek.",
+    "regionalHintText": "Sok kereses {{town}} telepulesen rendszeres kertgondozásra vonatkozik. A munkakat ugy tervezzuk, hogy az idopontok stabilak maradjanak es a kulso teruletek hosszu tavon rendezettek legyenek.",
     "faq": [
       {
         "question": "Milyen szolgáltatásokat nyújtanak {{town}} településen?",
@@ -555,10 +589,10 @@
     ]
   },
   "guidesPage": {
-    "seoTitle": "Kertgondozasi utmutatok",
-    "seoDescription": "Szezonalis tippek funyirashoz, sovenygondozashoz es kerti munkakhoz Leibnitzben es kornyeken.",
+    "seoTitle": "Kertgondozási utmutatok",
+    "seoDescription": "Szezonalis tippek fűnyíráshoz, sövénygondozashoz es kerti munkakhoz Leibnitzben es környéken.",
     "heroEyebrow": "Utmutato",
-    "heroTitle": "Tippek kertgondozashoz Leibnitzben es kornyeken",
+    "heroTitle": "Tippek kertgondozáshoz Leibnitzben es környéken",
     "heroText": "Itt rovid, szezonalis ajanlasokat talal rendezett zoldfeluletekhez.",
     "tipLabel": "Szezonalis tipp",
     "cta": "Megvalositasi tanacs kerese",
@@ -583,7 +617,88 @@
   },
   "stickyBar": {
     "callNow": "Hivjon most",
-    "quickRequest": "Gyors keres"
+    "quickRequest": "Gyors kérés"
+  },
+  "locationPages": {
+    "gartenpflege-leibnitz": {
+      "title": "Kertgondozás {{town}} településen",
+      "heroTitle": "Kertgondozás {{town}} településen magán- és üzleti ügyfeleknek",
+      "intro": "{{town}} területén kerteket és kültéri felületeket gondozunk, jól tervezhető ütemezéssel és tiszta kivitelezéssel.",
+      "services": [
+        "Fűnyírás",
+        "Meglévő sövények gondozása",
+        "Lombmunka",
+        "Rendszeres kültéri fenntartás"
+      ],
+      "trust": [
+        "Rövid kiszállás Leibnitz térségében",
+        "Gyors időpont-egyeztetés",
+        "Személyes kapcsolattartó"
+      ]
+    },
+    "gartenpflege-wagna": {
+      "title": "Kertgondozás {{town}} településen",
+      "heroTitle": "Az Ön kertszolgáltatója {{town}} településen",
+      "intro": "{{town}} ügyfelei számára rendszeres kertgondozást és szezonális feladatokat vállalunk.",
+      "services": [
+        "Szezonális munkák",
+        "Ágyás- és területgondozás",
+        "Fűnyírás",
+        "Lombmunka"
+      ],
+      "trust": [
+        "Regionális jelenlét Leibnitz körzetében",
+        "Tervezhető gondozási intervallumok",
+        "Tiszta és megbízható kivitelezés"
+      ]
+    },
+    "gartenpflege-gralla": {
+      "title": "Kertgondozás {{town}} településen",
+      "heroTitle": "Professzionális kertgondozás {{town}} településen",
+      "intro": "{{town}} területén folyamatos kertgondozást biztosítunk magán- és üzleti ingatlanoknak.",
+      "services": [
+        "Gyepgondozás",
+        "Meglévő sövények formázása",
+        "Ingatlangondozás",
+        "Kültéri felületek tisztán tartása"
+      ],
+      "trust": [
+        "Tapasztalat magán- és üzleti objektumokban",
+        "Közvetlen kapcsolat a csapattal",
+        "Pontos, határidős kivitelezés"
+      ]
+    },
+    "gartenpflege-tillmitsch": {
+      "title": "Kertgondozás {{town}} településen",
+      "heroTitle": "Kertgondozás {{town}} településen megbízható minőséggel",
+      "intro": "{{town}} területén fenntartható módon gondozzuk a zöldfelületeket és kerteket egész évben.",
+      "services": [
+        "Zöldfelület-gondozás",
+        "Sövénygondozás",
+        "Folyamatos támogatás",
+        "Tavaszi és őszi feladatok"
+      ],
+      "trust": [
+        "Regionális csapat Dél-Stájerországból",
+        "Világos kommunikáció",
+        "Rugalmas támogatás"
+      ]
+    },
+    "gartenpflege-strass": {
+      "title": "Kertgondozás {{town}} településen",
+      "heroTitle": "Kertszolgáltatás {{town}} településen",
+      "intro": "{{town}} területén tiszta munkavégzést, megbízható ütemezést és folyamatos támogatást nyújtunk.",
+      "services": [
+        "Sövénygondozás",
+        "Fűnyírás",
+        "Szezonális szerviz",
+        "Kültéri fenntartás"
+      ],
+      "trust": [
+        "Gyors kiszállás Leibnitz körzetében",
+        "Tiszta munkamódszer",
+        "Kötöttségmentes első konzultáció"
+      ]
+    }
   }
 }
-

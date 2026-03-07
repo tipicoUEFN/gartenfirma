@@ -25,7 +25,7 @@ function LocalBusinessSchema() {
         'Strass in Steiermark',
         'Graz',
         'Deutschlandsberg',
-        'Suedoststeiermark',
+        'Südoststeiermark',
       ],
       openingHoursSpecification: [
         {
@@ -37,9 +37,9 @@ function LocalBusinessSchema() {
       ],
       serviceType: [
         'Gartenpflege',
-        'Rasenmaehen',
+        'Rasenmähen',
         'Heckenpflege',
-        'Aussenanlagenbetreuung',
+        'Außenanlagenbetreuung',
         'Laubarbeiten',
       ],
     }

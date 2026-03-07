@@ -30,7 +30,7 @@ function LanguageSwitcher() {
       >
         {languages.map((lng) => (
           <option key={lng} value={lng}>
-            {lng === 'de-AT' ? 'DE' : lng.toUpperCase()}
+            {lng === 'de-AT' ? 'AT' : lng.toUpperCase()}
           </option>
         ))}
       </select>
