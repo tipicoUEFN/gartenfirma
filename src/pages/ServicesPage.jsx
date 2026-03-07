@@ -2,7 +2,6 @@ import { Flower2, Leaf, Scissors, Shovel, Sprout, Trees } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import CTASection from '../components/CTASection'
-import PageHero from '../components/PageHero'
 import SeoHead from '../components/SeoHead'
 import SectionTitle from '../components/SectionTitle'
 import ServiceCard from '../components/ServiceCard'
@@ -66,13 +65,7 @@ function ServicesPage() {
         structuredData={faqSchema}
       />
 
-      <PageHero
-        eyebrow={t('servicesPage.heroEyebrow')}
-        title={t('servicesPage.heroTitle')}
-        text={t('servicesPage.heroText')}
-      />
-
-      <section className="section-spacing pt-0">
+      <section className="section-spacing">
         <div className="container-width">
           <SectionTitle
             title={t('servicesPage.sectionTitle')}
