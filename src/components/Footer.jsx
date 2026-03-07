@@ -3,17 +3,20 @@ import { Link } from 'react-router-dom'
 import { businessData } from '../config/businessData'
 
 function Footer() {
+  const iconLogoSrc = `${import.meta.env.BASE_URL}images/logo/logo1024x1024_white.svg`
+  const horizontalLogoSrc = `${import.meta.env.BASE_URL}images/logo/logo1600x400_white.svg`
+
   return (
     <footer className="mt-14 border-t border-olive-200 bg-olive-800 text-olive-100">
       <div className="container-width grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <img
-            src="/images/logo/logo1024x1024_white.svg"
+            src={iconLogoSrc}
             alt={`${businessData.companyName} Icon`}
             className="h-12 w-12 sm:hidden"
           />
           <img
-            src="/images/logo/logo1600x400_white.svg"
+            src={horizontalLogoSrc}
             alt={businessData.companyName}
             className="hidden h-10 w-auto sm:block"
           />

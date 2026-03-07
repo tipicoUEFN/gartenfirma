@@ -11,7 +11,7 @@ import ServicesPage from './pages/ServicesPage'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="min-h-screen bg-olive-50 text-anthracite-900">
         <Navbar />
         <main>

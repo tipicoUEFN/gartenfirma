@@ -5,6 +5,8 @@ import { businessData, navigationItems } from '../config/businessData'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const iconLogoSrc = `${import.meta.env.BASE_URL}images/logo/logo1024x1024.svg`
+  const horizontalLogoSrc = `${import.meta.env.BASE_URL}images/logo/logo1600x400.svg`
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : ''
@@ -21,12 +23,12 @@ function Navbar() {
       <div className="container-width flex h-20 items-center justify-between">
         <Link to="/" className="group flex items-center gap-3" aria-label={businessData.companyName}>
           <img
-            src="/images/logo/logo1024x1024.svg"
+            src={iconLogoSrc}
             alt={`${businessData.companyName} Icon`}
             className="h-10 w-10 sm:hidden"
           />
           <img
-            src="/images/logo/logo1600x400.svg"
+            src={horizontalLogoSrc}
             alt={businessData.companyName}
             className="hidden h-8 w-auto sm:block md:h-9 lg:h-10"
           />
