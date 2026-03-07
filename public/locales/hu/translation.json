@@ -1,192 +1,194 @@
 {
   "navbar": {
-    "home": "Kezdolap",
-    "services": "Szolgaltatasok",
-    "about": "Rolunk",
-    "references": "Referenciak",
+    "home": "Kezdőlap",
+    "services": "Szolgáltatások",
+    "about": "Rólunk",
+    "references": "Referenciák",
     "contact": "Kapcsolat",
     "callNow": "Hivjon most",
-    "toggleMenu": "Menu valtas"
+    "toggleMenu": "Menü váltás"
   },
   "hero": {
     "title": "Kertje a legjobb kezekben",
-    "cta": "Konzultacio keres"
+    "cta": "Konzultáció keres"
   },
   "home": {
     "hero": {
-      "eyebrow": "Premium kertgondozas",
-      "title": "Kertje a legjobb kezekben. Rendezetten es professzionalisan gondozva.",
-      "text": "A(z) {{companyName}} magas szinvonalu kertgondozast nyujt magan- es uzleti ugyfeleknek.",
-      "imageAlt": "Kertesz talicskat tol novennyel egy rendezett kertben.",
-      "serviceArea": "Szolgaltatasi terulet"
+      "eyebrow": "Prémium kertgondozás",
+      "title": "Kertje a legjobb kezekben. Rendezetten és professzionálisan gondozva.",
+      "text": "A(z) {{companyName}} magas színvonalú kertgondozást nyújt magán- és üzleti ügyfeleknek.",
+      "imageAlt": "Kertész talicskát tol növénnyel egy rendezett kertben.",
+      "serviceArea": "Szolgáltatási terület"
     },
     "services": {
-      "eyebrow": "Szolgaltatasok",
+      "eyebrow": "Szolgáltatások",
       "title": "Minden egy rendezett kerthez",
-      "description": "Rendszeres gondozastol az idenymunkakig.",
-      "hedge": { "title": "Sovenynyiras", "description": "Szakertoi metszes az egeszseges novenyekert." },
-      "lawn": { "title": "Fu gondozasa", "description": "Funyiras, talajszelloztetes es tapanyagpotlas." },
-      "beds": { "title": "Agyasgondozas", "description": "Rendezett agyasok es ultetett teruletek a haz korul." },
-      "trees": { "title": "Fak es zoldfelulet nyirasa", "description": "Biztonsagos gondozas kisebb faknal es diszcserjeknel." },
-      "season": { "title": "Szezonalis szolgaltatas", "description": "Tavaszi es oszi kerti munkak." },
-      "ongoing": { "title": "Folyamatos gondozas", "description": "Rendszeres tamogatas magankertekhez es ingatlanokhoz." }
+      "description": "Rendszeres gondozástól az idénymunkákig.",
+      "hedge": { "title": "Sövénynyírás", "description": "Szakértői metszés az egészséges növényekért." },
+      "lawn": { "title": "Fű gondozása", "description": "Fűnyírás, talajszellőztetés és tápanyagpótlás." },
+      "beds": { "title": "Ágyásgondozás", "description": "Rendezett ágyások és ültetett területek a ház körül." },
+      "trees": { "title": "Fák és zöldfelület nyírása", "description": "Biztonságos gondozás kisebb fáknál és díszcserjéknél." },
+      "season": { "title": "Szezonális szolgáltatás", "description": "Tavaszi és őszi kerti munkák." },
+      "ongoing": { "title": "Folyamatos gondozás", "description": "Rendszeres támogatás magánkertekhez és ingatlanokhoz." }
     },
     "why": {
-      "eyebrow": "Miert mi",
-      "title": "A bizalom a preciz munkabol szuletik",
-      "description": "Celunk a hosszu tavu minoseg.",
-      "reliable": { "title": "Megbizhato kivitelezes", "text": "Egyertelmu idopontok es tiszta munkavegzes." },
-      "punctual": { "title": "Pontos es tervezheto", "text": "Betartjuk a megbeszelt idopontokat." },
-      "personal": { "title": "Szemelyes tamogatas", "text": "Kozvetlen kapcsolattarto es szemelyre szabott megoldasok." }
+      "eyebrow": "Miért mi",
+      "title": "A bizalom a preciz munkából születik",
+      "description": "Célunk a hosszú távú minőség.",
+      "reliable": { "title": "Megbízható kivitelezés", "text": "Egyértelmű időpontok és tiszta munkavégzés." },
+      "punctual": { "title": "Pontos és tervezhető", "text": "Betartjuk a megbeszélt időpontokat." },
+      "personal": { "title": "Személyes támogatás", "text": "Közvetlen kapcsolattartó és személyre szabott megoldások." }
     },
     "about": {
-      "eyebrow": "Rolunk",
-      "title": "Regionalisan jelen vagyunk. Szemelyes kapcsolattal.",
-      "description": "Ismerjuk a helyi adottsagokat es fenntarthatoan dolgozunk.",
-      "text": "Csapatunk tiszta folyamatokkal es oszinte tanacsadassal dolgozik.",
-      "link": "Tobbet a csapatunkrol",
-      "regionActive": "Aktiv a regioban",
-      "regionItem1": "Del-Stajerorszag",
+      "eyebrow": "Rólunk",
+      "title": "Regionálisan jelen vagyunk. Személyes kapcsolattal.",
+      "description": "Ismerjük a helyi adottságokat és fenntarthatóan dolgozunk.",
+      "text": "Csapatunk tiszta folyamatokkal és őszinte tanácsadással dolgozik.",
+      "link": "Többet a csapatunkról",
+      "regionActive": "Aktív a régióban",
+      "regionItem1": "Dél-Stájerország",
       "regionItem2": "Graz",
       "regionItem3": "Leibnitz",
-      "regionItem4": "Kornyek"
+      "regionItem4": "Környék"
     },
     "references": {
-      "eyebrow": "Referenciak",
-      "title": "Valogatott projektek a gyakorlatbol",
-      "description": "Tipikus projektek a regiobol."
+      "eyebrow": "Referenciák",
+      "title": "Válogatott projektek a gyakorlatból",
+      "description": "Tipikus projektek a régióból."
     },
     "location": {
-      "eyebrow": "Szolgaltatasi terulet",
-      "title": "Helyszinen, az On regioban",
-      "text": "Ugyfeleinket a(z) {{serviceArea}} teruleten szolgaljuk ki.",
+      "eyebrow": "Szolgáltatási terület",
+      "title": "Helyszínen, az Ön régiójában",
+      "text": "Ügyfeleinket a(z) {{serviceArea}} területen szolgáljuk ki.",
       "phone": "Telefon",
       "email": "E-mail",
-      "address": "Cim"
+      "address": "Cím"
     }
   },
   "servicesPage": {
-    "heroEyebrow": "Szolgaltatasok",
-    "heroTitle": "Egyedi kertgondozas standard csomag helyett",
-    "heroText": "Minden kert mas. Megfelelo gondozasi tervet keszitunk.",
-    "sectionTitle": "Fo szolgaltatasaink",
-    "sectionDescription": "A szolgaltatasok kulon vagy csomagban is kerhetok.",
-    "hedgeTitle": "Sovenynyiras",
-    "hedgeDescription": "Formazas es gondozas az egeszseges szerkezetert.",
-    "lawnTitle": "Fu gondozasa",
-    "lawnDescription": "Rendszeres funyiras, szelloztetes es tapanyagpotlas.",
-    "bedsTitle": "Agyasgondozas",
-    "bedsDescription": "Evelo- es diszagyasok gondozasa.",
-    "greenTitle": "Zoldfelulet nyirasa",
-    "greenDescription": "Biztonsagos metszes kisebb faknal es cserjeknel.",
-    "seasonTitle": "Szezonalis munkak",
-    "seasonDescription": "Tavaszi felkeszites, oszi szerviz es lombmunka.",
-    "ongoingTitle": "Folyamatos gondozas",
-    "ongoingDescription": "Rendszeres gondozas rogzitett utemterv szerint."
+    "heroEyebrow": "Szolgáltatások",
+    "heroTitle": "Egyedi kertgondozás standard csomag helyett",
+    "heroText": "Minden kert más. Megfelelő gondozási tervet készítünk.",
+    "sectionTitle": "Fő szolgáltatásaink",
+    "sectionDescription": "A szolgáltatások külön vagy csomagban is kérhetők.",
+    "hedgeTitle": "Sövénynyírás",
+    "hedgeDescription": "Formázás és gondozás az egészséges szerkezetért.",
+    "lawnTitle": "Fű gondozása",
+    "lawnDescription": "Rendszeres fűnyírás, szellőztetés és tápanyagpótlás.",
+    "bedsTitle": "Ágyásgondozás",
+    "bedsDescription": "Évelő- és díszágyások gondozása.",
+    "greenTitle": "Zöldfelület nyírása",
+    "greenDescription": "Biztonságos metszés kisebb fáknál és cserjéknél.",
+    "seasonTitle": "Szezonális munkák",
+    "seasonDescription": "Tavaszi felkészítés, őszi szerviz és lombmunka.",
+    "ongoingTitle": "Folyamatos gondozás",
+    "ongoingDescription": "Rendszeres gondozás rögzített ütemterv szerint."
   },
   "aboutPage": {
-    "heroEyebrow": "Rolunk",
-    "heroTitle": "Professzionalis kertgondozas regionalis fókusszal",
-    "heroText": "Regionalis vallalkozaskent megbizhato szolgaltatast es oszinte tanacsadast nyujtunk.",
+    "heroEyebrow": "Rólunk",
+    "heroTitle": "Professzionális kertgondozás regionális fókusszal",
+    "heroText": "Regionális vállalkozásként megbízható szolgáltatást és őszinte tanácsadást nyújtunk.",
     "sectionTitle": "Hogyan dolgozunk",
-    "sectionDescription": "Gondosan felmerjuk a kertet, es csak hasznos lepeseket ajanlunk.",
-    "body": "Celunk egy rendezett kert, amely az On mindennapjaihoz illik.",
-    "valuesEyebrow": "Ertekeink",
-    "value1": "Szemelyes tanacsadas egyertelmu tartalommal",
-    "value2": "Pontossag es tiszta munkavegzes",
-    "value3": "Fenntarthato gondozas hosszu tavu eredmenyert",
-    "value4": "Regionalis kozelseg es kozvetlen elerhetoseg"
+    "sectionDescription": "Gondosan felmérjük a kertet, és csak hasznos lépéseket ajánlunk.",
+    "body": "Célunk egy rendezett kert, amely az Ön mindennapjaihoz illik.",
+    "valuesEyebrow": "Értékeink",
+    "value1": "Személyes tanácsadás egyértelmű tartalommal",
+    "value2": "Pontosság és tiszta munkavégzés",
+    "value3": "Fenntartható gondozás hosszú távú eredményért",
+    "value4": "Regionális közelség és közvetlen elérhetőség"
   },
   "contact": { "title": "Kapcsolat" },
   "contactPage": {
     "heroEyebrow": "Kapcsolat",
-    "heroTitle": "Varjuk megkereseset",
-    "heroText": "Rendszeres gondozas vagy egyszeri projekt eseten gyorsan valaszolunk.",
-    "formTitle": "Uzenet kuldese",
-    "formDescription": "Irja le igenyet. Szemelyesen jelentkezunk.",
-    "direct": "Kozvetlenul elerheto",
-    "serviceArea": "Szolgaltatasi terulet"
+    "heroTitle": "Várjuk megkeresését",
+    "heroText": "Rendszeres gondozás vagy egyszeri projekt esetén gyorsan válaszolunk.",
+    "formTitle": "Üzenet küldése",
+    "formDescription": "Írja le igényét. Személyesen jelentkezünk.",
+    "direct": "Közvetlenül elérhető",
+    "serviceArea": "Szolgáltatási terület"
   },
   "cta": {
-    "eyebrow": "Kotottsegmentes erdeklodes",
-    "title": "Szeretne kertjet megbizhato kezekre bizni?",
-    "text": "Vilagos ajanlatot adunk es tiszta, pontos kivitelezest biztositunk.",
-    "button": "Lepjen kapcsolatba velunk"
+    "eyebrow": "Kötöttségmentes érdeklődés",
+    "title": "Szeretné kertjét megbízható kezekre bízni?",
+    "text": "Világos ajánlatot adunk és tiszta, pontos kivitelezést biztosítunk.",
+    "button": "Lépjen kapcsolatba velünk"
   },
   "footer": {
-    "claim": "Professzionalis kertgondozas megbizhato minoseggel Del-Stajerorszagban.",
+    "claim": "Professzionális kertgondozás megbízható minőséggel Dél-Stájerországban.",
     "contactTitle": "Kapcsolat",
-    "serviceAreaTitle": "Szolgaltatasi terulet",
-    "hoursTitle": "Idopontok",
+    "serviceAreaTitle": "Szolgáltatási terület",
+    "hoursTitle": "Időpontok",
     "legalTitle": "Jogi",
     "impressum": "Impresszum",
-    "privacy": "Adatvedelem",
+    "privacy": "Adatvédelem",
     "copyright": "{{year}} {{companyName}}. Minden jog fenntartva."
   },
   "contactForm": {
-    "firstNameLabel": "Keresztnev",
-    "firstNamePlaceholder": "Az On keresztneve",
-    "lastNameLabel": "Vezeteknev",
-    "lastNamePlaceholder": "Az On vezetekneve",
+    "firstNameLabel": "Keresztnév",
+    "firstNamePlaceholder": "Az Ön keresztneve",
+    "lastNameLabel": "Vezetéknév",
+    "lastNamePlaceholder": "Az Ön vezetékneve",
     "emailLabel": "E-mail",
     "emailPlaceholder": "nev@pelda.hu",
     "phoneLabel": "Telefon",
     "phonePlaceholder": "+43 ...",
-    "messageLabel": "Uzenet",
-    "messagePlaceholder": "Rovid leiras az igenyerol (pl. rendszeres gondozas, sovenynyiras, szezonalis munka).",
-    "submit": "Kerelem kuldese",
-    "notice": "Ez az urlap jelenleg nem kuld adatot (frontend demo)."
+    "messageLabel": "Üzenet",
+    "messagePlaceholder": "Rövid leírás az igényéről (pl. rendszeres gondozás, sövénynyírás, szezonális munka).",
+    "submit": "Kérelem küldése",
+    "notice": "Ez az űrlap jelenleg nem küld adatot (frontend demo)."
   },
   "references": {
-    "eyebrow": "Referenciak",
-    "title": "Lathato eredmenyek a regiobol",
+    "eyebrow": "Referenciák",
+    "title": "Látható eredmenyek a régióból",
     "heroText": "",
-    "sectionTitle": "Valogatott projektek",
-    "sectionDescription": "Betekintes a tipikus kerti munkakba, mint fu gondozasa, sovenynyiras es szezonalis szerviz.",
-    "imageComingSoon": "Kep hamarosan: /images/references/refX.webp",
+    "sectionTitle": "Válogatott projektek",
+    "sectionDescription": "Betekintés a tipikus kerti munkákba, mint fű gondozása, sövénynyírás és szezonális szerviz.",
+    "imageComingSoon": "Kép hamarosan: /images/references/refX.webp",
     "projects": {
-      "1": { "title": "Funyiras", "location": "Del-Stajerorszag", "text": "Rendszeres fuapolas a tiszta es egyenletes osszkephez." },
-      "2": { "title": "Sovenynyiras", "location": "Leibnitz", "text": "Preciz formas metszes suru es egeszseges sovenyhez." },
-      "3": { "title": "Agyasgondozas", "location": "Graz kornyeke", "text": "Agyasok es evelok gondozasa rendezett megjelenesert." },
-      "4": { "title": "Ingatlangondozas", "location": "Graz regio", "text": "Folyamatos zoldterulet-gondozas rogzitett idokozokkel." },
-      "5": { "title": "Szezonalis szerviz", "location": "Del-Stajerorszag", "text": "Tavaszi es oszi munkak a rendezett kertszerkezetert." }
+      "1": { "title": "Fűnyírás", "location": "Dél-Stájerország", "text": "Rendszeres fűápolás a tiszta és egyenletes összképhez." },
+      "2": { "title": "Sövénynyírás", "location": "Leibnitz", "text": "Precíz formás metszés sűrű és egészséges sövényhez." },
+      "3": { "title": "Ágyásgondozás", "location": "Graz környéke", "text": "Ágyások és évelők gondozása rendezett megjelenésért." },
+      "4": { "title": "Ingatlangondozás", "location": "Graz régió", "text": "Folyamatos zöldterület-gondozás rögzített időközökkel." },
+      "5": { "title": "Szezonális szerviz", "location": "Dél-Stájerország", "text": "Tavaszi és őszi munkák a rendezett kertszerkezetért." }
     }
   },
   "impressum": {
     "eyebrow": "Impresszum",
     "title": "Jogi adatok",
-    "heroText": "Kerjuk, cserelje le az alabbi helyorzo adatokat a vallalkozas teljes jogi adataira.",
+    "heroText": "Kérjük, cserélje le az alábbi helyőrző adatokat a vállalkozás teljes jogi adataira.",
     "phoneLabel": "Telefon:",
     "emailLabel": "E-mail:",
-    "businessPurpose": "Tevekenyseg: kertgondozas es zoldfelulet-kezeles",
-    "uid": "UID szam: ATU12345678 (helyorzo)",
-    "companyNumber": "Cegjegyzekszam: FN123456x (helyorzo)",
-    "companyCourt": "Cegbirosag: Graz tartomanyi birosag (helyorzo)",
-    "authority": "Illetekes hatosag: Jarasi hivatal (helyorzo)",
-    "membership": "Tagsag: WKO Stajerorszag (helyorzo)",
+    "businessPurpose": "Tevékenység: kertgondozás és zöldfelület-kezelés",
+    "uid": "UID szám: ATU12345678 (helyőrző)",
+    "companyNumber": "Cégjegyzékszám: FN123456x (helyőrző)",
+    "companyCourt": "Cégbíróság: Graz tartományi bíróság (helyőrző)",
+    "authority": "Illetékes hatóság: Járási hivatal (helyőrző)",
+    "membership": "Tagság: WKO Stájerország (helyőrző)",
     "tradeLaw": "Szakmai jog: Gewerbeordnung (GewO)"
   },
   "privacy": {
-    "eyebrow": "Adatvedelem",
-    "title": "Tajekoztatas az adatkezelesrol",
-    "heroText": "Ez az oldal kiindulopont, es jogilag ellenorzott adatvedelmi tajekoztatora kell cserelni.",
-    "section1Title": "1. Adatkezelo",
-    "section1Text": "Az adatkezelesert a weboldal uzemeltetoje felelos.",
-    "section2Title": "2. Gyujtes es feldolgozas",
-    "section2Text": "Szemelyes adatokat csak a szukseges mertekben dolgozunk fel, peldaul kapcsolatfelvetelkor.",
-    "section3Title": "3. Kapcsolati urlap",
-    "section3Text": "Az urlap elkuldese soran a megadott adatok felhasznalhatok a kerelem feldolgozasara.",
-    "section4Title": "4. Az On jogai",
-    "section4Text": "Onnek joga van tajekoztatashoz, helyesbiteshez, torleshez, korlatozashoz es tiltakozashoz.",
-    "notice": "Megjegyzes: Ez a szoveg helyorzo, es nem helyettesit jogi tanacsadast."
+    "eyebrow": "Adatvédelem",
+    "title": "Tájékoztatás az adatkezelésről",
+    "heroText": "Ez az oldal kiindulópont, és jogilag ellenőrzött adatvédelmi tájékoztatóra kell cserélni.",
+    "section1Title": "1. Adatkezelő",
+    "section1Text": "Az adatkezelésért a weboldal üzemeltetője felelős.",
+    "section2Title": "2. Gyűjtés és feldolgozás",
+    "section2Text": "Személyes adatokat csak a szükséges mértékben dolgozunk fel, például kapcsolatfelvételkor.",
+    "section3Title": "3. Kapcsolati űrlap",
+    "section3Text": "Az űrlap elküldése során a megadott adatok felhasználhatók a kérelem feldolgozására.",
+    "section4Title": "4. Az Ön jogai",
+    "section4Text": "Önnek joga van tájékoztatáshoz, helyesbítéshez, törléshez, korlátozáshoz és tiltakozáshoz.",
+    "notice": "Megjegyzés: Ez a szöveg helyőrző, és nem helyettesít jogi tanácsadást."
   },
   "services": {
-    "title": "Szolgaltatasaink"
+    "title": "Szolgáltatásaink"
   },
   "about": {
-    "title": "Rolunk"
+    "title": "Rólunk"
   },
   "language": {
     "label": "Nyelv"
   }
 }
+
+

@@ -1,0 +1,243 @@
+{
+  "navbar": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "about": "Über uns",
+    "references": "Referenzen",
+    "contact": "Kontakt",
+    "callNow": "Jetzt anrufen",
+    "toggleMenu": "Menü umschalten"
+  },
+  "hero": {
+    "title": "Ihr Garten in besten Händen",
+    "cta": "Jetzt Beratung anfragen"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Premium Gartenpflege",
+      "title": "Ihr Garten in besten Händen. Gepflegt, klar und professionell betreut.",
+      "text": "{{companyName}} bietet hochwertige Gartenpflege für Privat- und Firmenkunden in der Südsteiermark. Mit Fachwissen, Handschlagqualität und Blick fürs Detail.",
+      "imageAlt": "Gärtner schiebt Schubkarre mit Pflanze durch gepflegten Garten.",
+      "serviceArea": "Einsatzgebiet"
+    },
+    "services": {
+      "eyebrow": "Leistungen",
+      "title": "Unsere Leistungen",
+      "description": "Zuverlässige Gartenpflege und Außenanlagenbetreuung für Privatkunden, Firmen und öffentliche Einrichtungen in der Südsteiermark.",
+      "hedge": {
+        "title": "Pflege bestehender Hecken",
+        "description": "Leichter Formschnitt und Nachschnitt bereits bestehender Hecken für ein sauberes Erscheinungsbild."
+      },
+      "lawn": {
+        "title": "Rasenmähen & Grünflächenpflege",
+        "description": "Regelmäßiges Mähen und Pflegen von Rasenflächen bei privaten Grundstücken, Firmenanlagen und öffentlichen Einrichtungen."
+      },
+      "beds": {
+        "title": "Laubarbeiten & Außenflächen sauber halten",
+        "description": "Entfernung von Laub sowie einfache Pflegearbeiten zur Sauberhaltung von Grünflächen und Außenbereichen."
+      },
+      "trees": {
+        "title": "Laufende Betreuung von Außenanlagen",
+        "description": "Regelmäßige Pflege von Grünflächen bei Wohnanlagen, Firmenstandorten und öffentlichen Einrichtungen."
+      },
+      "season": {
+        "title": "Einfache Gartenpflege",
+        "description": "Allgemeine Pflegearbeiten wie Gießen, kleinere Schnittarbeiten und Sauberhalten von Gartenflächen."
+      },
+      "ongoing": {
+        "title": "Fensterreinigung",
+        "description": "Fensterreinigung bei privaten Haushalten sowie kleineren Firmenobjekten vom Boden aus oder mit einfachen Steighilfen."
+      }
+    },
+    "why": {
+      "eyebrow": "Warum wir",
+      "title": "Vertrauen entsteht durch saubere Arbeit",
+      "description": "Unser Anspruch ist ein Ergebnis, das langfristig überzeugt. Fachlich, optisch und organisatorisch.",
+      "reliable": {
+        "title": "Verlässliche Ausführung",
+        "text": "Klare Termine, transparente Leistungen und saubere Arbeit bis ins Detail."
+      },
+      "punctual": {
+        "title": "Pünktlich & planbar",
+        "text": "Wir arbeiten strukturiert und halten vereinbarte Zeitfenster ein."
+      },
+      "personal": {
+        "title": "Persönliche Betreuung",
+        "text": "Direkter Ansprechpartner und individuelle Lösungen für Ihren Garten."
+      }
+    },
+    "about": {
+      "eyebrow": "Über uns",
+      "title": "Regional verwurzelt. Persönlich im Kontakt.",
+      "description": "Wir kennen die Anforderungen von Gärten in der Region und setzen auf nachhaltige Pflege statt kurzfristiger Kosmetik.",
+      "text": "Unser Team arbeitet mit klaren Prozessen und ehrlicher Beratung. Sie erhalten nachvollziehbare Empfehlungen und ein Ergebnis, das Ihren Garten sichtbar aufwertet.",
+      "link": "Mehr über unser Team",
+      "regionActive": "Regional aktiv",
+      "regionItem1": "Südsteiermark",
+      "regionItem2": "Graz",
+      "regionItem3": "Leibnitz",
+      "regionItem4": "Umgebung"
+    },
+    "references": {
+      "eyebrow": "Referenzen",
+      "title": "Ausgewählte Projekte aus der Praxis",
+      "description": "Wir zeigen typische Arbeiten wie Rasenpflege, Heckschnitt und laufende Gartenbetreuung aus der Region."
+    },
+    "location": {
+      "eyebrow": "Einsatzgebiet",
+      "title": "Vor Ort in Ihrer Region",
+      "text": "Wir betreuen Kundinnen und Kunden in {{serviceArea}}. Durch unsere regionale Nähe sind wir flexibel, schnell erreichbar und persönlich für Sie da.",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "address": "Adresse"
+    }
+  },
+  "servicesPage": {
+    "heroEyebrow": "Leistungen",
+    "heroTitle": "Individuelle Gartenpflege statt Standardpaket",
+    "heroText": "Jeder Garten hat andere Anforderungen. Wir erstellen ein passendes Pflegekonzept und setzen dieses sorgfältig um.",
+    "sectionTitle": "Unsere Leistungen",
+    "sectionDescription": "Zuverlässige Gartenpflege und Außenanlagenbetreuung für Privatkunden, Firmen und öffentliche Einrichtungen in der Südsteiermark.",
+    "hedgeTitle": "Pflege bestehender Hecken",
+    "hedgeDescription": "Leichter Formschnitt und Nachschnitt bereits bestehender Hecken für ein sauberes Erscheinungsbild.",
+    "lawnTitle": "Rasenmähen & Grünflächenpflege",
+    "lawnDescription": "Regelmäßiges Mähen und Pflegen von Rasenflächen bei privaten Grundstücken, Firmenanlagen und öffentlichen Einrichtungen.",
+    "bedsTitle": "Laubarbeiten & Außenflächen sauber halten",
+    "bedsDescription": "Entfernung von Laub sowie einfache Pflegearbeiten zur Sauberhaltung von Grünflächen und Außenbereichen.",
+    "greenTitle": "Laufende Betreuung von Außenanlagen",
+    "greenDescription": "Regelmäßige Pflege von Grünflächen bei Wohnanlagen, Firmenstandorten und öffentlichen Einrichtungen.",
+    "seasonTitle": "Einfache Gartenpflege",
+    "seasonDescription": "Allgemeine Pflegearbeiten wie Gießen, kleinere Schnittarbeiten und Sauberhalten von Gartenflächen.",
+    "ongoingTitle": "Fensterreinigung",
+    "ongoingDescription": "Fensterreinigung bei privaten Haushalten sowie kleineren Firmenobjekten vom Boden aus oder mit einfachen Steighilfen."
+  },
+  "aboutPage": {
+    "heroEyebrow": "Über uns",
+    "heroTitle": "Professionelle Gartenpflege mit regionalem Fokus",
+    "heroText": "Als Gartenpflegebetrieb in der Südsteiermark stehen wir für verlässliche Betreuung, ehrliche Beratung und Ergebnisse, die langfristig bestehen.",
+    "sectionTitle": "Wie wir arbeiten",
+    "sectionDescription": "Wir nehmen uns Zeit für eine saubere Bestandsaufnahme und empfehlen nur das, was Ihrem Garten wirklich hilft.",
+    "body": "Unser Ziel ist ein gepflegter Garten, der zu Ihrem Alltag passt. Deshalb setzen wir auf klare Abläufe, nachvollziehbare Angebote und kontinuierliche Qualität in der Ausführung.",
+    "valuesEyebrow": "Unsere Werte",
+    "value1": "Persönliche Beratung mit klarem Leistungsumfang",
+    "value2": "Termintreue und saubere Arbeitsweise",
+    "value3": "Nachhaltige Pflege mit Blick auf langfristige Wirkung",
+    "value4": "Regionale Nähe und direkte Erreichbarkeit"
+  },
+  "contact": {
+    "title": "Kontakt"
+  },
+  "contactPage": {
+    "heroEyebrow": "Kontakt",
+    "heroTitle": "Wir freuen uns auf Ihre Anfrage",
+    "heroText": "Ob laufende Gartenpflege oder ein konkretes Einzelprojekt: Wir melden uns zeitnah mit einer fundierten Rückmeldung.",
+    "formTitle": "Nachricht senden",
+    "formDescription": "Teilen Sie uns Ihr Anliegen mit. Wir melden uns persönlich bei Ihnen.",
+    "direct": "Direkt erreichbar",
+    "serviceArea": "Einsatzgebiet"
+  },
+  "cta": {
+    "eyebrow": "Unverbindlich anfragen",
+    "title": "Sie möchten Ihren Garten in verlässliche Hände geben?",
+    "text": "Wir erstellen ein klares Angebot, beraten ehrlich und sorgen für eine saubere, termingerechte Umsetzung.",
+    "button": "Jetzt Kontakt aufnehmen"
+  },
+  "footer": {
+    "claim": "Professionelle Gartenpflege mit Handschlagqualität in der Südsteiermark.",
+    "contactTitle": "Kontakt",
+    "serviceAreaTitle": "Einsatzgebiet",
+    "hoursTitle": "Zeiten",
+    "legalTitle": "Rechtliches",
+    "impressum": "Impressum",
+    "privacy": "Datenschutz",
+    "copyright": "{{year}} {{companyName}}. Alle Rechte vorbehalten."
+  },
+  "contactForm": {
+    "firstNameLabel": "Vorname",
+    "firstNamePlaceholder": "Ihr Vorname",
+    "lastNameLabel": "Nachname",
+    "lastNamePlaceholder": "Ihr Nachname",
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "name@beispiel.at",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "+43 ...",
+    "messageLabel": "Nachricht",
+    "messagePlaceholder": "Beschreiben Sie kurz Ihr Anliegen (z. B. laufende Pflege, Heckenschnitt, saisonale Betreuung).",
+    "submit": "Anfrage senden",
+    "notice": "Dieses Formular sendet derzeit keine Daten (Frontend-Demo)."
+  },
+  "references": {
+    "eyebrow": "Referenzen",
+    "title": "Sichtbare Resultate aus der Region",
+    "heroText": "",
+    "sectionTitle": "Ausgewählte Projekte",
+    "sectionDescription": "Ein Einblick in typische Gartenarbeiten wie Rasenpflege, Heckschnitt und Saisonservice.",
+    "imageComingSoon": "Bild folgt: /images/references/refX.webp",
+    "projects": {
+      "1": {
+        "title": "Rasen mähen",
+        "location": "Südsteiermark",
+        "text": "Regelmässige Rasenpflege für ein sauberes, gleichmässiges Gesamtbild."
+      },
+      "2": {
+        "title": "Heckschnitt",
+        "location": "Leibnitz",
+        "text": "Präziser Formschnitt für dichte, gesunde Hecken und klare Linien."
+      },
+      "3": {
+        "title": "Beetpflege",
+        "location": "Graz Umgebung",
+        "text": "Pflege von Beeten und Stauden für ein ordentliches Erscheinungsbild."
+      },
+      "4": {
+        "title": "Objektpflege",
+        "location": "Raum Graz",
+        "text": "Laufende Pflege von Grünflächen mit festen Intervallen."
+      },
+      "5": {
+        "title": "Saisonservice",
+        "location": "Südsteiermark",
+        "text": "Frühjahrs- und Herbstarbeiten für eine saubere Gartenstruktur."
+      }
+    }
+  },
+  "impressum": {
+    "eyebrow": "Impressum",
+    "title": "Rechtliche Angaben",
+    "heroText": "Bitte ersetzen Sie die folgenden Platzhalter durch Ihre vollständigen rechtlichen Unternehmensdaten.",
+    "phoneLabel": "Telefon:",
+    "emailLabel": "E-Mail:",
+    "businessPurpose": "Unternehmensgegenstand: Gartenpflege und Grünflächenbetreuung",
+    "uid": "UID-Nummer: ATU12345678 (Platzhalter)",
+    "companyNumber": "Firmenbuchnummer: FN123456x (Platzhalter)",
+    "companyCourt": "Firmenbuchgericht: Landesgericht Graz (Platzhalter)",
+    "authority": "Zuständige Aufsichtsbehörde: Bezirkshauptmannschaft (Platzhalter)",
+    "membership": "Mitglied bei: WKO Steiermark (Platzhalter)",
+    "tradeLaw": "Berufsrecht: Gewerbeordnung (GewO)"
+  },
+  "privacy": {
+    "eyebrow": "Datenschutz",
+    "title": "Information zur Datenverarbeitung",
+    "heroText": "Diese Seite ist ein Startpunkt und muss durch eine rechtlich geprüfte Datenschutzerklärung ersetzt werden.",
+    "section1Title": "1. Verantwortliche Stelle",
+    "section1Text": "Die verantwortliche Stelle für die Datenverarbeitung ist der Betreiber dieser Website.",
+    "section2Title": "2. Erhebung und Verarbeitung",
+    "section2Text": "Personenbezogene Daten werden nur im erforderlichen Umfang verarbeitet, etwa bei Kontaktanfragen.",
+    "section3Title": "3. Kontaktformular",
+    "section3Text": "Beim Absenden einer Anfrage können eingegebene Daten zur Bearbeitung der Anfrage verwendet werden.",
+    "section4Title": "4. Ihre Rechte",
+    "section4Text": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Widerspruch.",
+    "notice": "Hinweis: Dieser Text ist ein Platzhalter und ersetzt keine rechtliche Beratung."
+  },
+  "services": {
+    "title": "Unsere Leistungen"
+  },
+  "about": {
+    "title": "Über uns"
+  },
+  "language": {
+    "label": "Sprache"
+  }
+}
+
+

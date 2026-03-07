@@ -2,21 +2,21 @@
 export const businessData = {
   // Branding
   companyName: 'PR Gartenservice',
-  claim: 'Professionelle Gartenpflege mit Handschlagqualitaet in der Suedsteiermark.',
+  claim: 'Professionelle Gartenpflege mit Handschlagqualität in der Südsteiermark.',
 
   // Contact (public repo): use placeholder data only, never real personal phone numbers.
   phoneContacts: [
     { label: 'Timi', phone: '+43664000000' },
     { label: 'Mario', phone: '+43664111111' },
-    { label: 'Buero', phone: '+43664333333' },
+    { label: 'Büro', phone: '+43664333333' },
   ],
   // Keep a primary contact for compact CTA placements like header buttons.
   phone: '+43664000000',
   email: 'office@pr-gartenservice.at',
-  address: 'Musterstrasse 1, 8430 Musterort',
+  address: 'Musterstraße 1, 8430 Musterort',
 
   // Local focus
-  serviceArea: 'Suedsteiermark / Graz / Leibnitz / Umgebung',
+  serviceArea: 'Südsteiermark / Graz / Leibnitz / Umgebung',
 
   openingHours: [
     'Mo - Fr: 07:00 - 17:00 Uhr',
@@ -29,7 +29,7 @@ businessData.primaryPhone = businessData.phoneContacts[0]?.phone ?? businessData
 export const navigationItems = [
   { label: 'Startseite', to: '/' },
   { label: 'Leistungen', to: '/leistungen' },
-  { label: 'Ueber uns', to: '/ueber-uns' },
+  { label: 'Über uns', to: '/ueber-uns' },
   { label: 'Referenzen', to: '/referenzen' },
   { label: 'Kontakt', to: '/kontakt' },
 ]

@@ -1,6 +1,6 @@
 {
   "navbar": {
-    "home": "Pocetna",
+    "home": "Početna",
     "services": "Usluge",
     "about": "O nama",
     "references": "Reference",
@@ -9,44 +9,44 @@
     "toggleMenu": "Prebaci izbornik"
   },
   "hero": {
-    "title": "Vas vrt u najboljim rukama",
-    "cta": "Zatrazi savjetovanje"
+    "title": "Vaš vrt u najboljim rukama",
+    "cta": "Zatraži savjetovanje"
   },
   "home": {
     "hero": {
       "eyebrow": "Premium njega vrta",
-      "title": "Vas vrt u najboljim rukama. Uredan i profesionalno odrzavan.",
-      "text": "{{companyName}} pruza kvalitetnu njegu vrtova za privatne i poslovne klijente.",
+      "title": "Vaš vrt u najboljim rukama. Uredan i profesionalno održavan.",
+      "text": "{{companyName}} pruža kvalitetnu njegu vrtova za privatne i poslovne klijente.",
       "imageAlt": "Vrtlar gura kolica s biljkom kroz uredan vrt.",
-      "serviceArea": "Podrucje usluge"
+      "serviceArea": "Područje usluge"
     },
     "services": {
       "eyebrow": "Usluge",
       "title": "Sve za uredan vrt",
       "description": "Od redovite njege do sezonskih radova.",
-      "hedge": { "title": "Rezanje zivice", "description": "Strucno orezivanje za zdrav izgled biljaka." },
-      "lawn": { "title": "Njega travnjaka", "description": "Kosnja, prozracivanje i gnojenje travnjaka." },
+      "hedge": { "title": "Rezanje živice", "description": "Stručno orezivanje za zdrav izgled biljaka." },
+      "lawn": { "title": "Njega travnjaka", "description": "Košnja, prozračivanje i gnojenje travnjaka." },
       "beds": { "title": "Njega cvjetnih gredica", "description": "Uredne gredice i sadnja oko doma." },
-      "trees": { "title": "Rezanje drveca", "description": "Sigurno odrzavanje manjih stabala i grmova." },
+      "trees": { "title": "Rezanje drveća", "description": "Sigurno održavanje manjih stabala i grmova." },
       "season": { "title": "Sezonske usluge", "description": "Proljetna i jesenska priprema vrta." },
-      "ongoing": { "title": "Redovno odrzavanje", "description": "Redovna njega privatnih vrtova i objekata." }
+      "ongoing": { "title": "Redovno održavanje", "description": "Redovna njega privatnih vrtova i objekata." }
     },
     "why": {
-      "eyebrow": "Zasto mi",
+      "eyebrow": "Zašto mi",
       "title": "Povjerenje dolazi kroz kvalitetan rad",
-      "description": "Nas cilj je dugotrajna kvaliteta.",
-      "reliable": { "title": "Pouzdana izvedba", "text": "Jasni termini i cist rad." },
-      "punctual": { "title": "Tocno i planirano", "text": "Postujemo dogovorene termine." },
-      "personal": { "title": "Osobna podrska", "text": "Izravan kontakt i prilagodena rjesenja." }
+      "description": "Naš cilj je dugotrajna kvaliteta.",
+      "reliable": { "title": "Pouzdana izvedba", "text": "Jasni termini i čist rad." },
+      "punctual": { "title": "Točno i planirano", "text": "Poštujemo dogovorene termine." },
+      "personal": { "title": "Osobna podrška", "text": "Izravan kontakt i prilagođena rješenja." }
     },
     "about": {
       "eyebrow": "O nama",
       "title": "Regionalno prisutni. Osobni u kontaktu.",
-      "description": "Poznajemo lokalne uvjete i radimo odrzivo.",
-      "text": "Nas tim radi s jasnim procesima i postenim savjetovanjem.",
-      "link": "Vise o nasem timu",
+      "description": "Poznajemo lokalne uvjete i radimo održivo.",
+      "text": "Naš tim radi s jasnim procesima i poštenim savjetovanjem.",
+      "link": "Više o našem timu",
       "regionActive": "Aktivni u regiji",
-      "regionItem1": "Juzna Stajerska",
+      "regionItem1": "Južna Štajerska",
       "regionItem2": "Graz",
       "regionItem3": "Leibnitz",
       "regionItem4": "Okolica"
@@ -54,12 +54,12 @@
     "references": {
       "eyebrow": "Reference",
       "title": "Odabrani projekti iz prakse",
-      "description": "Tipicni projekti iz nase regije."
+      "description": "Tipični projekti iz naše regije."
     },
     "location": {
-      "eyebrow": "Podrucje usluge",
-      "title": "Na terenu u vasoj regiji",
-      "text": "Klijente podrzavamo na podrucju {{serviceArea}}.",
+      "eyebrow": "Područje usluge",
+      "title": "Na terenu u vašoj regiji",
+      "text": "Klijente podržavamo na području {{serviceArea}}.",
       "phone": "Telefon",
       "email": "E-posta",
       "address": "Adresa"
@@ -68,44 +68,44 @@
   "servicesPage": {
     "heroEyebrow": "Usluge",
     "heroTitle": "Individualna njega vrta umjesto standardnog paketa",
-    "heroText": "Svaki vrt je drugaciji. Izradujemo odgovarajuci plan njege.",
-    "sectionTitle": "Nase glavne usluge",
-    "sectionDescription": "Usluge se mogu naruciti pojedinacno ili kao paket.",
-    "hedgeTitle": "Rezanje zivice",
-    "hedgeDescription": "Oblikovanje i odrzavanje za zdravu strukturu.",
+    "heroText": "Svaki vrt je drugačiji. Izrađujemo odgovarajući plan njege.",
+    "sectionTitle": "Naše glavne usluge",
+    "sectionDescription": "Usluge se mogu naručiti pojedinačno ili kao paket.",
+    "hedgeTitle": "Rezanje živice",
+    "hedgeDescription": "Oblikovanje i održavanje za zdravu strukturu.",
     "lawnTitle": "Njega travnjaka",
-    "lawnDescription": "Redovita kosnja, prozracivanje i gnojenje.",
+    "lawnDescription": "Redovita košnja, prozračivanje i gnojenje.",
     "bedsTitle": "Njega gredica",
     "bedsDescription": "Njega trajnica i ukrasnih gredica.",
     "greenTitle": "Rezanje zelenila",
     "greenDescription": "Sigurno orezivanje manjih stabala i grmova.",
     "seasonTitle": "Sezonski radovi",
-    "seasonDescription": "Proljetna priprema, jesenski servis i lisce.",
+    "seasonDescription": "Proljetna priprema, jesenski servis i lišće.",
     "ongoingTitle": "Redovna njega",
     "ongoingDescription": "Redovna njega prema fiksnom rasporedu."
   },
   "aboutPage": {
     "heroEyebrow": "O nama",
     "heroTitle": "Profesionalna njega vrta s regionalnim fokusom",
-    "heroText": "Kao regionalna tvrtka nudimo pouzdanu uslugu i posteno savjetovanje.",
+    "heroText": "Kao regionalna tvrtka nudimo pouzdanu uslugu i pošteno savjetovanje.",
     "sectionTitle": "Kako radimo",
-    "sectionDescription": "Pazljivo analiziramo vrt i preporucujemo samo korisne mjere.",
-    "body": "Nas cilj je uredan vrt koji odgovara vasoj svakodnevici.",
-    "valuesEyebrow": "Nase vrijednosti",
+    "sectionDescription": "Pažljivo analiziramo vrt i preporučujemo samo korisne mjere.",
+    "body": "Naš cilj je uredan vrt koji odgovara vašoj svakodnevici.",
+    "valuesEyebrow": "Naše vrijednosti",
     "value1": "Osobno savjetovanje s jasnim opsegom",
-    "value2": "Tocnost i cist rad",
-    "value3": "Odrziva njega za dugorocan rezultat",
+    "value2": "Točnost i čist rad",
+    "value3": "Održiva njega za dugoročan rezultat",
     "value4": "Regionalna blizina i dostupnost"
   },
   "contact": { "title": "Kontakt" },
   "contactPage": {
     "heroEyebrow": "Kontakt",
-    "heroTitle": "Veselimo se vasem upitu",
+    "heroTitle": "Veselimo se vašem upitu",
     "heroText": "Za redovitu njegu ili jednokratni projekt odgovaramo brzo.",
-    "formTitle": "Posaljite poruku",
-    "formDescription": "Recite nam svoju potrebu. Javit cemo vam se osobno.",
+    "formTitle": "Pošaljite poruku",
+    "formDescription": "Recite nam svoju potrebu. Javit ćemo vam se osobno.",
     "direct": "Izravno dostupni",
-    "serviceArea": "Podrucje usluge"
+    "serviceArea": "Područje usluge"
   },
   "cta": {
     "eyebrow": "Neobavezni upit",
@@ -114,9 +114,9 @@
     "button": "Kontaktirajte nas"
   },
   "footer": {
-    "claim": "Profesionalna njega vrta s pouzdanom kvalitetom u Juznoj Stajerskoj.",
+    "claim": "Profesionalna njega vrta s pouzdanom kvalitetom u Južnoj Štajerskoj.",
     "contactTitle": "Kontakt",
-    "serviceAreaTitle": "Podrucje usluge",
+    "serviceAreaTitle": "Područje usluge",
     "hoursTitle": "Radno vrijeme",
     "legalTitle": "Pravno",
     "impressum": "Impresum",
@@ -125,63 +125,63 @@
   },
   "contactForm": {
     "firstNameLabel": "Ime",
-    "firstNamePlaceholder": "Vase ime",
+    "firstNamePlaceholder": "Vaše ime",
     "lastNameLabel": "Prezime",
-    "lastNamePlaceholder": "Vase prezime",
+    "lastNamePlaceholder": "Vaše prezime",
     "emailLabel": "E-posta",
     "emailPlaceholder": "ime@primjer.hr",
     "phoneLabel": "Telefon",
     "phonePlaceholder": "+43 ...",
     "messageLabel": "Poruka",
-    "messagePlaceholder": "Kratko opisite svoj zahtjev (npr. redovna njega, rezanje zivice, sezonske usluge).",
-    "submit": "Posalji upit",
-    "notice": "Ovaj obrazac trenutno ne salje podatke (frontend demo)."
+    "messagePlaceholder": "Kratko opišite svoj zahtjev (npr. redovna njega, rezanje živice, sezonske usluge).",
+    "submit": "Pošalji upit",
+    "notice": "Ovaj obrazac trenutno ne šalje podatke (frontend demo)."
   },
   "references": {
     "eyebrow": "Reference",
     "title": "Vidljivi rezultati iz regije",
     "heroText": "",
     "sectionTitle": "Odabrani projekti",
-    "sectionDescription": "Uvid u tipicne vrtne radove kao sto su njega travnjaka, rezanje zivice i sezonski servis.",
+    "sectionDescription": "Uvid u tipične vrtne radove kao što su njega travnjaka, rezanje živice i sezonski servis.",
     "imageComingSoon": "Slika uskoro: /images/references/refX.webp",
     "projects": {
-      "1": { "title": "Kosnja travnjaka", "location": "Juzna Stajerska", "text": "Redovna njega travnjaka za cist i ujednacen izgled." },
-      "2": { "title": "Rezanje zivice", "location": "Leibnitz", "text": "Precizno oblikovanje za gustu i zdravu zivicu." },
+      "1": { "title": "Košnja travnjaka", "location": "Južna Štajerska", "text": "Redovna njega travnjaka za čist i ujednačen izgled." },
+      "2": { "title": "Rezanje živice", "location": "Leibnitz", "text": "Precizno oblikovanje za gustu i zdravu živicu." },
       "3": { "title": "Njega gredica", "location": "Okolica Graza", "text": "Njega gredica i trajnica za uredan izgled." },
-      "4": { "title": "Njega objekta", "location": "Regija Graz", "text": "Kontinuirano odrzavanje zelenih povrsina u fiksnim intervalima." },
-      "5": { "title": "Sezonski servis", "location": "Juzna Stajerska", "text": "Proljetni i jesenski radovi za urednu strukturu vrta." }
+      "4": { "title": "Njega objekta", "location": "Regija Graz", "text": "Kontinuirano održavanje zelenih površina u fiksnim intervalima." },
+      "5": { "title": "Sezonski servis", "location": "Južna Štajerska", "text": "Proljetni i jesenski radovi za urednu strukturu vrta." }
     }
   },
   "impressum": {
     "eyebrow": "Impresum",
     "title": "Pravne informacije",
-    "heroText": "Molimo zamijenite sljedece placeholder podatke svojim potpunim pravnim podacima.",
+    "heroText": "Molimo zamijenite sljedeće placeholder podatke svojim potpunim pravnim podacima.",
     "phoneLabel": "Telefon:",
     "emailLabel": "E-posta:",
-    "businessPurpose": "Predmet poslovanja: njega vrtova i odrzavanje zelenih povrsina",
+    "businessPurpose": "Predmet poslovanja: njega vrtova i održavanje zelenih površina",
     "uid": "UID broj: ATU12345678 (placeholder)",
     "companyNumber": "Broj registra: FN123456x (placeholder)",
-    "companyCourt": "Trgovacki sud: Zemaljski sud Graz (placeholder)",
-    "authority": "Nadlezno tijelo: Okruzna uprava (placeholder)",
-    "membership": "Clanstvo: WKO Stajerska (placeholder)",
+    "companyCourt": "Trgovački sud: Zemaljski sud Graz (placeholder)",
+    "authority": "Nadležno tijelo: Okružna uprava (placeholder)",
+    "membership": "Članstvo: WKO Štajerska (placeholder)",
     "tradeLaw": "Strukovno pravo: Gewerbeordnung (GewO)"
   },
   "privacy": {
     "eyebrow": "Privatnost",
     "title": "Informacije o obradi podataka",
-    "heroText": "Ova stranica je polazna tocka i mora biti zamijenjena pravno provjerenom izjavom o privatnosti.",
+    "heroText": "Ova stranica je polazna točka i mora biti zamijenjena pravno provjerenom izjavom o privatnosti.",
     "section1Title": "1. Odgovorna osoba",
     "section1Text": "Odgovorna osoba za obradu podataka je operater ove web stranice.",
     "section2Title": "2. Prikupljanje i obrada",
-    "section2Text": "Osobni podaci obraduju se samo u potrebnom opsegu, npr. kod kontakt upita.",
+    "section2Text": "Osobni podaci obrađuju se samo u potrebnom opsegu, npr. kod kontakt upita.",
     "section3Title": "3. Kontakt obrazac",
     "section3Text": "Pri slanju upita uneseni podaci mogu se koristiti za obradu upita.",
-    "section4Title": "4. Vasa prava",
-    "section4Text": "Imate pravo na pristup, ispravak, brisanje, ogranicenje obrade i prigovor.",
+    "section4Title": "4. Vaša prava",
+    "section4Text": "Imate pravo na pristup, ispravak, brisanje, ograničenje obrade i prigovor.",
     "notice": "Napomena: Ovaj tekst je placeholder i ne zamjenjuje pravni savjet."
   },
   "services": {
-    "title": "Nase usluge"
+    "title": "Naše usluge"
   },
   "about": {
     "title": "O nama"
@@ -190,3 +190,6 @@
     "label": "Jezik"
   }
 }
+
+
+
