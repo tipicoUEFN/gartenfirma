@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tipicouefn.github.io/gartenfirma/sitemap.xml

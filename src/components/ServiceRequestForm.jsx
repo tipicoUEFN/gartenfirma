@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { businessData } from '../config/businessData'
 
 const serviceOptions = [
   { key: 'rasen', label: 'Rasenmähen / Grünflächenpflege' },
@@ -29,6 +30,8 @@ const propertyTypeOptions = [
 ]
 
 function ServiceRequestForm() {
+  const [status, setStatus] = useState('idle')
+  const [errorText, setErrorText] = useState('')
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -49,23 +52,6 @@ function ServiceRequestForm() {
   const selectedServiceLabels = useMemo(
     () => serviceOptions.filter((option) => formData.services.includes(option.key)).map((option) => option.label),
     [formData.services],
-  )
-
-  const payload = useMemo(
-    () => ({
-      first_name: formData.firstName,
-      last_name: formData.lastName,
-      email: formData.email,
-      phone: formData.phone,
-      address: formData.address,
-      service: formData.services,
-      lawn_size: formData.lawnSize,
-      hedge_length: formData.hedgeLength,
-      frequency: formData.frequency,
-      property_type: formData.propertyType,
-      message: formData.message,
-    }),
-    [formData],
   )
 
   const handleInputChange = (event) => {
@@ -89,10 +75,59 @@ function ServiceRequestForm() {
     })
   }
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault()
-    // Keep submit side effects minimal for now; payload is ready for future API integration.
-    console.log('Service request payload', payload)
+    setStatus('submitting')
+    setErrorText('')
+
+    const payload = {
+      _subject: `Neue Service-Anfrage von ${formData.firstName} ${formData.lastName}`,
+      Vorname: formData.firstName,
+      Nachname: formData.lastName,
+      Email: formData.email,
+      Telefon: formData.phone,
+      Adresse: formData.address || 'nicht angegeben',
+      Service: selectedServiceLabels.length ? selectedServiceLabels.join(', ') : 'nicht angegeben',
+      Rasenflaeche: formData.lawnSize || 'nicht angegeben',
+      Heckenlaenge: formData.hedgeLength ? `${formData.hedgeLength} Meter` : 'nicht angegeben',
+      Haeufigkeit: formData.frequency || 'nicht angegeben',
+      Objektart: propertyTypeOptions.find((option) => option.value === formData.propertyType)?.label || 'nicht angegeben',
+      Nachricht: formData.message || 'keine Nachricht',
+      Anfrageart: 'Serviceanfrage',
+    }
+
+    try {
+      const response = await fetch(`https://formsubmit.co/ajax/${businessData.email}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(payload),
+      })
+
+      if (!response.ok) {
+        throw new Error('submit_failed')
+      }
+
+      setStatus('success')
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        address: '',
+        services: [],
+        lawnSize: '',
+        hedgeLength: '',
+        frequency: '',
+        propertyType: '',
+        message: '',
+      })
+    } catch {
+      setStatus('error')
+      setErrorText('Senden fehlgeschlagen. Bitte rufen Sie uns direkt an.')
+    }
   }
 
   return (
@@ -289,11 +324,14 @@ function ServiceRequestForm() {
       <div className="space-y-3">
         <button
           type="submit"
+          disabled={status === 'submitting'}
           className="w-full rounded-full bg-olive-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-olive-800 sm:w-auto"
         >
-          Anfrage senden
+          {status === 'submitting' ? 'Wird gesendet...' : 'Anfrage senden'}
         </button>
-        <p className="text-xs text-olive-600">Diese Anfrage dient zur unverbindlichen Angebotsanfrage.</p>
+        <p className="text-xs text-olive-600">Unverbindliche Anfrage. Rueckmeldung in der Regel innerhalb von 24h (Mo-Fr).</p>
+        {status === 'success' ? <p className="text-sm text-emerald-700">Danke. Ihre Anfrage wurde gesendet.</p> : null}
+        {status === 'error' ? <p className="text-sm text-red-700">{errorText}</p> : null}
       </div>
     </form>
   )

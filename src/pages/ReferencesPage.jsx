@@ -1,5 +1,6 @@
 import PageHero from '../components/PageHero'
 import ReferenceCard from '../components/ReferenceCard'
+import SeoHead from '../components/SeoHead'
 import SectionTitle from '../components/SectionTitle'
 import { useTranslation } from 'react-i18next'
 import { referenceProjects } from '../config/imageLibrary'
@@ -15,6 +16,12 @@ function ReferencesPage() {
 
   return (
     <>
+      <SeoHead
+        title="Referenzen aus der Region"
+        description="Ausgewaehlte Projekte zu Rasenpflege, Heckschnitt und Objektpflege im Raum Leibnitz, Graz und Suedsteiermark."
+        pathname="/referenzen"
+      />
+
       <PageHero
         eyebrow={t('references.eyebrow')}
         title={t('references.title')}

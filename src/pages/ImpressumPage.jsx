@@ -1,4 +1,5 @@
 import PageHero from '../components/PageHero'
+import SeoHead from '../components/SeoHead'
 import { useTranslation } from 'react-i18next'
 import { businessData } from '../config/businessData'
 
@@ -7,6 +8,12 @@ function ImpressumPage() {
 
   return (
     <>
+      <SeoHead
+        title="Impressum"
+        description="Rechtliche Angaben von PR Gartenservice im Raum Leibnitz und Suedsteiermark."
+        pathname="/impressum"
+      />
+
       <PageHero
         eyebrow={t('impressum.eyebrow')}
         title={t('impressum.title')}

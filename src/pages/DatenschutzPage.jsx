@@ -1,4 +1,5 @@
 import PageHero from '../components/PageHero'
+import SeoHead from '../components/SeoHead'
 import { useTranslation } from 'react-i18next'
 
 function DatenschutzPage() {
@@ -6,6 +7,12 @@ function DatenschutzPage() {
 
   return (
     <>
+      <SeoHead
+        title="Datenschutz"
+        description="Informationen zur Datenverarbeitung bei Kontaktanfragen von PR Gartenservice."
+        pathname="/datenschutz"
+      />
+
       <PageHero
         eyebrow={t('privacy.eyebrow')}
         title={t('privacy.title')}

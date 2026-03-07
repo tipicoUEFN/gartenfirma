@@ -1,6 +1,7 @@
 import { CheckCircle2 } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import PageHero from '../components/PageHero'
+import SeoHead from '../components/SeoHead'
 import SectionTitle from '../components/SectionTitle'
 
 function AboutPage() {
@@ -14,6 +15,12 @@ function AboutPage() {
 
   return (
     <>
+      <SeoHead
+        title="Ueber uns"
+        description="Regionaler Gartenservice in der Suedsteiermark mit persoenlicher Beratung, klaren Prozessen und verlaesslicher Ausfuehrung."
+        pathname="/ueber-uns"
+      />
+
       <PageHero
         eyebrow={t('aboutPage.heroEyebrow')}
         title={t('aboutPage.heroTitle')}

@@ -12,7 +12,7 @@ export const businessData = {
   ],
   // Keep a primary contact for compact CTA placements like header buttons.
   phone: '+43664000000',
-  email: 'office@pr-gartenservice.at',
+  email: 'mariorozman88@gmail.com',
   address: 'Musterstraße 1, 8430 Musterort',
 
   // Local focus

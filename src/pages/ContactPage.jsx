@@ -1,6 +1,9 @@
 import { Mail, MapPin, Phone } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
+import LocalBusinessSchema from '../components/LocalBusinessSchema'
 import PageHero from '../components/PageHero'
+import QuickRequestForm from '../components/QuickRequestForm'
+import SeoHead from '../components/SeoHead'
 import SectionTitle from '../components/SectionTitle'
 import ServiceRequestForm from '../components/ServiceRequestForm'
 import { businessData } from '../config/businessData'
@@ -10,6 +13,13 @@ function ContactPage() {
 
   return (
     <>
+      <SeoHead
+        title="Kontakt und Anfrage"
+        description="Jetzt Gartenpflege in Leibnitz, Wagna, Gralla, Tillmitsch, Strass und Umgebung anfragen. Wir melden uns zeitnah zurueck."
+        pathname="/kontakt"
+      />
+      <LocalBusinessSchema />
+
       <PageHero
         eyebrow={t('contactPage.heroEyebrow')}
         title={t('contactPage.heroTitle')}
@@ -17,6 +27,12 @@ function ContactPage() {
       />
 
       <section className="section-spacing pt-0">
+        <div className="container-width">
+          <QuickRequestForm />
+        </div>
+      </section>
+
+      <section className="section-spacing">
         <div className="container-width grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <SectionTitle title={t('contactPage.formTitle')} description={t('contactPage.formDescription')} />

@@ -2,12 +2,15 @@ import { ArrowRight, Clock3, Flower2, Leaf, Scissors, ShieldCheck, Shovel, Sprou
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import CTASection from '../components/CTASection'
+import LocalBusinessSchema from '../components/LocalBusinessSchema'
 import PageHero from '../components/PageHero'
 import ReferenceCard from '../components/ReferenceCard'
+import SeoHead from '../components/SeoHead'
 import SectionTitle from '../components/SectionTitle'
 import ServiceCard from '../components/ServiceCard'
 import TrustCard from '../components/TrustCard'
 import { businessData } from '../config/businessData'
+import { locationPages } from '../config/locationPages'
 import { homepageImages, referenceProjects } from '../config/imageLibrary'
 
 function HomePage() {
@@ -72,6 +75,13 @@ function HomePage() {
 
   return (
     <>
+      <SeoHead
+        title="Gartenpflege in Leibnitz und Suedsteiermark"
+        description="PR Gartenservice bietet Rasenmaehen, Heckenpflege und laufende Aussenanlagenbetreuung in Leibnitz, Graz und Umgebung."
+        pathname="/"
+      />
+      <LocalBusinessSchema />
+
       <PageHero
         eyebrow={t('home.hero.eyebrow')}
         title={t('home.hero.title')}
@@ -166,6 +176,27 @@ function HomePage() {
           <div className="grid gap-5 lg:grid-cols-3">
             {references.map((item) => (
               <ReferenceCard key={item.title} {...item} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing">
+        <div className="container-width">
+          <SectionTitle
+            eyebrow="Regionale Seiten"
+            title="Gartenpflege in Ihrer Gemeinde"
+            description="Direkte Infos zu unseren Leistungen in den wichtigsten Orten unseres Einsatzgebiets."
+          />
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {locationPages.map((location) => (
+              <Link
+                key={location.slug}
+                to={`/${location.slug}`}
+                className="rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm font-semibold text-olive-800"
+              >
+                Gartenpflege {location.town}
+              </Link>
             ))}
           </div>
         </div>

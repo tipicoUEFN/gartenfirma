@@ -2,6 +2,7 @@ import { Mail, MapPin, Phone } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { businessData } from '../config/businessData'
+import { locationPages } from '../config/locationPages'
 
 function Footer() {
   const { t } = useTranslation()
@@ -73,6 +74,16 @@ function Footer() {
                 {t('footer.privacy')}
               </Link>
             </li>
+          </ul>
+          <p className="mt-6 text-sm font-semibold uppercase tracking-[0.2em] text-olive-300">Beliebte Orte</p>
+          <ul className="mt-4 space-y-2 text-sm">
+            {locationPages.map((location) => (
+              <li key={location.slug}>
+                <Link to={`/${location.slug}`} className="hover:text-white">
+                  Gartenpflege {location.town}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
