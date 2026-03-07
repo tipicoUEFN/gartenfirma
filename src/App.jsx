@@ -6,7 +6,6 @@ import StickyContactBar from './components/StickyContactBar'
 import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import DatenschutzPage from './pages/DatenschutzPage'
-import GuidesPage from './pages/GuidesPage'
 import HomePage from './pages/HomePage'
 import ImpressumPage from './pages/ImpressumPage'
 import LocationPage from './pages/LocationPage'
@@ -24,7 +23,6 @@ function App() {
             <Route path="/leistungen" element={<ServicesPage />} />
             <Route path="/ueber-uns" element={<AboutPage />} />
             <Route path="/referenzen" element={<ReferencesPage />} />
-            <Route path="/ratgeber" element={<GuidesPage />} />
             <Route path="/kontakt" element={<ContactPage />} />
             <Route path="/:slug" element={<LocationPage />} />
             <Route path="/impressum" element={<ImpressumPage />} />

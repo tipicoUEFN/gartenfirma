@@ -14,7 +14,6 @@ function Navbar() {
   const navigationItems = [
     { label: t('navbar.home'), to: '/' },
     { label: t('navbar.services'), to: '/leistungen' },
-    { label: 'Ratgeber', to: '/ratgeber' },
     { label: t('navbar.about'), to: '/ueber-uns' },
     { label: t('navbar.references'), to: '/referenzen' },
     { label: t('navbar.contact'), to: '/kontakt' },

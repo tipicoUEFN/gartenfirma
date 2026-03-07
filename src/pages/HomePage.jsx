@@ -233,55 +233,6 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="section-spacing pt-0">
-        <div className="container-width">
-          <div className="rounded-2xl border border-olive-200 bg-white px-4 py-4 sm:px-5">
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-olive-600">Regionale Präsenz</p>
-            <p className="mt-2 text-sm font-semibold text-olive-800">Täglich im Einsatz in der Region</p>
-            <div className="mt-3 flex flex-wrap gap-2">
-              {['Leibnitz', 'Wagna', 'Gralla', 'Tillmitsch', 'Straß', 'Ehrenhausen', 'Graz Umgebung'].map((town) => (
-                <div key={town} className="inline-flex items-center gap-1.5 rounded-full border border-olive-200 bg-olive-50 px-3 py-1.5 text-xs font-semibold text-olive-800">
-                  <MapPin size={13} className="text-olive-700" />
-                  {town}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section-spacing pt-0">
-        <div className="container-width">
-          <div className="rounded-2xl border border-olive-200 bg-white px-4 py-4 sm:px-5">
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-olive-600">Regionale Seiten</p>
-            <div className="mt-3 flex flex-wrap gap-2">
-              {locationPages.map((location) => (
-                <Link
-                  key={location.slug}
-                  to={`/${location.slug}`}
-                  className="rounded-full border border-olive-200 bg-olive-50 px-3 py-1.5 text-xs font-semibold text-olive-800 hover:bg-olive-100"
-                >
-                  {location.town}
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section-spacing pt-0">
-        <div className="container-width">
-          <div className="rounded-2xl border border-olive-200 bg-white px-6 py-5">
-            <p className="text-sm font-semibold text-olive-800">
-              Privatgärten, Firmenstandorte, Wohnanlagen und öffentliche Einrichtungen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark.
-            </p>
-            <p className="mt-2 text-sm text-olive-700">
-              Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz Umgebung
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="section-spacing">
         <div className="container-width">
           <div className="glass-card grid gap-8 rounded-3xl px-6 py-8 sm:px-10 sm:py-10 lg:grid-cols-2">
@@ -341,6 +292,55 @@ function HomePage() {
       </section>
 
       <CTASection />
+
+      <section className="section-spacing pt-0">
+        <div className="container-width">
+          <div className="rounded-2xl border border-olive-200 bg-white px-4 py-4 sm:px-5">
+            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-olive-600">Regionale Präsenz</p>
+            <p className="mt-2 text-sm font-semibold text-olive-800">Täglich im Einsatz in der Region</p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {['Leibnitz', 'Wagna', 'Gralla', 'Tillmitsch', 'Straß', 'Ehrenhausen', 'Graz Umgebung'].map((town) => (
+                <div key={town} className="inline-flex items-center gap-1.5 rounded-full border border-olive-200 bg-olive-50 px-3 py-1.5 text-xs font-semibold text-olive-800">
+                  <MapPin size={13} className="text-olive-700" />
+                  {town}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing pt-0">
+        <div className="container-width">
+          <div className="rounded-2xl border border-olive-200 bg-white px-4 py-4 sm:px-5">
+            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-olive-600">Regionale Seiten</p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {locationPages.map((location) => (
+                <Link
+                  key={location.slug}
+                  to={`/${location.slug}`}
+                  className="rounded-full border border-olive-200 bg-olive-50 px-3 py-1.5 text-xs font-semibold text-olive-800 hover:bg-olive-100"
+                >
+                  {location.town}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing pt-0">
+        <div className="container-width">
+          <div className="rounded-2xl border border-olive-200 bg-white px-6 py-5">
+            <p className="text-sm font-semibold text-olive-800">
+              Privatgärten, Firmenstandorte, Wohnanlagen und öffentliche Einrichtungen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark.
+            </p>
+            <p className="mt-2 text-sm text-olive-700">
+              Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz Umgebung
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
