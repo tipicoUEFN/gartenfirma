@@ -1,4 +1,4 @@
-function PageHero({ eyebrow, title, text, children, imageSrc, imageAlt, imageSrcSet, imageContent }) {
+function PageHero({ eyebrow, title, text, children, imageSrc, imageAlt, imageSrcSet, imageContent, footerContent }) {
   return (
     <section className="section-spacing pt-6 sm:pt-8 lg:pt-10">
       <div className="container-width">
@@ -31,6 +31,8 @@ function PageHero({ eyebrow, title, text, children, imageSrc, imageAlt, imageSrc
               </div>
             ) : null}
           </div>
+
+          {footerContent ? <div className="mt-8">{footerContent}</div> : null}
         </div>
       </div>
     </section>

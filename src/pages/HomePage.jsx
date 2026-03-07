@@ -119,6 +119,23 @@ function HomePage() {
         title={t('homeExtras.heroTitle')}
         text={t('homeExtras.heroText')}
         imageContent={<HeroSlider slides={heroSlides} />}
+        footerContent={(
+          <div className="rounded-2xl border border-olive-200 bg-white px-4 py-3 sm:px-5">
+            <div className="grid gap-2 md:grid-cols-2 xl:grid-cols-4">
+              {heroTrustItems.map((item) => {
+                const Icon = item.icon
+                return (
+                  <div key={item.label} className="flex items-center gap-2 rounded-xl bg-olive-100/60 px-3 py-2 text-sm font-semibold text-olive-800">
+                    <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white text-amber-500">
+                      <Icon size={14} fill="currentColor" />
+                    </span>
+                    <span>{item.label}</span>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        )}
       >
         <div className="space-y-6">
           <div className="flex justify-end">
@@ -149,26 +166,6 @@ function HomePage() {
           </div>
         </div>
       </PageHero>
-
-      <section className="section-spacing pt-0 pb-2 sm:pb-3 lg:pb-4">
-        <div className="container-width">
-          <div className="rounded-2xl border border-olive-200 bg-white px-4 py-3 sm:px-5">
-            <div className="grid gap-2 md:grid-cols-2 xl:grid-cols-4">
-              {heroTrustItems.map((item) => {
-                const Icon = item.icon
-                return (
-                  <div key={item.label} className="flex items-center gap-2 rounded-xl bg-olive-100/60 px-3 py-2 text-sm font-semibold text-olive-800">
-                    <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white text-amber-500">
-                      <Icon size={14} fill="currentColor" />
-                    </span>
-                    <span>{item.label}</span>
-                  </div>
-                )
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="section-spacing pt-2 sm:pt-3 lg:pt-4 bg-olive-100/40">
         <div className="container-width">
