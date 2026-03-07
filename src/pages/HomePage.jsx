@@ -2,6 +2,7 @@ import { ArrowRight, Building2, CalendarCheck, CheckCircle2, Clock3, Flower2, Le
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import CTASection from '../components/CTASection'
+import HeroSlider from '../components/HeroSlider'
 import LocalBusinessSchema from '../components/LocalBusinessSchema'
 import PageHero from '../components/PageHero'
 import ReferenceCard from '../components/ReferenceCard'
@@ -11,7 +12,7 @@ import ServiceCard from '../components/ServiceCard'
 import TrustCard from '../components/TrustCard'
 import { businessData } from '../config/businessData'
 import { locationPages } from '../config/locationPages'
-import { homepageImages, referenceProjects } from '../config/imageLibrary'
+import { heroSlides, referenceProjects } from '../config/imageLibrary'
 
 function HomePage() {
   const { t } = useTranslation()
@@ -113,12 +114,8 @@ function HomePage() {
         eyebrow="PR Gartenservice"
         title="Gartenpflege aus Leibnitz"
         text="Zuverlässig für Privatgärten, Firmenflächen und Wohnanlagen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark."
-        imageSrc={homepageImages.hero.src}
-        imageSrcSet={homepageImages.hero.srcSet}
-        imageAlt={t('home.hero.imageAlt')}
+        imageContent={<HeroSlider slides={heroSlides} />}
       >
-        {/* TODO: replace placeholder hero visuals with real work photos later. */}
-        {/* examples: hedge trimming, mowing, before/after lawn, equipment */}
         <ul className="space-y-2 text-sm font-semibold text-olive-800 sm:text-base">
           {heroServiceList.map((item) => (
             <li key={item} className="flex items-center gap-2">

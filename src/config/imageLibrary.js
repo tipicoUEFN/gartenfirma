@@ -16,6 +16,61 @@ export const homepageImages = {
   },
 }
 
+export const heroSlides = [
+  {
+    src: withBase('images/hero/hero6-rasenmaeher-real-1600x1200.webp'),
+    srcSet: [
+      `${withBase('images/hero/hero6-rasenmaeher-real-800x600.webp')} 800w`,
+      `${withBase('images/hero/hero6-rasenmaeher-real-1200x900.webp')} 1200w`,
+      `${withBase('images/hero/hero6-rasenmaeher-real-1600x1200.webp')} 1600w`,
+      `${withBase('images/hero/hero6-rasenmaeher-real-2400x1800.webp')} 2400w`,
+    ].join(', '),
+    sizes: '(max-width: 1024px) 100vw, 42vw',
+    width: 1600,
+    height: 1200,
+    alt: 'Rasenmäher im Einsatz im gepflegten Privatgarten',
+  },
+  {
+    src: withBase('images/hero/hero3-gartenpflege-1600x1200.webp'),
+    srcSet: [
+      `${withBase('images/hero/hero3-gartenpflege-800x600.webp')} 800w`,
+      `${withBase('images/hero/hero3-gartenpflege-1200x900.webp')} 1200w`,
+      `${withBase('images/hero/hero3-gartenpflege-1600x1200.webp')} 1600w`,
+      `${withBase('images/hero/hero3-gartenpflege-2400x1800.webp')} 2400w`,
+    ].join(', '),
+    sizes: '(max-width: 1024px) 100vw, 42vw',
+    width: 1600,
+    height: 1200,
+    alt: 'Heckenschnitt in Leibnitz',
+  },
+  {
+    src: withBase('images/hero/hero4-gartenpflege-1600x1200.webp'),
+    srcSet: [
+      `${withBase('images/hero/hero4-gartenpflege-800x600.webp')} 800w`,
+      `${withBase('images/hero/hero4-gartenpflege-1200x900.webp')} 1200w`,
+      `${withBase('images/hero/hero4-gartenpflege-1600x1200.webp')} 1600w`,
+      `${withBase('images/hero/hero4-gartenpflege-2400x1800.webp')} 2400w`,
+    ].join(', '),
+    sizes: '(max-width: 1024px) 100vw, 42vw',
+    width: 1600,
+    height: 1200,
+    alt: 'Laubarbeiten mit Laubbläser im Garten',
+  },
+  {
+    src: withBase('images/hero/hero5-fensterreinigung-1600x1200.webp'),
+    srcSet: [
+      `${withBase('images/hero/hero5-fensterreinigung-800x600.webp')} 800w`,
+      `${withBase('images/hero/hero5-fensterreinigung-1200x900.webp')} 1200w`,
+      `${withBase('images/hero/hero5-fensterreinigung-1600x1200.webp')} 1600w`,
+      `${withBase('images/hero/hero5-fensterreinigung-2400x1800.webp')} 2400w`,
+    ].join(', '),
+    sizes: '(max-width: 1024px) 100vw, 42vw',
+    width: 1600,
+    height: 1200,
+    alt: 'Fensterreinigung am Einfamilienhaus',
+  },
+]
+
 export const referenceProjects = [
   // TODO: Replace/supplement these placeholders with real project photos (before/after, equipment, team-on-site) for stronger trust.
   {

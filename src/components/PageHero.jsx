@@ -1,4 +1,4 @@
-function PageHero({ eyebrow, title, text, children, imageSrc, imageAlt, imageSrcSet }) {
+function PageHero({ eyebrow, title, text, children, imageSrc, imageAlt, imageSrcSet, imageContent }) {
   return (
     <section className="section-spacing pt-28 sm:pt-32">
       <div className="container-width">
@@ -11,7 +11,13 @@ function PageHero({ eyebrow, title, text, children, imageSrc, imageAlt, imageSrc
               {children ? <div className="mt-8">{children}</div> : null}
             </div>
 
-            {imageSrc ? (
+            {imageContent ? (
+              <div className="overflow-hidden rounded-2xl border border-olive-200 shadow-md">
+                {imageContent}
+              </div>
+            ) : null}
+
+            {!imageContent && imageSrc ? (
               <div className="overflow-hidden rounded-2xl border border-olive-200 shadow-md">
                 {/* TODO: replace placeholder image with real work photos (hedge trimming, mowing, before/after, equipment). */}
                 <img
