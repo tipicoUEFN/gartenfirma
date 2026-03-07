@@ -263,7 +263,7 @@
       "1": {
         "title": "Rasen mähen",
         "location": "Südsteiermark",
-        "text": "Regelmässige Rasenpflege für ein sauberes, gleichmässiges Gesamtbild."
+        "text": "Regelmäßige Rasenpflege für ein sauberes, gleichmäßiges Gesamtbild."
       },
       "2": {
         "title": "Heckschnitt",
@@ -471,7 +471,7 @@
     "steps": {
       "contact": "1. Basis-Kontaktdaten",
       "services": "2. Service-Auswahl",
-      "lawnSize": "3. Flächengroesse",
+      "lawnSize": "3. Flächengröße",
       "hedgeLength": "4. Heckenlänge",
       "frequency": "5. Häufigkeit der Ausführung",
       "propertyType": "6. Objektart",
