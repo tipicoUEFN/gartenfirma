@@ -2,6 +2,7 @@ import { Mail, MapPin, Phone } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import LocalBusinessSchema from '../components/LocalBusinessSchema'
 import PageHero from '../components/PageHero'
+import ProjectExampleCard from '../components/ProjectExampleCard'
 import QuickRequestForm from '../components/QuickRequestForm'
 import SeoHead from '../components/SeoHead'
 import SectionTitle from '../components/SectionTitle'
@@ -10,6 +11,21 @@ import { businessData } from '../config/businessData'
 
 function ContactPage() {
   const { t } = useTranslation()
+
+  const requestFlow = [
+    {
+      title: 'Schnellanfrage - Ablauf',
+      challenge: 'Sie brauchen rasch einen Termin oder Rückruf.',
+      approach: 'Kurze Angaben im Formular oder direkte telefonische Anfrage.',
+      result: 'Zeitnahe Rückmeldung mit nächstem sinnvollen Schritt.',
+    },
+    {
+      title: 'Detaillierte Anfrage - Ablauf',
+      challenge: 'Es geht um mehrere Flächen oder regelmäßige Betreuung.',
+      approach: 'Leistungsumfang und Ort im Detail erfassen.',
+      result: 'Klareres Angebot mit passendem Intervall.',
+    },
+  ]
 
   return (
     <>
@@ -31,9 +47,24 @@ function ContactPage() {
           <SectionTitle
             eyebrow="Schneller Kontakt"
             title="Am schnellsten: kurze Anfrage senden"
-            description="Fuer eine rasche Rueckmeldung reicht meist die Schnellanfrage. Die ausfuehrliche Anfrage finden Sie direkt darunter."
+            description="Kurz anfragen, schnell Rückmeldung erhalten."
           />
           <QuickRequestForm />
+        </div>
+      </section>
+
+      <section className="section-spacing pt-0">
+        <div className="container-width">
+          <SectionTitle
+            eyebrow="Ablauf"
+            title="So läuft Ihre Anfrage ab"
+            description="Kompakt nach Ausgangslage, Umsetzung und Ergebnis."
+          />
+          <div className="grid gap-5 lg:grid-cols-2">
+            {requestFlow.map((item) => (
+              <ProjectExampleCard key={item.title} {...item} />
+            ))}
+          </div>
         </div>
       </section>
 
@@ -41,9 +72,9 @@ function ContactPage() {
         <div className="container-width grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <SectionTitle
-              eyebrow="Ausfuehrliche Anfrage"
+              eyebrow="Ausführliche Anfrage"
               title={t('contactPage.formTitle')}
-              description="Wenn Sie mehr Details angeben moechten, nutzen Sie dieses Formular fuer ein praeziseres Angebot."
+              description="Mehr Details für ein präziseres Angebot."
             />
             <ServiceRequestForm />
           </div>

@@ -1,6 +1,7 @@
 import { CheckCircle2 } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import PageHero from '../components/PageHero'
+import ProjectExampleCard from '../components/ProjectExampleCard'
 import SeoHead from '../components/SeoHead'
 import SectionTitle from '../components/SectionTitle'
 
@@ -11,6 +12,21 @@ function AboutPage() {
     t('aboutPage.value2'),
     t('aboutPage.value3'),
     t('aboutPage.value4'),
+  ]
+
+  const workFlowExamples = [
+    {
+      title: 'Privatgarten - laufende Betreuung',
+      challenge: 'Uneinheitlicher Pflegezustand und fehlende Regelmäßigkeit.',
+      approach: 'Fixer Intervallplan für Rasen, Hecke und Beete.',
+      result: 'Konstant gepflegter Garten mit planbarem Aufwand.',
+    },
+    {
+      title: 'Wohnanlage - Gemeinschaftsflächen',
+      challenge: 'Unklare Zuständigkeiten und wechselnde Qualität vor Ort.',
+      approach: 'Klare Aufgaben pro Termin und saubere Rückmeldung nach Einsatz.',
+      result: 'Verlässlicher Zustand der Flächen für Bewohner und Verwaltung.',
+    },
   ]
 
   return (
@@ -32,14 +48,16 @@ function AboutPage() {
           <div>
             <SectionTitle
               title={t('aboutPage.sectionTitle')}
-              description={t('aboutPage.sectionDescription')}
+              description="Kurz, klar und nach festen Abläufen."
             />
             <p className="mb-4 rounded-xl border border-olive-200 bg-olive-100/50 px-4 py-3 text-sm font-semibold text-olive-800">
-              Gartenpflege aus Leibnitz. Zuverlaessig, sauber und puenktlich.
+              Gartenpflege aus Leibnitz. Zuverlässig, sauber und pünktlich.
             </p>
-            <p className="text-sm leading-relaxed text-olive-700 sm:text-base">
-              {t('aboutPage.body')}
-            </p>
+            <div className="grid gap-4">
+              {workFlowExamples.map((item) => (
+                <ProjectExampleCard key={item.title} {...item} />
+              ))}
+            </div>
           </div>
 
           <div className="glass-card rounded-2xl p-6 sm:p-8">

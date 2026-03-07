@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import CTASection from '../components/CTASection'
 import LocalBusinessSchema from '../components/LocalBusinessSchema'
 import PageHero from '../components/PageHero'
+import ProjectExampleCard from '../components/ProjectExampleCard'
 import ReferenceCard from '../components/ReferenceCard'
 import SeoHead from '../components/SeoHead'
 import SectionTitle from '../components/SectionTitle'
@@ -82,6 +83,27 @@ function HomePage() {
 
   const heroServiceList = ['Rasenpflege', 'Heckenschnitt', 'Laufende Betreuung']
 
+  const compactExamples = [
+    {
+      title: 'Heckenschnitt - Beispiel',
+      challenge: 'Überwachsene Hecke am Grundstücksrand.',
+      approach: 'Präziser Formschnitt mit sauberer Entsorgung.',
+      result: 'Klare Linien und gepflegtes Erscheinungsbild.',
+    },
+    {
+      title: 'Rasenpflege - Beispiel',
+      challenge: 'Uneinheitliches Wachstum und unsaubere Kanten.',
+      approach: 'Mähen und Kantenpflege im fixen Intervall.',
+      result: 'Ruhiger, gleichmäßiger und sauberer Gesamteindruck.',
+    },
+    {
+      title: 'Objektpflege - Beispiel',
+      challenge: 'Mehrere Flächen mit unterschiedlichem Pflegezustand.',
+      approach: 'Laufender Plan mit festen Vor-Ort-Terminen.',
+      result: 'Verlässliche Pflegequalität über alle Bereiche.',
+    },
+  ]
+
   // Demo cards only. Replace with real, permission-safe customer feedback later.
   const demoTestimonials = [
     {
@@ -115,6 +137,8 @@ function HomePage() {
         imageSrcSet={homepageImages.hero.srcSet}
         imageAlt={t('home.hero.imageAlt')}
       >
+        {/* TODO: replace placeholder hero visuals with real work photos later. */}
+        {/* examples: hedge trimming, mowing, before/after lawn, equipment */}
         <ul className="space-y-2 text-sm font-semibold text-olive-800 sm:text-base">
           {heroServiceList.map((item) => (
             <li key={item} className="flex items-center gap-2">
@@ -159,13 +183,28 @@ function HomePage() {
       <section className="section-spacing pt-0">
         <div className="container-width">
           <SectionTitle
-            eyebrow={t('home.why.eyebrow')}
-            title={t('home.why.title')}
-            description={t('home.why.description')}
+            eyebrow="Einsätze"
+            title="Vorher/Nachher in kurzer Form"
+            description="Kompakte Beispiele aus dem Alltag in der Region."
           />
-          <div className="grid gap-5 md:grid-cols-3">
-            {trustItems.map((item) => (
-              <TrustCard key={item.title} {...item} />
+          <div className="grid gap-5 lg:grid-cols-3">
+            {compactExamples.map((example) => (
+              <ProjectExampleCard key={example.title} {...example} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing bg-olive-100/40">
+        <div className="container-width">
+          <SectionTitle
+            eyebrow={t('home.services.eyebrow')}
+            title={t('home.services.title')}
+            description="Leistungen klar gegliedert und schnell erfassbar."
+          />
+          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+            {services.map((service) => (
+              <ServiceCard key={service.title} {...service} />
             ))}
           </div>
         </div>
@@ -186,21 +225,18 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="section-spacing bg-olive-100/40">
+      <section className="section-spacing">
         <div className="container-width">
           <SectionTitle
-            eyebrow={t('home.services.eyebrow')}
-            title={t('home.services.title')}
-            description={t('home.services.description')}
+            eyebrow={t('home.why.eyebrow')}
+            title={t('home.why.title')}
+            description="Darauf können Sie sich bei jedem Einsatz verlassen."
           />
-          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-            {services.map((service) => (
-              <ServiceCard key={service.title} {...service} />
+          <div className="grid gap-5 md:grid-cols-3">
+            {trustItems.map((item) => (
+              <TrustCard key={item.title} {...item} />
             ))}
           </div>
-          <p className="mt-6 text-sm leading-relaxed text-olive-700 sm:text-base">
-            {t('home.services.infoLine')}
-          </p>
         </div>
       </section>
 
@@ -265,6 +301,19 @@ function HomePage() {
         </div>
       </section>
 
+      <section className="section-spacing pt-0">
+        <div className="container-width">
+          <div className="rounded-2xl border border-olive-200 bg-white px-6 py-5">
+            <p className="text-sm font-semibold text-olive-800">
+              Privatgärten, Firmenstandorte, Wohnanlagen und öffentliche Einrichtungen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark.
+            </p>
+            <p className="mt-2 text-sm text-olive-700">
+              Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz Umgebung
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="section-spacing">
         <div className="container-width">
           <div className="glass-card grid gap-8 rounded-3xl px-6 py-8 sm:px-10 sm:py-10 lg:grid-cols-2">
@@ -319,19 +368,6 @@ function HomePage() {
               <li className="flex items-start gap-3"><Clock3 size={18} className="mt-0.5 text-olive-700" />Schnelle Termine und klare Rückmeldungen</li>
               <li className="flex items-start gap-3"><MapPin size={18} className="mt-0.5 text-olive-700" />Regional betreut in Leibnitz und Umgebung</li>
             </ul>
-          </div>
-        </div>
-      </section>
-
-      <section className="section-spacing pt-0">
-        <div className="container-width">
-          <div className="rounded-2xl border border-olive-200 bg-white px-6 py-5">
-            <p className="text-sm font-semibold text-olive-800">
-              Privatgärten, Firmenstandorte, Wohnanlagen und öffentliche Einrichtungen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark.
-            </p>
-            <p className="mt-2 text-sm text-olive-700">
-              Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz Umgebung
-            </p>
           </div>
         </div>
       </section>

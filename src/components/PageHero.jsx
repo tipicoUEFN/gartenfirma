@@ -13,6 +13,7 @@ function PageHero({ eyebrow, title, text, children, imageSrc, imageAlt, imageSrc
 
             {imageSrc ? (
               <div className="overflow-hidden rounded-2xl border border-olive-200 shadow-md">
+                {/* TODO: replace placeholder image with real work photos (hedge trimming, mowing, before/after, equipment). */}
                 <img
                   src={imageSrc}
                   srcSet={imageSrcSet}

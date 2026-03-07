@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import CTASection from '../components/CTASection'
 import PageHero from '../components/PageHero'
+import ProjectExampleCard from '../components/ProjectExampleCard'
 import SeoHead from '../components/SeoHead'
 import SectionTitle from '../components/SectionTitle'
 import ServiceCard from '../components/ServiceCard'
@@ -91,6 +92,45 @@ function ServicesPage() {
     },
   ]
 
+  const serviceExamples = [
+    {
+      title: 'Rasenpflege - Beispiel',
+      challenge: 'Unregelmäßiges Wachstum und unsaubere Rasenkanten.',
+      approach: 'Regelmäßiges Mähen und präzise Kantenpflege im 14-Tage-Rhythmus.',
+      result: 'Gleichmäßiger und gepflegter Rasen mit klarem Gesamtbild.',
+    },
+    {
+      title: 'Heckenschnitt - Beispiel',
+      challenge: 'Überwachsene Hecke am Grundstücksrand und unklare Linien.',
+      approach: 'Gezielter Formschnitt mit sauberer Entsorgung des Schnittguts.',
+      result: 'Dichte Hecke, klare Konturen und ordentliches Erscheinungsbild.',
+    },
+    {
+      title: 'Beetpflege - Beispiel',
+      challenge: 'Verunkrautete Beete und unruhiger Eindruck am Eingangsbereich.',
+      approach: 'Unkrautentfernung, Rückschnitt und strukturierte Nachpflege.',
+      result: 'Saubere Beetflächen und deutlich ruhigeres Gesamtbild.',
+    },
+    {
+      title: 'Saisonservice - Beispiel',
+      challenge: 'Laubmengen im Herbst und ungepflegte Flächen nach dem Winter.',
+      approach: 'Frühjahrs- und Herbstdurchgang mit Laubarbeiten und Aufräumservice.',
+      result: 'Flächen bleiben nutzbar und wirken durchgehend gepflegt.',
+    },
+    {
+      title: 'Objektpflege - Beispiel',
+      challenge: 'Uneinheitlicher Eindruck bei mehreren Grünflächen rund ums Objekt.',
+      approach: 'Fester Tourenplan für Rasen, Beete und Sichtachsen am Standort.',
+      result: 'Verlässlicher Pflegezustand im laufenden Betrieb.',
+    },
+    {
+      title: 'Fensterreinigung - Beispiel',
+      challenge: 'Verschmutzte Erdgeschossfenster bei Büro und Eingangsbereich.',
+      approach: 'Regelmäßige Reinigung mit abgestimmten Intervallen vor Ort.',
+      result: 'Saubere Fensterflächen und gepflegter erster Eindruck.',
+    },
+  ]
+
   return (
     <>
       <SeoHead
@@ -110,24 +150,36 @@ function ServicesPage() {
         <div className="container-width">
           <SectionTitle
             title={t('servicesPage.sectionTitle')}
-            description={t('servicesPage.sectionDescription')}
+            description="Kurzer Überblick zu unseren Leistungen in der Region."
           />
           <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
             {serviceList.map((service) => (
               <ServiceCard key={service.title} {...service} />
             ))}
           </div>
-          <p className="mt-6 text-sm leading-relaxed text-olive-700 sm:text-base">
-            {t('servicesPage.infoLine')}
-          </p>
         </div>
       </section>
 
       <section className="section-spacing bg-olive-100/40">
         <div className="container-width">
           <SectionTitle
+            eyebrow="Praxisbeispiele"
+            title="So laufen typische Einsätze ab"
+            description="Kompakt nach Ausgangslage, Umsetzung und Ergebnis."
+          />
+          <div className="grid gap-5 lg:grid-cols-2">
+            {serviceExamples.map((example) => (
+              <ProjectExampleCard key={example.title} {...example} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing">
+        <div className="container-width">
+          <SectionTitle
             title="Leistung + Ort"
-            description="Haeufig gesuchte Kombinationen in unserer Region."
+            description="Häufig gesuchte Kombinationen in unserer Region."
           />
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {locationPages.map((location) => (
