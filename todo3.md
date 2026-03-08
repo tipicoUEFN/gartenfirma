@@ -133,6 +133,30 @@ Each batch must end with:
 - No missing localization keys
 - Build and audit pass cleanly
 
+## Competitor Website Research (Local/Regional)
+
+Research target met: `10` websites reviewed (Leibnitz and nearby Styria markets).
+
+Primary source for discovery:
+
+- `https://firmen.wko.at/gartenpflege/leibnitz_bezirk/`
+- `https://firmen.wko.at/gartenpfleger/leibnitz_bezirk/`
+- `https://firmen.wko.at/gartenpflege/deutschlandsberg_bezirk/`
+- `https://firmen.wko.at/gartenpflege/s%C3%BCdoststeiermark_bezirk/`
+
+Company websites reviewed:
+
+1. `http://www.gartenpflege-zoehrer.at/` (WKO listing: Gartenpflege und Hausbetreuung, Bezirk Leibnitz)
+2. `http://www.blumen-stelzl.at/` (St. Johann i.S. / Oberhaag, Gartengestaltung & Pflege)
+3. `http://www.brodschneider.at/` (Hasendorf/Wagna, Gartengestaltung und Gartenpflege)
+4. `http://www.erlauer.at/` (Blumen | Gärten | Naturpools)
+5. `https://www.blumenhof-bender.at/` (Bad Radkersburg, Gartengestaltung/Pflege)
+6. `http://www.gartenkonzepte.at/` (St. Veit in der Südsteiermark, Gartenkonzepte)
+7. `https://steilhangmaeher.at/` (Gleinstatten, Spezialpflege/Steilhang-Mahen)
+8. `https://www.gundz.at/gruenschnitt-und-gartenpflege-leibnitz/` (Leibnitz, Grunschnitt & Gartenpflege)
+9. `https://www.rp-homeservice.at/gartenpflege/` (Bezirk Leibnitz / Sudsteiermark, Gartenservice)
+10. `https://gartnerexperte.at/gartenpflege/leibnitz` (Leibnitz-focused service page)
+
 ## Glossary lock (to fill during implementation)
 
 - AT:
