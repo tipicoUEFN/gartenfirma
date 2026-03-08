@@ -471,6 +471,7 @@
       "services": "2. Szolgáltatás választas",
       "lawnSize": "3. Terulet merete",
       "hedgeLength": "4. Sövény hossza",
+      "additionalDetails": "5. Tovabbi adatok",
       "frequency": "5. Vegrehajtas gyakorisaga",
       "propertyType": "6. Objektum tipusa",
       "message": "7. Opcionis uzenet",
@@ -484,7 +485,11 @@
       "address": "Cim (opcionalis)",
       "lawnSize": "Füves terület (m²)",
       "hedgeLength": "Sövény hossza (folyo meter)",
+      "hedgeHeight": "Sövény magassaga",
+      "greenWaste": "Zoldhulladek / nyesedek",
+      "gardenAccess": "Kert megkozelitese",
       "propertyType": "Objektum tipusa",
+      "urgency": "Surgosseg",
       "message": "Uzenet (opcionalis)"
     },
     "placeholders": {
@@ -507,6 +512,41 @@
       "600 m² felett",
       "nem tudom"
     ],
+    "hedgeHeightOptions": {
+      "upTo1m": "1 m-ig",
+      "oneTo2m": "1 - 2 m",
+      "over2m": "2 m felett"
+    },
+    "greenWasteOptions": {
+      "leaveOnSite": "helyszinen marad",
+      "selfDisposal": "ugyfel maga elszallitja",
+      "pickup": "kerjuk elszallitani"
+    },
+    "gardenAccessOptions": {
+      "easy": "konnyen megkozelitheto",
+      "narrow": "hazon at / szuk bejarat",
+      "slope": "lejtos / nehez"
+    },
+    "urgencyOptions": {
+      "normal": "normal",
+      "within3days": "3 napon belul",
+      "urgent": "surgos"
+    },
+    "frequencyOptionLabels": {
+      "weekly": "heti",
+      "biweekly": "2 hetente",
+      "monthly": "havi",
+      "yearly1": "evente 1x",
+      "yearly2": "evente 2x",
+      "oneTime": "egyszeri",
+      "byArrangement": "megegyezes szerint"
+    },
+    "frequencyByService": {
+      "rasen": ["weekly", "biweekly", "monthly"],
+      "hecke": ["yearly1", "yearly2"],
+      "fenster": ["oneTime", "monthly", "byArrangement"],
+      "default": ["oneTime", "monthly", "biweekly", "weekly", "byArrangement"]
+    },
     "frequencyOptions": [
       "egyszeri",
       "havi",
@@ -526,9 +566,20 @@
       "service": "Szolgáltatás",
       "lawnSize": "Fuves terulet",
       "hedge": "Sövény",
+      "hedgeHeight": "Sövény magassag",
+      "greenWaste": "Zoldhulladek",
+      "gardenAccess": "Hozzaferes",
       "frequency": "Gyakorisag",
-      "propertyType": "Objektum"
+      "propertyType": "Objektum",
+      "urgency": "Surgosseg",
+      "priceEstimate": "Becsult ar",
+      "noEstimate": "adatok alapjan szamitva"
     },
+    "summaryLabel": "Keres osszegzese",
+    "trustIndicators": [
+      "Valasz altalaban 24 oran belul",
+      "Kotottsegmentes ajanlat"
+    ],
     "upload": {
       "label": "Kepek feltoltese (opcionalis)",
       "help": "Legfeljebb 3 kep. Csak JPG/PNG/WebP. Max 5 MB/kep.",

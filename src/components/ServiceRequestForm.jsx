@@ -1,6 +1,7 @@
-import { useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { businessData } from '../config/businessData'
+import { estimateServicePrice } from '../utils/priceEstimate'
 
 function ServiceRequestForm({ firstInputRef }) {
   const { t } = useTranslation()
@@ -21,8 +22,12 @@ function ServiceRequestForm({ firstInputRef }) {
     services: [],
     lawnSize: '',
     hedgeLength: '',
+    hedgeHeight: '',
+    greenWaste: '',
+    gardenAccess: '',
     frequency: '',
     propertyType: '',
+    urgency: '',
     message: '',
   })
 
@@ -38,8 +43,73 @@ function ServiceRequestForm({ firstInputRef }) {
     [t],
   )
 
-  const lawnSizeOptions = t('serviceRequestForm.lawnSizeOptions', { returnObjects: true })
-  const frequencyOptions = t('serviceRequestForm.frequencyOptions', { returnObjects: true })
+  const lawnSizeOptionLabels = t('serviceRequestForm.lawnSizeOptions', { returnObjects: true })
+  const hedgeHeightOptionLabels = t('serviceRequestForm.hedgeHeightOptions', { returnObjects: true })
+  const greenWasteOptionLabels = t('serviceRequestForm.greenWasteOptions', { returnObjects: true })
+  const gardenAccessOptionLabels = t('serviceRequestForm.gardenAccessOptions', { returnObjects: true })
+  const urgencyOptionLabels = t('serviceRequestForm.urgencyOptions', { returnObjects: true })
+  const frequencyOptionLabels = t('serviceRequestForm.frequencyOptionLabels', { returnObjects: true })
+  const frequencyByService = t('serviceRequestForm.frequencyByService', { returnObjects: true })
+
+  const lawnSizeOptions = useMemo(() => {
+    const labels = Array.isArray(lawnSizeOptionLabels) ? lawnSizeOptionLabels : []
+    return [
+      { value: 'under100', label: labels[0] || 'unter 100 m²' },
+      { value: '100to300', label: labels[1] || '100 - 300 m²' },
+      { value: '300to600', label: labels[2] || '300 - 600 m²' },
+      { value: 'over600', label: labels[3] || 'über 600 m²' },
+      { value: 'unknown', label: labels[4] || 'weiß nicht' },
+    ]
+  }, [lawnSizeOptionLabels])
+
+  const hedgeHeightOptions = useMemo(
+    () => [
+      { value: 'upTo1m', label: hedgeHeightOptionLabels?.upTo1m || 'bis 1 m' },
+      { value: 'oneTo2m', label: hedgeHeightOptionLabels?.oneTo2m || '1 - 2 m' },
+      { value: 'over2m', label: hedgeHeightOptionLabels?.over2m || 'über 2 m' },
+    ],
+    [hedgeHeightOptionLabels],
+  )
+
+  const greenWasteOptions = useMemo(
+    () => [
+      { value: 'leaveOnSite', label: greenWasteOptionLabels?.leaveOnSite || 'vor Ort belassen' },
+      { value: 'selfDisposal', label: greenWasteOptionLabels?.selfDisposal || 'Kunde entsorgt selbst' },
+      { value: 'pickup', label: greenWasteOptionLabels?.pickup || 'bitte abführen' },
+    ],
+    [greenWasteOptionLabels],
+  )
+
+  const gardenAccessOptions = useMemo(
+    () => [
+      { value: 'easy', label: gardenAccessOptionLabels?.easy || 'einfach zugänglich' },
+      { value: 'narrow', label: gardenAccessOptionLabels?.narrow || 'durch Haus / schmaler Zugang' },
+      { value: 'slope', label: gardenAccessOptionLabels?.slope || 'Hanglage / schwierig' },
+    ],
+    [gardenAccessOptionLabels],
+  )
+
+  const urgencyOptions = useMemo(
+    () => [
+      { value: 'normal', label: urgencyOptionLabels?.normal || 'normal' },
+      { value: 'within3days', label: urgencyOptionLabels?.within3days || 'innerhalb 3 Tage' },
+      { value: 'urgent', label: urgencyOptionLabels?.urgent || 'dringend' },
+    ],
+    [urgencyOptionLabels],
+  )
+
+  const frequencyLabelMap = useMemo(
+    () => ({
+      weekly: frequencyOptionLabels?.weekly || 'wöchentlich',
+      biweekly: frequencyOptionLabels?.biweekly || 'alle 2 Wochen',
+      monthly: frequencyOptionLabels?.monthly || 'monatlich',
+      yearly1: frequencyOptionLabels?.yearly1 || '1x pro Jahr',
+      yearly2: frequencyOptionLabels?.yearly2 || '2x pro Jahr',
+      oneTime: frequencyOptionLabels?.oneTime || 'einmalig',
+      byArrangement: frequencyOptionLabels?.byArrangement || 'nach Vereinbarung',
+    }),
+    [frequencyOptionLabels],
+  )
   const propertyTypeOptions = [
     { value: 'privat', label: t('serviceRequestForm.propertyTypeOptions.privat') },
     { value: 'firma', label: t('serviceRequestForm.propertyTypeOptions.firma') },
@@ -52,10 +122,81 @@ function ServiceRequestForm({ firstInputRef }) {
   const isLawnSelected = formData.services.includes('rasen')
   const isHedgeSelected = formData.services.includes('hecke')
 
+  const frequencyOptions = useMemo(() => {
+    const fallback = Array.isArray(frequencyByService?.default)
+      ? frequencyByService.default
+      : ['oneTime', 'monthly', 'biweekly', 'weekly', 'byArrangement']
+
+    const codes = new Set()
+    let hasDynamicMatch = false
+
+    formData.services.forEach((serviceKey) => {
+      const serviceCodes = frequencyByService?.[serviceKey]
+      if (Array.isArray(serviceCodes)) {
+        hasDynamicMatch = true
+        serviceCodes.forEach((code) => codes.add(code))
+      }
+    })
+
+    if (!formData.services.length || !hasDynamicMatch || formData.services.some((serviceKey) => !Array.isArray(frequencyByService?.[serviceKey]))) {
+      fallback.forEach((code) => codes.add(code))
+    }
+
+    const order = ['weekly', 'biweekly', 'monthly', 'yearly1', 'yearly2', 'oneTime', 'byArrangement']
+
+    return [...codes]
+      .sort((a, b) => {
+        const aIndex = order.indexOf(a)
+        const bIndex = order.indexOf(b)
+        if (aIndex === -1 && bIndex === -1) {
+          return a.localeCompare(b)
+        }
+        if (aIndex === -1) {
+          return 1
+        }
+        if (bIndex === -1) {
+          return -1
+        }
+        return aIndex - bIndex
+      })
+      .map((value) => ({ value, label: frequencyLabelMap[value] || value }))
+  }, [formData.services, frequencyByService, frequencyLabelMap])
+
   const selectedServiceLabels = useMemo(
     () => serviceOptions.filter((option) => formData.services.includes(option.key)).map((option) => option.label),
     [formData.services, serviceOptions],
   )
+
+  const trustIndicators = t('serviceRequestForm.trustIndicators', { returnObjects: true })
+  const trustIndicatorItems = Array.isArray(trustIndicators)
+    ? trustIndicators
+    : ['Rückmeldung meist innerhalb 24h', 'Unverbindliches Angebot']
+
+  const getOptionLabel = (options, value) => options.find((option) => option.value === value)?.label || t('serviceRequestForm.mail.notProvided')
+
+  const priceEstimate = useMemo(
+    () => estimateServicePrice({
+      services: formData.services,
+      lawnSize: formData.lawnSize,
+      hedgeLength: formData.hedgeLength,
+      hedgeHeight: formData.hedgeHeight,
+      greenWaste: formData.greenWaste,
+      gardenAccess: formData.gardenAccess,
+      urgency: formData.urgency,
+    }),
+    [formData.services, formData.lawnSize, formData.hedgeLength, formData.hedgeHeight, formData.greenWaste, formData.gardenAccess, formData.urgency],
+  )
+
+  useEffect(() => {
+    if (!formData.frequency) {
+      return
+    }
+
+    const stillValid = frequencyOptions.some((option) => option.value === formData.frequency)
+    if (!stillValid) {
+      setFormData((prev) => ({ ...prev, frequency: '' }))
+    }
+  }, [formData.frequency, frequencyOptions])
 
   const handleInputChange = (event) => {
     const { name, value } = event.target
@@ -74,6 +215,7 @@ function ServiceRequestForm({ firstInputRef }) {
         services: nextServices,
         lawnSize: nextServices.includes('rasen') ? prev.lawnSize : '',
         hedgeLength: nextServices.includes('hecke') ? prev.hedgeLength : '',
+        hedgeHeight: nextServices.includes('hecke') ? prev.hedgeHeight : '',
       }
     })
   }
@@ -136,10 +278,15 @@ function ServiceRequestForm({ firstInputRef }) {
       Telefon: formData.phone,
       Adresse: formData.address || t('serviceRequestForm.mail.notProvided'),
       Service: selectedServiceLabels.length ? selectedServiceLabels.join(', ') : t('serviceRequestForm.mail.notProvided'),
-      Rasenfläche: formData.lawnSize || t('serviceRequestForm.mail.notProvided'),
+      Rasenfläche: lawnSizeOptions.find((option) => option.value === formData.lawnSize)?.label || t('serviceRequestForm.mail.notProvided'),
+      Heckenhöhe: isHedgeSelected ? getOptionLabel(hedgeHeightOptions, formData.hedgeHeight) : t('serviceRequestForm.mail.notProvided'),
+      Grünabfall: getOptionLabel(greenWasteOptions, formData.greenWaste),
+      Zugang: getOptionLabel(gardenAccessOptions, formData.gardenAccess),
       Heckenlänge: formData.hedgeLength ? t('serviceRequestForm.mail.meters', { value: formData.hedgeLength }) : t('serviceRequestForm.mail.notProvided'),
-      Häufigkeit: formData.frequency || t('serviceRequestForm.mail.notProvided'),
+      Häufigkeit: frequencyOptions.find((option) => option.value === formData.frequency)?.label || t('serviceRequestForm.mail.notProvided'),
       Objektart: propertyTypeOptions.find((option) => option.value === formData.propertyType)?.label || t('serviceRequestForm.mail.notProvided'),
+      Dringlichkeit: getOptionLabel(urgencyOptions, formData.urgency),
+      'Preis-Schätzung': priceEstimate?.label || t('serviceRequestForm.summary.noEstimate'),
       Nachricht: formData.message || t('serviceRequestForm.mail.noMessage'),
       Anfrageart: t('serviceRequestForm.mail.requestType'),
     }
@@ -175,8 +322,12 @@ function ServiceRequestForm({ firstInputRef }) {
         services: [],
         lawnSize: '',
         hedgeLength: '',
+        hedgeHeight: '',
+        greenWaste: '',
+        gardenAccess: '',
         frequency: '',
         propertyType: '',
+        urgency: '',
         message: '',
       })
       setUploadedImages([])
@@ -255,9 +406,9 @@ function ServiceRequestForm({ firstInputRef }) {
 
       <div className="space-y-5">
         <h3 className="text-base font-semibold text-olive-800">{t('serviceRequestForm.steps.services')}</h3>
-        <div className="grid gap-3 md:grid-cols-2">
+        <div className="grid gap-2 md:grid-cols-2">
           {serviceOptions.map((service) => (
-            <label key={service.key} className="flex items-start gap-3 rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm text-olive-800">
+            <label key={service.key} className="flex items-start gap-2 rounded-xl border border-olive-200 bg-white px-3 py-2.5 text-sm text-olive-800">
               <input
                 type="checkbox"
                 checked={formData.services.includes(service.key)}
@@ -274,18 +425,18 @@ function ServiceRequestForm({ firstInputRef }) {
         <div className="space-y-5">
           <h3 className="text-base font-semibold text-olive-800">{t('serviceRequestForm.steps.lawnSize')}</h3>
           <p className="text-sm text-olive-700">{t('serviceRequestForm.fields.lawnSize')}</p>
-          <div className="grid gap-3 md:grid-cols-2">
+          <div className="grid gap-2 md:grid-cols-2">
             {lawnSizeOptions.map((option) => (
-              <label key={option} className="flex items-start gap-3 rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm text-olive-800">
+              <label key={option.value} className="flex items-start gap-2 rounded-xl border border-olive-200 bg-white px-3 py-2.5 text-sm text-olive-800">
                 <input
                   type="radio"
                   name="lawnSize"
-                  value={option}
-                  checked={formData.lawnSize === option}
+                  value={option.value}
+                  checked={formData.lawnSize === option.value}
                   onChange={handleInputChange}
                   className="mt-1 h-4 w-4 accent-olive-700"
                 />
-                <span>{option}</span>
+                <span>{option.label}</span>
               </label>
             ))}
           </div>
@@ -307,23 +458,94 @@ function ServiceRequestForm({ firstInputRef }) {
               className="mt-2 w-full rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-olive-500"
             />
           </label>
+          <p className="text-sm text-olive-700">{t('serviceRequestForm.fields.hedgeHeight')}</p>
+          <div className="grid gap-2 md:grid-cols-3">
+            {hedgeHeightOptions.map((option) => (
+              <label key={option.value} className="flex items-start gap-2 rounded-xl border border-olive-200 bg-white px-3 py-2.5 text-sm text-olive-800">
+                <input
+                  type="radio"
+                  name="hedgeHeight"
+                  value={option.value}
+                  checked={formData.hedgeHeight === option.value}
+                  onChange={handleInputChange}
+                  className="mt-1 h-4 w-4 accent-olive-700"
+                />
+                <span>{option.label}</span>
+              </label>
+            ))}
+          </div>
         </div>
       )}
 
       <div className="space-y-5">
-        <h3 className="text-base font-semibold text-olive-800">{t('serviceRequestForm.steps.frequency')}</h3>
-        <div className="grid gap-3 md:grid-cols-2">
-          {frequencyOptions.map((option) => (
-            <label key={option} className="flex items-start gap-3 rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm text-olive-800">
+        <h3 className="text-base font-semibold text-olive-800">{t('serviceRequestForm.steps.additionalDetails')}</h3>
+
+        <p className="text-sm text-olive-700">{t('serviceRequestForm.fields.greenWaste')}</p>
+        <div className="grid gap-2 md:grid-cols-3">
+          {greenWasteOptions.map((option) => (
+            <label key={option.value} className="flex items-start gap-2 rounded-xl border border-olive-200 bg-white px-3 py-2.5 text-sm text-olive-800">
               <input
                 type="radio"
-                name="frequency"
-                value={option}
-                checked={formData.frequency === option}
+                name="greenWaste"
+                value={option.value}
+                checked={formData.greenWaste === option.value}
                 onChange={handleInputChange}
                 className="mt-1 h-4 w-4 accent-olive-700"
               />
-              <span>{option}</span>
+              <span>{option.label}</span>
+            </label>
+          ))}
+        </div>
+
+        <p className="text-sm text-olive-700">{t('serviceRequestForm.fields.gardenAccess')}</p>
+        <div className="grid gap-2 md:grid-cols-3">
+          {gardenAccessOptions.map((option) => (
+            <label key={option.value} className="flex items-start gap-2 rounded-xl border border-olive-200 bg-white px-3 py-2.5 text-sm text-olive-800">
+              <input
+                type="radio"
+                name="gardenAccess"
+                value={option.value}
+                checked={formData.gardenAccess === option.value}
+                onChange={handleInputChange}
+                className="mt-1 h-4 w-4 accent-olive-700"
+              />
+              <span>{option.label}</span>
+            </label>
+          ))}
+        </div>
+
+        <p className="text-sm text-olive-700">{t('serviceRequestForm.fields.urgency')}</p>
+        <div className="grid gap-2 md:grid-cols-3">
+          {urgencyOptions.map((option) => (
+            <label key={option.value} className="flex items-start gap-2 rounded-xl border border-olive-200 bg-white px-3 py-2.5 text-sm text-olive-800">
+              <input
+                type="radio"
+                name="urgency"
+                value={option.value}
+                checked={formData.urgency === option.value}
+                onChange={handleInputChange}
+                className="mt-1 h-4 w-4 accent-olive-700"
+              />
+              <span>{option.label}</span>
+            </label>
+          ))}
+        </div>
+      </div>
+
+      <div className="space-y-5">
+        <h3 className="text-base font-semibold text-olive-800">{t('serviceRequestForm.steps.frequency')}</h3>
+        <div className="grid gap-2 md:grid-cols-2">
+          {frequencyOptions.map((option) => (
+            <label key={option.value} className="flex items-start gap-2 rounded-xl border border-olive-200 bg-white px-3 py-2.5 text-sm text-olive-800">
+              <input
+                type="radio"
+                name="frequency"
+                value={option.value}
+                checked={formData.frequency === option.value}
+                onChange={handleInputChange}
+                className="mt-1 h-4 w-4 accent-olive-700"
+              />
+              <span>{option.label}</span>
             </label>
           ))}
         </div>
@@ -383,21 +605,30 @@ function ServiceRequestForm({ firstInputRef }) {
         {uploadError ? <p className="text-sm text-red-700">{uploadError}</p> : null}
       </div>
 
-      <div className="space-y-4 rounded-2xl border border-olive-200 bg-olive-50/70 p-5">
-        <h3 className="text-base font-semibold text-olive-800">{t('serviceRequestForm.steps.summary')}</h3>
+      <div className="space-y-3">
+        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-emerald-700">{t('serviceRequestForm.summaryLabel')}</p>
+        <div className="space-y-4 rounded-2xl border border-olive-200 bg-olive-50/70 p-5">
         <div className="space-y-2 text-sm text-olive-700">
           <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.service')}:</span> {selectedServiceLabels.length ? selectedServiceLabels.join(', ') : '-'}</p>
           {isLawnSelected && (
-            <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.lawnSize')}:</span> {formData.lawnSize || '-'}</p>
+            <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.lawnSize')}:</span> {lawnSizeOptions.find((option) => option.value === formData.lawnSize)?.label || '-'}</p>
           )}
           {isHedgeSelected && (
-            <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.hedge')}:</span> {formData.hedgeLength ? t('serviceRequestForm.mail.meters', { value: formData.hedgeLength }) : '-'}</p>
+            <>
+              <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.hedge')}:</span> {formData.hedgeLength ? t('serviceRequestForm.mail.meters', { value: formData.hedgeLength }) : '-'}</p>
+              <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.hedgeHeight')}:</span> {hedgeHeightOptions.find((option) => option.value === formData.hedgeHeight)?.label || '-'}</p>
+            </>
           )}
-          <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.frequency')}:</span> {formData.frequency || '-'}</p>
+          <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.greenWaste')}:</span> {greenWasteOptions.find((option) => option.value === formData.greenWaste)?.label || '-'}</p>
+          <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.gardenAccess')}:</span> {gardenAccessOptions.find((option) => option.value === formData.gardenAccess)?.label || '-'}</p>
+          <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.frequency')}:</span> {frequencyOptions.find((option) => option.value === formData.frequency)?.label || '-'}</p>
           <p>
             <span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.propertyType')}:</span>{' '}
             {propertyTypeOptions.find((option) => option.value === formData.propertyType)?.label || '-'}
           </p>
+          <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.urgency')}:</span> {urgencyOptions.find((option) => option.value === formData.urgency)?.label || '-'}</p>
+          <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.priceEstimate')}:</span> {priceEstimate?.label || t('serviceRequestForm.summary.noEstimate')}</p>
+        </div>
         </div>
       </div>
 
@@ -409,6 +640,11 @@ function ServiceRequestForm({ firstInputRef }) {
         >
           {status === 'submitting' ? t('serviceRequestForm.submit.sending') : t('serviceRequestForm.submit.default')}
         </button>
+        <div className="space-y-1">
+          {trustIndicatorItems.map((item) => (
+            <p key={item} className="text-xs text-emerald-700/80">✓ {item}</p>
+          ))}
+        </div>
         <p className="text-xs text-olive-600">{t('serviceRequestForm.notice')}</p>
         {status === 'success' ? <p className="text-sm text-emerald-700">{t('serviceRequestForm.success')}</p> : null}
         {status === 'error' ? <p className="text-sm text-red-700">{errorText}</p> : null}

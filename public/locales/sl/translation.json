@@ -471,6 +471,7 @@
       "services": "2. Izbira storitve",
       "lawnSize": "3. Velikost površine",
       "hedgeLength": "4. Dolžina žive meje",
+      "additionalDetails": "5. Dodatni podatki",
       "frequency": "5. Pogostost izvedbe",
       "propertyType": "6. Vrsta objekta",
       "message": "7. Neobvezno sporocilo",
@@ -484,7 +485,11 @@
       "address": "Naslov (neobvezno)",
       "lawnSize": "Povrsina trate (m²)",
       "hedgeLength": "Dolžina žive meje (tekoci metri)",
+      "hedgeHeight": "Visina žive meje",
+      "greenWaste": "Obrezki / zeleni odpad",
+      "gardenAccess": "Dostop do vrta",
       "propertyType": "Vrsta objekta",
+      "urgency": "Nujnost",
       "message": "Sporocilo (neobvezno)"
     },
     "placeholders": {
@@ -507,6 +512,41 @@
       "nad 600 m²",
       "ne vem"
     ],
+    "hedgeHeightOptions": {
+      "upTo1m": "do 1 m",
+      "oneTo2m": "1 - 2 m",
+      "over2m": "nad 2 m"
+    },
+    "greenWasteOptions": {
+      "leaveOnSite": "pustite na lokaciji",
+      "selfDisposal": "stranka odstrani sama",
+      "pickup": "odvozite"
+    },
+    "gardenAccessOptions": {
+      "easy": "enostaven dostop",
+      "narrow": "skozi hiso / ozek dostop",
+      "slope": "naklon / tezji dostop"
+    },
+    "urgencyOptions": {
+      "normal": "normalno",
+      "within3days": "v 3 dneh",
+      "urgent": "nujno"
+    },
+    "frequencyOptionLabels": {
+      "weekly": "tedensko",
+      "biweekly": "vsaka 2 tedna",
+      "monthly": "mesecno",
+      "yearly1": "1x na leto",
+      "yearly2": "2x na leto",
+      "oneTime": "enkratno",
+      "byArrangement": "po dogovoru"
+    },
+    "frequencyByService": {
+      "rasen": ["weekly", "biweekly", "monthly"],
+      "hecke": ["yearly1", "yearly2"],
+      "fenster": ["oneTime", "monthly", "byArrangement"],
+      "default": ["oneTime", "monthly", "biweekly", "weekly", "byArrangement"]
+    },
     "frequencyOptions": [
       "enkratno",
       "mesecno",
@@ -526,9 +566,20 @@
       "service": "Storitev",
       "lawnSize": "Povrsina trate",
       "hedge": "Ziva meja",
+      "hedgeHeight": "Visina žive meje",
+      "greenWaste": "Zeleni odpad",
+      "gardenAccess": "Dostop",
       "frequency": "Pogostost",
-      "propertyType": "Objekt"
+      "propertyType": "Objekt",
+      "urgency": "Nujnost",
+      "priceEstimate": "Ocena cene",
+      "noEstimate": "izracunano po podatkih"
     },
+    "summaryLabel": "Povzetek povpraševanja",
+    "trustIndicators": [
+      "Odgovor obicajno v 24h",
+      "Neobvezujoca ponudba"
+    ],
     "upload": {
       "label": "Nalozite slike (neobvezno)",
       "help": "Do 3 slike. Samo JPG/PNG/WebP. Najvec 5 MB na sliko.",

@@ -471,6 +471,7 @@
       "services": "2. Odabir usluge",
       "lawnSize": "3. Velicina površine",
       "hedgeLength": "4. Duljina živice",
+      "additionalDetails": "5. Dodatni podaci",
       "frequency": "5. Ucestalost izvedbe",
       "propertyType": "6. Vrsta objekta",
       "message": "7. Opcionalna poruka",
@@ -484,7 +485,11 @@
       "address": "Adresa (opcionalno)",
       "lawnSize": "Povrsina travnjaka (m²)",
       "hedgeLength": "Duljina živice (tekuci metri)",
+      "hedgeHeight": "Visina živice",
+      "greenWaste": "Zeleni otpad / rezani materijal",
+      "gardenAccess": "Pristup vrtu",
       "propertyType": "Vrsta objekta",
+      "urgency": "Hitnost",
       "message": "Poruka (opcionalno)"
     },
     "placeholders": {
@@ -507,6 +512,41 @@
       "iznad 600 m²",
       "ne znam"
     ],
+    "hedgeHeightOptions": {
+      "upTo1m": "do 1 m",
+      "oneTo2m": "1 - 2 m",
+      "over2m": "iznad 2 m"
+    },
+    "greenWasteOptions": {
+      "leaveOnSite": "ostaviti na lokaciji",
+      "selfDisposal": "klijent sam zbrinjava",
+      "pickup": "molimo odvesti"
+    },
+    "gardenAccessOptions": {
+      "easy": "jednostavan pristup",
+      "narrow": "kroz kucu / uzak pristup",
+      "slope": "nagib / otezan pristup"
+    },
+    "urgencyOptions": {
+      "normal": "normalno",
+      "within3days": "unutar 3 dana",
+      "urgent": "hitno"
+    },
+    "frequencyOptionLabels": {
+      "weekly": "tjedno",
+      "biweekly": "svaka 2 tjedna",
+      "monthly": "mjesecno",
+      "yearly1": "1x godisnje",
+      "yearly2": "2x godisnje",
+      "oneTime": "jednokratno",
+      "byArrangement": "po dogovoru"
+    },
+    "frequencyByService": {
+      "rasen": ["weekly", "biweekly", "monthly"],
+      "hecke": ["yearly1", "yearly2"],
+      "fenster": ["oneTime", "monthly", "byArrangement"],
+      "default": ["oneTime", "monthly", "biweekly", "weekly", "byArrangement"]
+    },
     "frequencyOptions": [
       "jednokratno",
       "mjesecno",
@@ -526,9 +566,20 @@
       "service": "Usluga",
       "lawnSize": "Povrsina travnjaka",
       "hedge": "Zivica",
+      "hedgeHeight": "Visina živice",
+      "greenWaste": "Zeleni otpad",
+      "gardenAccess": "Pristup",
       "frequency": "Ucestalost",
-      "propertyType": "Objekt"
+      "propertyType": "Objekt",
+      "urgency": "Hitnost",
+      "priceEstimate": "Procjena cijene",
+      "noEstimate": "izracun prema podacima"
     },
+    "summaryLabel": "Sazetak upita",
+    "trustIndicators": [
+      "Odgovor obicno unutar 24h",
+      "Neobvezujuca ponuda"
+    ],
     "upload": {
       "label": "Prenesite slike (opcionalno)",
       "help": "Do 3 slike. Samo JPG/PNG/WebP. Max 5 MB po slici.",

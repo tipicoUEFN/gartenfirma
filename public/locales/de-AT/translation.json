@@ -473,6 +473,7 @@
       "services": "2. Service-Auswahl",
       "lawnSize": "3. Flächengröße",
       "hedgeLength": "4. Heckenlänge",
+      "additionalDetails": "5. Zusatzangaben",
       "frequency": "5. Häufigkeit der Ausführung",
       "propertyType": "6. Objektart",
       "message": "7. Optionale Nachricht",
@@ -486,7 +487,11 @@
       "address": "Adresse (optional)",
       "lawnSize": "Rasenfläche (m²)",
       "hedgeLength": "Heckenlänge (laufende Meter)",
+      "hedgeHeight": "Heckenhöhe",
+      "greenWaste": "Schnittgut / Grünabfall",
+      "gardenAccess": "Zugang zum Garten",
       "propertyType": "Objektart",
+      "urgency": "Dringlichkeit",
       "message": "Nachricht (optional)"
     },
     "placeholders": {
@@ -509,6 +514,41 @@
       "über 600 m²",
       "weiß nicht"
     ],
+    "hedgeHeightOptions": {
+      "upTo1m": "bis 1 m",
+      "oneTo2m": "1 - 2 m",
+      "over2m": "über 2 m"
+    },
+    "greenWasteOptions": {
+      "leaveOnSite": "vor Ort belassen",
+      "selfDisposal": "Kunde entsorgt selbst",
+      "pickup": "bitte abführen"
+    },
+    "gardenAccessOptions": {
+      "easy": "einfach zugänglich",
+      "narrow": "durch Haus / schmaler Zugang",
+      "slope": "Hanglage / schwierig"
+    },
+    "urgencyOptions": {
+      "normal": "normal",
+      "within3days": "innerhalb 3 Tage",
+      "urgent": "dringend"
+    },
+    "frequencyOptionLabels": {
+      "weekly": "wöchentlich",
+      "biweekly": "alle 2 Wochen",
+      "monthly": "monatlich",
+      "yearly1": "1x pro Jahr",
+      "yearly2": "2x pro Jahr",
+      "oneTime": "einmalig",
+      "byArrangement": "nach Vereinbarung"
+    },
+    "frequencyByService": {
+      "rasen": ["weekly", "biweekly", "monthly"],
+      "hecke": ["yearly1", "yearly2"],
+      "fenster": ["oneTime", "monthly", "byArrangement"],
+      "default": ["oneTime", "monthly", "biweekly", "weekly", "byArrangement"]
+    },
     "frequencyOptions": [
       "einmalig",
       "monatlich",
@@ -528,9 +568,20 @@
       "service": "Service",
       "lawnSize": "Rasenfläche",
       "hedge": "Hecke",
+      "hedgeHeight": "Heckenhöhe",
+      "greenWaste": "Grünabfall",
+      "gardenAccess": "Zugang",
       "frequency": "Häufigkeit",
-      "propertyType": "Objekt"
+      "propertyType": "Objekt",
+      "urgency": "Dringlichkeit",
+      "priceEstimate": "Preis-Schätzung",
+      "noEstimate": "wird nach Angaben berechnet"
     },
+    "summaryLabel": "Anfrage Zusammenfassung",
+    "trustIndicators": [
+      "Rückmeldung meist innerhalb 24h",
+      "Unverbindliches Angebot"
+    ],
     "upload": {
       "label": "Bilder hochladen (optional)",
       "help": "Bis zu 3 Bilder. Nur JPG/PNG/WebP. Max. 5 MB pro Bild.",

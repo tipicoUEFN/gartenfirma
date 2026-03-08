@@ -471,6 +471,7 @@
       "services": "2. Service selection",
       "lawnSize": "3. Area size",
       "hedgeLength": "4. Hedge length",
+      "additionalDetails": "5. Additional details",
       "frequency": "5. Service frequency",
       "propertyType": "6. Property type",
       "message": "7. Optional message",
@@ -484,7 +485,11 @@
       "address": "Address (optional)",
       "lawnSize": "Lawn area (m²)",
       "hedgeLength": "Hedge length (running meters)",
+      "hedgeHeight": "Hedge height",
+      "greenWaste": "Clippings / green waste",
+      "gardenAccess": "Garden access",
       "propertyType": "Property type",
+      "urgency": "Urgency",
       "message": "Message (optional)"
     },
     "placeholders": {
@@ -507,6 +512,41 @@
       "over 600 m²",
       "not sure"
     ],
+    "hedgeHeightOptions": {
+      "upTo1m": "up to 1 m",
+      "oneTo2m": "1 - 2 m",
+      "over2m": "over 2 m"
+    },
+    "greenWasteOptions": {
+      "leaveOnSite": "leave on site",
+      "selfDisposal": "customer disposes",
+      "pickup": "please remove"
+    },
+    "gardenAccessOptions": {
+      "easy": "easy access",
+      "narrow": "through house / narrow access",
+      "slope": "slope / difficult"
+    },
+    "urgencyOptions": {
+      "normal": "normal",
+      "within3days": "within 3 days",
+      "urgent": "urgent"
+    },
+    "frequencyOptionLabels": {
+      "weekly": "weekly",
+      "biweekly": "every 2 weeks",
+      "monthly": "monthly",
+      "yearly1": "once per year",
+      "yearly2": "twice per year",
+      "oneTime": "one-time",
+      "byArrangement": "by arrangement"
+    },
+    "frequencyByService": {
+      "rasen": ["weekly", "biweekly", "monthly"],
+      "hecke": ["yearly1", "yearly2"],
+      "fenster": ["oneTime", "monthly", "byArrangement"],
+      "default": ["oneTime", "monthly", "biweekly", "weekly", "byArrangement"]
+    },
     "frequencyOptions": [
       "one-time",
       "monthly",
@@ -526,9 +566,20 @@
       "service": "Service",
       "lawnSize": "Lawn area",
       "hedge": "Hedge",
+      "hedgeHeight": "Hedge height",
+      "greenWaste": "Green waste",
+      "gardenAccess": "Access",
       "frequency": "Frequency",
-      "propertyType": "Property"
+      "propertyType": "Property",
+      "urgency": "Urgency",
+      "priceEstimate": "Estimated price",
+      "noEstimate": "calculated from your details"
     },
+    "summaryLabel": "Request summary",
+    "trustIndicators": [
+      "Response usually within 24h",
+      "Non-binding offer"
+    ],
     "upload": {
       "label": "Upload images (optional)",
       "help": "Up to 3 images. JPG/PNG/WebP only. Max 5 MB each.",
