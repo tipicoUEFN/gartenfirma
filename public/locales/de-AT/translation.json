@@ -427,7 +427,7 @@
     "regionalProofLine1": "Privatgärten, Firmenstandorte, Wohnanlagen und öffentliche Einrichtungen im Großraum Leibnitz, Graz, Deutschlandsberg und der Südoststeiermark.",
     "regionalProofLine2": "Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz Umgebung",
     "seoTitle": "Gartenpflege in Leibnitz und Südsteiermark",
-    "seoDescription": "PR Gartenservice bietet Rasenmähen, Heckenpflege und laufende Außenanlagenbetreuung in Leibnitz, Graz und Umgebung.",
+    "seoDescription": "PR Gartenservice bietet Rasenmähen, Heckenschnitt und laufende Außenanlagenbetreuung in Leibnitz, Graz und Umgebung.",
     "heroEyebrow": "PR Gartenservice",
     "testimonials": {
       "1": {
@@ -479,10 +479,10 @@
     },
     "serviceOptions": [
       "Rasenmähen",
-      "Heckenpflege",
+      "Heckenschnitt",
       "Laubarbeiten",
       "Laufende Außenanlagenbetreuung",
-      "Einfache Gartenpflege"
+      "Gartenpflege"
     ]
   },
   "serviceRequestForm": {
@@ -525,8 +525,8 @@
       "rasen": "Rasenmähen / Grünflächenpflege",
       "hecke": "Heckenschnitt",
       "laub": "Laubarbeiten",
-      "gartenpflege": "Einfache Gartenpflege",
-      "aussenanlagen": "Betreuung von Außenanlagen",
+      "gartenpflege": "Gartenpflege",
+      "aussenanlagen": "Laufende Außenanlagenbetreuung",
       "fenster": "Fensterreinigung"
     },
     "lawnSizeOptions": [

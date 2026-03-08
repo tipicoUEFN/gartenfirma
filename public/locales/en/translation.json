@@ -425,7 +425,7 @@
     "regionalProofLine1": "Private gardens, company sites, residential complexes and public facilities in Leibnitz, Graz, Deutschlandsberg and Southeast Styria.",
     "regionalProofLine2": "Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz area",
     "seoTitle": "Garden care in Leibnitz and Southern Styria",
-    "seoDescription": "PR Gartenservice offers lawn mowing, hedge care and ongoing outdoor maintenance in Leibnitz, Graz and nearby.",
+    "seoDescription": "PR Gartenservice offers lawn mowing, hedge trimming and ongoing outdoor maintenance in Leibnitz, Graz and nearby.",
     "heroEyebrow": "PR Gartenservice",
     "testimonials": {
       "1": {
@@ -477,10 +477,10 @@
     },
     "serviceOptions": [
       "Lawn mowing",
-      "Hedge care",
-      "Leaf work",
+      "Hedge trimming",
+      "Leaf cleanup",
       "Ongoing outdoor maintenance",
-      "Basic garden care"
+      "Garden maintenance"
     ]
   },
   "serviceRequestForm": {
@@ -522,8 +522,8 @@
     "serviceOptions": {
       "rasen": "Lawn mowing / green area care",
       "hecke": "Hedge trimming",
-      "laub": "Leaf work",
-      "gartenpflege": "Basic garden care",
+      "laub": "Leaf cleanup",
+      "gartenpflege": "Garden maintenance",
       "aussenanlagen": "Outdoor area maintenance",
       "fenster": "Window cleaning"
     },

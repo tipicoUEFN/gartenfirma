@@ -425,7 +425,7 @@
     "regionalProofLine1": "Privatni vrtovi, poslovne lokacije, stambeni objekti i javne ustanove u Leibnitzu, Grazu, Deutschlandsbergu i jugoistočnoj Štajerskoj.",
     "regionalProofLine2": "Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · okolica Graza",
     "seoTitle": "Njega vrtova u Leibnitzu i južnoj Štajerskoj",
-    "seoDescription": "PR Gartenservice nudi kosnju travnjaka, njegu živice i redovno održavanje vanjskih površina u Leibnitzu, Grazu i okolici.",
+    "seoDescription": "PR Gartenservice nudi košnju travnjaka, rezanje živice i redovno održavanje vanjskih površina u Leibnitzu, Grazu i okolici.",
     "heroEyebrow": "PR Gartenservice",
     "testimonials": {
       "1": {
@@ -476,11 +476,11 @@
       "requestType": "Brzi upit"
     },
     "serviceOptions": [
-      "Kosnja travnjaka",
-      "Njega živice",
+      "Košnja travnjaka",
+      "Rezanje živice",
       "Radovi s lišćem",
       "Redovno održavanje vanjskih površina",
-      "Osnovna njega vrta"
+      "Održavanje vrta"
     ]
   },
   "serviceRequestForm": {
@@ -520,10 +520,10 @@
       "message": "Kratko opišite svoj zahtjev ili posebne želje."
     },
     "serviceOptions": {
-      "rasen": "Kosnja travnjaka / njega zelenih površina",
+      "rasen": "Košnja travnjaka / njega zelenih površina",
       "hecke": "Rezanje živice",
       "laub": "Radovi s lišćem",
-      "gartenpflege": "Osnovna njega vrta",
+      "gartenpflege": "Održavanje vrta",
       "aussenanlagen": "Održavanje vanjskih površina",
       "fenster": "Čišćenje prozora"
     },

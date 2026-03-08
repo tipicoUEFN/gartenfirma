@@ -425,7 +425,7 @@
     "regionalProofLine1": "Magánkertek, céges területek, lakóparkok és közintézmények Leibnitz, Graz, Deutschlandsberg és Délkelet-Stájerország térségében.",
     "regionalProofLine2": "Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz környéke",
     "seoTitle": "Kertgondozás Leibnitzben es Dél-Stájerországban",
-    "seoDescription": "A PR Gartenservice fűnyírást, sövénygondozast es rendszeres kültéri fenntartast kinal Leibnitz, Graz es környéken.",
+    "seoDescription": "A PR Gartenservice fűnyírást, sövénynyírást és rendszeres kültéri fenntartást kínál Leibnitz, Graz és környékén.",
     "heroEyebrow": "PR Gartenservice",
     "testimonials": {
       "1": {
@@ -477,10 +477,10 @@
     },
     "serviceOptions": [
       "Fűnyírás",
-      "Sövénygondozas",
+      "Sövénynyírás",
       "Lombmunka",
-      "Rendszeres kültéri fenntartas",
-      "Alap kertgondozás"
+      "Rendszeres kültéri fenntartás",
+      "Kertfenntartás"
     ]
   },
   "serviceRequestForm": {
@@ -520,12 +520,12 @@
       "message": "Röviden írja le igényét vagy különleges kívánságát."
     },
     "serviceOptions": {
-      "rasen": "Fűnyírás / zoldfelulet-gondozas",
-      "hecke": "Sövényvagas",
+      "rasen": "Fűnyírás / zöldfelület-gondozás",
+      "hecke": "Sövénynyírás",
       "laub": "Lombmunka",
-      "gartenpflege": "Alap kertgondozás",
-      "aussenanlagen": "Kulteri terulet fenntartasa",
-      "fenster": "Ablaktisztitas"
+      "gartenpflege": "Kertfenntartás",
+      "aussenanlagen": "Kültéri terület fenntartása",
+      "fenster": "Ablaktisztítás"
     },
     "lawnSizeOptions": [
       "100 m² alatt",
