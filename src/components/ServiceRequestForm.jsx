@@ -37,7 +37,13 @@ function ServiceRequestForm({ firstInputRef }) {
   const phoneCodeOptions = [
     { value: '+43', label: 'Oesterreich (+43)' },
     { value: '+49', label: 'Deutschland (+49)' },
+    { value: '+420', label: 'Tschechien (+420)' },
+    { value: '+421', label: 'Slowakei (+421)' },
+    { value: '+36', label: 'Ungarn (+36)' },
     { value: '+386', label: 'Slowenien (+386)' },
+    { value: '+39', label: 'Italien (+39)' },
+    { value: '+41', label: 'Schweiz (+41)' },
+    { value: '+423', label: 'Liechtenstein (+423)' },
     { value: '+385', label: 'Kroatien (+385)' },
   ]
 
