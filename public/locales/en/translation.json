@@ -489,12 +489,14 @@
       "greenWaste": "Clippings / green waste",
       "gardenAccess": "Garden access",
       "propertyType": "Property type",
+      "propertyTypeHint": "Helps us estimate effort more accurately.",
       "urgency": "Urgency",
       "message": "Message (optional)"
     },
     "placeholders": {
       "hedgeLength": "e.g. 20",
       "select": "Please select",
+      "propertyType": "Select property type",
       "message": "Briefly describe your request or special wishes."
     },
     "serviceOptions": {
@@ -557,9 +559,8 @@
     "propertyTypeOptions": {
       "privat": "Private garden",
       "firma": "Company / business",
-      "wohnanlage": "Residential complex",
-      "kindergarten-schule": "Kindergarten / school",
-      "oeffentlich": "Public institution",
+      "wohnanlage": "Residential complex / property management",
+      "oeffentlich": "Public institution (school, kindergarten, municipality)",
       "sonstiges": "Other"
     },
     "summary": {
@@ -572,7 +573,8 @@
       "frequency": "Frequency",
       "propertyType": "Property",
       "urgency": "Urgency",
-      "priceEstimate": "Estimated price",
+      "priceEstimate": "Estimated price (non-binding)",
+      "priceEstimateNote": "Final price possible after on-site visit.",
       "noEstimate": "calculated from your details"
     },
     "summaryLabel": "Request summary",

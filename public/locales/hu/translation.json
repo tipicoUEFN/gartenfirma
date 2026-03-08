@@ -489,12 +489,14 @@
       "greenWaste": "Zoldhulladek / nyesedek",
       "gardenAccess": "Kert megkozelitese",
       "propertyType": "Objektum tipusa",
+      "propertyTypeHint": "Segit jobban megbecsulni a munka merteket.",
       "urgency": "Surgosseg",
       "message": "Uzenet (opcionalis)"
     },
     "placeholders": {
       "hedgeLength": "pl. 20",
       "select": "Valasszon",
+      "propertyType": "Valassza ki az objektum tipusat",
       "message": "Roviden irja le igenyet vagy kulonleges kivansagat."
     },
     "serviceOptions": {
@@ -557,9 +559,8 @@
     "propertyTypeOptions": {
       "privat": "Magankert",
       "firma": "Ceg / vallalkozas",
-      "wohnanlage": "Lakoegyuttes",
-      "kindergarten-schule": "Ovoda / iskola",
-      "oeffentlich": "Kozintezmeny",
+      "wohnanlage": "Lakoegyuttes / kozos kepviselet",
+      "oeffentlich": "Kozintezmeny (iskola, ovoda, onkormanyzat)",
       "sonstiges": "Egyeb"
     },
     "summary": {
@@ -572,7 +573,8 @@
       "frequency": "Gyakorisag",
       "propertyType": "Objektum",
       "urgency": "Surgosseg",
-      "priceEstimate": "Becsult ar",
+      "priceEstimate": "Becsult ar (nem kotelezo)",
+      "priceEstimateNote": "Vegleges ar helyszini felmeres utan lehetseges.",
       "noEstimate": "adatok alapjan szamitva"
     },
     "summaryLabel": "Keres osszegzese",

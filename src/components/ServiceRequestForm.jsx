@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { businessData } from '../config/businessData'
-import { estimateServicePrice } from '../utils/priceEstimate'
+import { applyCustomerTypeMultiplier, estimateServicePrice } from '../utils/priceEstimate'
 
 function ServiceRequestForm({ firstInputRef }) {
   const { t } = useTranslation()
@@ -114,7 +114,6 @@ function ServiceRequestForm({ firstInputRef }) {
     { value: 'privat', label: t('serviceRequestForm.propertyTypeOptions.privat') },
     { value: 'firma', label: t('serviceRequestForm.propertyTypeOptions.firma') },
     { value: 'wohnanlage', label: t('serviceRequestForm.propertyTypeOptions.wohnanlage') },
-    { value: 'kindergarten-schule', label: t('serviceRequestForm.propertyTypeOptions.kindergarten-schule') },
     { value: 'oeffentlich', label: t('serviceRequestForm.propertyTypeOptions.oeffentlich') },
     { value: 'sonstiges', label: t('serviceRequestForm.propertyTypeOptions.sonstiges') },
   ]
@@ -174,7 +173,7 @@ function ServiceRequestForm({ firstInputRef }) {
 
   const getOptionLabel = (options, value) => options.find((option) => option.value === value)?.label || t('serviceRequestForm.mail.notProvided')
 
-  const priceEstimate = useMemo(
+  const baseEstimate = useMemo(
     () => estimateServicePrice({
       services: formData.services,
       lawnSize: formData.lawnSize,
@@ -185,6 +184,11 @@ function ServiceRequestForm({ firstInputRef }) {
       urgency: formData.urgency,
     }),
     [formData.services, formData.lawnSize, formData.hedgeLength, formData.hedgeHeight, formData.greenWaste, formData.gardenAccess, formData.urgency],
+  )
+
+  const priceEstimate = useMemo(
+    () => applyCustomerTypeMultiplier(baseEstimate, formData.propertyType),
+    [baseEstimate, formData.propertyType],
   )
 
   useEffect(() => {
@@ -286,7 +290,7 @@ function ServiceRequestForm({ firstInputRef }) {
       Häufigkeit: frequencyOptions.find((option) => option.value === formData.frequency)?.label || t('serviceRequestForm.mail.notProvided'),
       Objektart: propertyTypeOptions.find((option) => option.value === formData.propertyType)?.label || t('serviceRequestForm.mail.notProvided'),
       Dringlichkeit: getOptionLabel(urgencyOptions, formData.urgency),
-      'Preis-Schätzung': priceEstimate?.label || t('serviceRequestForm.summary.noEstimate'),
+      'Geschätzter Preis (unverbindlich)': priceEstimate?.label || t('serviceRequestForm.summary.noEstimate'),
       Nachricht: formData.message || t('serviceRequestForm.mail.noMessage'),
       Anfrageart: t('serviceRequestForm.mail.requestType'),
     }
@@ -561,13 +565,14 @@ function ServiceRequestForm({ firstInputRef }) {
             onChange={handleInputChange}
             className="mt-2 w-full rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-olive-500"
           >
-            <option value="">{t('serviceRequestForm.placeholders.select')}</option>
+            <option value="">{t('serviceRequestForm.placeholders.propertyType')}</option>
             {propertyTypeOptions.map((option) => (
               <option key={option.value} value={option.value}>
                 {option.label}
               </option>
             ))}
           </select>
+          <p className="mt-2 text-xs text-olive-600">{t('serviceRequestForm.fields.propertyTypeHint')}</p>
         </label>
       </div>
 
@@ -626,8 +631,8 @@ function ServiceRequestForm({ firstInputRef }) {
             <span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.propertyType')}:</span>{' '}
             {propertyTypeOptions.find((option) => option.value === formData.propertyType)?.label || '-'}
           </p>
-          <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.urgency')}:</span> {urgencyOptions.find((option) => option.value === formData.urgency)?.label || '-'}</p>
           <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.priceEstimate')}:</span> {priceEstimate?.label || t('serviceRequestForm.summary.noEstimate')}</p>
+          <p className="text-xs text-olive-600">{t('serviceRequestForm.summary.priceEstimateNote')}</p>
         </div>
         </div>
       </div>

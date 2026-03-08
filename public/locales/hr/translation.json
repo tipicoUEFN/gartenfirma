@@ -489,12 +489,14 @@
       "greenWaste": "Zeleni otpad / rezani materijal",
       "gardenAccess": "Pristup vrtu",
       "propertyType": "Vrsta objekta",
+      "propertyTypeHint": "Pomaze nam bolje procijeniti opseg rada.",
       "urgency": "Hitnost",
       "message": "Poruka (opcionalno)"
     },
     "placeholders": {
       "hedgeLength": "npr. 20",
       "select": "Odaberite",
+      "propertyType": "Odaberite vrstu objekta",
       "message": "Kratko opisite svoj zahtjev ili posebne zelje."
     },
     "serviceOptions": {
@@ -557,9 +559,8 @@
     "propertyTypeOptions": {
       "privat": "Privatni vrt",
       "firma": "Tvrtka / obrt",
-      "wohnanlage": "Stambeni kompleks",
-      "kindergarten-schule": "Vrtic / škola",
-      "oeffentlich": "Javna ustanova",
+      "wohnanlage": "Stambeni kompleks / upravitelj",
+      "oeffentlich": "Javna ustanova (skola, vrtic, opcina)",
       "sonstiges": "Ostalo"
     },
     "summary": {
@@ -572,7 +573,8 @@
       "frequency": "Ucestalost",
       "propertyType": "Objekt",
       "urgency": "Hitnost",
-      "priceEstimate": "Procjena cijene",
+      "priceEstimate": "Procijenjena cijena (neobvezno)",
+      "priceEstimateNote": "Konacna cijena moguca je nakon obilaska.",
       "noEstimate": "izracun prema podacima"
     },
     "summaryLabel": "Sazetak upita",

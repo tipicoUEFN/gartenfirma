@@ -491,12 +491,14 @@
       "greenWaste": "Schnittgut / Grünabfall",
       "gardenAccess": "Zugang zum Garten",
       "propertyType": "Objektart",
+      "propertyTypeHint": "Hilft uns den Aufwand besser einzuschätzen.",
       "urgency": "Dringlichkeit",
       "message": "Nachricht (optional)"
     },
     "placeholders": {
       "hedgeLength": "z.B. 20",
       "select": "Bitte wählen",
+      "propertyType": "Objektart auswählen",
       "message": "Beschreiben Sie kurz Ihr Anliegen oder besondere Wünsche."
     },
     "serviceOptions": {
@@ -559,9 +561,8 @@
     "propertyTypeOptions": {
       "privat": "Privatgarten",
       "firma": "Firma / Betrieb",
-      "wohnanlage": "Wohnanlage",
-      "kindergarten-schule": "Kindergarten / Schule",
-      "oeffentlich": "öffentliche Einrichtung",
+      "wohnanlage": "Wohnanlage / Hausverwaltung",
+      "oeffentlich": "öffentliche Einrichtung (Schule, Kindergarten, Gemeinde)",
       "sonstiges": "sonstiges"
     },
     "summary": {
@@ -574,7 +575,8 @@
       "frequency": "Häufigkeit",
       "propertyType": "Objekt",
       "urgency": "Dringlichkeit",
-      "priceEstimate": "Preis-Schätzung",
+      "priceEstimate": "Geschätzter Preis (unverbindlich)",
+      "priceEstimateNote": "Endpreis nach Besichtigung möglich.",
       "noEstimate": "wird nach Angaben berechnet"
     },
     "summaryLabel": "Anfrage Zusammenfassung",

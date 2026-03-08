@@ -2,6 +2,14 @@ function roundToFive(value) {
   return Math.round(value / 5) * 5
 }
 
+const customerTypeMultiplier = {
+  privat: 1.0,
+  firma: 1.2,
+  wohnanlage: 1.3,
+  oeffentlich: 1.2,
+  sonstiges: 1.0,
+}
+
 function addRange(total, min, max) {
   return {
     min: total.min + min,
@@ -127,6 +135,22 @@ export function estimateServicePrice({
 
   const min = roundToFive(total.min)
   const max = roundToFive(total.max)
+
+  return {
+    min,
+    max,
+    label: `${min} - ${max} €`,
+  }
+}
+
+export function applyCustomerTypeMultiplier(baseEstimate, propertyType) {
+  if (!baseEstimate) {
+    return null
+  }
+
+  const multiplier = customerTypeMultiplier[propertyType] ?? 1.0
+  const min = roundToFive(baseEstimate.min * multiplier)
+  const max = roundToFive(baseEstimate.max * multiplier)
 
   return {
     min,
