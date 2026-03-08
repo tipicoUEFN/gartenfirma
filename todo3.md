@@ -31,7 +31,43 @@ Secondary fallback/config surfaces to verify:
 	- `src/components/QuickRequestForm.jsx`
 	- `src/components/ServiceRequestForm.jsx`
 
-## Execution phases
+## Research phase (must be first)
+
+Before any further localization edits, complete market research for each target locale:
+
+- AT -> Austria
+- SL -> Slovenia
+- HR -> Croatia
+- HU -> Hungary
+- EN -> international English
+
+Minimum target per market:
+
+- `5-10` local company websites with similar services
+
+Service scope to compare:
+
+- garden maintenance
+- lawn mowing
+- hedge trimming/cutting
+- landscaping
+- exterior cleaning
+- leaf removal
+- window cleaning
+- request forms
+- service description blocks
+
+Analysis focus:
+
+- natural wording
+- industry terminology
+- typical phrasing used by local companies
+
+Execution gate:
+
+- Do not continue implementation batches unless research coverage is complete for all markets, or missing coverage is explicitly documented with reason.
+
+## Execution phases (after research gate)
 
 ### Phase 1: Terminology baseline (cross-language)
 
@@ -133,7 +169,7 @@ Each batch must end with:
 - No missing localization keys
 - Build and audit pass cleanly
 
-## Competitor Website Research (Local/Regional)
+## Competitor Website Research (AT baseline complete)
 
 Research target met: `10` websites reviewed (Leibnitz and nearby Styria markets).
 
@@ -156,6 +192,21 @@ Company websites reviewed:
 8. `https://www.gundz.at/gruenschnitt-und-gartenpflege-leibnitz/` (Leibnitz, Grunschnitt & Gartenpflege)
 9. `https://www.rp-homeservice.at/gartenpflege/` (Bezirk Leibnitz / Sudsteiermark, Gartenservice)
 10. `https://gartnerexperte.at/gartenpflege/leibnitz` (Leibnitz-focused service page)
+
+## Competitor Website Research (SL/HR/HU/EN pending completion)
+
+Status:
+
+- AT: complete (`10` sources)
+- SL: pending (`target 5-10`)
+- HR: pending (`target 5-10`)
+- HU: pending (`target 5-10`)
+- EN: pending (`target 5-10`)
+
+Working notes for pending markets:
+
+- Some automated search endpoints returned noisy/unrelated results in this environment.
+- Next pass should use direct regional business directories and manual URL verification to reach `5-10` valid company sites per market.
 
 ## Glossary lock (to fill during implementation)
 
