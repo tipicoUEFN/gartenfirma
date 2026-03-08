@@ -111,12 +111,12 @@
     "ongoingTitle": "Redovna njega",
     "ongoingDescription": "Redovna njega prema fiksnom rasporedu.",
     "seoTitle": "Usluge njege vrtova",
-    "seoDescription": "Naše usluge: kosnja travnjaka, njega živice, radovi s lišćem i redovno održavanje vanjskih površina u Leibnitzu i okolici.",
-    "sectionDescriptionShort": "Kratki pregled nasih usluga u regiji.",
+    "seoDescription": "Naše usluge: košnja travnjaka, njega živice, radovi s lišćem i redovno održavanje vanjskih površina u Leibnitzu i okolici.",
+    "sectionDescriptionShort": "Kratki pregled naših usluga u regiji.",
     "locationLinksTitle": "Usluga + mjesto",
-    "locationLinksDescription": "Cesto trazene kombinacije u nasoj regiji.",
+    "locationLinksDescription": "Često tražene kombinacije u našoj regiji.",
     "gardenCareInTown": "Njega vrta {{town}}",
-    "cardTagline": "Cisto. Pouzdano. Regionalno.",
+    "cardTagline": "Čisto. Pouzdano. Regionalno.",
     "faq": [
       {
         "question": "Koliko često treba kositi travnjak?",
@@ -131,12 +131,12 @@
         "answer": "Da, održavamo i poslovne lokacije, stambene komplekse i javne ustanove u redovitim intervalima."
       },
       {
-        "question": "Kako mogu zatraziti ponudu?",
+        "question": "Kako mogu zatražiti ponudu?",
         "answer": "Najbrže putem kontakt obrasca ili telefonom. Obično odgovaramo unutar 24 sata."
       },
       {
-        "question": "Koliko kosta njega živice?",
-        "answer": "Cijena ovisi o duljini, visini i pristupacnosti. Nakon kratkog uskladivanja dajemo jasnu ponudu."
+        "question": "Koliko košta njega živice?",
+        "answer": "Cijena ovisi o duljini, visini i pristupačnosti. Nakon kratkog usklađivanja dajemo jasnu ponudu."
       }
     ]
   },
@@ -196,20 +196,20 @@
     },
     "detailed": {
       "eyebrow": "Detaljni upit",
-      "description": "Vise detalja za precizniju ponudu."
+      "description": "Više detalja za precizniju ponudu."
     },
     "flow": {
       "quick": {
         "title": "Brzi upit - tijek",
         "challenge": "Trebate brzo termin ili povratni poziv.",
         "approach": "Kratki podaci u obrascu ili izravni telefonski upit.",
-        "result": "Brza povratna informacija sa sljedecim smislenim korakom."
+        "result": "Brza povratna informacija sa sljedećim smislenim korakom."
       },
       "detailed": {
         "title": "Detaljni upit - tijek",
-        "challenge": "Radi se o vise površina ili redovitom održavanju.",
+        "challenge": "Radi se o više površina ili redovitom održavanju.",
         "approach": "Detaljno definiramo opseg usluge i lokaciju.",
-        "result": "Jasnija ponuda s odgovarajucim intervalom."
+        "result": "Jasnija ponuda s odgovarajućim intervalom."
       }
     }
   },
@@ -378,7 +378,7 @@
     "ratingFiveStars": "5 od 5 zvjezdica",
     "heroSliderRegion": "Fotografije izvedenih radova",
     "logoIconAlt": "Ikona {{companyName}}",
-    "serviceAreaValue": "Sire područje Leibnitza, Graza, Deutschlandsberga i jugoistocne Štajerske",
+    "serviceAreaValue": "Šire područje Leibnitza, Graza, Deutschlandsberga i jugoistočne Štajerske",
     "salutationOptions": [
       "Gospodin",
       "Gospođa"
@@ -638,7 +638,7 @@
     "ctaOffer": "Zatražite ponudu za {{town}}",
     "ctaServices": "Pogledaj usluge",
     "servicesTitle": "Naše usluge u mjestu {{town}}",
-    "trustTitle": "Zasto nam klijenti u mjestu {{town}} vjeruju",
+    "trustTitle": "Zašto nam klijenti u mjestu {{town}} vjeruju",
     "regionalHintTitle": "Regionalna napomena",
     "regionalHintText": "Mnogi upiti u mjestu {{town}} odnose se na redovitu njegu vrtova. Termine planiramo tako da ostanu stabilni i vanjske površine trajno uredne.",
     "faq": [
@@ -667,23 +667,23 @@
     "heroTitle": "Savjeti za njegu vrtova u Leibnitzu i okolici",
     "heroText": "Ovdje ćete pronaći kratke sezonske preporuke za uređene zelene površine.",
     "tipLabel": "Sezonski savjet",
-    "cta": "Zatrazi savjet za izvedbu",
+    "cta": "Zatraži savjet za izvedbu",
     "guides": [
       {
         "title": "Proljetna njega travnjaka u južnoj Štajerskoj",
         "text": "Kada gnojiti, koliko često kositi i kako travnjak nakon zime ponovno zgusnuti."
       },
       {
-        "title": "Rezanje živice: vrijeme, njega i cisti rubovi",
-        "text": "Prakticni savjeti za zdravu živicu i uredan ukupni dojam."
+        "title": "Rezanje živice: vrijeme, njega i čisti rubovi",
+        "text": "Praktični savjeti za zdravu živicu i uredan ukupni dojam."
       },
       {
-        "title": "Jesenski radovi s lišćem: sigurno i ucinkovito",
+        "title": "Jesenski radovi s lišćem: sigurno i učinkovito",
         "text": "Kako održati staze, prilaze i zelene površine urednima i sigurnima."
       },
       {
-        "title": "Priprema vrta u proljece: kratka kontrolna lista",
-        "text": "Najvazniji koraci za snazan pocetak sezone."
+        "title": "Priprema vrta u proljeće: kratka kontrolna lista",
+        "text": "Najvažniji koraci za snažan početak sezone."
       }
     ]
   },

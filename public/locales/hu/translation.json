@@ -119,7 +119,7 @@
     "cardTagline": "Tiszta. Megbízható. Regionális.",
     "faq": [
       {
-        "question": "Milyen gyakran kell nyirni a pazsitot?",
+        "question": "Milyen gyakran kell nyírni a pázsitot?",
         "answer": "A főszezonban a növekedéstől függően általában 7-14 napos ütemet javaslunk."
       },
       {
@@ -228,12 +228,12 @@
     "impressum": "Impresszum",
     "privacy": "Adatvédelem",
     "copyright": "{{year}} {{companyName}}. Minden jog fenntartva.",
-    "popularPlaces": "Nepszeru helyek",
+    "popularPlaces": "Népszerű helyek",
     "gardenCareInTown": "Kertgondozás {{town}}",
     "dailyInAction": "Naponta aktívak: Leibnitz - Wagna - Gralla - Tillmitsch - Straß - Ehrenhausen - Graz környéke",
     "openingHours": [
       "Hétfő - Péntek: 07:00 - 17:00",
-      "Szombat: egyeztetes alapjan"
+      "Szombat: egyeztetés alapján"
     ]
   },
   "contactForm": {
@@ -486,11 +486,11 @@
   "serviceRequestForm": {
     "steps": {
       "contact": "1. Kapcsolati adatok",
-      "services": "2. Szolgáltatás választás",
+      "services": "2. Szolgáltatás kiválasztása",
       "lawnSize": "3. Terület mérete",
       "hedgeLength": "4. Sövény hossza",
       "additionalDetails": "5. További adatok",
-      "frequency": "5. Végrehajtás gyakorisága",
+      "frequency": "5. Szolgáltatás gyakorisága",
       "propertyType": "6. Objektum típusa",
       "message": "7. Opcionális üzenet",
       "summary": "8. Kérés összegzése"
@@ -604,7 +604,7 @@
     "upload": {
       "label": "Képek feltöltése (opcionális)",
       "help": "Legfeljebb 3 kép. Csak JPG/PNG/WebP. Max 5 MB/kép.",
-      "selected": "{{count}} / {{max}} kep kiválasztva.",
+      "selected": "{{count}} / {{max}} kép kiválasztva.",
       "errors": {
         "tooMany": "Legfeljebb {{max}} képet válasszon.",
         "invalidType": "Csak képfájlok tölthetők fel.",
@@ -688,7 +688,7 @@
     ]
   },
   "stickyBar": {
-    "callNow": "Hivjon most",
+    "callNow": "Hívjon most",
     "quickRequest": "Gyors kérés"
   },
   "locationPages": {

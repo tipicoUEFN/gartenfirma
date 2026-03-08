@@ -248,7 +248,7 @@
     "messageLabel": "Message",
     "messagePlaceholder": "Describe your request briefly (e.g. ongoing care, hedge trimming, seasonal support).",
     "submit": "Send request",
-    "notice": "This form currently does not send data (frontend demo)."
+    "notice": "Note: This form is currently not functional (frontend demo)."
   },
   "references": {
     "eyebrow": "References",
@@ -462,7 +462,7 @@
     "submit": {
       "default": "Send quick request",
       "sending": "Sending...",
-      "holding": "Hold... {{progress}}%"
+      "holding": "Keep holding... {{progress}}%"
     },
     "holdHint": "Hold the button for 3 seconds to send.",
     "success": "Thank you. Your request has been sent.",
@@ -615,7 +615,7 @@
     "submit": {
       "default": "Send request",
       "sending": "Sending...",
-      "holding": "Hold... {{progress}}%"
+      "holding": "Keep holding... {{progress}}%"
     },
     "holdHint": "Hold the button for 3 seconds to send.",
     "notice": "Non-binding inquiry. Usually answered within 24h (Mon-Fri).",

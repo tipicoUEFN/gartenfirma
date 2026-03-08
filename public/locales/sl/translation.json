@@ -111,16 +111,16 @@
     "ongoingTitle": "Redna oskrba",
     "ongoingDescription": "Redna nega po dogovorjenem terminskem planu.",
     "seoTitle": "Storitve nege vrtov",
-    "seoDescription": "Nase storitve: kosnja trate, nega živih mej, delo z listjem in redno vzdrževanje zunanjih površin v Leibnitzu in okolici.",
-    "sectionDescriptionShort": "Kratek pregled nasih storitev v regiji.",
+    "seoDescription": "Naše storitve: košnja trate, nega živih mej, delo z listjem in redno vzdrževanje zunanjih površin v Leibnitzu in okolici.",
+    "sectionDescriptionShort": "Kratek pregled naših storitev v regiji.",
     "locationLinksTitle": "Storitev + kraj",
-    "locationLinksDescription": "Pogosto iskane kombinacije v nasi regiji.",
+    "locationLinksDescription": "Pogosto iskane kombinacije v naši regiji.",
     "gardenCareInTown": "Nega vrta {{town}}",
-    "cardTagline": "Cisto. Zanesljivo. Regionalno.",
+    "cardTagline": "Čisto. Zanesljivo. Regionalno.",
     "faq": [
       {
         "question": "Kako pogosto je treba kositi trato?",
-        "answer": "V glavni sezoni glede na rast obicajno priporocamo interval 7 do 14 dni."
+        "answer": "V glavni sezoni glede na rast običajno priporočamo interval 7 do 14 dni."
       },
       {
         "question": "Katere kraje pokrivate?",
@@ -179,7 +179,7 @@
     "heroTitle": "",
     "heroText": "",
     "formTitle": "Pošljite sporočilo",
-    "formDescription": "Na kratko opisite zeljo. Odgovorimo hitro.",
+    "formDescription": "Na kratko opišite željo. Odgovorimo hitro.",
     "direct": "Neposredno dosegljivi",
     "serviceArea": "Območje storitev",
     "seoTitle": "Kontakt in povpraševanje",
@@ -187,7 +187,7 @@
     "quick": {
       "eyebrow": "Hiter kontakt",
       "title": "Pošljite kratko povpraševanje",
-      "description": "Odgovor obicajno v 24h."
+      "description": "Odgovor običajno v 24h."
     },
     "flowSection": {
       "eyebrow": "Potek",
@@ -378,7 +378,7 @@
     "ratingFiveStars": "5 od 5 zvezdic",
     "heroSliderRegion": "Fotografije izvedenih del",
     "logoIconAlt": "Ikona {{companyName}}",
-    "serviceAreaValue": "Sirsje območje Leibnitz, Gradec, Deutschlandsberg in jugovzhodna Štajerska",
+    "serviceAreaValue": "Širše območje Leibnitz, Gradec, Deutschlandsberg in jugovzhodna Štajerska",
     "salutationOptions": [
       "Gospod",
       "Gospa"
@@ -731,23 +731,23 @@
       "intro": "V kraju {{town}} ponujamo čisto izvedbo, zanesljive termine in redno oskrbo.",
       "services": [
         "Nega živih mej",
-        "Kosnja trate",
+        "Košnja trate",
         "Sezonski servis",
-        "Vzdrzevanje zunanjih površin"
+        "Vzdrževanje zunanjih površin"
       ],
       "trust": [
         "Hitro na terenu v okraju Leibnitz",
-        "Cist nacin dela",
+        "Čist način dela",
         "Neobvezno prvo svetovanje"
       ]
     }
   },
   "guidesPage": {
-    "seoTitle": "Vodici za nego vrtov",
+    "seoTitle": "Vodiči za nego vrtov",
     "seoDescription": "Sezonski nasveti za nego trate, žive meje in vrtna dela v Leibnitzu in okolici.",
-    "heroEyebrow": "Vodici",
+    "heroEyebrow": "Vodiči",
     "heroTitle": "Nasveti za nego vrta v Leibnitzu in okolici",
-    "heroText": "Tu najdete kratka sezonska priporocila za urejene zelene površine.",
+    "heroText": "Tu najdete kratka sezonska priporočila za urejene zelene površine.",
     "tipLabel": "Sezonski nasvet",
     "cta": "Zahtevajte svetovanje za izvedbo",
     "guides": [
@@ -756,16 +756,16 @@
         "text": "Kdaj gnojiti, kako pogosto kositi in kako trato po zimi zgostiti."
       },
       {
-        "title": "Obrezovanje žive meje: cas, nega in cisti robovi",
-        "text": "Prakticni nasveti za zdrave žive meje in urejen videz."
+        "title": "Obrezovanje žive meje: čas, nega in čisti robovi",
+        "text": "Praktični nasveti za zdrave žive meje in urejen videz."
       },
       {
-        "title": "Jesensko delo z listjem: varno in ucinkovito",
+        "title": "Jesensko delo z listjem: varno in učinkovito",
         "text": "Kako ohraniti poti, dovoze in zelene površine urejene in varne."
       },
       {
         "title": "Priprava vrta spomladi: kratek kontrolni seznam",
-        "text": "Najpomembnejsi koraki za mocan zacetek sezone."
+        "text": "Najpomembnejši koraki za močan začetek sezone."
       }
     ]
   },
