@@ -7,12 +7,23 @@ function QuickRequestForm({ firstInputRef }) {
   const [status, setStatus] = useState('idle')
   const [errorText, setErrorText] = useState('')
   const [formData, setFormData] = useState({
+    salutation: 'Herr',
     name: '',
+    phoneCode: '+43',
     phone: '',
     town: '',
     service: '',
     callbackTime: '',
   })
+
+  const phoneCodeOptions = [
+    { value: '+43', label: 'Oesterreich (+43)' },
+    { value: '+49', label: 'Deutschland (+49)' },
+    { value: '+386', label: 'Slowenien (+386)' },
+    { value: '+385', label: 'Kroatien (+385)' },
+  ]
+
+  const salutationOptions = ['Herr', 'Frau']
   const quickServiceOptions = t('quickRequestForm.serviceOptions', { returnObjects: true })
 
   const handleChange = (event) => {
@@ -34,8 +45,9 @@ function QuickRequestForm({ firstInputRef }) {
         },
         body: JSON.stringify({
           _subject: t('quickRequestForm.mail.subject', { name: formData.name }),
+          Anrede: formData.salutation,
           Name: formData.name,
-          Telefon: formData.phone,
+          Telefon: `${formData.phoneCode} ${formData.phone}`,
           Ort: formData.town,
           Service: formData.service,
           Rückrufzeit: formData.callbackTime || t('quickRequestForm.mail.notProvided'),
@@ -48,7 +60,7 @@ function QuickRequestForm({ firstInputRef }) {
       }
 
       setStatus('success')
-      setFormData({ name: '', phone: '', town: '', service: '', callbackTime: '' })
+      setFormData({ salutation: 'Herr', name: '', phoneCode: '+43', phone: '', town: '', service: '', callbackTime: '' })
     } catch {
       setStatus('error')
       setErrorText(t('quickRequestForm.errors.submitFailed'))
@@ -63,6 +75,19 @@ function QuickRequestForm({ firstInputRef }) {
 
       <div className="grid gap-4 md:grid-cols-2">
         <label className="text-sm font-medium text-olive-800">
+          Anrede
+          <select
+            name="salutation"
+            value={formData.salutation}
+            onChange={handleChange}
+            className="mt-1 w-full rounded-xl border border-olive-200 px-3 py-2 text-sm"
+          >
+            {salutationOptions.map((option) => (
+              <option key={option} value={option}>{option}</option>
+            ))}
+          </select>
+        </label>
+        <label className="text-sm font-medium text-olive-800">
           {t('quickRequestForm.fields.name')}
           <input
             ref={firstInputRef}
@@ -75,14 +100,26 @@ function QuickRequestForm({ firstInputRef }) {
         </label>
         <label className="text-sm font-medium text-olive-800">
           {t('quickRequestForm.fields.phone')}
-          <input
-            required
-            name="phone"
-            type="tel"
-            value={formData.phone}
-            onChange={handleChange}
-            className="mt-1 w-full rounded-xl border border-olive-200 px-3 py-2 text-sm"
-          />
+          <div className="mt-1 grid grid-cols-[minmax(0,180px)_1fr] gap-2">
+            <select
+              name="phoneCode"
+              value={formData.phoneCode}
+              onChange={handleChange}
+              className="w-full rounded-xl border border-olive-200 px-3 py-2 text-sm"
+            >
+              {phoneCodeOptions.map((option) => (
+                <option key={option.value} value={option.value}>{option.label}</option>
+              ))}
+            </select>
+            <input
+              required
+              name="phone"
+              type="tel"
+              value={formData.phone}
+              onChange={handleChange}
+              className="w-full rounded-xl border border-olive-200 px-3 py-2 text-sm"
+            />
+          </div>
         </label>
         <label className="text-sm font-medium text-olive-800">
           {t('quickRequestForm.fields.town')}

@@ -14,9 +14,11 @@ function ServiceRequestForm({ firstInputRef }) {
   const [uploadedImages, setUploadedImages] = useState([])
   const fileInputRef = useRef(null)
   const [formData, setFormData] = useState({
+    salutation: 'Herr',
     firstName: '',
     lastName: '',
     email: '',
+    phoneCode: '+43',
     phone: '',
     address: '',
     services: [],
@@ -30,6 +32,15 @@ function ServiceRequestForm({ firstInputRef }) {
     urgency: '',
     message: '',
   })
+
+  const phoneCodeOptions = [
+    { value: '+43', label: 'Oesterreich (+43)' },
+    { value: '+49', label: 'Deutschland (+49)' },
+    { value: '+386', label: 'Slowenien (+386)' },
+    { value: '+385', label: 'Kroatien (+385)' },
+  ]
+
+  const salutationOptions = ['Herr', 'Frau']
 
   const serviceOptions = useMemo(
     () => [
@@ -288,10 +299,11 @@ function ServiceRequestForm({ firstInputRef }) {
 
     const payload = {
       _subject: t('serviceRequestForm.mail.subject', { firstName: formData.firstName, lastName: formData.lastName }),
+      Anrede: formData.salutation,
       Vorname: formData.firstName,
       Nachname: formData.lastName,
       Email: formData.email,
-      Telefon: formData.phone,
+      Telefon: `${formData.phoneCode} ${formData.phone}`,
       Adresse: formData.address || t('serviceRequestForm.mail.notProvided'),
       Service: selectedServiceLabels.length ? selectedServiceLabels.join(', ') : t('serviceRequestForm.mail.notProvided'),
       Rasenfläche: lawnSizeOptions.find((option) => option.value === formData.lawnSize)?.label || t('serviceRequestForm.mail.notProvided'),
@@ -330,9 +342,11 @@ function ServiceRequestForm({ firstInputRef }) {
 
       setStatus('success')
       setFormData({
+        salutation: 'Herr',
         firstName: '',
         lastName: '',
         email: '',
+        phoneCode: '+43',
         phone: '',
         address: '',
         services: [],
@@ -362,6 +376,19 @@ function ServiceRequestForm({ firstInputRef }) {
       <div className="space-y-5">
         <h3 className="text-base font-semibold text-olive-800">{t('serviceRequestForm.steps.contact')}</h3>
         <div className="grid gap-5 md:grid-cols-2">
+          <label className="text-sm font-medium text-olive-800 md:col-span-2">
+            Anrede
+            <select
+              name="salutation"
+              value={formData.salutation}
+              onChange={handleInputChange}
+              className="mt-2 w-full rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-olive-500"
+            >
+              {salutationOptions.map((option) => (
+                <option key={option} value={option}>{option}</option>
+              ))}
+            </select>
+          </label>
           <label className="text-sm font-medium text-olive-800">
             {t('serviceRequestForm.fields.firstName')}
             <input
@@ -398,14 +425,26 @@ function ServiceRequestForm({ firstInputRef }) {
           </label>
           <label className="text-sm font-medium text-olive-800">
             {t('serviceRequestForm.fields.phone')}
-            <input
-              name="phone"
-              type="tel"
-              value={formData.phone}
-              onChange={handleInputChange}
-              className="mt-2 w-full rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-olive-500"
-              required
-            />
+            <div className="mt-2 grid grid-cols-[minmax(0,210px)_1fr] gap-2">
+              <select
+                name="phoneCode"
+                value={formData.phoneCode}
+                onChange={handleInputChange}
+                className="w-full rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-olive-500"
+              >
+                {phoneCodeOptions.map((option) => (
+                  <option key={option.value} value={option.value}>{option.label}</option>
+                ))}
+              </select>
+              <input
+                name="phone"
+                type="tel"
+                value={formData.phone}
+                onChange={handleInputChange}
+                className="w-full rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-olive-500"
+                required
+              />
+            </div>
           </label>
           <label className="text-sm font-medium text-olive-800 md:col-span-2">
             {t('serviceRequestForm.fields.address')}
@@ -548,36 +587,37 @@ function ServiceRequestForm({ firstInputRef }) {
         </div>
       </div>
 
-      <div className="space-y-5">
-        <h3 className="text-base font-semibold text-olive-800">{t('serviceRequestForm.steps.frequency')}</h3>
-        <div className="space-y-4">
-          {formData.services.map((serviceKey) => {
-            const serviceLabel = serviceOptions.find((option) => option.key === serviceKey)?.label || serviceKey
-            const serviceFrequencyOptions = getFrequencyOptionsForService(serviceKey)
-            return (
-              <div key={serviceKey} className="space-y-2">
-                <p className="text-sm font-medium text-olive-700">{serviceLabel}</p>
-                <div className="grid gap-2 md:grid-cols-2">
-                  {serviceFrequencyOptions.map((option) => (
-                    <label key={`${serviceKey}-${option.value}`} className="flex items-start gap-2 rounded-xl border border-olive-200 bg-white px-3 py-2.5 text-sm text-olive-800">
-                      <input
-                        type="radio"
-                        name={`frequency-${serviceKey}`}
-                        value={option.value}
-                        checked={formData.serviceFrequencies[serviceKey] === option.value}
-                        onChange={() => handleServiceFrequencyChange(serviceKey, option.value)}
-                        className="mt-1 h-4 w-4 accent-olive-700"
-                      />
-                      <span>{option.label}</span>
-                    </label>
-                  ))}
+      {formData.services.length > 0 ? (
+        <div className="space-y-5">
+          <h3 className="text-base font-semibold text-olive-800">{t('serviceRequestForm.steps.frequency')}</h3>
+          <div className="space-y-4">
+            {formData.services.map((serviceKey) => {
+              const serviceLabel = serviceOptions.find((option) => option.key === serviceKey)?.label || serviceKey
+              const serviceFrequencyOptions = getFrequencyOptionsForService(serviceKey)
+              return (
+                <div key={serviceKey} className="space-y-2">
+                  <p className="text-sm font-medium text-olive-700">{serviceLabel}</p>
+                  <div className="grid gap-2 md:grid-cols-2">
+                    {serviceFrequencyOptions.map((option) => (
+                      <label key={`${serviceKey}-${option.value}`} className="flex items-start gap-2 rounded-xl border border-olive-200 bg-white px-3 py-2.5 text-sm text-olive-800">
+                        <input
+                          type="radio"
+                          name={`frequency-${serviceKey}`}
+                          value={option.value}
+                          checked={formData.serviceFrequencies[serviceKey] === option.value}
+                          onChange={() => handleServiceFrequencyChange(serviceKey, option.value)}
+                          className="mt-1 h-4 w-4 accent-olive-700"
+                        />
+                        <span>{option.label}</span>
+                      </label>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            )
-          })}
-          {!formData.services.length ? <p className="text-xs text-olive-600">{t('serviceRequestForm.placeholders.select')}</p> : null}
+              )
+            })}
+          </div>
         </div>
-      </div>
+      ) : null}
 
       <div className="space-y-5">
         <h3 className="text-base font-semibold text-olive-800">{t('serviceRequestForm.steps.propertyType')}</h3>
