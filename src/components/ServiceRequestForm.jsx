@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { businessData } from '../config/businessData'
 import { applyCustomerTypeMultiplier, estimateServicePrice } from '../utils/priceEstimate'
@@ -25,7 +25,7 @@ function ServiceRequestForm({ firstInputRef }) {
     hedgeHeight: '',
     greenWaste: '',
     gardenAccess: '',
-    frequency: '',
+    serviceFrequencies: {},
     propertyType: '',
     urgency: '',
     message: '',
@@ -73,7 +73,6 @@ function ServiceRequestForm({ firstInputRef }) {
 
   const greenWasteOptions = useMemo(
     () => [
-      { value: 'leaveOnSite', label: greenWasteOptionLabels?.leaveOnSite || 'vor Ort belassen' },
       { value: 'selfDisposal', label: greenWasteOptionLabels?.selfDisposal || 'Kunde entsorgt selbst' },
       { value: 'pickup', label: greenWasteOptionLabels?.pickup || 'bitte abführen' },
     ],
@@ -121,32 +120,20 @@ function ServiceRequestForm({ firstInputRef }) {
   const isLawnSelected = formData.services.includes('rasen')
   const isHedgeSelected = formData.services.includes('hecke')
 
-  const frequencyOptions = useMemo(() => {
+  const frequencyOrder = ['weekly', 'biweekly', 'monthly', 'yearly1', 'yearly2', 'oneTime', 'byArrangement']
+
+  const getFrequencyOptionsForService = (serviceKey) => {
     const fallback = Array.isArray(frequencyByService?.default)
       ? frequencyByService.default
       : ['oneTime', 'monthly', 'biweekly', 'weekly', 'byArrangement']
+    const serviceCodes = Array.isArray(frequencyByService?.[serviceKey])
+      ? frequencyByService[serviceKey]
+      : fallback
 
-    const codes = new Set()
-    let hasDynamicMatch = false
-
-    formData.services.forEach((serviceKey) => {
-      const serviceCodes = frequencyByService?.[serviceKey]
-      if (Array.isArray(serviceCodes)) {
-        hasDynamicMatch = true
-        serviceCodes.forEach((code) => codes.add(code))
-      }
-    })
-
-    if (!formData.services.length || !hasDynamicMatch || formData.services.some((serviceKey) => !Array.isArray(frequencyByService?.[serviceKey]))) {
-      fallback.forEach((code) => codes.add(code))
-    }
-
-    const order = ['weekly', 'biweekly', 'monthly', 'yearly1', 'yearly2', 'oneTime', 'byArrangement']
-
-    return [...codes]
+    return [...new Set(serviceCodes)]
       .sort((a, b) => {
-        const aIndex = order.indexOf(a)
-        const bIndex = order.indexOf(b)
+        const aIndex = frequencyOrder.indexOf(a)
+        const bIndex = frequencyOrder.indexOf(b)
         if (aIndex === -1 && bIndex === -1) {
           return a.localeCompare(b)
         }
@@ -159,11 +146,24 @@ function ServiceRequestForm({ firstInputRef }) {
         return aIndex - bIndex
       })
       .map((value) => ({ value, label: frequencyLabelMap[value] || value }))
-  }, [formData.services, frequencyByService, frequencyLabelMap])
+  }
 
   const selectedServiceLabels = useMemo(
     () => serviceOptions.filter((option) => formData.services.includes(option.key)).map((option) => option.label),
     [formData.services, serviceOptions],
+  )
+
+  const serviceFrequencySummary = useMemo(
+    () => formData.services
+      .map((serviceKey) => {
+        const serviceLabel = serviceOptions.find((option) => option.key === serviceKey)?.label || serviceKey
+        const frequencyCode = formData.serviceFrequencies[serviceKey]
+        const frequencyLabel = frequencyCode ? (frequencyLabelMap[frequencyCode] || frequencyCode) : null
+        return frequencyLabel ? `${serviceLabel}: ${frequencyLabel}` : null
+      })
+      .filter(Boolean)
+      .join(' | '),
+    [formData.services, formData.serviceFrequencies, serviceOptions, frequencyLabelMap],
   )
 
   const trustIndicators = t('serviceRequestForm.trustIndicators', { returnObjects: true })
@@ -191,17 +191,6 @@ function ServiceRequestForm({ firstInputRef }) {
     [baseEstimate, formData.propertyType],
   )
 
-  useEffect(() => {
-    if (!formData.frequency) {
-      return
-    }
-
-    const stillValid = frequencyOptions.some((option) => option.value === formData.frequency)
-    if (!stillValid) {
-      setFormData((prev) => ({ ...prev, frequency: '' }))
-    }
-  }, [formData.frequency, frequencyOptions])
-
   const handleInputChange = (event) => {
     const { name, value } = event.target
     setFormData((prev) => ({ ...prev, [name]: value }))
@@ -220,8 +209,21 @@ function ServiceRequestForm({ firstInputRef }) {
         lawnSize: nextServices.includes('rasen') ? prev.lawnSize : '',
         hedgeLength: nextServices.includes('hecke') ? prev.hedgeLength : '',
         hedgeHeight: nextServices.includes('hecke') ? prev.hedgeHeight : '',
+        serviceFrequencies: Object.fromEntries(
+          Object.entries(prev.serviceFrequencies).filter(([key]) => nextServices.includes(key)),
+        ),
       }
     })
+  }
+
+  const handleServiceFrequencyChange = (serviceKey, frequencyCode) => {
+    setFormData((prev) => ({
+      ...prev,
+      serviceFrequencies: {
+        ...prev.serviceFrequencies,
+        [serviceKey]: frequencyCode,
+      },
+    }))
   }
 
   const validateUploadedImages = (files) => {
@@ -287,7 +289,7 @@ function ServiceRequestForm({ firstInputRef }) {
       Grünabfall: getOptionLabel(greenWasteOptions, formData.greenWaste),
       Zugang: getOptionLabel(gardenAccessOptions, formData.gardenAccess),
       Heckenlänge: formData.hedgeLength ? t('serviceRequestForm.mail.meters', { value: formData.hedgeLength }) : t('serviceRequestForm.mail.notProvided'),
-      Häufigkeit: frequencyOptions.find((option) => option.value === formData.frequency)?.label || t('serviceRequestForm.mail.notProvided'),
+      Häufigkeit: serviceFrequencySummary || t('serviceRequestForm.mail.notProvided'),
       Objektart: propertyTypeOptions.find((option) => option.value === formData.propertyType)?.label || t('serviceRequestForm.mail.notProvided'),
       Dringlichkeit: getOptionLabel(urgencyOptions, formData.urgency),
       'Geschätzter Preis (unverbindlich)': priceEstimate?.label || t('serviceRequestForm.summary.noEstimate'),
@@ -329,7 +331,7 @@ function ServiceRequestForm({ firstInputRef }) {
         hedgeHeight: '',
         greenWaste: '',
         gardenAccess: '',
-        frequency: '',
+        serviceFrequencies: {},
         propertyType: '',
         urgency: '',
         message: '',
@@ -538,20 +540,32 @@ function ServiceRequestForm({ firstInputRef }) {
 
       <div className="space-y-5">
         <h3 className="text-base font-semibold text-olive-800">{t('serviceRequestForm.steps.frequency')}</h3>
-        <div className="grid gap-2 md:grid-cols-2">
-          {frequencyOptions.map((option) => (
-            <label key={option.value} className="flex items-start gap-2 rounded-xl border border-olive-200 bg-white px-3 py-2.5 text-sm text-olive-800">
-              <input
-                type="radio"
-                name="frequency"
-                value={option.value}
-                checked={formData.frequency === option.value}
-                onChange={handleInputChange}
-                className="mt-1 h-4 w-4 accent-olive-700"
-              />
-              <span>{option.label}</span>
-            </label>
-          ))}
+        <div className="space-y-4">
+          {formData.services.map((serviceKey) => {
+            const serviceLabel = serviceOptions.find((option) => option.key === serviceKey)?.label || serviceKey
+            const serviceFrequencyOptions = getFrequencyOptionsForService(serviceKey)
+            return (
+              <div key={serviceKey} className="space-y-2">
+                <p className="text-sm font-medium text-olive-700">{serviceLabel}</p>
+                <div className="grid gap-2 md:grid-cols-2">
+                  {serviceFrequencyOptions.map((option) => (
+                    <label key={`${serviceKey}-${option.value}`} className="flex items-start gap-2 rounded-xl border border-olive-200 bg-white px-3 py-2.5 text-sm text-olive-800">
+                      <input
+                        type="radio"
+                        name={`frequency-${serviceKey}`}
+                        value={option.value}
+                        checked={formData.serviceFrequencies[serviceKey] === option.value}
+                        onChange={() => handleServiceFrequencyChange(serviceKey, option.value)}
+                        className="mt-1 h-4 w-4 accent-olive-700"
+                      />
+                      <span>{option.label}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+            )
+          })}
+          {!formData.services.length ? <p className="text-xs text-olive-600">{t('serviceRequestForm.placeholders.select')}</p> : null}
         </div>
       </div>
 
@@ -626,7 +640,7 @@ function ServiceRequestForm({ firstInputRef }) {
           )}
           <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.greenWaste')}:</span> {greenWasteOptions.find((option) => option.value === formData.greenWaste)?.label || '-'}</p>
           <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.gardenAccess')}:</span> {gardenAccessOptions.find((option) => option.value === formData.gardenAccess)?.label || '-'}</p>
-          <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.frequency')}:</span> {frequencyOptions.find((option) => option.value === formData.frequency)?.label || '-'}</p>
+          <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.frequency')}:</span> {serviceFrequencySummary || '-'}</p>
           <p>
             <span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.propertyType')}:</span>{' '}
             {propertyTypeOptions.find((option) => option.value === formData.propertyType)?.label || '-'}
