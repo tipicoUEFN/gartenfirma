@@ -1,29 +1,23 @@
-# todo2 remaining
+# todo2 completed
 
-Done: Objektart UX update, post-estimate multiplier, summary refinement, i18n sync, build/audit, and deployment are complete.
+Status: completed and deployed.
 
-## Open items
+Implemented:
 
-- Manual QA on live site:
-  - check all Objektart choices and estimate updates
-  - verify multiplied estimate values feel plausible
-  - test mobile spacing/readability
-  - test one real submit and verify email payload fields
-  - per-service frequency behavior for multi-service requests
-- Automated QA:
-  - build and i18n audit pass after latest service-frequency formatting update
-- Optional tuning:
-  - fine-tune multiplier values after real request data
-  - refine non-DE wording if needed
-- Optional future scope:
-  - add WhatsApp notification flow (still not implemented)
+- Objektart UX refinement (placeholder, options, helper text)
+- Post-estimate customer type multiplier (base logic unchanged)
+- Summary refinement with estimate note and trust indicators
+- Per-service `Häufigkeit` selection and service-wise summary/email formatting
+- Grünabfall reduced to two options (`Kunde entsorgt selbst`, `bitte abführen`)
+- i18n updates synced across all locales
 
-## Progress started
+Validation:
 
-- Improved service-wise `Häufigkeit` formatting in `ServiceRequestForm`:
-  - summary now renders frequencies as a readable per-service list
-  - email payload now sends service frequencies as structured `Service: Häufigkeit` pairs
-- Validation rerun:
-  - `npm run i18n:audit` passed
-  - `npm run build` passed
+- `npm run i18n:audit` passed
+- `npm run build` passed
+
+Optional future enhancements:
+
+- tune multipliers and wording based on real request data
+- add WhatsApp notification flow when channel is introduced
 
