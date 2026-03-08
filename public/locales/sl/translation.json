@@ -429,11 +429,11 @@
     "heroEyebrow": "PR Gartenservice",
     "testimonials": {
       "1": {
-        "quote": "Zanesljivo in čisto opravljeno. Termin je bil spos?tovan in vrt je ostal odlic?en.",
-        "source": "Druzina K., Leibnitz"
+        "quote": "Zanesljivo in čisto opravljeno. Termin je bil spoštovan in vrt je ostal odličen.",
+        "source": "Družina K., Leibnitz"
       },
       "2": {
-        "quote": "Kratko usklajevanje, posten odziv in nato cista izvedba. Tocno tako mora biti.",
+        "quote": "Kratko usklajevanje, pošten odziv in nato čista izvedba. Točno tako mora biti.",
         "source": "Upravljanje objektov M., Wagna"
       },
       "3": {
@@ -443,7 +443,7 @@
     }
   },
   "quickRequestForm": {
-    "badge": "Priporoceno za hiter odziv",
+    "badge": "Priporočeno za hiter odziv",
     "title": "Hitro povpraševanje v 1 minuti",
     "subtitle": "Odgovor običajno v 24h (pon-pet).",
     "fields": {
@@ -492,7 +492,7 @@
       "additionalDetails": "5. Dodatni podatki",
       "frequency": "5. Pogostost izvedbe",
       "propertyType": "6. Vrsta objekta",
-      "message": "7. Neobvezno sporocilo",
+      "message": "7. Neobvezno sporočilo",
       "summary": "8. Povzetek povpraševanja"
     },
     "fields": {
@@ -545,8 +545,8 @@
     },
     "gardenAccessOptions": {
       "easy": "enostaven dostop",
-      "narrow": "skozi hiso / ozek dostop",
-      "slope": "naklon / tezji dostop"
+      "narrow": "skozi hišo / ozek dostop",
+      "slope": "naklon / težji dostop"
     },
     "urgencyOptions": {
       "normal": "normalno",
@@ -556,7 +556,7 @@
     "frequencyOptionLabels": {
       "weekly": "tedensko",
       "biweekly": "vsaka 2 tedna",
-      "monthly": "mesecno",
+      "monthly": "mesečno",
       "yearly1": "1x na leto",
       "yearly2": "2x na leto",
       "oneTime": "enkratno",
@@ -570,7 +570,7 @@
     },
     "frequencyOptions": [
       "enkratno",
-      "mesecno",
+      "mesečno",
       "vsaka 2 tedna",
       "tedensko",
       "po dogovoru"
@@ -579,55 +579,55 @@
       "privat": "Zasebni vrt",
       "firma": "Podjetje",
       "wohnanlage": "Stanovanjski objekt / upravnik",
-      "oeffentlich": "Javna ustanova (sola, vrtec, obcina)",
+      "oeffentlich": "Javna ustanova (šola, vrtec, občina)",
       "sonstiges": "Drugo"
     },
     "summary": {
       "service": "Storitev",
-      "lawnSize": "Povrsina trate",
-      "hedge": "Ziva meja",
-      "hedgeHeight": "Visina žive meje",
+      "lawnSize": "Površina trate",
+      "hedge": "Živa meja",
+      "hedgeHeight": "Višina žive meje",
       "greenWaste": "Zeleni odpad",
       "gardenAccess": "Dostop",
       "frequency": "Pogostost",
       "propertyType": "Objekt",
       "urgency": "Nujnost",
       "priceEstimate": "Ocenjena cena (neobvezno)",
-      "priceEstimateNote": "Koncna cena je mozna po ogledu na lokaciji.",
-      "noEstimate": "izracunano po podatkih"
+      "priceEstimateNote": "Končna cena je možna po ogledu na lokaciji.",
+      "noEstimate": "izračunano po podatkih"
     },
     "summaryLabel": "Povzetek povpraševanja",
     "trustIndicators": [
-      "Odgovor obicajno v 24h",
-      "Neobvezujoca ponudba"
+      "Odgovor običajno v 24h",
+      "Neobvezujoča ponudba"
     ],
     "upload": {
-      "label": "Nalozite slike (neobvezno)",
-      "help": "Do 3 slike. Samo JPG/PNG/WebP. Najvec 5 MB na sliko.",
+      "label": "Naložite slike (neobvezno)",
+      "help": "Do 3 slike. Samo JPG/PNG/WebP. Največ 5 MB na sliko.",
       "selected": "Izbranih {{count}} od {{max}} slik.",
       "errors": {
-        "tooMany": "Izberite najvec {{max}} slike.",
-        "invalidType": "Nalozite samo slikovne datoteke.",
+        "tooMany": "Izberite največ {{max}} slike.",
+        "invalidType": "Naložite samo slikovne datoteke.",
         "fileTooLarge": "Ena slika je prevelika (max 5 MB).",
         "totalTooLarge": "Skupna velikost je prevelika (max 15 MB)."
       }
     },
     "submit": {
       "default": "Pošlji povpraševanje",
-      "sending": "Posiljanje...",
-      "holding": "Drzite... {{progress}}%"
+      "sending": "Pošiljanje...",
+      "holding": "Držite... {{progress}}%"
     },
-    "holdHint": "Za posiljanje drzite gumb 3 sekunde.",
-    "notice": "Neobvezno povpraševanje. Odgovor obicajno v 24h (Pon-Pet).",
+    "holdHint": "Za pošiljanje držite gumb 3 sekunde.",
+    "notice": "Neobvezno povpraševanje. Odgovor običajno v 24h (pon-pet).",
     "success": "Hvala. Vaše povpraševanje je poslano.",
     "errors": {
-      "holdToSend": "Prosimo, drzite gumb 3 sekunde.",
-      "submitFailed": "Posiljanje ni uspelo. Poklicite nas neposredno."
+      "holdToSend": "Prosimo, držite gumb 3 sekunde.",
+      "submitFailed": "Pošiljanje ni uspelo. Pokličite nas neposredno."
     },
     "mail": {
       "subject": "Novo servisno povpraševanje od {{firstName}} {{lastName}}",
       "notProvided": "ni navedeno",
-      "noMessage": "brez sporocila",
+      "noMessage": "brez sporočila",
       "requestType": "Servisno povpraševanje",
       "meters": "{{value}} metrov"
     }
@@ -637,10 +637,10 @@
     "heroEyebrow": "Regionalna vrtnarska storitev",
     "ctaOffer": "Zahtevajte ponudbo za {{town}}",
     "ctaServices": "Poglej storitve",
-    "servicesTitle": "Nase storitve v kraju {{town}}",
+    "servicesTitle": "Naše storitve v kraju {{town}}",
     "trustTitle": "Zakaj nam stranke v kraju {{town}} zaupajo",
     "regionalHintTitle": "Regionalni namig",
-    "regionalHintText": "Veliko povpraševanj v kraju {{town}} se nanasa na redno nego vrtov. Termine nacrtujemo tako, da ostanejo stabilni in površine trajno urejene.",
+    "regionalHintText": "Veliko povpraševanj v kraju {{town}} se nanaša na redno nego vrtov. Termine načrtujemo tako, da ostanejo stabilni in površine trajno urejene.",
     "faq": [
       {
         "question": "Katere storitve nudite v kraju {{town}}?",
@@ -652,11 +652,11 @@
       },
       {
         "question": "Kako hitro lahko v kraju {{town}} prejmem ponudbo?",
-        "answer": "Po oddaji povpraševanja se obicajno oglasimo v 24 urah (Pon-Pet) s prvim odzivom."
+        "answer": "Po oddaji povpraševanja se običajno oglasimo v 24 urah (pon-pet) s prvim odzivom."
       },
       {
-        "question": "Ali je v kraju {{town}} mozna tudi redna nega vrta?",
-        "answer": "Da, v kraju {{town}} nudimo nacrtovane intervale nege, na primer tedensko, na 14 dni ali mesecno."
+        "question": "Ali je v kraju {{town}} možna tudi redna nega vrta?",
+        "answer": "Da, v kraju {{town}} nudimo načrtovane intervale nege, na primer tedensko, na 14 dni ali mesečno."
       }
     ]
   },
@@ -664,11 +664,11 @@
     "gartenpflege-leibnitz": {
       "title": "Nega vrta v kraju {{town}}",
       "heroTitle": "Nega vrta v kraju {{town}} za zasebne in poslovne stranke",
-      "intro": "V kraju {{town}} vzdrzujemo vrtove in zunanje površine z jasnimi intervali ter čisto izvedbo.",
+      "intro": "V kraju {{town}} vzdržujemo vrtove in zunanje površine z jasnimi intervali ter čisto izvedbo.",
       "services": [
-        "Kosnja trate",
-        "Nega obstojecih živih mej",
-        "Delo z listjem",
+        "Košnja trate",
+        "Nega obstoječih živih mej",
+        "Dela z listjem",
         "Redno vzdrževanje zunanjih površin"
       ],
       "trust": [
@@ -679,18 +679,18 @@
     },
     "gartenpflege-wagna": {
       "title": "Nega vrta v kraju {{town}}",
-      "heroTitle": "Vas vrtni servis v kraju {{town}}",
+      "heroTitle": "Vaš vrtni servis v kraju {{town}}",
       "intro": "Za stranke v kraju {{town}} prevzamemo redno nego vrtov in sezonska dela.",
       "services": [
         "Sezonska dela",
         "Nega gred in površin",
-        "Kosnja trate",
-        "Delo z listjem"
+        "Košnja trate",
+        "Dela z listjem"
       ],
       "trust": [
         "Regionalno v okraju Leibnitz",
-        "Nacrtovani intervali",
-        "Cista in zanesljiva izvedba"
+        "Načrtovani intervali",
+        "Čista in zanesljiva izvedba"
       ]
     },
     "gartenpflege-gralla": {
@@ -699,12 +699,12 @@
       "intro": "V kraju {{town}} nudimo stalno nego vrtov za zasebne in poslovne objekte.",
       "services": [
         "Nega trate",
-        "Oblikovanje obstojecih živih mej",
+        "Oblikovanje obstoječih živih mej",
         "Nega objekta",
-        "Ciscenje zunanjih površin"
+        "Čiščenje zunanjih površin"
       ],
       "trust": [
-        "Izkusnje z zasebnimi in poslovnimi objekti",
+        "Izkušnje z zasebnimi in poslovnimi objekti",
         "Neposreden stik z ekipo",
         "Terminirana izvedba"
       ]

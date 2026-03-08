@@ -424,7 +424,7 @@
     "regionalPagesLabel": "Regionális oldalak",
     "regionalProofLine1": "Magánkertek, céges területek, lakóparkok és közintézmények Leibnitz, Graz, Deutschlandsberg és Délkelet-Stájerország térségében.",
     "regionalProofLine2": "Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz környéke",
-    "seoTitle": "Kertgondozás Leibnitzben es Dél-Stájerországban",
+    "seoTitle": "Kertgondozás Leibnitzben és Dél-Stájerországban",
     "seoDescription": "A PR Gartenservice fűnyírást, sövénynyírást és rendszeres kültéri fenntartást kínál Leibnitz, Graz és környékén.",
     "heroEyebrow": "PR Gartenservice",
     "testimonials": {
@@ -471,7 +471,7 @@
       "submitFailed": "A küldés sikertelen. Kérjük, hívjon minket közvetlenül."
     },
     "mail": {
-      "subject": "Gyors kérés erkezett: {{name}}",
+      "subject": "Gyors kérés érkezett: {{name}}",
       "notProvided": "nincs megadva",
       "requestType": "Gyors kérés"
     },
@@ -486,14 +486,14 @@
   "serviceRequestForm": {
     "steps": {
       "contact": "1. Kapcsolati adatok",
-      "services": "2. Szolgáltatás választas",
-      "lawnSize": "3. Terulet merete",
+      "services": "2. Szolgáltatás választás",
+      "lawnSize": "3. Terület mérete",
       "hedgeLength": "4. Sövény hossza",
-      "additionalDetails": "5. Tovabbi adatok",
-      "frequency": "5. Vegrehajtas gyakorisaga",
-      "propertyType": "6. Objektum tipusa",
-      "message": "7. Opcionis uzenet",
-      "summary": "8. Keres osszegzese"
+      "additionalDetails": "5. További adatok",
+      "frequency": "5. Végrehajtás gyakorisága",
+      "propertyType": "6. Objektum típusa",
+      "message": "7. Opcionális üzenet",
+      "summary": "8. Kérés összegzése"
     },
     "fields": {
       "salutation": "Megszólítás",
@@ -540,27 +540,27 @@
       "over2m": "2 m felett"
     },
     "greenWasteOptions": {
-      "selfDisposal": "ugyfel maga elszallitja",
-      "pickup": "kerjuk elszallitani"
+      "selfDisposal": "ügyfél maga elszállítja",
+      "pickup": "kérjük elszállítani"
     },
     "gardenAccessOptions": {
-      "easy": "konnyen megkozelitheto",
-      "narrow": "hazon at / szuk bejarat",
-      "slope": "lejtos / nehez"
+      "easy": "könnyen megközelíthető",
+      "narrow": "házon át / szűk bejárat",
+      "slope": "lejtős / nehéz"
     },
     "urgencyOptions": {
-      "normal": "normal",
-      "within3days": "3 napon belul",
-      "urgent": "surgos"
+      "normal": "normál",
+      "within3days": "3 napon belül",
+      "urgent": "sürgős"
     },
     "frequencyOptionLabels": {
       "weekly": "heti",
       "biweekly": "2 hetente",
       "monthly": "havi",
-      "yearly1": "evente 1x",
-      "yearly2": "evente 2x",
+      "yearly1": "évente 1x",
+      "yearly2": "évente 2x",
       "oneTime": "egyszeri",
-      "byArrangement": "megegyezes szerint"
+      "byArrangement": "megegyezés szerint"
     },
     "frequencyByService": {
       "rasen": ["weekly", "biweekly", "monthly"],
@@ -573,63 +573,63 @@
       "havi",
       "2 hetente",
       "heti",
-      "megegyezes szerint"
+      "megegyezés szerint"
     ],
     "propertyTypeOptions": {
-      "privat": "Magankert",
-      "firma": "Ceg / vallalkozas",
-      "wohnanlage": "Lakoegyuttes / kozos kepviselet",
-      "oeffentlich": "Kozintezmeny (iskola, ovoda, onkormanyzat)",
-      "sonstiges": "Egyeb"
+      "privat": "Magánkert",
+      "firma": "Cég / vállalkozás",
+      "wohnanlage": "Lakóegyüttes / közös képviselet",
+      "oeffentlich": "Közintézmény (iskola, óvoda, önkormányzat)",
+      "sonstiges": "Egyéb"
     },
     "summary": {
       "service": "Szolgáltatás",
-      "lawnSize": "Fuves terulet",
+      "lawnSize": "Füves terület",
       "hedge": "Sövény",
-      "hedgeHeight": "Sövény magassag",
-      "greenWaste": "Zoldhulladek",
-      "gardenAccess": "Hozzaferes",
-      "frequency": "Gyakorisag",
+      "hedgeHeight": "Sövény magasság",
+      "greenWaste": "Zöldhulladék",
+      "gardenAccess": "Hozzáférés",
+      "frequency": "Gyakoriság",
       "propertyType": "Objektum",
-      "urgency": "Surgosseg",
-      "priceEstimate": "Becsult ar (nem kotelezo)",
-      "priceEstimateNote": "Vegleges ar helyszini felmeres utan lehetseges.",
-      "noEstimate": "adatok alapjan szamitva"
+      "urgency": "Sürgősség",
+      "priceEstimate": "Becsült ár (nem kötelező)",
+      "priceEstimateNote": "Végleges ár helyszíni felmérés után lehetséges.",
+      "noEstimate": "adatok alapján számítva"
     },
-    "summaryLabel": "Keres osszegzese",
+    "summaryLabel": "Kérés összegzése",
     "trustIndicators": [
-      "Valasz altalaban 24 oran belul",
-      "Kotottsegmentes ajanlat"
+      "Válasz általában 24 órán belül",
+      "Kötöttségmentes ajánlat"
     ],
     "upload": {
-      "label": "Kepek feltoltese (opcionalis)",
-      "help": "Legfeljebb 3 kep. Csak JPG/PNG/WebP. Max 5 MB/kep.",
+      "label": "Képek feltöltése (opcionális)",
+      "help": "Legfeljebb 3 kép. Csak JPG/PNG/WebP. Max 5 MB/kép.",
       "selected": "{{count}} / {{max}} kep kiválasztva.",
       "errors": {
-        "tooMany": "Legfeljebb {{max}} kepet valasszon.",
-        "invalidType": "Csak kepfajlok tolthetők fel.",
-        "fileTooLarge": "Az egyik kep tul nagy (max 5 MB).",
-        "totalTooLarge": "A teljes meret tul nagy (max 15 MB)."
+        "tooMany": "Legfeljebb {{max}} képet válasszon.",
+        "invalidType": "Csak képfájlok tölthetők fel.",
+        "fileTooLarge": "Az egyik kép túl nagy (max 5 MB).",
+        "totalTooLarge": "A teljes méret túl nagy (max 15 MB)."
       }
     },
     "submit": {
-      "default": "Keres kuldese",
-      "sending": "Kuldes...",
+      "default": "Kérés küldése",
+      "sending": "Küldés...",
       "holding": "Tartsa nyomva... {{progress}}%"
     },
-    "holdHint": "Kuldeshez tartsa nyomva a gombot 3 masodpercig.",
-    "notice": "Kotottsegmentes kereses. Válasz altalaban 24 oran belul.",
-    "success": "Koszonjuk. A kerese el lett kuldve.",
+    "holdHint": "Küldéshez tartsa nyomva a gombot 3 másodpercig.",
+    "notice": "Kötöttségmentes kérés. Válasz általában 24 órán belül.",
+    "success": "Köszönjük. A kérése el lett küldve.",
     "errors": {
-      "holdToSend": "Kerjuk, tartsa nyomva a gombot 3 masodpercig.",
-      "submitFailed": "A kuldes sikertelen. Kerjuk, hivjon minket kozvetlenul."
+      "holdToSend": "Kérjük, tartsa nyomva a gombot 3 másodpercig.",
+      "submitFailed": "A küldés sikertelen. Kérjük, hívjon minket közvetlenül."
     },
     "mail": {
-      "subject": "Uj szervizkeres: {{firstName}} {{lastName}}",
+      "subject": "Új szervizkérés: {{firstName}} {{lastName}}",
       "notProvided": "nincs megadva",
-      "noMessage": "nincs uzenet",
-      "requestType": "Szervizkeres",
-      "meters": "{{value}} meter"
+      "noMessage": "nincs üzenet",
+      "requestType": "Szervizkérés",
+      "meters": "{{value}} méter"
     }
   },
   "locationPage": {

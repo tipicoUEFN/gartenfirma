@@ -429,15 +429,15 @@
     "heroEyebrow": "PR Gartenservice",
     "testimonials": {
       "1": {
-        "quote": "Pouzdano i čisto odradeno. Termin je ispostovan, a vrt ostavljen urednim.",
+        "quote": "Pouzdano i čisto odrađeno. Termin je ispoštovan, a vrt ostavljen urednim.",
         "source": "Obitelj K., Leibnitz"
       },
       "2": {
-        "quote": "Kratko uskladivanje, korektna povratna informacija i cista izvedba. Upravo tako treba biti.",
+        "quote": "Kratko usklađivanje, korektna povratna informacija i čista izvedba. Upravo tako treba biti.",
         "source": "Uprava zgrade M., Wagna"
       },
       "3": {
-        "quote": "Redovita briga funkcionira odlicno. Ljubazno, tocno i uredno.",
+        "quote": "Redovita briga funkcionira odlično. Ljubazno, točno i uredno.",
         "source": "Poslovna lokacija M., područje Graza"
       }
     }
@@ -487,13 +487,13 @@
     "steps": {
       "contact": "1. Kontakt podaci",
       "services": "2. Odabir usluge",
-      "lawnSize": "3. Velicina površine",
+      "lawnSize": "3. Veličina površine",
       "hedgeLength": "4. Duljina živice",
       "additionalDetails": "5. Dodatni podaci",
-      "frequency": "5. Ucestalost izvedbe",
+      "frequency": "5. Učestalost izvedbe",
       "propertyType": "6. Vrsta objekta",
       "message": "7. Opcionalna poruka",
-      "summary": "8. Sazetak upita"
+      "summary": "8. Sažetak upita"
     },
     "fields": {
       "salutation": "Oslovljavanje",
@@ -504,12 +504,12 @@
       "phoneCode": "Pozivni broj države",
       "address": "Adresa (opcionalno)",
       "lawnSize": "Površina travnjaka (m²)",
-      "hedgeLength": "Duljina živice (tekuci metri)",
+      "hedgeLength": "Duljina živice (tekući metri)",
       "hedgeHeight": "Visina živice",
       "greenWaste": "Zeleni otpad / rezani materijal",
       "gardenAccess": "Pristup vrtu",
       "propertyType": "Vrsta objekta",
-      "propertyTypeHint": "Pomaze nam bolje procijeniti opseg rada.",
+      "propertyTypeHint": "Pomaže nam bolje procijeniti opseg rada.",
       "urgency": "Hitnost",
       "message": "Poruka (opcionalno)"
     },
@@ -545,8 +545,8 @@
     },
     "gardenAccessOptions": {
       "easy": "jednostavan pristup",
-      "narrow": "kroz kucu / uzak pristup",
-      "slope": "nagib / otezan pristup"
+      "narrow": "kroz kuću / uzak pristup",
+      "slope": "nagib / otežan pristup"
     },
     "urgencyOptions": {
       "normal": "normalno",
@@ -556,9 +556,9 @@
     "frequencyOptionLabels": {
       "weekly": "tjedno",
       "biweekly": "svaka 2 tjedna",
-      "monthly": "mjesecno",
-      "yearly1": "1x godisnje",
-      "yearly2": "2x godisnje",
+      "monthly": "mjesečno",
+      "yearly1": "1x godišnje",
+      "yearly2": "2x godišnje",
       "oneTime": "jednokratno",
       "byArrangement": "po dogovoru"
     },
@@ -570,7 +570,7 @@
     },
     "frequencyOptions": [
       "jednokratno",
-      "mjesecno",
+      "mjesečno",
       "svaka 2 tjedna",
       "tjedno",
       "po dogovoru"
@@ -579,47 +579,47 @@
       "privat": "Privatni vrt",
       "firma": "Tvrtka / obrt",
       "wohnanlage": "Stambeni kompleks / upravitelj",
-      "oeffentlich": "Javna ustanova (skola, vrtic, opcina)",
+      "oeffentlich": "Javna ustanova (škola, vrtić, općina)",
       "sonstiges": "Ostalo"
     },
     "summary": {
       "service": "Usluga",
-      "lawnSize": "Povrsina travnjaka",
-      "hedge": "Zivica",
+      "lawnSize": "Površina travnjaka",
+      "hedge": "Živica",
       "hedgeHeight": "Visina živice",
       "greenWaste": "Zeleni otpad",
       "gardenAccess": "Pristup",
-      "frequency": "Ucestalost",
+      "frequency": "Učestalost",
       "propertyType": "Objekt",
       "urgency": "Hitnost",
       "priceEstimate": "Procijenjena cijena (neobvezno)",
-      "priceEstimateNote": "Konacna cijena moguca je nakon obilaska.",
-      "noEstimate": "izracun prema podacima"
+      "priceEstimateNote": "Konačna cijena moguća je nakon obilaska.",
+      "noEstimate": "izračun prema podacima"
     },
-    "summaryLabel": "Sazetak upita",
+    "summaryLabel": "Sažetak upita",
     "trustIndicators": [
-      "Odgovor obicno unutar 24h",
-      "Neobvezujuca ponuda"
+      "Odgovor obično unutar 24h",
+      "Neobvezujuća ponuda"
     ],
     "upload": {
       "label": "Prenesite slike (opcionalno)",
       "help": "Do 3 slike. Samo JPG/PNG/WebP. Max 5 MB po slici.",
       "selected": "Odabrano {{count}} od {{max}} slika.",
       "errors": {
-        "tooMany": "Odaberite najvise {{max}} slike.",
+        "tooMany": "Odaberite najviše {{max}} slike.",
         "invalidType": "Prenesite samo slikovne datoteke.",
         "fileTooLarge": "Jedna slika je prevelika (max 5 MB).",
-        "totalTooLarge": "Ukupna velicina je prevelika (max 15 MB)."
+        "totalTooLarge": "Ukupna veličina je prevelika (max 15 MB)."
       }
     },
     "submit": {
       "default": "Pošalji upit",
       "sending": "Slanje...",
-      "holding": "Drzite... {{progress}}%"
+      "holding": "Držite... {{progress}}%"
     },
     "holdHint": "Za slanje držite tipku 3 sekunde.",
-    "notice": "Neobvezujuci upit. Odgovor obicno u 24h (Pon-Pet).",
-    "success": "Hvala. Vas upit je poslan.",
+    "notice": "Neobvezujući upit. Odgovor obično u 24h (pon-pet).",
+    "success": "Hvala. Vaš upit je poslan.",
     "errors": {
       "holdToSend": "Molimo držite tipku 3 sekunde.",
       "submitFailed": "Slanje nije uspjelo. Molimo nazovite nas izravno."
@@ -635,7 +635,7 @@
   "locationPage": {
     "seoDescription": "Njega vrtova za privatne klijente, tvrtke i stambene komplekse u mjestu {{town}} i okolici.",
     "heroEyebrow": "Regionalna vrtna usluga",
-    "ctaOffer": "Zatrazite ponudu za {{town}}",
+    "ctaOffer": "Zatražite ponudu za {{town}}",
     "ctaServices": "Pogledaj usluge",
     "servicesTitle": "Naše usluge u mjestu {{town}}",
     "trustTitle": "Zasto nam klijenti u mjestu {{town}} vjeruju",
