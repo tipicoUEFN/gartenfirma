@@ -153,17 +153,27 @@ function ServiceRequestForm({ firstInputRef }) {
     [formData.services, serviceOptions],
   )
 
-  const serviceFrequencySummary = useMemo(
+  const serviceFrequencyItems = useMemo(
     () => formData.services
       .map((serviceKey) => {
         const serviceLabel = serviceOptions.find((option) => option.key === serviceKey)?.label || serviceKey
         const frequencyCode = formData.serviceFrequencies[serviceKey]
         const frequencyLabel = frequencyCode ? (frequencyLabelMap[frequencyCode] || frequencyCode) : null
-        return frequencyLabel ? `${serviceLabel}: ${frequencyLabel}` : null
+        return {
+          serviceKey,
+          serviceLabel,
+          frequencyLabel,
+        }
       })
-      .filter(Boolean)
-      .join(' | '),
+      .filter((item) => item.serviceLabel),
     [formData.services, formData.serviceFrequencies, serviceOptions, frequencyLabelMap],
+  )
+
+  const serviceFrequencySummary = useMemo(
+    () => serviceFrequencyItems
+      .map((item) => `${item.serviceLabel}: ${item.frequencyLabel || t('serviceRequestForm.mail.notProvided')}`)
+      .join('; '),
+    [serviceFrequencyItems, t],
   )
 
   const trustIndicators = t('serviceRequestForm.trustIndicators', { returnObjects: true })
@@ -640,7 +650,20 @@ function ServiceRequestForm({ firstInputRef }) {
           )}
           <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.greenWaste')}:</span> {greenWasteOptions.find((option) => option.value === formData.greenWaste)?.label || '-'}</p>
           <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.gardenAccess')}:</span> {gardenAccessOptions.find((option) => option.value === formData.gardenAccess)?.label || '-'}</p>
-          <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.frequency')}:</span> {serviceFrequencySummary || '-'}</p>
+          <div>
+            <p><span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.frequency')}:</span></p>
+            {serviceFrequencyItems.length ? (
+              <ul className="mt-1 space-y-1">
+                {serviceFrequencyItems.map((item) => (
+                  <li key={`summary-${item.serviceKey}`}>
+                    {item.serviceLabel}: {item.frequencyLabel || '-'}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p>-</p>
+            )}
+          </div>
           <p>
             <span className="font-semibold text-olive-800">{t('serviceRequestForm.summary.propertyType')}:</span>{' '}
             {propertyTypeOptions.find((option) => option.value === formData.propertyType)?.label || '-'}

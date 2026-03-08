@@ -10,10 +10,18 @@ Done: Objektart UX update, post-estimate multiplier, summary refinement, i18n sy
   - test mobile spacing/readability
   - test one real submit and verify email payload fields
   - per-service frequency behavior for multi-service requests
-  - summary and email payload formatting for service-wise frequencies
 - Optional tuning:
   - fine-tune multiplier values after real request data
   - refine non-DE wording if needed
 - Optional future scope:
   - add WhatsApp notification flow (still not implemented)
+
+## Progress started
+
+- Improved service-wise `Häufigkeit` formatting in `ServiceRequestForm`:
+  - summary now renders frequencies as a readable per-service list
+  - email payload now sends service frequencies as structured `Service: Häufigkeit` pairs
+- Validation rerun:
+  - `npm run i18n:audit` passed
+  - `npm run build` passed
 
