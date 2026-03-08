@@ -2,6 +2,7 @@ import { useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { businessData } from '../config/businessData'
 import { applyCustomerTypeMultiplier, estimateServicePrice } from '../utils/priceEstimate'
+import { sendNotificationRelay } from '../utils/notificationRelay'
 
 function ServiceRequestForm({ firstInputRef }) {
   const { t } = useTranslation()
@@ -338,6 +339,13 @@ function ServiceRequestForm({ firstInputRef }) {
 
       if (!response.ok) {
         throw new Error('submit_failed')
+      }
+
+      // Optional relay for WhatsApp/automation flows. Email remains the primary channel.
+      try {
+        await sendNotificationRelay('service-request', payload)
+      } catch (relayError) {
+        console.warn('Notification relay failed:', relayError)
       }
 
       setStatus('success')

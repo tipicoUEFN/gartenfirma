@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { businessData } from '../config/businessData'
+import { sendNotificationRelay } from '../utils/notificationRelay'
 
 function QuickRequestForm({ firstInputRef }) {
   const { t } = useTranslation()
@@ -37,26 +38,35 @@ function QuickRequestForm({ firstInputRef }) {
     setErrorText('')
 
     try {
+      const emailPayload = {
+        _subject: t('quickRequestForm.mail.subject', { name: formData.name }),
+        Anrede: formData.salutation,
+        Name: formData.name,
+        Telefon: `${formData.phoneCode} ${formData.phone}`,
+        Ort: formData.town,
+        Service: formData.service,
+        Rückrufzeit: formData.callbackTime || t('quickRequestForm.mail.notProvided'),
+        Anfrageart: t('quickRequestForm.mail.requestType'),
+      }
+
       const response = await fetch(`https://formsubmit.co/ajax/${businessData.email}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           Accept: 'application/json',
         },
-        body: JSON.stringify({
-          _subject: t('quickRequestForm.mail.subject', { name: formData.name }),
-          Anrede: formData.salutation,
-          Name: formData.name,
-          Telefon: `${formData.phoneCode} ${formData.phone}`,
-          Ort: formData.town,
-          Service: formData.service,
-          Rückrufzeit: formData.callbackTime || t('quickRequestForm.mail.notProvided'),
-          Anfrageart: t('quickRequestForm.mail.requestType'),
-        }),
+        body: JSON.stringify(emailPayload),
       })
 
       if (!response.ok) {
         throw new Error('submit_failed')
+      }
+
+      // Optional relay for WhatsApp/automation flows. Email remains the primary channel.
+      try {
+        await sendNotificationRelay('quick-request', emailPayload)
+      } catch (relayError) {
+        console.warn('Notification relay failed:', relayError)
       }
 
       setStatus('success')
