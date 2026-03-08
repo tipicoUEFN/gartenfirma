@@ -33,21 +33,22 @@
         "description": "Mowing, scarifying, fertilizing and soil improvement tailored to the season."
       },
       "beds": {
-        "title": "Flower bed care",
-        "description": "Clean beds and structured planting areas around your home."
+        "title": "Leaf cleanup and keeping outdoor areas tidy",
+        "description": "Leaf removal and basic maintenance work to keep green areas and outdoor surfaces clean."
       },
       "trees": {
-        "title": "Tree and green trimming",
-        "description": "Safe and clean maintenance for smaller trees and ornamental shrubs."
+        "title": "Ongoing outdoor area maintenance",
+        "description": "Regular green area care for residential complexes, company sites and public facilities."
       },
       "season": {
-        "title": "Seasonal service",
-        "description": "Spring and autumn service including leaf cleanup and winter preparation."
+        "title": "Garden maintenance",
+        "description": "General garden work such as minor trimming, watering and keeping garden areas tidy."
       },
       "ongoing": {
-        "title": "Ongoing property care",
-        "description": "Regular support for private gardens, residential complexes and small businesses."
-      }
+        "title": "Window cleaning",
+        "description": "Window cleaning for private households and smaller business sites from ground level or with simple access aids."
+      },
+      "infoLine": "We support private gardens, company sites, residential complexes and public facilities across Leibnitz, Graz, Deutschlandsberg and Southeast Styria."
     },
     "why": {
       "eyebrow": "Why us",
@@ -102,14 +103,15 @@
     "hedgeDescription": "Shape and maintenance trimming for healthy structures.",
     "lawnTitle": "Lawn care",
     "lawnDescription": "Regular mowing, scarifying, fertilizing and site-specific care.",
-    "bedsTitle": "Flower bed care",
-    "bedsDescription": "Care of perennials and ornamental beds including pruning.",
-    "greenTitle": "Green trimming",
-    "greenDescription": "Safe trimming for smaller trees, shrubs and ornamentals.",
-    "seasonTitle": "Seasonal work",
-    "seasonDescription": "Spring prep, autumn service, leaf cleanup and winter prep.",
-    "ongoingTitle": "Ongoing care",
-    "ongoingDescription": "Regular maintenance based on a fixed interval plan.",
+    "bedsTitle": "Leaf cleanup and keeping outdoor areas tidy",
+    "bedsDescription": "Leaf removal and basic maintenance work to keep green areas and outdoor surfaces clean.",
+    "greenTitle": "Ongoing outdoor area maintenance",
+    "greenDescription": "Regular green area care for residential complexes, company sites and public facilities.",
+    "seasonTitle": "Garden maintenance",
+    "seasonDescription": "General garden work such as minor trimming, watering and keeping garden areas tidy.",
+    "ongoingTitle": "Window cleaning",
+    "ongoingDescription": "Window cleaning for private households and smaller business sites from ground level or with simple access aids.",
+    "infoLine": "We support private gardens, company sites, residential complexes and public facilities across Leibnitz, Graz, Deutschlandsberg and Southeast Styria.",
     "seoTitle": "Garden care services",
     "seoDescription": "Our services: lawn mowing, hedge trimming, leaf cleanup and ongoing outdoor area maintenance in Leibnitz and surrounding areas.",
     "sectionDescriptionShort": "Short overview of our services in the region.",
@@ -176,17 +178,17 @@
   },
   "contactPage": {
     "heroEyebrow": "Contact",
-    "heroTitle": "",
-    "heroText": "",
+    "heroTitle": "Contact and quote request",
+    "heroText": "Tell us what you need in a few lines. We usually get back to you within 24 hours.",
     "formTitle": "Send message",
     "formDescription": "Tell us briefly. We reply fast.",
     "direct": "Directly reachable",
     "serviceArea": "Service area",
-    "seoTitle": "Contact and request",
+    "seoTitle": "Contact and quote request",
     "seoDescription": "Request garden care in Leibnitz, Wagna, Gralla, Tillmitsch, Straß and surrounding areas. We reply quickly.",
     "quick": {
       "eyebrow": "Fast contact",
-      "title": "Send a short request",
+      "title": "Send a quick quote request",
       "description": "Usually answered within 24h."
     },
     "flowSection": {
@@ -195,18 +197,18 @@
       "description": "Three quick steps."
     },
     "detailed": {
-      "eyebrow": "Detailed request",
+      "eyebrow": "Detailed quote request",
       "description": "More details, more precise quote."
     },
     "flow": {
       "quick": {
-        "title": "Quick request - process",
+        "title": "Quick quote request - process",
         "challenge": "You need a quick appointment or callback.",
         "approach": "Short details in the form or direct phone inquiry.",
         "result": "Prompt response with the next useful step."
       },
       "detailed": {
-        "title": "Detailed request - process",
+        "title": "Detailed quote request - process",
         "challenge": "You need support for multiple areas or recurring care.",
         "approach": "Capture scope and location in detail.",
         "result": "Clearer offer with a matching interval."
@@ -253,7 +255,7 @@
   "references": {
     "eyebrow": "References",
     "title": "Visible results from the region",
-    "heroText": "",
+    "heroText": "From real projects: practical results from private gardens, company sites and residential complexes.",
     "sectionTitle": "Selected projects",
     "sectionDescription": "An insight into typical garden tasks such as lawn care, hedge trimming and seasonal service.",
     "imageComingSoon": "Image coming soon: /images/references/refX.webp",

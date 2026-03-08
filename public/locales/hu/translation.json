@@ -33,21 +33,22 @@
         "description": "Fűnyírás, talajszellőztetés és tápanyagpótlás."
       },
       "beds": {
-        "title": "Ágyásgondozás",
-        "description": "Rendezett ágyások és ültetett területek a ház körül."
+        "title": "Lombmunka és kültéri felületek tisztán tartása",
+        "description": "Lombeltávolítás és alap karbantartási munkák a tiszta zöld- és kültéri felületekért."
       },
       "trees": {
-        "title": "Fák és zöldfelület nyírása",
-        "description": "Biztonságos gondozás kisebb fáknál és díszcserjéknél."
+        "title": "Kültéri területek folyamatos fenntartása",
+        "description": "Zöldfelületek rendszeres gondozása lakóparkoknál, céges helyszíneken és közintézményeknél."
       },
       "season": {
-        "title": "Szezonális szolgáltatás",
-        "description": "Tavaszi és őszi kerti munkák."
+        "title": "Kertfenntartás",
+        "description": "Általános kerti munkák, például kisebb metszések, öntözés és rendezett összkép fenntartása."
       },
       "ongoing": {
-        "title": "Folyamatos gondozás",
-        "description": "Rendszeres támogatás magánkertekhez és ingatlanokhoz."
-      }
+        "title": "Ablaktisztítás",
+        "description": "Ablaktisztítás magánháztartásoknál és kisebb céges objektumoknál, talajról vagy egyszerű segédeszközökkel."
+      },
+      "infoLine": "Magánkerteket, céges helyszíneket, lakóparkokat és közintézményeket gondozunk Leibnitz, Graz, Deutschlandsberg és Délkelet-Stájerország térségében."
     },
     "why": {
       "eyebrow": "Miért mi",
@@ -102,14 +103,15 @@
     "hedgeDescription": "Formázás és gondozás az egészséges szerkezetért.",
     "lawnTitle": "Fű gondozása",
     "lawnDescription": "Rendszeres fűnyírás, szellőztetés és tápanyagpótlás.",
-    "bedsTitle": "Ágyásgondozás",
-    "bedsDescription": "Évelő- és díszágyások gondozása.",
-    "greenTitle": "Zöldfelület nyírása",
-    "greenDescription": "Biztonságos metszés kisebb fáknál és cserjéknél.",
-    "seasonTitle": "Szezonális munkák",
-    "seasonDescription": "Tavaszi felkészítés, őszi szerviz és lombmunka.",
-    "ongoingTitle": "Folyamatos gondozás",
-    "ongoingDescription": "Rendszeres gondozás rögzített ütemterv szerint.",
+    "bedsTitle": "Lombmunka és kültéri felületek tisztán tartása",
+    "bedsDescription": "Lombeltávolítás és alap karbantartási munkák a tiszta zöld- és kültéri felületekért.",
+    "greenTitle": "Kültéri területek folyamatos fenntartása",
+    "greenDescription": "Zöldfelületek rendszeres gondozása lakóparkoknál, céges helyszíneken és közintézményeknél.",
+    "seasonTitle": "Kertfenntartás",
+    "seasonDescription": "Általános kerti munkák, például kisebb metszések, öntözés és rendezett összkép fenntartása.",
+    "ongoingTitle": "Ablaktisztítás",
+    "ongoingDescription": "Ablaktisztítás magánháztartásoknál és kisebb céges objektumoknál, talajról vagy egyszerű segédeszközökkel.",
+    "infoLine": "Magánkerteket, céges helyszíneket, lakóparkokat és közintézményeket gondozunk Leibnitz, Graz, Deutschlandsberg és Délkelet-Stájerország térségében.",
     "seoTitle": "Kertgondozási szolgáltatások",
     "seoDescription": "Szolgáltatásaink: fűnyírás, sövénynyírás, lombmunka és rendszeres kültéri fenntartás Leibnitzben és környékén.",
     "sectionDescriptionShort": "Rövid áttekintés szolgáltatásainkról a régióban.",
@@ -176,8 +178,8 @@
   },
   "contactPage": {
     "heroEyebrow": "Kapcsolat",
-    "heroTitle": "",
-    "heroText": "",
+    "heroTitle": "Kapcsolat és ajánlatkérés",
+    "heroText": "Írja le röviden, mire van szüksége. Általában 24 órán belül válaszolunk.",
     "formTitle": "Üzenet küldése",
     "formDescription": "Írja le röviden. Gyorsan visszajelzünk.",
     "direct": "Közvetlenül elérhető",
@@ -186,7 +188,7 @@
     "seoDescription": "Kérjen kertgondozást Leibnitz, Wagna, Gralla, Tillmitsch, Straß és környéke területén. Gyorsan válaszolunk.",
     "quick": {
       "eyebrow": "Gyors kapcsolat",
-      "title": "Küldjön rövid kérést",
+      "title": "Küldjön gyors ajánlatkérést",
       "description": "Válasz általában 24h-on belül."
     },
     "flowSection": {
@@ -195,7 +197,7 @@
       "description": "Három rövid lépés."
     },
     "detailed": {
-      "eyebrow": "Részletes kérés",
+      "eyebrow": "Részletes ajánlatkérés",
       "description": "Több részlet a pontosabb ajánlathoz."
     },
     "flow": {
@@ -214,7 +216,7 @@
     }
   },
   "cta": {
-    "eyebrow": "Kötöttségmentes érdeklődés",
+    "eyebrow": "Kötetlen ajánlatkérés",
     "title": "Szeretné kertjét megbízható kezekre bízni?",
     "text": "Világos ajánlatot adunk és tiszta, pontos kivitelezést biztosítunk.",
     "button": "Lépjen kapcsolatba velünk"
@@ -253,7 +255,7 @@
   "references": {
     "eyebrow": "Referenciák",
     "title": "Látható eredmények a régióból",
-    "heroText": "",
+    "heroText": "Valós munkákból: gyakorlati eredmények magánkertekből, céges területekről és lakóparkokból.",
     "sectionTitle": "Válogatott projektek",
     "sectionDescription": "Betekintés a tipikus kerti munkákba, mint fű gondozása, sövénynyírás és szezonális szerviz.",
     "imageComingSoon": "Kép hamarosan: /images/references/refX.webp",

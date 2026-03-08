@@ -178,8 +178,8 @@
   },
   "contactPage": {
     "heroEyebrow": "Kontakt",
-    "heroTitle": "",
-    "heroText": "",
+    "heroTitle": "Kontakt und Anfrage",
+    "heroText": "Schildern Sie kurz Ihr Anliegen. Wir melden uns schnell und zuverlässig zurück.",
     "formTitle": "Nachricht senden",
     "formDescription": "Kurz schildern, wir melden uns.",
     "direct": "Direkt erreichbar",
@@ -255,7 +255,7 @@
   "references": {
     "eyebrow": "Referenzen",
     "title": "Sichtbare Resultate aus der Region",
-    "heroText": "",
+    "heroText": "Aus der Praxis: echte Einsätze aus Privatgärten, Firmenflächen und Wohnanlagen.",
     "sectionTitle": "Ausgewählte Projekte",
     "sectionDescription": "Ein Einblick in typische Gartenarbeiten wie Rasenpflege, Heckschnitt und Saisonservice.",
     "imageComingSoon": "Bild folgt: /images/references/refX.webp",

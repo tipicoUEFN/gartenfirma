@@ -33,21 +33,22 @@
         "description": "Košnja, prezračevanje in gnojenje trate."
       },
       "beds": {
-        "title": "Nega gred",
-        "description": "Urejene grede in zasaditve okoli doma."
+        "title": "Dela z listjem in čiščenje zunanjih površin",
+        "description": "Odstranjevanje listja in osnovna vzdrževalna dela za čiste zelene in zunanje površine."
       },
       "trees": {
-        "title": "Obrezovanje drevja",
-        "description": "Varno obrezovanje manjših dreves in grmovnic."
+        "title": "Redno vzdrževanje zunanjih površin",
+        "description": "Redna oskrba zelenih površin pri stanovanjskih objektih, poslovnih lokacijah in javnih ustanovah."
       },
       "season": {
-        "title": "Sezonske storitve",
-        "description": "Spomladanska in jesenska priprava vrta."
+        "title": "Vzdrževanje vrta",
+        "description": "Splošna vrtna opravila, kot so manjši rezi, zalivanje in skrb za urejen videz vrta."
       },
       "ongoing": {
-        "title": "Redno vzdrževanje",
-        "description": "Redna oskrba zasebnih vrtov in objektov."
-      }
+        "title": "Čiščenje oken",
+        "description": "Čiščenje oken pri zasebnih hišah in manjših poslovnih objektih z varnim dostopom s tal ali enostavnimi pripomočki."
+      },
+      "infoLine": "Za zasebne vrtove, poslovne lokacije, stanovanjske objekte in javne ustanove skrbimo na območju Leibnitza, Gradca, Deutschlandsberga in jugovzhodne Štajerske."
     },
     "why": {
       "eyebrow": "Zakaj mi",
@@ -102,18 +103,19 @@
     "hedgeDescription": "Oblikovanje in vzdrževanje za zdravo strukturo.",
     "lawnTitle": "Nega trate",
     "lawnDescription": "Redna košnja, prezračevanje in gnojenje.",
-    "bedsTitle": "Nega gred",
-    "bedsDescription": "Nega trajnic in okrasnih gred.",
-    "greenTitle": "Obrezovanje zelenja",
-    "greenDescription": "Varno obrezovanje manjših dreves in grmovnic.",
-    "seasonTitle": "Sezonska dela",
-    "seasonDescription": "Spomladanska priprava, jesenski servis in listje.",
-    "ongoingTitle": "Redna oskrba",
-    "ongoingDescription": "Redna nega po dogovorjenem terminskem planu.",
+    "bedsTitle": "Dela z listjem in čiščenje zunanjih površin",
+    "bedsDescription": "Odstranjevanje listja in osnovna vzdrževalna dela za čiste zelene in zunanje površine.",
+    "greenTitle": "Redno vzdrževanje zunanjih površin",
+    "greenDescription": "Redna oskrba zelenih površin pri stanovanjskih objektih, poslovnih lokacijah in javnih ustanovah.",
+    "seasonTitle": "Vzdrževanje vrta",
+    "seasonDescription": "Splošna vrtna opravila, kot so manjši rezi, zalivanje in skrb za urejen videz vrta.",
+    "ongoingTitle": "Čiščenje oken",
+    "ongoingDescription": "Čiščenje oken pri zasebnih hišah in manjših poslovnih objektih z varnim dostopom s tal ali enostavnimi pripomočki.",
+    "infoLine": "Za zasebne vrtove, poslovne lokacije, stanovanjske objekte in javne ustanove skrbimo na območju Leibnitza, Gradca, Deutschlandsberga in jugovzhodne Štajerske.",
     "seoTitle": "Storitve nege vrtov",
     "seoDescription": "Naše storitve: košnja trate, nega živih mej, delo z listjem in redno vzdrževanje zunanjih površin v Leibnitzu in okolici.",
     "sectionDescriptionShort": "Kratek pregled naših storitev v regiji.",
-    "locationLinksTitle": "Storitev + kraj",
+    "locationLinksTitle": "Storitve po krajih",
     "locationLinksDescription": "Pogosto iskane kombinacije v naši regiji.",
     "gardenCareInTown": "Nega vrta {{town}}",
     "cardTagline": "Čisto. Zanesljivo. Regionalno.",
@@ -176,8 +178,8 @@
   },
   "contactPage": {
     "heroEyebrow": "Kontakt",
-    "heroTitle": "",
-    "heroText": "",
+    "heroTitle": "Kontakt in povpraševanje",
+    "heroText": "Na kratko opišite, kaj potrebujete. Običajno odgovorimo v 24 urah.",
     "formTitle": "Pošljite sporočilo",
     "formDescription": "Na kratko opišite željo. Odgovorimo hitro.",
     "direct": "Neposredno dosegljivi",
@@ -186,7 +188,7 @@
     "seoDescription": "Zaprosite za nego vrta v Leibnitzu, Wagni, Gralli, Tillmitschu, Straßu in okolici. Hitro odgovorimo.",
     "quick": {
       "eyebrow": "Hiter kontakt",
-      "title": "Pošljite kratko povpraševanje",
+      "title": "Pošljite hitro povpraševanje",
       "description": "Odgovor običajno v 24h."
     },
     "flowSection": {
@@ -253,7 +255,7 @@
   "references": {
     "eyebrow": "Reference",
     "title": "Vidni rezultati iz regije",
-    "heroText": "",
+    "heroText": "Iz prakse: resnični rezultati iz zasebnih vrtov, poslovnih površin in stanovanjskih objektov.",
     "sectionTitle": "Izbrani projekti",
     "sectionDescription": "Vpogled v tipična vrtna dela, kot so nega trate, obrezovanje žive meje in sezonski servis.",
     "imageComingSoon": "Slika sledi: /images/references/refX.webp",
