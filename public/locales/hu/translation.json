@@ -378,7 +378,23 @@
     "ratingFiveStars": "5 / 5 csillag",
     "heroSliderRegion": "Elvégzett munkák képei",
     "logoIconAlt": "{{companyName}} ikon",
-    "serviceAreaValue": "Leibnitz, Graz, Deutschlandsberg es Delkelet-Stajerorszag tersege"
+    "serviceAreaValue": "Leibnitz, Graz, Deutschlandsberg es Delkelet-Stajerorszag tersege",
+    "salutationOptions": [
+      "Úr",
+      "Hölgy"
+    ],
+    "phoneCountryOptions": {
+      "at": "Ausztria (+43)",
+      "de": "Németország (+49)",
+      "cz": "Csehország (+420)",
+      "sk": "Szlovákia (+421)",
+      "hu": "Magyarország (+36)",
+      "si": "Szlovénia (+386)",
+      "it": "Olaszország (+39)",
+      "ch": "Svájc (+41)",
+      "li": "Liechtenstein (+423)",
+      "hr": "Horvátország (+385)"
+    }
   },
   "homeExtras": {
     "heroTitle": "Kertgondozás Leibnitzből",
@@ -427,30 +443,32 @@
     }
   },
   "quickRequestForm": {
-    "badge": "Gyors visszajelzeshez ajanlott",
+    "badge": "Gyors visszajelzéshez ajánlott",
     "title": "Gyors kérés 1 perc alatt",
-    "subtitle": "Válasz altalaban 24 oran belul (Hétfő-Péntek).",
+    "subtitle": "Válasz általában 24 órán belül (hétfő-péntek).",
     "fields": {
-      "name": "Nev",
+      "salutation": "Megszólítás",
+      "name": "Név",
       "phone": "Telefon",
-      "town": "Telepules",
-      "service": "Kivant szolgáltatás",
-      "callbackTime": "Preferalt visszahivasi ido (opcionalis)"
+      "phoneCode": "Országhívó",
+      "town": "Település",
+      "service": "Kívánt szolgáltatás",
+      "callbackTime": "Preferált visszahívási idő (opcionális)"
     },
     "placeholders": {
       "town": "pl. Leibnitz",
-      "select": "Valasszon"
+      "select": "Válasszon"
     },
     "submit": {
-      "default": "Gyors kérés kuldese",
-      "sending": "Kuldes...",
+      "default": "Gyors kérés küldése",
+      "sending": "Küldés...",
       "holding": "Tartsa nyomva... {{progress}}%"
     },
-    "holdHint": "Kuldeshez tartsa nyomva a gombot 3 masodpercig.",
-    "success": "Koszonjuk. A keres elkuldve.",
+    "holdHint": "Küldéshez tartsa nyomva a gombot 3 másodpercig.",
+    "success": "Köszönjük. A kérés elküldve.",
     "errors": {
-      "holdToSend": "Kerjuk, tartsa nyomva a gombot 3 masodpercig.",
-      "submitFailed": "A kuldes sikertelen. Kerjuk, hivjon minket kozvetlenul."
+      "holdToSend": "Kérjük, tartsa nyomva a gombot 3 másodpercig.",
+      "submitFailed": "A küldés sikertelen. Kérjük, hívjon minket közvetlenül."
     },
     "mail": {
       "subject": "Gyors kérés erkezett: {{name}}",
@@ -478,26 +496,28 @@
       "summary": "8. Keres osszegzese"
     },
     "fields": {
-      "firstName": "Keresztnev",
-      "lastName": "Vezeteknev",
+      "salutation": "Megszólítás",
+      "firstName": "Keresztnév",
+      "lastName": "Vezetéknév",
       "email": "E-mail",
       "phone": "Telefon",
-      "address": "Cim (opcionalis)",
+      "phoneCode": "Országhívó",
+      "address": "Cím (opcionális)",
       "lawnSize": "Füves terület (m²)",
-      "hedgeLength": "Sövény hossza (folyo meter)",
-      "hedgeHeight": "Sövény magassaga",
-      "greenWaste": "Zoldhulladek / nyesedek",
-      "gardenAccess": "Kert megkozelitese",
-      "propertyType": "Objektum tipusa",
-      "propertyTypeHint": "Segit jobban megbecsulni a munka merteket.",
-      "urgency": "Surgosseg",
-      "message": "Uzenet (opcionalis)"
+      "hedgeLength": "Sövény hossza (folyó méter)",
+      "hedgeHeight": "Sövény magassága",
+      "greenWaste": "Zöldhulladék / nyesedék",
+      "gardenAccess": "Kert megközelítése",
+      "propertyType": "Objektum típusa",
+      "propertyTypeHint": "Segít jobban megbecsülni a munka mértékét.",
+      "urgency": "Sürgősség",
+      "message": "Üzenet (opcionális)"
     },
     "placeholders": {
       "hedgeLength": "pl. 20",
-      "select": "Valasszon",
-      "propertyType": "Valassza ki az objektum tipusat",
-      "message": "Roviden irja le igenyet vagy kulonleges kivansagat."
+      "select": "Válasszon",
+      "propertyType": "Válassza ki az objektum típusát",
+      "message": "Röviden írja le igényét vagy különleges kívánságát."
     },
     "serviceOptions": {
       "rasen": "Fűnyírás / zoldfelulet-gondozas",

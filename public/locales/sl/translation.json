@@ -378,7 +378,23 @@
     "ratingFiveStars": "5 od 5 zvezdic",
     "heroSliderRegion": "Fotografije izvedenih del",
     "logoIconAlt": "Ikona {{companyName}}",
-    "serviceAreaValue": "Sirsje območje Leibnitz, Gradec, Deutschlandsberg in jugovzhodna Štajerska"
+    "serviceAreaValue": "Sirsje območje Leibnitz, Gradec, Deutschlandsberg in jugovzhodna Štajerska",
+    "salutationOptions": [
+      "Gospod",
+      "Gospa"
+    ],
+    "phoneCountryOptions": {
+      "at": "Avstrija (+43)",
+      "de": "Nemčija (+49)",
+      "cz": "Češka (+420)",
+      "sk": "Slovaška (+421)",
+      "hu": "Madžarska (+36)",
+      "si": "Slovenija (+386)",
+      "it": "Italija (+39)",
+      "ch": "Švica (+41)",
+      "li": "Lihtenštajn (+423)",
+      "hr": "Hrvaška (+385)"
+    }
   },
   "homeExtras": {
     "heroTitle": "Nega vrtov iz Leibnitza",
@@ -429,13 +445,15 @@
   "quickRequestForm": {
     "badge": "Priporoceno za hiter odziv",
     "title": "Hitro povpraševanje v 1 minuti",
-    "subtitle": "Odgovor obicajno v 24h (Pon-Pet).",
+    "subtitle": "Odgovor običajno v 24h (pon-pet).",
     "fields": {
+      "salutation": "Nagovor",
       "name": "Ime",
       "phone": "Telefon",
+      "phoneCode": "Predpona države",
       "town": "Kraj",
-      "service": "Zelena storitev",
-      "callbackTime": "Zeleni cas povratnega klica (neobvezno)"
+      "service": "Želena storitev",
+      "callbackTime": "Želeni čas povratnega klica (neobvezno)"
     },
     "placeholders": {
       "town": "npr. Leibnitz",
@@ -443,14 +461,14 @@
     },
     "submit": {
       "default": "Pošlji hitro povpraševanje",
-      "sending": "Posiljanje...",
-      "holding": "Drzite... {{progress}}%"
+      "sending": "Pošiljanje...",
+      "holding": "Držite... {{progress}}%"
     },
-    "holdHint": "Za posiljanje drzite gumb 3 sekunde.",
+    "holdHint": "Za pošiljanje držite gumb 3 sekunde.",
     "success": "Hvala. Vaše povpraševanje je poslano.",
     "errors": {
-      "holdToSend": "Prosimo, drzite gumb 3 sekunde.",
-      "submitFailed": "Posiljanje ni uspelo. Poklicite nas neposredno."
+      "holdToSend": "Prosimo, držite gumb 3 sekunde.",
+      "submitFailed": "Pošiljanje ni uspelo. Pokličite nas neposredno."
     },
     "mail": {
       "subject": "Hitro povpraševanje od {{name}}",
@@ -478,34 +496,36 @@
       "summary": "8. Povzetek povpraševanja"
     },
     "fields": {
+      "salutation": "Nagovor",
       "firstName": "Ime",
       "lastName": "Priimek",
-      "email": "E-posta",
+      "email": "E-pošta",
       "phone": "Telefon",
+      "phoneCode": "Predpona države",
       "address": "Naslov (neobvezno)",
-      "lawnSize": "Povrsina trate (m²)",
-      "hedgeLength": "Dolžina žive meje (tekoci metri)",
-      "hedgeHeight": "Visina žive meje",
+      "lawnSize": "Površina trate (m²)",
+      "hedgeLength": "Dolžina žive meje (tekoči metri)",
+      "hedgeHeight": "Višina žive meje",
       "greenWaste": "Obrezki / zeleni odpad",
       "gardenAccess": "Dostop do vrta",
       "propertyType": "Vrsta objekta",
       "propertyTypeHint": "Pomaga nam bolje oceniti obseg dela.",
       "urgency": "Nujnost",
-      "message": "Sporocilo (neobvezno)"
+      "message": "Sporočilo (neobvezno)"
     },
     "placeholders": {
       "hedgeLength": "npr. 20",
       "select": "Izberite",
       "propertyType": "Izberite vrsto objekta",
-      "message": "Na kratko opisite vaso zeljo ali posebne zahteve."
+      "message": "Na kratko opišite vašo željo ali posebne zahteve."
     },
     "serviceOptions": {
       "rasen": "Kosnja trate / nega zelenih površin",
       "hecke": "Obrezovanje žive meje",
       "laub": "Delo z listjem",
       "gartenpflege": "Osnovna nega vrta",
-      "aussenanlagen": "Vzdrzevanje zunanjih površin",
-      "fenster": "Ciscenje oken"
+      "aussenanlagen": "Vzdrževanje zunanjih površin",
+      "fenster": "Čiščenje oken"
     },
     "lawnSizeOptions": [
       "pod 100 m²",

@@ -378,7 +378,23 @@
     "ratingFiveStars": "5 od 5 zvjezdica",
     "heroSliderRegion": "Fotografije izvedenih radova",
     "logoIconAlt": "Ikona {{companyName}}",
-    "serviceAreaValue": "Sire područje Leibnitza, Graza, Deutschlandsberga i jugoistocne Štajerske"
+    "serviceAreaValue": "Sire područje Leibnitza, Graza, Deutschlandsberga i jugoistocne Štajerske",
+    "salutationOptions": [
+      "Gospodin",
+      "Gospođa"
+    ],
+    "phoneCountryOptions": {
+      "at": "Austrija (+43)",
+      "de": "Njemačka (+49)",
+      "cz": "Češka (+420)",
+      "sk": "Slovačka (+421)",
+      "hu": "Mađarska (+36)",
+      "si": "Slovenija (+386)",
+      "it": "Italija (+39)",
+      "ch": "Švicarska (+41)",
+      "li": "Lihtenštajn (+423)",
+      "hr": "Hrvatska (+385)"
+    }
   },
   "homeExtras": {
     "heroTitle": "Njega vrtova iz Leibnitza",
@@ -427,15 +443,17 @@
     }
   },
   "quickRequestForm": {
-    "badge": "Preporuceno za brzi odgovor",
+    "badge": "Preporučeno za brzi odgovor",
     "title": "Brzi upit u 1 minuti",
-    "subtitle": "Odgovor obicno u 24h (Pon-Pet).",
+    "subtitle": "Odgovor obično u 24h (pon-pet).",
     "fields": {
+      "salutation": "Oslovljavanje",
       "name": "Ime",
       "phone": "Telefon",
+      "phoneCode": "Pozivni broj države",
       "town": "Mjesto",
-      "service": "Zeljena usluga",
-      "callbackTime": "Zeljeno vrijeme povratnog poziva (opcionalno)"
+      "service": "Željena usluga",
+      "callbackTime": "Željeno vrijeme povratnog poziva (opcionalno)"
     },
     "placeholders": {
       "town": "npr. Leibnitz",
@@ -444,10 +462,10 @@
     "submit": {
       "default": "Pošalji brzi upit",
       "sending": "Slanje...",
-      "holding": "Drzite... {{progress}}%"
+      "holding": "Držite... {{progress}}%"
     },
     "holdHint": "Za slanje držite tipku 3 sekunde.",
-    "success": "Hvala. Vas upit je poslan.",
+    "success": "Hvala. Vaš upit je poslan.",
     "errors": {
       "holdToSend": "Molimo držite tipku 3 sekunde.",
       "submitFailed": "Slanje nije uspjelo. Molimo nazovite nas izravno."
@@ -478,12 +496,14 @@
       "summary": "8. Sazetak upita"
     },
     "fields": {
+      "salutation": "Oslovljavanje",
       "firstName": "Ime",
       "lastName": "Prezime",
-      "email": "E-posta",
+      "email": "E-pošta",
       "phone": "Telefon",
+      "phoneCode": "Pozivni broj države",
       "address": "Adresa (opcionalno)",
-      "lawnSize": "Povrsina travnjaka (m²)",
+      "lawnSize": "Površina travnjaka (m²)",
       "hedgeLength": "Duljina živice (tekuci metri)",
       "hedgeHeight": "Visina živice",
       "greenWaste": "Zeleni otpad / rezani materijal",
@@ -497,7 +517,7 @@
       "hedgeLength": "npr. 20",
       "select": "Odaberite",
       "propertyType": "Odaberite vrstu objekta",
-      "message": "Kratko opisite svoj zahtjev ili posebne zelje."
+      "message": "Kratko opišite svoj zahtjev ili posebne želje."
     },
     "serviceOptions": {
       "rasen": "Kosnja travnjaka / njega zelenih površina",
@@ -505,7 +525,7 @@
       "laub": "Radovi s lišćem",
       "gartenpflege": "Osnovna njega vrta",
       "aussenanlagen": "Održavanje vanjskih površina",
-      "fenster": "Ciscenje prozora"
+      "fenster": "Čišćenje prozora"
     },
     "lawnSizeOptions": [
       "ispod 100 m²",

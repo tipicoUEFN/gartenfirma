@@ -380,7 +380,23 @@
     "ratingFiveStars": "5 von 5 Sternen",
     "heroSliderRegion": "Bilder aus Einsätzen",
     "logoIconAlt": "{{companyName}} Icon",
-    "serviceAreaValue": "Großraum Leibnitz, Graz, Deutschlandsberg und Südoststeiermark"
+    "serviceAreaValue": "Großraum Leibnitz, Graz, Deutschlandsberg und Südoststeiermark",
+    "salutationOptions": [
+      "Herr",
+      "Frau"
+    ],
+    "phoneCountryOptions": {
+      "at": "Österreich (+43)",
+      "de": "Deutschland (+49)",
+      "cz": "Tschechien (+420)",
+      "sk": "Slowakei (+421)",
+      "hu": "Ungarn (+36)",
+      "si": "Slowenien (+386)",
+      "it": "Italien (+39)",
+      "ch": "Schweiz (+41)",
+      "li": "Liechtenstein (+423)",
+      "hr": "Kroatien (+385)"
+    }
   },
   "homeExtras": {
     "heroTitle": "Gartenpflege aus Leibnitz",
@@ -433,8 +449,10 @@
     "title": "Schnellanfrage in 1 Minute",
     "subtitle": "Antwort meist innerhalb von 24h (Mo-Fr).",
     "fields": {
+      "salutation": "Anrede",
       "name": "Name",
       "phone": "Telefon",
+      "phoneCode": "Ländervorwahl",
       "town": "Ort",
       "service": "Gewünschter Service",
       "callbackTime": "Bevorzugte Rückrufzeit (optional)"
@@ -480,10 +498,12 @@
       "summary": "8. Anfrage Zusammenfassung"
     },
     "fields": {
+      "salutation": "Anrede",
       "firstName": "Vorname",
       "lastName": "Nachname",
       "email": "E-Mail",
       "phone": "Telefon",
+      "phoneCode": "Ländervorwahl",
       "address": "Adresse (optional)",
       "lawnSize": "Rasenfläche (m²)",
       "hedgeLength": "Heckenlänge (laufende Meter)",

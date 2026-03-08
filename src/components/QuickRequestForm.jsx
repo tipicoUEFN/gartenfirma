@@ -5,10 +5,17 @@ import { sendNotificationRelay } from '../utils/notificationRelay'
 
 function QuickRequestForm({ firstInputRef }) {
   const { t } = useTranslation()
+  const salutationOptions = t('common.salutationOptions', { returnObjects: true })
+  const salutationFallback = ['Herr', 'Frau']
+  const resolvedSalutationOptions = Array.isArray(salutationOptions) && salutationOptions.length
+    ? salutationOptions
+    : salutationFallback
+  const defaultSalutation = resolvedSalutationOptions[0]
+  const phoneCountryOptions = t('common.phoneCountryOptions', { returnObjects: true })
   const [status, setStatus] = useState('idle')
   const [errorText, setErrorText] = useState('')
   const [formData, setFormData] = useState({
-    salutation: 'Herr',
+    salutation: defaultSalutation,
     name: '',
     phoneCode: '+43',
     phone: '',
@@ -18,19 +25,17 @@ function QuickRequestForm({ firstInputRef }) {
   })
 
   const phoneCodeOptions = [
-    { value: '+43', label: 'Oesterreich (+43)' },
-    { value: '+49', label: 'Deutschland (+49)' },
-    { value: '+420', label: 'Tschechien (+420)' },
-    { value: '+421', label: 'Slowakei (+421)' },
-    { value: '+36', label: 'Ungarn (+36)' },
-    { value: '+386', label: 'Slowenien (+386)' },
-    { value: '+39', label: 'Italien (+39)' },
-    { value: '+41', label: 'Schweiz (+41)' },
-    { value: '+423', label: 'Liechtenstein (+423)' },
-    { value: '+385', label: 'Kroatien (+385)' },
+    { value: '+43', key: 'at', fallback: 'Oesterreich (+43)' },
+    { value: '+49', key: 'de', fallback: 'Deutschland (+49)' },
+    { value: '+420', key: 'cz', fallback: 'Tschechien (+420)' },
+    { value: '+421', key: 'sk', fallback: 'Slowakei (+421)' },
+    { value: '+36', key: 'hu', fallback: 'Ungarn (+36)' },
+    { value: '+386', key: 'si', fallback: 'Slowenien (+386)' },
+    { value: '+39', key: 'it', fallback: 'Italien (+39)' },
+    { value: '+41', key: 'ch', fallback: 'Schweiz (+41)' },
+    { value: '+423', key: 'li', fallback: 'Liechtenstein (+423)' },
+    { value: '+385', key: 'hr', fallback: 'Kroatien (+385)' },
   ]
-
-  const salutationOptions = ['Herr', 'Frau']
   const quickServiceOptions = t('quickRequestForm.serviceOptions', { returnObjects: true })
 
   const handleChange = (event) => {
@@ -76,7 +81,7 @@ function QuickRequestForm({ firstInputRef }) {
       }
 
       setStatus('success')
-      setFormData({ salutation: 'Herr', name: '', phoneCode: '+43', phone: '', town: '', service: '', callbackTime: '' })
+      setFormData({ salutation: defaultSalutation, name: '', phoneCode: '+43', phone: '', town: '', service: '', callbackTime: '' })
     } catch {
       setStatus('error')
       setErrorText(t('quickRequestForm.errors.submitFailed'))
@@ -91,14 +96,14 @@ function QuickRequestForm({ firstInputRef }) {
 
       <div className="grid gap-4 md:grid-cols-2">
         <label className="text-sm font-medium text-olive-800">
-          Anrede
+          {t('quickRequestForm.fields.salutation')}
           <select
             name="salutation"
             value={formData.salutation}
             onChange={handleChange}
             className="mt-1 w-full rounded-xl border border-olive-200 px-3 py-2 text-sm"
           >
-            {salutationOptions.map((option) => (
+            {resolvedSalutationOptions.map((option) => (
               <option key={option} value={option}>{option}</option>
             ))}
           </select>
@@ -122,9 +127,10 @@ function QuickRequestForm({ firstInputRef }) {
               value={formData.phoneCode}
               onChange={handleChange}
               className="w-full rounded-xl border border-olive-200 px-3 py-2 text-sm"
+              aria-label={t('quickRequestForm.fields.phoneCode')}
             >
               {phoneCodeOptions.map((option) => (
-                <option key={option.value} value={option.value}>{option.label}</option>
+                <option key={option.value} value={option.value}>{phoneCountryOptions?.[option.key] || option.fallback}</option>
               ))}
             </select>
             <input

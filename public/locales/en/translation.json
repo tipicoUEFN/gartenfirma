@@ -378,7 +378,23 @@
     "ratingFiveStars": "5 out of 5 stars",
     "heroSliderRegion": "Photos from completed jobs",
     "logoIconAlt": "{{companyName}} icon",
-    "serviceAreaValue": "Greater Leibnitz, Graz, Deutschlandsberg and Southeast Styria"
+    "serviceAreaValue": "Greater Leibnitz, Graz, Deutschlandsberg and Southeast Styria",
+    "salutationOptions": [
+      "Mr",
+      "Ms"
+    ],
+    "phoneCountryOptions": {
+      "at": "Austria (+43)",
+      "de": "Germany (+49)",
+      "cz": "Czechia (+420)",
+      "sk": "Slovakia (+421)",
+      "hu": "Hungary (+36)",
+      "si": "Slovenia (+386)",
+      "it": "Italy (+39)",
+      "ch": "Switzerland (+41)",
+      "li": "Liechtenstein (+423)",
+      "hr": "Croatia (+385)"
+    }
   },
   "homeExtras": {
     "heroTitle": "Garden care from Leibnitz",
@@ -431,8 +447,10 @@
     "title": "Quick request in 1 minute",
     "subtitle": "Usually answered within 24h (Mon-Fri).",
     "fields": {
+      "salutation": "Salutation",
       "name": "Name",
       "phone": "Phone",
+      "phoneCode": "Country code",
       "town": "Town",
       "service": "Desired service",
       "callbackTime": "Preferred callback time (optional)"
@@ -478,10 +496,12 @@
       "summary": "8. Request summary"
     },
     "fields": {
+      "salutation": "Salutation",
       "firstName": "First name",
       "lastName": "Last name",
       "email": "Email",
       "phone": "Phone",
+      "phoneCode": "Country code",
       "address": "Address (optional)",
       "lawnSize": "Lawn area (m²)",
       "hedgeLength": "Hedge length (running meters)",

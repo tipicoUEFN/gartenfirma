@@ -6,6 +6,13 @@ import { sendNotificationRelay } from '../utils/notificationRelay'
 
 function ServiceRequestForm({ firstInputRef }) {
   const { t } = useTranslation()
+  const salutationOptions = t('common.salutationOptions', { returnObjects: true })
+  const salutationFallback = ['Herr', 'Frau']
+  const resolvedSalutationOptions = Array.isArray(salutationOptions) && salutationOptions.length
+    ? salutationOptions
+    : salutationFallback
+  const defaultSalutation = resolvedSalutationOptions[0]
+  const phoneCountryOptions = t('common.phoneCountryOptions', { returnObjects: true })
   const MAX_FILES = 3
   const MAX_FILE_SIZE_BYTES = 5 * 1024 * 1024
   const MAX_TOTAL_SIZE_BYTES = 15 * 1024 * 1024
@@ -15,7 +22,7 @@ function ServiceRequestForm({ firstInputRef }) {
   const [uploadedImages, setUploadedImages] = useState([])
   const fileInputRef = useRef(null)
   const [formData, setFormData] = useState({
-    salutation: 'Herr',
+    salutation: defaultSalutation,
     firstName: '',
     lastName: '',
     email: '',
@@ -35,19 +42,17 @@ function ServiceRequestForm({ firstInputRef }) {
   })
 
   const phoneCodeOptions = [
-    { value: '+43', label: 'Oesterreich (+43)' },
-    { value: '+49', label: 'Deutschland (+49)' },
-    { value: '+420', label: 'Tschechien (+420)' },
-    { value: '+421', label: 'Slowakei (+421)' },
-    { value: '+36', label: 'Ungarn (+36)' },
-    { value: '+386', label: 'Slowenien (+386)' },
-    { value: '+39', label: 'Italien (+39)' },
-    { value: '+41', label: 'Schweiz (+41)' },
-    { value: '+423', label: 'Liechtenstein (+423)' },
-    { value: '+385', label: 'Kroatien (+385)' },
+    { value: '+43', key: 'at', fallback: 'Oesterreich (+43)' },
+    { value: '+49', key: 'de', fallback: 'Deutschland (+49)' },
+    { value: '+420', key: 'cz', fallback: 'Tschechien (+420)' },
+    { value: '+421', key: 'sk', fallback: 'Slowakei (+421)' },
+    { value: '+36', key: 'hu', fallback: 'Ungarn (+36)' },
+    { value: '+386', key: 'si', fallback: 'Slowenien (+386)' },
+    { value: '+39', key: 'it', fallback: 'Italien (+39)' },
+    { value: '+41', key: 'ch', fallback: 'Schweiz (+41)' },
+    { value: '+423', key: 'li', fallback: 'Liechtenstein (+423)' },
+    { value: '+385', key: 'hr', fallback: 'Kroatien (+385)' },
   ]
-
-  const salutationOptions = ['Herr', 'Frau']
 
   const serviceOptions = useMemo(
     () => [
@@ -356,7 +361,7 @@ function ServiceRequestForm({ firstInputRef }) {
 
       setStatus('success')
       setFormData({
-        salutation: 'Herr',
+        salutation: defaultSalutation,
         firstName: '',
         lastName: '',
         email: '',
@@ -391,14 +396,14 @@ function ServiceRequestForm({ firstInputRef }) {
         <h3 className="text-base font-semibold text-olive-800">{t('serviceRequestForm.steps.contact')}</h3>
         <div className="grid gap-5 md:grid-cols-2">
           <label className="text-sm font-medium text-olive-800 md:col-span-2">
-            Anrede
+            {t('serviceRequestForm.fields.salutation')}
             <select
               name="salutation"
               value={formData.salutation}
               onChange={handleInputChange}
               className="mt-2 w-full rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-olive-500"
             >
-              {salutationOptions.map((option) => (
+              {resolvedSalutationOptions.map((option) => (
                 <option key={option} value={option}>{option}</option>
               ))}
             </select>
@@ -445,9 +450,10 @@ function ServiceRequestForm({ firstInputRef }) {
                 value={formData.phoneCode}
                 onChange={handleInputChange}
                 className="w-full rounded-xl border border-olive-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-olive-500"
+                aria-label={t('serviceRequestForm.fields.phoneCode')}
               >
                 {phoneCodeOptions.map((option) => (
-                  <option key={option.value} value={option.value}>{option.label}</option>
+                  <option key={option.value} value={option.value}>{phoneCountryOptions?.[option.key] || option.fallback}</option>
                 ))}
               </select>
               <input
