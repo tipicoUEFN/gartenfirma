@@ -104,29 +104,54 @@ function ContactPage() {
       <section className="section-spacing pt-0">
         <div className="container-width">
           <aside className="glass-card h-fit rounded-2xl p-6 sm:p-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-olive-600">{t('contactPage.direct')}</p>
-            <ul className="mt-5 space-y-4 text-sm text-olive-700 sm:text-base">
-              {businessData.phoneContacts.map((contact) => (
-                <li key={contact.phone} className="flex items-start gap-3">
-                  <Phone size={18} className="mt-0.5 shrink-0 text-olive-700" />
-                  <a href={`tel:${contact.phone}`} className="font-semibold hover:text-olive-800">
-                    {contact.label}: {contact.phone}
-                  </a>
-                </li>
-              ))}
-              <li className="flex items-start gap-3">
-                <Mail size={18} className="mt-0.5 shrink-0 text-olive-700" />
-                <a href={`mailto:${businessData.email}`} className="font-semibold hover:text-olive-800">
-                  {businessData.email}
+            <div className="grid gap-6 lg:grid-cols-[1fr_1.1fr] lg:items-start">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-olive-600">{t('contactPage.direct')}</p>
+                <ul className="mt-5 space-y-4 text-sm text-olive-700 sm:text-base">
+                  {businessData.phoneContacts.map((contact) => (
+                    <li key={contact.phone} className="flex items-start gap-3">
+                      <Phone size={18} className="mt-0.5 shrink-0 text-olive-700" />
+                      <a href={`tel:${contact.phone}`} className="font-semibold hover:text-olive-800">
+                        {contact.label}: {contact.phone}
+                      </a>
+                    </li>
+                  ))}
+                  <li className="flex items-start gap-3">
+                    <Mail size={18} className="mt-0.5 shrink-0 text-olive-700" />
+                    <a href={`mailto:${businessData.email}`} className="font-semibold hover:text-olive-800">
+                      {businessData.email}
+                    </a>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <MapPin size={18} className="mt-0.5 shrink-0 text-olive-700" />
+                    <span>{businessData.address}</span>
+                  </li>
+                </ul>
+                <p className="mt-7 text-xs uppercase tracking-[0.2em] text-olive-600">{t('contactPage.serviceArea')}</p>
+                <p className="mt-3 text-sm text-olive-700">{t('common.serviceAreaValue')}</p>
+              </div>
+
+              <div className="space-y-3">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-olive-600">Google Maps</p>
+                <div className="overflow-hidden rounded-2xl border border-olive-200 bg-white shadow-sm">
+                  <iframe
+                    title="PR Gartenservice Standort auf Google Maps"
+                    src={businessData.mapEmbedUrl}
+                    className="h-72 w-full"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                </div>
+                <a
+                  href={businessData.mapExternalUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex text-sm font-semibold text-olive-700 hover:text-olive-900"
+                >
+                  In Google Maps öffnen
                 </a>
-              </li>
-              <li className="flex items-start gap-3">
-                <MapPin size={18} className="mt-0.5 shrink-0 text-olive-700" />
-                <span>{businessData.address}</span>
-              </li>
-            </ul>
-            <p className="mt-7 text-xs uppercase tracking-[0.2em] text-olive-600">{t('contactPage.serviceArea')}</p>
-            <p className="mt-3 text-sm text-olive-700">{t('common.serviceAreaValue')}</p>
+              </div>
+            </div>
           </aside>
         </div>
       </section>

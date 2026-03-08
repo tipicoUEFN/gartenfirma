@@ -14,6 +14,8 @@ export const businessData = {
   phone: '+43664000000',
   email: 'mariorozman88@gmail.com',
   address: 'Musterstraße 1, 8430 Musterort',
+  mapEmbedUrl: 'https://www.google.com/maps?q=Musterstra%C3%9Fe+1%2C+8430+Musterort&output=embed',
+  mapExternalUrl: 'https://www.google.com/maps/search/?api=1&query=Musterstra%C3%9Fe+1%2C+8430+Musterort',
 
   // Local focus
   serviceArea: 'Großraum Leibnitz, Graz, Deutschlandsberg und Südoststeiermark',
