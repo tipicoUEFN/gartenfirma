@@ -111,12 +111,12 @@
     "ongoingTitle": "Folyamatos gondozás",
     "ongoingDescription": "Rendszeres gondozás rögzített ütemterv szerint.",
     "seoTitle": "Kertgondozási szolgáltatások",
-    "seoDescription": "Szolgáltatásaink: fűnyírás, sövénygondozas, lombmunka es rendszeres kültéri fenntartas Leibnitzben es környéken.",
-    "sectionDescriptionShort": "Rovid attekintes szolgáltatásainkrol a regioban.",
-    "locationLinksTitle": "Szolgáltatás + telepules",
-    "locationLinksDescription": "Gyakran keresett kombinaciok a regioban.",
+    "seoDescription": "Szolgáltatásaink: fűnyírás, sövénynyírás, lombmunka és rendszeres kültéri fenntartás Leibnitzben és környékén.",
+    "sectionDescriptionShort": "Rövid áttekintés szolgáltatásainkról a régióban.",
+    "locationLinksTitle": "Szolgáltatás + település",
+    "locationLinksDescription": "Gyakran keresett kombinációk a régióban.",
     "gardenCareInTown": "Kertgondozás {{town}}",
-    "cardTagline": "Tiszta. Megbizhato. Regionalis.",
+    "cardTagline": "Tiszta. Megbízható. Regionális.",
     "faq": [
       {
         "question": "Milyen gyakran kell nyirni a pazsitot?",
@@ -152,10 +152,10 @@
     "value2": "Pontosság és tiszta munkavégzés",
     "value3": "Fenntartható gondozás hosszú távú eredményért",
     "value4": "Regionális közelség és közvetlen elérhetőség",
-    "seoTitle": "Rolunk",
-    "seoDescription": "Regionalis kertszolgáltatás Dél-Stájerországban szemelyes tanacsadassal, atlathato folyamatokkal es megbizhato kivitelezessel.",
-    "sectionSubtitle": "Roviden, vilagosan, fix folyamatok menten.",
-    "highlight": "Kertgondozás Leibnitzbol. Megbizhato, tiszta es pontos.",
+    "seoTitle": "Rólunk",
+    "seoDescription": "Regionális kertszolgáltatás Dél-Stájerországban személyes tanácsadással, átlátható folyamatokkal és megbízható kivitelezéssel.",
+    "sectionSubtitle": "Röviden, világosan, fix folyamatok mentén.",
+    "highlight": "Kertgondozás Leibnitzből. Megbízható, tiszta és pontos.",
     "workflows": {
       "private": {
         "title": "Magánkert - folyamatos gondozás",
@@ -179,24 +179,24 @@
     "heroTitle": "",
     "heroText": "",
     "formTitle": "Üzenet küldése",
-    "formDescription": "Irja le roviden. Gyorsan visszajelzunk.",
+    "formDescription": "Írja le röviden. Gyorsan visszajelzünk.",
     "direct": "Közvetlenül elérhető",
     "serviceArea": "Szolgáltatási terület",
-    "seoTitle": "Kapcsolat es ajánlatkérés",
+    "seoTitle": "Kapcsolat és ajánlatkérés",
     "seoDescription": "Kérjen kertgondozást Leibnitz, Wagna, Gralla, Tillmitsch, Straß és környéke területén. Gyorsan válaszolunk.",
     "quick": {
       "eyebrow": "Gyors kapcsolat",
       "title": "Küldjön rövid kérést",
-      "description": "Válasz altalaban 24h-on belul."
+      "description": "Válasz általában 24h-on belül."
     },
     "flowSection": {
       "eyebrow": "Folyamat",
-      "title": "Igy mukodik",
-      "description": "Harom rovid lepes."
+      "title": "Így működik",
+      "description": "Három rövid lépés."
     },
     "detailed": {
-      "eyebrow": "Reszletes keres",
-      "description": "Tobb reszlet a pontosabb ajanlathoz."
+      "eyebrow": "Részletes kérés",
+      "description": "Több részlet a pontosabb ajánlathoz."
     },
     "flow": {
       "quick": {
@@ -284,12 +284,12 @@
         "text": "Tavaszi és őszi munkák a rendezett kertszerkezetért."
       }
     },
-    "seoTitle": "Regionalis referenciak",
-    "seoDescription": "Valogatott projektek fűnyírás, sövényvagas es objektumgondozas temaban Leibnitz, Graz es Dél-Stájerország teruleten.",
-    "casesTitle": "Munkak helyszin szerint",
-    "casesDescription": "Konkrett projektek szolgáltatással, objektumtippussal es gondozasi ritmussal.",
+    "seoTitle": "Regionális referenciák",
+    "seoDescription": "Válogatott projektek fűnyírás, sövénynyírás és objektumgondozás témában Leibnitz, Graz és Dél-Stájerország területén.",
+    "casesTitle": "Munkák helyszín szerint",
+    "casesDescription": "Konkrét projektek szolgáltatással, objektumtípussal és gondozási ritmussal.",
     "projectInTown": "Projekt itt: {{town}}",
-    "moreInTown": "Tovabb a kertgondozáshoz itt: {{town}}",
+    "moreInTown": "Tovább a kertgondozáshoz itt: {{town}}",
     "caseStudies": {
       "leibnitz-rasen": {
         "service": "Gyepgondozás",
@@ -339,7 +339,7 @@
     "membership": "Tagság: WKO Stájerország (helyőrző)",
     "tradeLaw": "Szakmai jog: Gewerbeordnung (GewO)",
     "seoTitle": "Impresszum",
-    "seoDescription": "Jogi informaciok a PR Gartenservice-tol Leibnitz es Dél-Stájerország teruleten."
+    "seoDescription": "Jogi információk a PR Gartenservice-től Leibnitz és Dél-Stájerország területén."
   },
   "privacy": {
     "eyebrow": "Adatvédelem",
@@ -354,8 +354,8 @@
     "section4Title": "4. Az Ön jogai",
     "section4Text": "Önnek joga van tájékoztatáshoz, helyesbítéshez, törléshez, korlátozáshoz és tiltakozáshoz.",
     "notice": "Megjegyzés: Ez a szöveg helyőrző, és nem helyettesít jogi tanácsadást.",
-    "seoTitle": "Adatvedelem",
-    "seoDescription": "Informaciok az adatkezelesrol kapcsolatfelveteli kerelmek eseten a PR Gartenservice-nel."
+    "seoTitle": "Adatvédelem",
+    "seoDescription": "Információk az adatkezelésről kapcsolatfelvételi kérelmek esetén a PR Gartenservice-nél."
   },
   "services": {
     "title": "Szolgáltatásaink"
@@ -378,7 +378,7 @@
     "ratingFiveStars": "5 / 5 csillag",
     "heroSliderRegion": "Elvégzett munkák képei",
     "logoIconAlt": "{{companyName}} ikon",
-    "serviceAreaValue": "Leibnitz, Graz, Deutschlandsberg es Delkelet-Stajerorszag tersege",
+    "serviceAreaValue": "Leibnitz, Graz, Deutschlandsberg és Délkelet-Stájerország térsége",
     "salutationOptions": [
       "Úr",
       "Hölgy"
@@ -633,14 +633,14 @@
     }
   },
   "locationPage": {
-    "seoDescription": "Kertgondozás maganugyfeleknek, cegeknek es lakoegyutteseknek {{town}} es környéken.",
-    "heroEyebrow": "Regionalis kertszolgáltatás",
-    "ctaOffer": "Ajanlatkeres {{town}} telepulesre",
-    "ctaServices": "Szolgáltatások megtekintese",
+    "seoDescription": "Kertgondozás magánügyfeleknek, cégeknek és lakóegyütteseknek {{town}} és környékén.",
+    "heroEyebrow": "Regionális kertszolgáltatás",
+    "ctaOffer": "Ajánlatkérés {{town}} településre",
+    "ctaServices": "Szolgáltatások megtekintése",
     "servicesTitle": "Szolgáltatásaink itt: {{town}}",
     "trustTitle": "Miért bíznak bennünk {{town}} ügyfelei",
-    "regionalHintTitle": "Regionalis megjegyzes",
-    "regionalHintText": "Sok kereses {{town}} telepulesen rendszeres kertgondozásra vonatkozik. A munkakat ugy tervezzuk, hogy az idopontok stabilak maradjanak es a kulso teruletek hosszu tavon rendezettek legyenek.",
+    "regionalHintTitle": "Regionális megjegyzés",
+    "regionalHintText": "Sok kérés {{town}} településen rendszeres kertgondozásra vonatkozik. A munkákat úgy tervezzük, hogy az időpontok stabilak maradjanak és a külső területek hosszú távon rendezettek legyenek.",
     "faq": [
       {
         "question": "Milyen szolgáltatásokat nyújtanak {{town}} településen?",
@@ -661,13 +661,13 @@
     ]
   },
   "guidesPage": {
-    "seoTitle": "Kertgondozási utmutatok",
-    "seoDescription": "Szezonalis tippek fűnyíráshoz, sövénygondozashoz es kerti munkakhoz Leibnitzben es környéken.",
-    "heroEyebrow": "Utmutato",
-    "heroTitle": "Tippek kertgondozáshoz Leibnitzben es környéken",
-    "heroText": "Itt rovid, szezonalis ajanlasokat talal rendezett zoldfeluletekhez.",
-    "tipLabel": "Szezonalis tipp",
-    "cta": "Megvalositasi tanacs kerese",
+    "seoTitle": "Kertgondozási útmutatók",
+    "seoDescription": "Szezonális tippek fűnyíráshoz, sövénynyíráshoz és kerti munkákhoz Leibnitzben és környékén.",
+    "heroEyebrow": "Útmutató",
+    "heroTitle": "Tippek kertgondozáshoz Leibnitzben és környékén",
+    "heroText": "Itt rövid, szezonális ajánlásokat talál rendezett zöldfelületekhez.",
+    "tipLabel": "Szezonális tipp",
+    "cta": "Megvalósítási tanács kérése",
     "guides": [
       {
         "title": "Tavaszi gyepápolás Dél-Stájerországban",

@@ -120,7 +120,7 @@
     "faq": [
       {
         "question": "Koliko često treba kositi travnjak?",
-        "answer": "U glavnoj sezoni, ovisno o rastu, obicno preporucujemo ritam od 7 do 14 dana."
+        "answer": "U glavnoj sezoni, ovisno o rastu, obično preporučujemo ritam od 7 do 14 dana."
       },
       {
         "question": "Koja mjesta pokrivate?",
@@ -132,7 +132,7 @@
       },
       {
         "question": "Kako mogu zatraziti ponudu?",
-        "answer": "Najbrze putem kontakt obrasca ili telefonom. Obicno odgovaramo unutar 24 sata."
+        "answer": "Najbrže putem kontakt obrasca ili telefonom. Obično odgovaramo unutar 24 sata."
       },
       {
         "question": "Koliko kosta njega živice?",
@@ -155,18 +155,18 @@
     "seoTitle": "O nama",
     "seoDescription": "Regionalna vrtna usluga u južnoj Štajerskoj s osobnim savjetovanjem, jasnim procesima i pouzdanom izvedbom.",
     "sectionSubtitle": "Kratko, jasno i po definiranim koracima.",
-    "highlight": "Njega vrta iz Leibnitza. Pouzdano, čisto i tocno.",
+    "highlight": "Njega vrta iz Leibnitza. Pouzdano, čisto i točno.",
     "workflows": {
       "private": {
         "title": "Privatni vrt - redovita njega",
-        "challenge": "Neujednaceno stanje održavanja i manjak redovitosti.",
+        "challenge": "Neujednačeno stanje održavanja i manjak redovitosti.",
         "approach": "Fiksni intervalni plan za travnjak, živicu i gredice.",
         "result": "Stalno uredan vrt uz predvidiv opseg rada."
       },
       "apartment": {
-        "title": "Stambeni kompleks - zajednicke površine",
+        "title": "Stambeni kompleks - zajedničke površine",
         "challenge": "Nejasne odgovornosti i promjenjiva kvaliteta na lokaciji.",
-        "approach": "Jasni zadaci po terminu i cista povratna informacija nakon izvedbe.",
+        "approach": "Jasni zadaci po terminu i čista povratna informacija nakon izvedbe.",
         "result": "Pouzdano stanje površina za stanare i upravu."
       }
     }
@@ -183,11 +183,11 @@
     "direct": "Izravno dostupni",
     "serviceArea": "Područje usluge",
     "seoTitle": "Kontakt i upit",
-    "seoDescription": "Zatrazite njegu vrta u Leibnitzu, Wagni, Gralli, Tillmitschu, Straßu i okolici. Odgovaramo brzo.",
+    "seoDescription": "Zatražite njegu vrta u Leibnitzu, Wagni, Gralli, Tillmitschu, Straßu i okolici. Odgovaramo brzo.",
     "quick": {
       "eyebrow": "Brzi kontakt",
       "title": "Pošaljite kratki upit",
-      "description": "Odgovor obicno u 24h."
+      "description": "Odgovor obično u 24h."
     },
     "flowSection": {
       "eyebrow": "Tijek",
@@ -652,11 +652,11 @@
       },
       {
         "question": "Koliko brzo mogu dobiti ponudu u mjestu {{town}}?",
-        "answer": "Nakon upita obicno se javljamo unutar 24 sata (Pon-Pet) s prvom povratnom informacijom."
+        "answer": "Nakon upita obično se javljamo unutar 24 sata (pon-pet) s prvom povratnom informacijom."
       },
       {
-        "question": "Je li moguca i redovita njega vrta u mjestu {{town}}?",
-        "answer": "Da, u mjestu {{town}} nudimo planirane intervale njege, primjerice tjedno, svaka 2 tjedna ili mjesecno."
+        "question": "Je li moguća i redovita njega vrta u mjestu {{town}}?",
+        "answer": "Da, u mjestu {{town}} nudimo planirane intervale njege, primjerice tjedno, svaka 2 tjedna ili mjesečno."
       }
     ]
   },
@@ -665,7 +665,7 @@
     "seoDescription": "Sezonski savjeti za njegu travnjaka, živice i vrtne radove u Leibnitzu i okolici.",
     "heroEyebrow": "Savjeti",
     "heroTitle": "Savjeti za njegu vrtova u Leibnitzu i okolici",
-    "heroText": "Ovdje cete pronaci kratke sezonske preporuke za uredene zelene površine.",
+    "heroText": "Ovdje ćete pronaći kratke sezonske preporuke za uređene zelene površine.",
     "tipLabel": "Sezonski savjet",
     "cta": "Zatrazi savjet za izvedbu",
     "guides": [

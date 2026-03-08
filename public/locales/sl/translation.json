@@ -160,13 +160,13 @@
       "private": {
         "title": "Zasebni vrt - redna oskrba",
         "challenge": "Neenotno stanje nege in pomanjkanje rednosti.",
-        "approach": "Fiksni intervalni nacrt za trato, zivo mejo in grede.",
+        "approach": "Fiksni intervalni načrt za trato, živo mejo in grede.",
         "result": "Stalno urejen vrt s predvidljivim obsegom dela."
       },
       "apartment": {
         "title": "Stanovanjski objekt - skupne površine",
-        "challenge": "Nejasne odgovornosti in nihajoca kakovost na terenu.",
-        "approach": "Jasne naloge na termin in cista povratna informacija po izvedbi.",
+        "challenge": "Nejasne odgovornosti in nihajoča kakovost na terenu.",
+        "approach": "Jasne naloge na termin in čista povratna informacija po izvedbi.",
         "result": "Zanesljivo stanje površin za stanovalce in upravljanje."
       }
     }

@@ -42,7 +42,7 @@
       },
       "season": {
         "title": "Seasonal service",
-        "description": "Spring and autumn service including leaf work and winter preparation."
+        "description": "Spring and autumn service including leaf cleanup and winter preparation."
       },
       "ongoing": {
         "title": "Ongoing property care",
@@ -107,11 +107,11 @@
     "greenTitle": "Green trimming",
     "greenDescription": "Safe trimming for smaller trees, shrubs and ornamentals.",
     "seasonTitle": "Seasonal work",
-    "seasonDescription": "Spring prep, autumn service, leaf work and winter prep.",
+    "seasonDescription": "Spring prep, autumn service, leaf cleanup and winter prep.",
     "ongoingTitle": "Ongoing care",
     "ongoingDescription": "Regular maintenance based on a fixed interval plan.",
     "seoTitle": "Garden care services",
-    "seoDescription": "Our services: lawn mowing, hedge care, leaf work and ongoing outdoor area maintenance in Leibnitz and surrounding areas.",
+    "seoDescription": "Our services: lawn mowing, hedge trimming, leaf cleanup and ongoing outdoor area maintenance in Leibnitz and surrounding areas.",
     "sectionDescriptionShort": "Short overview of our services in the region.",
     "locationLinksTitle": "Service + town",
     "locationLinksDescription": "Frequently requested combinations in our region.",
@@ -135,7 +135,7 @@
         "answer": "The fastest way is through our contact form or by phone. We usually respond within 24 hours."
       },
       {
-        "question": "How much does hedge care cost?",
+        "question": "How much does hedge trimming cost?",
         "answer": "Costs depend on length, height and accessibility. After a short coordination, we provide a clear quote."
       }
     ]
@@ -300,7 +300,7 @@
         "cadence": "every 14 days"
       },
       "wagna-hecke": {
-        "service": "Hedge care",
+        "service": "Hedge trimming",
         "objectType": "Single-family home",
         "challenge": "Overgrown hedge at sidewalk and driveway.",
         "approach": "Gentle shaping in two rounds with clean disposal.",
@@ -308,7 +308,7 @@
         "cadence": "2x per year"
       },
       "gralla-objekt": {
-        "service": "Outdoor maintenance",
+        "service": "Outdoor area maintenance",
         "objectType": "Residential complex",
         "challenge": "Fluctuating quality due to changing providers.",
         "approach": "Monthly maintenance plan with fixed contact and checklist.",
@@ -425,7 +425,7 @@
     "regionalProofLine1": "Private gardens, company sites, residential complexes and public facilities in Leibnitz, Graz, Deutschlandsberg and Southeast Styria.",
     "regionalProofLine2": "Leibnitz · Wagna · Gralla · Tillmitsch · Straß · Ehrenhausen · Graz area",
     "seoTitle": "Garden care in Leibnitz and Southern Styria",
-    "seoDescription": "PR Gartenservice offers lawn mowing, hedge trimming and ongoing outdoor maintenance in Leibnitz, Graz and nearby.",
+    "seoDescription": "PR Gartenservice offers lawn mowing, hedge trimming and ongoing outdoor area maintenance in Leibnitz, Graz and nearby.",
     "heroEyebrow": "PR Gartenservice",
     "testimonials": {
       "1": {
@@ -479,7 +479,7 @@
       "Lawn mowing",
       "Hedge trimming",
       "Leaf cleanup",
-      "Ongoing outdoor maintenance",
+      "Ongoing outdoor area maintenance",
       "Garden maintenance"
     ]
   },
@@ -644,7 +644,7 @@
     "faq": [
       {
         "question": "Which services do you offer in {{town}}?",
-        "answer": "In {{town}} we offer lawn care, hedge care, leaf work and ongoing outdoor maintenance, among others."
+        "answer": "In {{town}} we offer lawn care, hedge trimming, leaf cleanup and ongoing outdoor area maintenance, among others."
       },
       {
         "question": "Do you support businesses and residential complexes in {{town}}?",
@@ -668,8 +668,8 @@
       "services": [
         "Lawn mowing",
         "Care of existing hedges",
-        "Leaf work",
-        "Ongoing outdoor maintenance"
+        "Leaf cleanup",
+        "Ongoing outdoor area maintenance"
       ],
       "trust": [
         "Short routes in the Leibnitz area",
@@ -685,7 +685,7 @@
         "Seasonal tasks",
         "Bed and area care",
         "Lawn mowing",
-        "Leaf work"
+        "Leaf cleanup"
       ],
       "trust": [
         "Regional in Leibnitz district",
@@ -715,7 +715,7 @@
       "intro": "In {{town}} we maintain green spaces and gardens sustainably so your outdoor areas stay tidy and inviting all year.",
       "services": [
         "Green area care",
-        "Hedge care",
+        "Hedge trimming",
         "Ongoing support",
         "Spring and autumn tasks"
       ],
@@ -730,10 +730,10 @@
       "heroTitle": "Garden service in {{town}}",
       "intro": "We offer garden service in {{town}} focused on clean work, reliable scheduling and ongoing support for different property types.",
       "services": [
-        "Hedge care",
+        "Hedge trimming",
         "Lawn mowing",
         "Seasonal service",
-        "Outdoor maintenance"
+        "Outdoor area maintenance"
       ],
       "trust": [
         "Quickly on site in Leibnitz district",
@@ -744,7 +744,7 @@
   },
   "guidesPage": {
     "seoTitle": "Garden care guides",
-    "seoDescription": "Seasonal tips on lawn care, hedge care and garden work in Leibnitz and nearby.",
+    "seoDescription": "Seasonal tips on lawn care, hedge trimming and garden work in Leibnitz and nearby.",
     "heroEyebrow": "Guides",
     "heroTitle": "Tips for garden care in Leibnitz and nearby",
     "heroText": "Here you will find compact seasonal recommendations for well-kept green areas.",
@@ -760,7 +760,7 @@
         "text": "Practical tips for healthy hedges and a neat overall look."
       },
       {
-        "title": "Leaf work in autumn: safe and efficient",
+        "title": "Leaf cleanup in autumn: safe and efficient",
         "text": "How to keep paths, driveways and green areas tidy and non-slip."
       },
       {
